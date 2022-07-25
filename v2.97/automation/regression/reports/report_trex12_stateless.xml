@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite name="nosetests" tests="12" errors="11" failures="0" skip="0"><testcase classname="stateless_tests.stl_general_test.STLBasic_Test" name="test_connectivity" time="16.241"><system-out><![CDATA[
+Starting TRex... done. (0s)
+Started TRex
+Connecting.
+Connected
+Mapping ports.
+Got ports mapping: {'map': {0: 1, 1: 0, 2: 3, 3: 2, 4: 5, 5: 4, 6: 7, 7: 6, 8: 9, 9: 8, 10: 11, 11: 10}, 'bi': [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9), (10, 11)], 'unknown': []}
+]]></system-out></testcase><testcase classname="stateless_tests.stl_rx_test.STLRX_Test" name="test_1_stream_many_iterations" time="37.982"><error type="trex.common.trex_exceptions.TRexError" message="'acquire' - interrupted by a keyboard signal (probably ctrl + c)"><![CDATA[Traceback (most recent call last):
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 51, in wrap2
+    ret = f(*args, **kwargs)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/stl/trex_stl_client.py", line 385, in acquire
+    rc = self._for_each_port('acquire', ports, force)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_client.py", line 426, in _for_each_port
+    rc.add(func(*args, **pkwargs))
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/stl/trex_stl_port.py", line 546, in acquire
+    rc = self.transmit("acquire", params)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 223, in transmit
+    rc = self.invoke_rpc_method(method_name, params, max_retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 190, in invoke_rpc_method
+    return self.send_msg(msg, retry = retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 251, in send_msg
+    return self.__send_msg(msg, retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 263, in __send_msg
+    response = self.send_raw_msg(self.zipper.compress(buffer), retry = retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 300, in send_raw_msg
+    raise e
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 296, in send_raw_msg
+    return self._send_raw_msg_safe(msg, retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 320, in _send_raw_msg_safe
+    response = self.socket.recv()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/pyzmq-ctypes/zmq/socket.py", line 214, in recv
+    _retry_sys_call(zmq_msg_recv, zmq_msg, self.handle, flags)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/pyzmq-ctypes/zmq/utils.py", line 44, in _retry_sys_call
+    rc = f(*args)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/unittest/case.py", line 60, in testPartExecutor
+    yield
+  File "/usr/lib64/python3.6/unittest/case.py", line 622, in run
+    testMethod()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateless_tests/stl_rx_test.py", line 233, in wrapped
+    func(self, *args, **kwargs)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateless_tests/stl_rx_test.py", line 636, in test_1_stream_many_iterations
+    self.c.reset()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 51, in wrap2
+    ret = f(*args, **kwargs)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/stl/trex_stl_client.py", line 335, in reset
+    self.acquire(ports, force = True, sync_streams = False)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 58, in wrap2
+    raise TRexError("'{0}' - interrupted by a keyboard signal (probably ctrl + c)".format(func_name))
+trex.common.trex_exceptions.TRexError: 'acquire' - interrupted by a keyboard signal (probably ctrl + c)
+]]></error><system-out><![CDATA[
+num cores 6 num 9k mbufs 6144 num 4k mbufs 6144
+
+injecting 500 packets on port 0
+Stream: Latency, with field engine of random packet size
+Stream: Latency, short packet with field engine
+Stream: Latency, large packet field engine
+Stream: Latency, 9k packet with field engine
+Stream: Flow stat. No latency
+Try 1 failed. Retrying
+('remove_all_streams' - interrupted by a keyboard signal (probably ctrl + c)
+Try 2 failed. Retrying
+('acquire' - interrupted by a keyboard signal (probably ctrl + c)
+Try 3 failed. Retrying
+('acquire' - interrupted by a keyboard signal (probably ctrl + c)
+Try 4 failed. Giving up
+]]></system-out></testcase><testcase classname="stateless_tests.stl_rx_test.STLRX_Test" name="test_9k_stream" time="0.237"><error type="trex.common.trex_exceptions.TRexError" message="'get_port_info' - interrupted by a keyboard signal (probably ctrl + c)"><![CDATA[Traceback (most recent call last):
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 51, in wrap2
+    ret = f(*args, **kwargs)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_client.py", line 1180, in get_port_info
+    return [self.ports[port_id].get_formatted_info() for port_id in listify_if_int(ports)]
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_client.py", line 1180, in <listcomp>
+    return [self.ports[port_id].get_formatted_info() for port_id in listify_if_int(ports)]
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_port.py", line 607, in get_formatted_info
+    self.sync()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/stl/trex_stl_port.py", line 227, in sync
+    rc = self.transmit("get_port_status", params)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 223, in transmit
+    rc = self.invoke_rpc_method(method_name, params, max_retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 190, in invoke_rpc_method
+    return self.send_msg(msg, retry = retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 251, in send_msg
+    return self.__send_msg(msg, retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 263, in __send_msg
+    response = self.send_raw_msg(self.zipper.compress(buffer), retry = retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 300, in send_raw_msg
+    raise e
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 296, in send_raw_msg
+    return self._send_raw_msg_safe(msg, retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 320, in _send_raw_msg_safe
+    response = self.socket.recv()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/pyzmq-ctypes/zmq/socket.py", line 214, in recv
+    _retry_sys_call(zmq_msg_recv, zmq_msg, self.handle, flags)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/pyzmq-ctypes/zmq/utils.py", line 44, in _retry_sys_call
+    rc = f(*args)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/unittest/case.py", line 60, in testPartExecutor
+    yield
+  File "/usr/lib64/python3.6/unittest/case.py", line 618, in run
+    self.setUp()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateless_tests/stl_rx_test.py", line 25, in setUp
+    port_info = self.c.get_port_info(ports = self.rx_port)[0]
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 58, in wrap2
+    raise TRexError("'{0}' - interrupted by a keyboard signal (probably ctrl + c)".format(func_name))
+trex.common.trex_exceptions.TRexError: 'get_port_info' - interrupted by a keyboard signal (probably ctrl + c)
+]]></error></testcase><testcase classname="stateless_tests.stl_rx_test.STLRX_Test" name="test_fcs_stream" time="0.049"><error type="trex.common.trex_exceptions.TRexError" message="'get_port_info' - interrupted by a keyboard signal (probably ctrl + c)"><![CDATA[Traceback (most recent call last):
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 51, in wrap2
+    ret = f(*args, **kwargs)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_client.py", line 1180, in get_port_info
+    return [self.ports[port_id].get_formatted_info() for port_id in listify_if_int(ports)]
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_client.py", line 1180, in <listcomp>
+    return [self.ports[port_id].get_formatted_info() for port_id in listify_if_int(ports)]
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_port.py", line 607, in get_formatted_info
+    self.sync()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/stl/trex_stl_port.py", line 227, in sync
+    rc = self.transmit("get_port_status", params)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 223, in transmit
+    rc = self.invoke_rpc_method(method_name, params, max_retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 190, in invoke_rpc_method
+    return self.send_msg(msg, retry = retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 251, in send_msg
+    return self.__send_msg(msg, retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 263, in __send_msg
+    response = self.send_raw_msg(self.zipper.compress(buffer), retry = retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 300, in send_raw_msg
+    raise e
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 296, in send_raw_msg
+    return self._send_raw_msg_safe(msg, retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 320, in _send_raw_msg_safe
+    response = self.socket.recv()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/pyzmq-ctypes/zmq/socket.py", line 214, in recv
+    _retry_sys_call(zmq_msg_recv, zmq_msg, self.handle, flags)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/pyzmq-ctypes/zmq/utils.py", line 44, in _retry_sys_call
+    rc = f(*args)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/unittest/case.py", line 60, in testPartExecutor
+    yield
+  File "/usr/lib64/python3.6/unittest/case.py", line 618, in run
+    self.setUp()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateless_tests/stl_rx_test.py", line 25, in setUp
+    port_info = self.c.get_port_info(ports = self.rx_port)[0]
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 58, in wrap2
+    raise TRexError("'{0}' - interrupted by a keyboard signal (probably ctrl + c)".format(func_name))
+trex.common.trex_exceptions.TRexError: 'get_port_info' - interrupted by a keyboard signal (probably ctrl + c)
+]]></error></testcase><testcase classname="stateless_tests.stl_rx_test.STLRX_Test" name="test_incremental_latency_streams" time="0.047"><error type="trex.common.trex_exceptions.TRexError" message="'get_port_info' - interrupted by a keyboard signal (probably ctrl + c)"><![CDATA[Traceback (most recent call last):
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 51, in wrap2
+    ret = f(*args, **kwargs)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_client.py", line 1180, in get_port_info
+    return [self.ports[port_id].get_formatted_info() for port_id in listify_if_int(ports)]
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_client.py", line 1180, in <listcomp>
+    return [self.ports[port_id].get_formatted_info() for port_id in listify_if_int(ports)]
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_port.py", line 607, in get_formatted_info
+    self.sync()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/stl/trex_stl_port.py", line 227, in sync
+    rc = self.transmit("get_port_status", params)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 223, in transmit
+    rc = self.invoke_rpc_method(method_name, params, max_retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 190, in invoke_rpc_method
+    return self.send_msg(msg, retry = retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 251, in send_msg
+    return self.__send_msg(msg, retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 263, in __send_msg
+    response = self.send_raw_msg(self.zipper.compress(buffer), retry = retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 300, in send_raw_msg
+    raise e
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 296, in send_raw_msg
+    return self._send_raw_msg_safe(msg, retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 320, in _send_raw_msg_safe
+    response = self.socket.recv()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/pyzmq-ctypes/zmq/socket.py", line 214, in recv
+    _retry_sys_call(zmq_msg_recv, zmq_msg, self.handle, flags)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/pyzmq-ctypes/zmq/utils.py", line 44, in _retry_sys_call
+    rc = f(*args)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/unittest/case.py", line 60, in testPartExecutor
+    yield
+  File "/usr/lib64/python3.6/unittest/case.py", line 618, in run
+    self.setUp()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateless_tests/stl_rx_test.py", line 25, in setUp
+    port_info = self.c.get_port_info(ports = self.rx_port)[0]
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 58, in wrap2
+    raise TRexError("'{0}' - interrupted by a keyboard signal (probably ctrl + c)".format(func_name))
+trex.common.trex_exceptions.TRexError: 'get_port_info' - interrupted by a keyboard signal (probably ctrl + c)
+]]></error></testcase><testcase classname="stateless_tests.stl_rx_test.STLRX_Test" name="test_multiple_streams" time="0.050"><error type="trex.common.trex_exceptions.TRexError" message="'get_port_info' - interrupted by a keyboard signal (probably ctrl + c)"><![CDATA[Traceback (most recent call last):
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 51, in wrap2
+    ret = f(*args, **kwargs)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_client.py", line 1180, in get_port_info
+    return [self.ports[port_id].get_formatted_info() for port_id in listify_if_int(ports)]
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_client.py", line 1180, in <listcomp>
+    return [self.ports[port_id].get_formatted_info() for port_id in listify_if_int(ports)]
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_port.py", line 607, in get_formatted_info
+    self.sync()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/stl/trex_stl_port.py", line 227, in sync
+    rc = self.transmit("get_port_status", params)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 223, in transmit
+    rc = self.invoke_rpc_method(method_name, params, max_retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 190, in invoke_rpc_method
+    return self.send_msg(msg, retry = retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 251, in send_msg
+    return self.__send_msg(msg, retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 263, in __send_msg
+    response = self.send_raw_msg(self.zipper.compress(buffer), retry = retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 300, in send_raw_msg
+    raise e
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 296, in send_raw_msg
+    return self._send_raw_msg_safe(msg, retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 320, in _send_raw_msg_safe
+    response = self.socket.recv()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/pyzmq-ctypes/zmq/socket.py", line 214, in recv
+    _retry_sys_call(zmq_msg_recv, zmq_msg, self.handle, flags)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/pyzmq-ctypes/zmq/utils.py", line 44, in _retry_sys_call
+    rc = f(*args)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/unittest/case.py", line 60, in testPartExecutor
+    yield
+  File "/usr/lib64/python3.6/unittest/case.py", line 618, in run
+    self.setUp()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateless_tests/stl_rx_test.py", line 25, in setUp
+    port_info = self.c.get_port_info(ports = self.rx_port)[0]
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 58, in wrap2
+    raise TRexError("'{0}' - interrupted by a keyboard signal (probably ctrl + c)".format(func_name))
+trex.common.trex_exceptions.TRexError: 'get_port_info' - interrupted by a keyboard signal (probably ctrl + c)
+]]></error></testcase><testcase classname="stateless_tests.stl_rx_test.STLRX_Test" name="test_multiple_streams_random" time="0.053"><error type="trex.common.trex_exceptions.TRexError" message="'get_port_info' - interrupted by a keyboard signal (probably ctrl + c)"><![CDATA[Traceback (most recent call last):
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 51, in wrap2
+    ret = f(*args, **kwargs)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_client.py", line 1180, in get_port_info
+    return [self.ports[port_id].get_formatted_info() for port_id in listify_if_int(ports)]
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_client.py", line 1180, in <listcomp>
+    return [self.ports[port_id].get_formatted_info() for port_id in listify_if_int(ports)]
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_port.py", line 607, in get_formatted_info
+    self.sync()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/stl/trex_stl_port.py", line 227, in sync
+    rc = self.transmit("get_port_status", params)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 223, in transmit
+    rc = self.invoke_rpc_method(method_name, params, max_retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 190, in invoke_rpc_method
+    return self.send_msg(msg, retry = retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 251, in send_msg
+    return self.__send_msg(msg, retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 263, in __send_msg
+    response = self.send_raw_msg(self.zipper.compress(buffer), retry = retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 300, in send_raw_msg
+    raise e
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 296, in send_raw_msg
+    return self._send_raw_msg_safe(msg, retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 320, in _send_raw_msg_safe
+    response = self.socket.recv()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/pyzmq-ctypes/zmq/socket.py", line 214, in recv
+    _retry_sys_call(zmq_msg_recv, zmq_msg, self.handle, flags)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/pyzmq-ctypes/zmq/utils.py", line 44, in _retry_sys_call
+    rc = f(*args)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/unittest/case.py", line 60, in testPartExecutor
+    yield
+  File "/usr/lib64/python3.6/unittest/case.py", line 618, in run
+    self.setUp()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateless_tests/stl_rx_test.py", line 25, in setUp
+    port_info = self.c.get_port_info(ports = self.rx_port)[0]
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 58, in wrap2
+    raise TRexError("'{0}' - interrupted by a keyboard signal (probably ctrl + c)".format(func_name))
+trex.common.trex_exceptions.TRexError: 'get_port_info' - interrupted by a keyboard signal (probably ctrl + c)
+]]></error></testcase><testcase classname="stateless_tests.stl_rx_test.STLRX_Test" name="test_one_stream" time="0.047"><error type="trex.common.trex_exceptions.TRexError" message="'get_port_info' - interrupted by a keyboard signal (probably ctrl + c)"><![CDATA[Traceback (most recent call last):
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 51, in wrap2
+    ret = f(*args, **kwargs)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_client.py", line 1180, in get_port_info
+    return [self.ports[port_id].get_formatted_info() for port_id in listify_if_int(ports)]
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_client.py", line 1180, in <listcomp>
+    return [self.ports[port_id].get_formatted_info() for port_id in listify_if_int(ports)]
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_port.py", line 607, in get_formatted_info
+    self.sync()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/stl/trex_stl_port.py", line 227, in sync
+    rc = self.transmit("get_port_status", params)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 223, in transmit
+    rc = self.invoke_rpc_method(method_name, params, max_retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 190, in invoke_rpc_method
+    return self.send_msg(msg, retry = retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 251, in send_msg
+    return self.__send_msg(msg, retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 263, in __send_msg
+    response = self.send_raw_msg(self.zipper.compress(buffer), retry = retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 300, in send_raw_msg
+    raise e
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 296, in send_raw_msg
+    return self._send_raw_msg_safe(msg, retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 320, in _send_raw_msg_safe
+    response = self.socket.recv()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/pyzmq-ctypes/zmq/socket.py", line 214, in recv
+    _retry_sys_call(zmq_msg_recv, zmq_msg, self.handle, flags)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/pyzmq-ctypes/zmq/utils.py", line 44, in _retry_sys_call
+    rc = f(*args)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/unittest/case.py", line 60, in testPartExecutor
+    yield
+  File "/usr/lib64/python3.6/unittest/case.py", line 618, in run
+    self.setUp()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateless_tests/stl_rx_test.py", line 25, in setUp
+    port_info = self.c.get_port_info(ports = self.rx_port)[0]
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 58, in wrap2
+    raise TRexError("'{0}' - interrupted by a keyboard signal (probably ctrl + c)".format(func_name))
+trex.common.trex_exceptions.TRexError: 'get_port_info' - interrupted by a keyboard signal (probably ctrl + c)
+]]></error></testcase><testcase classname="stateless_tests.stl_rx_test.STLRX_Test" name="test_raw_pkt_stream" time="0.048"><error type="trex.common.trex_exceptions.TRexError" message="'get_port_info' - interrupted by a keyboard signal (probably ctrl + c)"><![CDATA[Traceback (most recent call last):
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 51, in wrap2
+    ret = f(*args, **kwargs)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_client.py", line 1180, in get_port_info
+    return [self.ports[port_id].get_formatted_info() for port_id in listify_if_int(ports)]
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_client.py", line 1180, in <listcomp>
+    return [self.ports[port_id].get_formatted_info() for port_id in listify_if_int(ports)]
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_port.py", line 607, in get_formatted_info
+    self.sync()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/stl/trex_stl_port.py", line 227, in sync
+    rc = self.transmit("get_port_status", params)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 223, in transmit
+    rc = self.invoke_rpc_method(method_name, params, max_retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 190, in invoke_rpc_method
+    return self.send_msg(msg, retry = retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 251, in send_msg
+    return self.__send_msg(msg, retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 263, in __send_msg
+    response = self.send_raw_msg(self.zipper.compress(buffer), retry = retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 300, in send_raw_msg
+    raise e
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 296, in send_raw_msg
+    return self._send_raw_msg_safe(msg, retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 320, in _send_raw_msg_safe
+    response = self.socket.recv()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/pyzmq-ctypes/zmq/socket.py", line 214, in recv
+    _retry_sys_call(zmq_msg_recv, zmq_msg, self.handle, flags)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/pyzmq-ctypes/zmq/utils.py", line 44, in _retry_sys_call
+    rc = f(*args)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/unittest/case.py", line 60, in testPartExecutor
+    yield
+  File "/usr/lib64/python3.6/unittest/case.py", line 618, in run
+    self.setUp()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateless_tests/stl_rx_test.py", line 25, in setUp
+    port_info = self.c.get_port_info(ports = self.rx_port)[0]
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 58, in wrap2
+    raise TRexError("'{0}' - interrupted by a keyboard signal (probably ctrl + c)".format(func_name))
+trex.common.trex_exceptions.TRexError: 'get_port_info' - interrupted by a keyboard signal (probably ctrl + c)
+]]></error></testcase><testcase classname="stateless_tests.stl_rx_test.STLRX_Test" name="test_x710_counters_wraparound" time="0.044"><error type="trex.common.trex_exceptions.TRexError" message="'get_port_info' - interrupted by a keyboard signal (probably ctrl + c)"><![CDATA[Traceback (most recent call last):
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 51, in wrap2
+    ret = f(*args, **kwargs)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_client.py", line 1180, in get_port_info
+    return [self.ports[port_id].get_formatted_info() for port_id in listify_if_int(ports)]
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_client.py", line 1180, in <listcomp>
+    return [self.ports[port_id].get_formatted_info() for port_id in listify_if_int(ports)]
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_port.py", line 607, in get_formatted_info
+    self.sync()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/stl/trex_stl_port.py", line 227, in sync
+    rc = self.transmit("get_port_status", params)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 223, in transmit
+    rc = self.invoke_rpc_method(method_name, params, max_retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 190, in invoke_rpc_method
+    return self.send_msg(msg, retry = retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 251, in send_msg
+    return self.__send_msg(msg, retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 263, in __send_msg
+    response = self.send_raw_msg(self.zipper.compress(buffer), retry = retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 300, in send_raw_msg
+    raise e
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 296, in send_raw_msg
+    return self._send_raw_msg_safe(msg, retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 320, in _send_raw_msg_safe
+    response = self.socket.recv()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/pyzmq-ctypes/zmq/socket.py", line 214, in recv
+    _retry_sys_call(zmq_msg_recv, zmq_msg, self.handle, flags)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/pyzmq-ctypes/zmq/utils.py", line 44, in _retry_sys_call
+    rc = f(*args)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/unittest/case.py", line 60, in testPartExecutor
+    yield
+  File "/usr/lib64/python3.6/unittest/case.py", line 618, in run
+    self.setUp()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateless_tests/stl_rx_test.py", line 25, in setUp
+    port_info = self.c.get_port_info(ports = self.rx_port)[0]
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 58, in wrap2
+    raise TRexError("'{0}' - interrupted by a keyboard signal (probably ctrl + c)".format(func_name))
+trex.common.trex_exceptions.TRexError: 'get_port_info' - interrupted by a keyboard signal (probably ctrl + c)
+]]></error></testcase><testcase classname="stateless_tests.stl_rx_test.STLRX_Test" name="test_vxlan_fs" time="0.054"><error type="trex.common.trex_exceptions.TRexError" message="'get_port_info' - interrupted by a keyboard signal (probably ctrl + c)"><![CDATA[Traceback (most recent call last):
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 51, in wrap2
+    ret = f(*args, **kwargs)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_client.py", line 1180, in get_port_info
+    return [self.ports[port_id].get_formatted_info() for port_id in listify_if_int(ports)]
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_client.py", line 1180, in <listcomp>
+    return [self.ports[port_id].get_formatted_info() for port_id in listify_if_int(ports)]
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_port.py", line 607, in get_formatted_info
+    self.sync()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/stl/trex_stl_port.py", line 227, in sync
+    rc = self.transmit("get_port_status", params)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 223, in transmit
+    rc = self.invoke_rpc_method(method_name, params, max_retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 190, in invoke_rpc_method
+    return self.send_msg(msg, retry = retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 251, in send_msg
+    return self.__send_msg(msg, retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 263, in __send_msg
+    response = self.send_raw_msg(self.zipper.compress(buffer), retry = retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 300, in send_raw_msg
+    raise e
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 296, in send_raw_msg
+    return self._send_raw_msg_safe(msg, retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 320, in _send_raw_msg_safe
+    response = self.socket.recv()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/pyzmq-ctypes/zmq/socket.py", line 214, in recv
+    _retry_sys_call(zmq_msg_recv, zmq_msg, self.handle, flags)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/pyzmq-ctypes/zmq/utils.py", line 44, in _retry_sys_call
+    rc = f(*args)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/unittest/case.py", line 60, in testPartExecutor
+    yield
+  File "/usr/lib64/python3.6/unittest/case.py", line 618, in run
+    self.setUp()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateless_tests/stl_rx_test.py", line 25, in setUp
+    port_info = self.c.get_port_info(ports = self.rx_port)[0]
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 58, in wrap2
+    raise TRexError("'{0}' - interrupted by a keyboard signal (probably ctrl + c)".format(func_name))
+trex.common.trex_exceptions.TRexError: 'get_port_info' - interrupted by a keyboard signal (probably ctrl + c)
+]]></error></testcase><testcase classname="stateless_tests.stl_rx_test.STLRX_Test" name="test_service_mode_flow_stats" time="0.051"><error type="trex.common.trex_exceptions.TRexError" message="'get_port_info' - interrupted by a keyboard signal (probably ctrl + c)"><![CDATA[Traceback (most recent call last):
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 51, in wrap2
+    ret = f(*args, **kwargs)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_client.py", line 1180, in get_port_info
+    return [self.ports[port_id].get_formatted_info() for port_id in listify_if_int(ports)]
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_client.py", line 1180, in <listcomp>
+    return [self.ports[port_id].get_formatted_info() for port_id in listify_if_int(ports)]
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_port.py", line 607, in get_formatted_info
+    self.sync()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/stl/trex_stl_port.py", line 227, in sync
+    rc = self.transmit("get_port_status", params)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 223, in transmit
+    rc = self.invoke_rpc_method(method_name, params, max_retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 190, in invoke_rpc_method
+    return self.send_msg(msg, retry = retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 251, in send_msg
+    return self.__send_msg(msg, retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 263, in __send_msg
+    response = self.send_raw_msg(self.zipper.compress(buffer), retry = retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 300, in send_raw_msg
+    raise e
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 296, in send_raw_msg
+    return self._send_raw_msg_safe(msg, retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 320, in _send_raw_msg_safe
+    response = self.socket.recv()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/pyzmq-ctypes/zmq/socket.py", line 214, in recv
+    _retry_sys_call(zmq_msg_recv, zmq_msg, self.handle, flags)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/pyzmq-ctypes/zmq/utils.py", line 44, in _retry_sys_call
+    rc = f(*args)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/unittest/case.py", line 60, in testPartExecutor
+    yield
+  File "/usr/lib64/python3.6/unittest/case.py", line 618, in run
+    self.setUp()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateless_tests/stl_rx_test.py", line 25, in setUp
+    port_info = self.c.get_port_info(ports = self.rx_port)[0]
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 58, in wrap2
+    raise TRexError("'{0}' - interrupted by a keyboard signal (probably ctrl + c)".format(func_name))
+trex.common.trex_exceptions.TRexError: 'get_port_info' - interrupted by a keyboard signal (probably ctrl + c)
+]]></error></testcase></testsuite>

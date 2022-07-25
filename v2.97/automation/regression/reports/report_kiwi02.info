@@ -1,0 +1,11 @@
+Version : v2.84-topo
+DPDK version: DPDK 20.02.0
+User    : hhaim
+Date    : Oct 25 2020 , 15:27:37
+Uuid    : a7191d0e-16c5-11eb-8848-641225363740
+Git SHA : d7c1099a6eb70703a28ebce7d1334e5cce786db2
+Compiled with GCC: 6.2.0
+Compiled with glibc: 2.16 (host: 2.16)
+Sanitized image: no
+Modes: []
+Router: Model: ESP100, Image: None

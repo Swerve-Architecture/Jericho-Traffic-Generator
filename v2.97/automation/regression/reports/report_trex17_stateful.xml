@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite name="nosetests" tests="31" errors="1" failures="0" skip="25"><testcase classname="stateful_tests.trex_client_cfg_test.CTRexClientCfg_Test" name="test_client_cfg_nbar" time="0.003"><skipped type="unittest.case.SkipTest" message="No NBAR on loopback"><![CDATA[SkipTest: No NBAR on loopback
+]]></skipped><system-out><![CDATA[Skip: No NBAR on loopback
+]]></system-out></testcase><testcase classname="stateful_tests.trex_client_cfg_test.CTRexClientCfg_Test" name="test_client_cfg_vlan" time="0.002"><skipped type="unittest.case.SkipTest" message="Not relevant on loopback"><![CDATA[SkipTest: Not relevant on loopback
+]]></skipped><system-out><![CDATA[Skip: Not relevant on loopback
+]]></system-out></testcase><testcase classname="stateful_tests.trex_imix_test.CTRexIMIX_Test" name="test_high_active_negative" time="0.003"><skipped type="unittest.case.SkipTest" message="No data in benchmark.yaml for test: test_short_flow_high_active, param: cores. Skipping."><![CDATA[SkipTest: No data in benchmark.yaml for test: test_short_flow_high_active, param: cores. Skipping.
+]]></skipped><system-out><![CDATA[Skip: No data in benchmark.yaml for test: test_short_flow_high_active, param: cores. Skipping.
+]]></system-out></testcase><testcase classname="stateful_tests.trex_imix_test.CTRexIMIX_Test" name="test_jumbo" time="105.254"><system-out><![CDATA[
+LATEST RESULT OBJECT:
+Is valid history?       True
+Done warmup?            True
+Expected tx rate:       {u'm_tx_expected_pps': 22400.0, u'm_tx_expected_bps': 1654732800.0, u'm_tx_expected_cps': 22400.0}
+Current tx rate:        {u'm_tx_bps': 1042991808.0, u'm_tx_cps': 0.0, u'm_tx_pps': 15369.4}
+Minimum latency:        {u'min-0': 10, u'min-1': 10}
+Maximum latency:        {u'max-0': 350, u'max-1': 150}
+Average latency:        {'all': 46.95, u'port0': 61.9, u'port1': 32.0}
+Average window latency: {'all': 46.76, u'port0': 61.367, u'port1': 32.154}
+Total drops:            -18
+Drop rate:              0.0
+History size so far:    100
+
+TRex CPU utilization: 0.56%, norm_cpu is : 588.32 Gb/core
+Err percent: 784.831367684
+]]></system-out></testcase><testcase classname="stateful_tests.trex_imix_test.CTRexIMIX_Test" name="test_routing_imix" time="65.918"><system-out><![CDATA[
+LATEST RESULT OBJECT:
+Is valid history?       True
+Done warmup?            True
+Expected tx rate:       {u'm_tx_expected_pps': 172731.0, u'm_tx_expected_bps': 499995776.0, u'm_tx_expected_cps': 172731.0}
+Current tx rate:        {u'm_tx_bps': 259267088.0, u'm_tx_cps': 0.0, u'm_tx_pps': 90415.0}
+Minimum latency:        {u'min-0': 10, u'min-1': 10}
+Maximum latency:        {u'max-0': 450, u'max-1': 450}
+Average latency:        {'all': 94.4, u'port0': 93.3, u'port1': 95.5}
+Average window latency: {'all': 98.564, u'port0': 97.687, u'port1': 99.441}
+Total drops:            -18
+Drop rate:              0.0
+History size so far:    63
+
+TRex CPU utilization: 5.91%, norm_cpu is : 16.79 Gb/core
+Err percent: 203.554169553
+]]></system-out></testcase><testcase classname="stateful_tests.trex_imix_test.CTRexIMIX_Test" name="test_routing_imix_64" time="36.205"><system-out><![CDATA[
+LATEST RESULT OBJECT:
+Is valid history?       True
+Done warmup?            True
+Expected tx rate:       {u'm_tx_expected_pps': 224000.0, u'm_tx_expected_bps': 114688000.0, u'm_tx_expected_cps': 224000.0}
+Current tx rate:        {u'm_tx_bps': 65976456.0, u'm_tx_cps': 0.0, u'm_tx_pps': 128824.6}
+Minimum latency:        {u'min-0': 10, u'min-1': 10}
+Maximum latency:        {u'max-0': 350, u'max-1': 350}
+Average latency:        {'all': 316.65, u'port0': 313.9, u'port1': 319.4}
+Average window latency: {'all': 297.129, u'port0': 293.755, u'port1': 300.503}
+Total drops:            -16
+Drop rate:              0.0
+History size so far:    33
+
+TRex CPU utilization: 8%, norm_cpu is : 2.89 Gb/core
+Err percent: 236.02910792
+]]></system-out></testcase><testcase classname="stateful_tests.trex_imix_test.CTRexIMIX_Test" name="test_short_flow" time="0.002"><skipped type="unittest.case.SkipTest" message="No data in benchmark.yaml for test: test_short_flow, param: multiplier. Skipping."><![CDATA[SkipTest: No data in benchmark.yaml for test: test_short_flow, param: multiplier. Skipping.
+]]></skipped><system-out><![CDATA[Skip: No data in benchmark.yaml for test: test_short_flow, param: multiplier. Skipping.
+]]></system-out></testcase><testcase classname="stateful_tests.trex_imix_test.CTRexIMIX_Test" name="test_short_flow_high_active" time="0.002"><skipped type="unittest.case.SkipTest" message="No data in benchmark.yaml for test: test_short_flow_high_active, param: multiplier. Skipping."><![CDATA[SkipTest: No data in benchmark.yaml for test: test_short_flow_high_active, param: multiplier. Skipping.
+]]></skipped><system-out><![CDATA[Skip: No data in benchmark.yaml for test: test_short_flow_high_active, param: multiplier. Skipping.
+]]></system-out></testcase><testcase classname="stateful_tests.trex_imix_test.CTRexIMIX_Test" name="test_short_flow_high_active2" time="0.002"><skipped type="unittest.case.SkipTest" message="No data in benchmark.yaml for test: test_short_flow_high_active2, param: multiplier. Skipping."><![CDATA[SkipTest: No data in benchmark.yaml for test: test_short_flow_high_active2, param: multiplier. Skipping.
+]]></skipped><system-out><![CDATA[Skip: No data in benchmark.yaml for test: test_short_flow_high_active2, param: multiplier. Skipping.
+]]></system-out></testcase><testcase classname="stateful_tests.trex_imix_test.CTRexIMIX_Test" name="test_static_routing_imix" time="0.004"><skipped type="unittest.case.SkipTest" message="In loopback mode the test is same as test_routing_imix"><![CDATA[SkipTest: In loopback mode the test is same as test_routing_imix
+]]></skipped><system-out><![CDATA[Skip: In loopback mode the test is same as test_routing_imix
+]]></system-out></testcase><testcase classname="stateful_tests.trex_imix_test.CTRexIMIX_Test" name="test_static_routing_imix_asymmetric" time="106.004"><system-out><![CDATA[
+LATEST RESULT OBJECT:
+Is valid history?       True
+Done warmup?            True
+Expected tx rate:       {u'm_tx_expected_pps': 69092.4, u'm_tx_expected_bps': 199998304.0, u'm_tx_expected_cps': 69092.4}
+Current tx rate:        {u'm_tx_bps': 126988744.0, u'm_tx_cps': 0.0, u'm_tx_pps': 44902.9}
+Minimum latency:        {u'min-0': 10, u'min-1': 10}
+Maximum latency:        {u'max-0': 150, u'max-1': 95}
+Average latency:        {'all': 6.0, u'port0': 3.0, u'port1': 9.0}
+Average window latency: {'all': 6.025, u'port0': 3.028, u'port1': 9.023}
+Total drops:            -18
+Drop rate:              0.0
+History size so far:    100
+
+TRex CPU utilization: 2.59%, norm_cpu is : 15.47 Gb/core
+Err percent: 60.579206702
+]]></system-out></testcase><testcase classname="stateful_tests.trex_ipv6_test.CTRexIPv6_Test" name="test_ipv6_negative" time="0.002"><skipped type="unittest.case.SkipTest" message="The test checks ipv6 drops by device and we are in loopback setup"><![CDATA[SkipTest: The test checks ipv6 drops by device and we are in loopback setup
+]]></skipped><system-out><![CDATA[Skip: The test checks ipv6 drops by device and we are in loopback setup
+]]></system-out></testcase><testcase classname="stateful_tests.trex_ipv6_test.CTRexIPv6_Test" name="test_ipv6_simple" time="0.003"><skipped type="unittest.case.SkipTest" message="--ipv6 flag does not work correctly in with virtual NICs"><![CDATA[SkipTest: --ipv6 flag does not work correctly in with virtual NICs
+]]></skipped><system-out><![CDATA[Skip: --ipv6 flag does not work correctly in with virtual NICs
+]]></system-out></testcase><testcase classname="stateful_tests.trex_nat_test.CTRexNat_Test" name="test_nat_simple_mode1" time="0.000"><skipped type="unittest.case.SkipTest" message="The test can't run with following modes of given setup: set(['loopback']) "><![CDATA[SkipTest: The test can't run with following modes of given setup: set(['loopback']) 
+]]></skipped><system-out><![CDATA[Skip: The test can't run with following modes of given setup: set(['loopback']) 
+]]></system-out></testcase><testcase classname="stateful_tests.trex_nat_test.CTRexNat_Test" name="test_nat_simple_mode1_udp" time="0.000"><skipped type="unittest.case.SkipTest" message="The test can't run with following modes of given setup: set(['loopback']) "><![CDATA[SkipTest: The test can't run with following modes of given setup: set(['loopback']) 
+]]></skipped><system-out><![CDATA[Skip: The test can't run with following modes of given setup: set(['loopback']) 
+]]></system-out></testcase><testcase classname="stateful_tests.trex_nat_test.CTRexNat_Test" name="test_nat_simple_mode2" time="0.000"><skipped type="unittest.case.SkipTest" message="The test can't run with following modes of given setup: set(['loopback']) "><![CDATA[SkipTest: The test can't run with following modes of given setup: set(['loopback']) 
+]]></skipped><system-out><![CDATA[Skip: The test can't run with following modes of given setup: set(['loopback']) 
+]]></system-out></testcase><testcase classname="stateful_tests.trex_nat_test.CTRexNat_Test" name="test_nat_simple_mode3" time="0.001"><skipped type="unittest.case.SkipTest" message="The test can't run with following modes of given setup: set(['loopback']) "><![CDATA[SkipTest: The test can't run with following modes of given setup: set(['loopback']) 
+]]></skipped><system-out><![CDATA[Skip: The test can't run with following modes of given setup: set(['loopback']) 
+]]></system-out></testcase><testcase classname="stateful_tests.trex_nat_test.CTRexNat_Test" name="test_nat_simple_mode3_udp" time="0.000"><skipped type="unittest.case.SkipTest" message="The test can't run with following modes of given setup: set(['loopback']) "><![CDATA[SkipTest: The test can't run with following modes of given setup: set(['loopback']) 
+]]></skipped><system-out><![CDATA[Skip: The test can't run with following modes of given setup: set(['loopback']) 
+]]></system-out></testcase><testcase classname="stateful_tests.trex_nat_test.CTRexNoNat_Test" name="test_nat_learning" time="0.000"><skipped type="unittest.case.SkipTest" message="The test can't run with following modes of given setup: set(['loopback']) "><![CDATA[SkipTest: The test can't run with following modes of given setup: set(['loopback']) 
+]]></skipped><system-out><![CDATA[Skip: The test can't run with following modes of given setup: set(['loopback']) 
+]]></system-out></testcase><testcase classname="stateful_tests.trex_nbar_test.CTRexNbar_Test" name="test_nbar_simple" time="0.000"><skipped type="unittest.case.SkipTest" message="The test can't run with following modes of given setup: set(['loopback']) "><![CDATA[SkipTest: The test can't run with following modes of given setup: set(['loopback']) 
+]]></skipped><system-out><![CDATA[Skip: The test can't run with following modes of given setup: set(['loopback']) 
+]]></system-out></testcase><testcase classname="stateful_tests.trex_rx_test.CTRexRx_Test" name="test_rx_check_http" time="0.000"><skipped type="unittest.case.SkipTest" message="The test can't run with following modes of given setup: set(['virt_nics']) "><![CDATA[SkipTest: The test can't run with following modes of given setup: set(['virt_nics']) 
+]]></skipped><system-out><![CDATA[Skip: The test can't run with following modes of given setup: set(['virt_nics']) 
+]]></system-out></testcase><testcase classname="stateful_tests.trex_rx_test.CTRexRx_Test" name="test_rx_check_http_ipv6" time="0.000"><skipped type="unittest.case.SkipTest" message="The test can't run with following modes of given setup: set(['virt_nics']) "><![CDATA[SkipTest: The test can't run with following modes of given setup: set(['virt_nics']) 
+]]></skipped><system-out><![CDATA[Skip: The test can't run with following modes of given setup: set(['virt_nics']) 
+]]></system-out></testcase><testcase classname="stateful_tests.trex_rx_test.CTRexRx_Test" name="test_rx_check_http_negative" time="0.000"><skipped type="unittest.case.SkipTest" message="The test can't run with following modes of given setup: set(['virt_nics']) "><![CDATA[SkipTest: The test can't run with following modes of given setup: set(['virt_nics']) 
+]]></skipped><system-out><![CDATA[Skip: The test can't run with following modes of given setup: set(['virt_nics']) 
+]]></system-out></testcase><testcase classname="stateful_tests.trex_rx_test.CTRexRx_Test" name="test_rx_check_sfr" time="0.000"><skipped type="unittest.case.SkipTest" message="The test can't run with following modes of given setup: set(['virt_nics']) "><![CDATA[SkipTest: The test can't run with following modes of given setup: set(['virt_nics']) 
+]]></skipped><system-out><![CDATA[Skip: The test can't run with following modes of given setup: set(['virt_nics']) 
+]]></system-out></testcase><testcase classname="stateful_tests.trex_rx_test.CTRexRx_Test" name="test_rx_check_sfr_ipv6" time="0.000"><skipped type="unittest.case.SkipTest" message="The test can't run with following modes of given setup: set(['virt_nics']) "><![CDATA[SkipTest: The test can't run with following modes of given setup: set(['virt_nics']) 
+]]></skipped><system-out><![CDATA[Skip: The test can't run with following modes of given setup: set(['virt_nics']) 
+]]></system-out></testcase><testcase classname="stateful_tests.trex_tcp_test.CTRexTcp_Test" name="test_ipv6_tcp_http" time="0.002"><skipped type="unittest.case.SkipTest" message="--ipv6 flag does not work correctly in with virtual NICs"><![CDATA[SkipTest: --ipv6 flag does not work correctly in with virtual NICs
+]]></skipped><system-out><![CDATA[Skip: --ipv6 flag does not work correctly in with virtual NICs
+]]></system-out></testcase><testcase classname="stateful_tests.trex_tcp_test.CTRexTcp_Test" name="test_tcp_http" time="279.862"><system-out><![CDATA[
+LATEST RESULT OBJECT:
+Is valid history?       True
+Done warmup?            True
+Expected tx rate:       {u'm_tx_expected_pps': 0.0, u'm_tx_expected_bps': 0.0, u'm_tx_expected_cps': 0.0}
+Current tx rate:        {u'm_tx_bps': 72772896.0, u'm_tx_cps': 253.4, u'm_tx_pps': 8810.9}
+Minimum latency:        {u'min-0': 10, u'min-1': 10}
+Maximum latency:        {u'max-0': 3500, u'max-1': 3500}
+Average latency:        {'all': 366.1, u'port0': 419.6, u'port1': 312.6}
+Average window latency: {'all': 118.16, u'port0': 124.795, u'port1': 111.525}
+Total drops:            -18
+Drop rate:              0.0
+History size so far:    100
+
+
+LATEST DUMP:
+TRex CPU utilization: 5.91%, norm_cpu is : 25.05 Gb/core
+Err percent: 25.2373729368
+{u'client': {u'all': {u'__last': 0,
+                      u'err_no_tcp_udp': 121637,
+                      u'm_active_flows': 0,
+                      u'm_avg_size': 1040.09954,
+                      u'm_est_flows': 0,
+                      u'm_rx_bw_l7_r': 67330628.959003,
+                      u'm_rx_pps_r': 6833.774414,
+                      u'm_tx_bw_l7_r': 505508.149272,
+                      u'm_tx_bw_l7_total_r': 505211.502666,
+                      u'm_tx_pps_r': 1318.827148,
+                      u'm_tx_ratio': 100.058717,
+                      u'redirect_rx_ok': 121645,
+                      u'tcps_closed': 332843,
+                      u'tcps_connattempt': 332843,
+                      u'tcps_connects': 332843,
+                      u'tcps_delack': 332843,
+                      u'tcps_preddat': 7322546,
+                      u'tcps_rcvackbyte': 82877907,
+                      u'tcps_rcvackbyte_of': 332843,
+                      u'tcps_rcvackpack': 665686,
+                      u'tcps_rcvbyte': 10682263242,
+                      u'tcps_rcvpack': 7988232,
+                      u'tcps_rttupdated': 998529,
+                      u'tcps_segstimed': 998529,
+                      u'tcps_sndacks': 998529,
+                      u'tcps_sndbyte': 82877907,
+                      u'tcps_sndbyte_ok': 82877907,
+                      u'tcps_sndctrl': 332843,
+                      u'tcps_sndpack': 332843,
+                      u'tcps_sndtotal': 1664215}},
+ u'server': {u'all': {u'__last': 0,
+                      u'err_no_tcp_udp': 123449,
+                      u'err_rx_throttled': 1,
+                      u'm_active_flows': 0,
+                      u'm_avg_size': 1073.158054,
+                      u'm_est_flows': 0,
+                      u'm_rx_bw_l7_r': 505446.996519,
+                      u'm_rx_pps_r': 1590.375732,
+                      u'm_tx_bw_l7_r': 69485168.801554,
+                      u'm_tx_bw_l7_total_r': 67322842.629645,
+                      u'm_tx_pps_r': 6562.036621,
+                      u'm_tx_ratio': 103.211876,
+                      u'redirect_rx_ok': 123457,
+                      u'tcps_accepts': 332843,
+                      u'tcps_closed': 332843,
+                      u'tcps_connects': 332843,
+                      u'tcps_rcvackbyte': 10682263242,
+                      u'tcps_rcvackbyte_of': 665686,
+                      u'tcps_rcvackpack': 1331372,
+                      u'tcps_rcvbyte': 82877907,
+                      u'tcps_rcvpack': 665686,
+                      u'tcps_rttupdated': 1331372,
+                      u'tcps_segstimed': 1331372,
+                      u'tcps_sndacks': 665686,
+                      u'tcps_sndbyte': 10682263242,
+                      u'tcps_sndbyte_ok': 10682263242,
+                      u'tcps_sndpack': 7655389,
+                      u'tcps_sndtotal': 8321075}}}
+
+LATEST RESULT OBJECT:
+Is valid history?       True
+Done warmup?            True
+Expected tx rate:       {u'm_tx_expected_pps': 0.0, u'm_tx_expected_bps': 0.0, u'm_tx_expected_cps': 0.0}
+Current tx rate:        {u'm_tx_bps': 868837.5, u'm_tx_cps': 184.5, u'm_tx_pps': 1539.1}
+Minimum latency:        {u'min-0': 10, u'min-1': 10}
+Maximum latency:        {u'max-0': 150, u'max-1': 950}
+Average latency:        {'all': 94.15, u'port0': 93.0, u'port1': 95.3}
+Average window latency: {'all': 46.024, u'port0': 44.52, u'port1': 47.528}
+Total drops:            -18
+Drop rate:              0.0
+History size so far:    100
+
+
+LATEST DUMP:
+TRex CPU utilization: 0.51%, norm_cpu is : 0.94 Gb/core
+Err percent: 95.305505306
+{u'client': {u'all': {u'__last': 0,
+                      u'err_no_tcp_udp': 122010,
+                      u'm_active_flows': 0,
+                      u'm_avg_size': 39.006025,
+                      u'm_est_flows': 0,
+                      u'm_rx_bw_l7_r': 69482.575416,
+                      u'm_rx_pps_r': 184.794083,
+                      u'm_tx_bw_l7_r': 45759.950048,
+                      u'm_tx_bw_l7_total_r': 45759.950048,
+                      u'm_tx_pps_r': 184.51593,
+                      u'm_tx_ratio': 100.0,
+                      u'redirect_rx_ok': 122018,
+                      u'udps_closed': 119900,
+                      u'udps_connects': 119900,
+                      u'udps_rcvbyte': 5635300,
+                      u'udps_rcvpkt': 119900,
+                      u'udps_sndbyte': 3716900,
+                      u'udps_sndpkt': 119900}},
+ u'server': {u'all': {u'__last': 0,
+                      u'err_no_tcp_udp': 122849,
+                      u'm_active_flows': 0,
+                      u'm_avg_size': 39.000002,
+                      u'm_est_flows': 0,
+                      u'm_rx_bw_l7_r': 45790.643117,
+                      u'm_rx_pps_r': 184.639679,
+                      u'm_tx_bw_l7_r': 69424.523436,
+                      u'm_tx_bw_l7_total_r': 69424.523436,
+                      u'm_tx_pps_r': 184.639679,
+                      u'm_tx_ratio': 100.0,
+                      u'redirect_rx_ok': 122857,
+                      u'udps_accepts': 119900,
+                      u'udps_closed': 119900,
+                      u'udps_rcvbyte': 3716900,
+                      u'udps_rcvpkt': 119900,
+                      u'udps_sndbyte': 5635300,
+                      u'udps_sndpkt': 119900}}}
+]]></system-out></testcase><testcase classname="stateful_tests.trex_tcp_test.CTRexTcp_Test" name="test_tcp_http_no_crash" time="0.003"><skipped type="unittest.case.SkipTest" message="No data in benchmark.yaml for test: test_tcp_http_no_crash, param: cores. Skipping."><![CDATA[SkipTest: No data in benchmark.yaml for test: test_tcp_http_no_crash, param: cores. Skipping.
+]]></skipped><system-out><![CDATA[Skip: No data in benchmark.yaml for test: test_tcp_http_no_crash, param: cores. Skipping.
+]]></system-out></testcase><testcase classname="stateful_tests.trex_tcp_test.CTRexTcp_Test" name="test_tcp_sfr" time="191.281"><error type="exceptions.Exception" message="Timeout of 50s happened during wait for TRex to become in 'Running' state"><![CDATA[Traceback (most recent call last):
+  File "/sw/packages/python/2.7.4/lib/python2.7/unittest/case.py", line 332, in run
+    testMethod()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateful_tests/trex_tcp_test.py", line 241, in test_tcp_sfr
+    astf =True
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/stf/trex_stf_lib/trex_client.py", line 188, in start_trex
+    self._block_to_success(timeout)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/stf/trex_stf_lib/trex_client.py", line 129, in _block_to_success
+    raise Exception("Timeout of %ss happened during wait for TRex to become in 'Running' state" % timeout)
+Exception: Timeout of 50s happened during wait for TRex to become in 'Running' state
+]]></error><system-out><![CDATA[
+LATEST RESULT OBJECT:
+Is valid history?       True
+Done warmup?            True
+Expected tx rate:       {u'm_tx_expected_pps': 0.0, u'm_tx_expected_bps': 0.0, u'm_tx_expected_cps': 0.0}
+Current tx rate:        {u'm_tx_bps': 61646832.0, u'm_tx_cps': 184.6, u'm_tx_pps': 10345.8}
+Minimum latency:        {u'min-0': 10, u'min-1': 10}
+Maximum latency:        {u'max-0': 3500, u'max-1': 3500}
+Average latency:        {'all': 450.65, u'port0': 480.2, u'port1': 421.1}
+Average window latency: {'all': 139.124, u'port0': 151.811, u'port1': 126.437}
+Total drops:            -18
+Drop rate:              0.0
+History size so far:    100
+
+
+LATEST DUMP:
+TRex CPU utilization: 6.31%, norm_cpu is : 20.25 Gb/core
+Err percent: 1.2419606528
+{u'client': {u'all': {u'__last': 0,
+                      u'err_no_tcp_udp': 118557,
+                      u'm_active_flows': 0,
+                      u'm_avg_size': 615.881559,
+                      u'm_est_flows': 0,
+                      u'm_rx_bw_l7_r': 49133792.546081,
+                      u'm_rx_pps_r': 8225.912109,
+                      u'm_tx_bw_l7_r': 6727994.080111,
+                      u'm_tx_bw_l7_total_r': 6723422.365234,
+                      u'm_tx_pps_r': 3111.857666,
+                      u'm_tx_ratio': 100.067997,
+                      u'redirect_rx_ok': 118565,
+                      u'tcps_closed': 244434,
+                      u'tcps_connattempt': 244434,
+                      u'tcps_connects': 244434,
+                      u'tcps_delack': 310349,
+                      u'tcps_preddat': 5193473,
+                      u'tcps_rcvackbyte': 1086839799,
+                      u'tcps_rcvackbyte_of': 244434,
+                      u'tcps_rcvackpack': 2560296,
+                      u'tcps_rcvbyte': 7918198785,
+                      u'tcps_rcvpack': 7743977,
+                      u'tcps_rttupdated': 2804730,
+                      u'tcps_segstimed': 2804504,
+                      u'tcps_sndacks': 805992,
+                      u'tcps_sndbyte': 1086839799,
+                      u'tcps_sndbyte_ok': 1086839799,
+                      u'tcps_sndctrl': 244434,
+                      u'tcps_sndpack': 2805182,
+                      u'tcps_sndtotal': 3855608}},
+ u'server': {u'all': {u'__last': 0,
+                      u'err_no_tcp_udp': 123455,
+                      u'm_active_flows': 0,
+                      u'm_avg_size': 638.169671,
+                      u'm_est_flows': 0,
+                      u'm_rx_bw_l7_r': 6725227.784178,
+                      u'm_rx_pps_r': 5028.084473,
+                      u'm_tx_bw_l7_r': 51201430.779802,
+                      u'm_tx_bw_l7_total_r': 49120947.399008,
+                      u'm_tx_pps_r': 6318.165039,
+                      u'm_tx_ratio': 104.23543,
+                      u'redirect_rx_ok': 123463,
+                      u'tcps_accepts': 244434,
+                      u'tcps_closed': 244434,
+                      u'tcps_connects': 244434,
+                      u'tcps_delack': 226,
+                      u'tcps_preddat': 489546,
+                      u'tcps_rcvackbyte': 7918198785,
+                      u'tcps_rcvackbyte_of': 488868,
+                      u'tcps_rcvackpack': 3121628,
+                      u'tcps_rcvbyte': 1086839799,
+                      u'tcps_rcvpack': 3049616,
+                      u'tcps_rttupdated': 3121628,
+                      u'tcps_segstimed': 3121628,
+                      u'tcps_sndacks': 498660,
+                      u'tcps_sndbyte': 7918198785,
+                      u'tcps_sndbyte_ok': 7918198785,
+                      u'tcps_sndpack': 7499543,
+                      u'tcps_sndtotal': 7998203}}}
+]]></system-out></testcase><testcase classname="stateful_tests.trex_tcp_test.CTRexTcp_Test" name="test_tcp_sfr_no_crash" time="0.209"><skipped type="unittest.case.SkipTest" message="No data in benchmark.yaml for test: test_tcp_sfr_no_crash, param: cores. Skipping."><![CDATA[SkipTest: No data in benchmark.yaml for test: test_tcp_sfr_no_crash, param: cores. Skipping.
+]]></skipped><system-out><![CDATA[Skip: No data in benchmark.yaml for test: test_tcp_sfr_no_crash, param: cores. Skipping.
+]]></system-out></testcase><testcase classname="stateful_tests.trex_vlan_test.CTRexVlan_Test" name="test_platform_cfg_vlan" time="0.001"><skipped type="unittest.case.SkipTest" message="The test can't run with following modes of given setup: set(['loopback']) "><![CDATA[SkipTest: The test can't run with following modes of given setup: set(['loopback']) 
+]]></skipped><system-out><![CDATA[Skip: The test can't run with following modes of given setup: set(['loopback']) 
+]]></system-out></testcase></testsuite>

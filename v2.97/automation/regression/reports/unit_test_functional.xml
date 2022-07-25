@@ -1,0 +1,2431 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite name="nosetests" tests="93" errors="0" failures="0" skip="0"><testcase classname="astf_basic_tests.CAstfBasic_Test" name="test_ASTFAssociation" time="0.002"></testcase><testcase classname="astf_basic_tests.CAstfBasic_Test" name="test_ASTFAssociationRule" time="0.000"></testcase><testcase classname="astf_basic_tests.CAstfBasic_Test" name="test_ASTFCapInfo" time="0.014"></testcase><testcase classname="astf_basic_tests.CAstfBasic_Test" name="test_ASTFIPGenDist" time="0.002"></testcase><testcase classname="astf_basic_tests.CAstfBasic_Test" name="test_ASTFIPGenGlobal" time="0.001"></testcase><testcase classname="astf_basic_tests.CAstfBasic_Test" name="test_ASTFProfile" time="0.001"></testcase><testcase classname="astf_basic_tests.CAstfBasic_Test" name="test_ASTFProgram" time="0.000"></testcase><testcase classname="astf_basic_tests.CAstfBasic_Test" name="test_ASTFTCPClientTemplate" time="0.001"></testcase><testcase classname="astf_basic_tests.CAstfBasic_Test" name="test_ASTFTCPServerTemplate" time="0.001"></testcase><testcase classname="astf_basic_tests.CAstfBasic_Test" name="test_astf" time="0.000"></testcase><testcase classname="astf_basic_tests.CAstfPcapFull_Test" name="test_astf_caps" time="7.232"><system-out><![CDATA[
+checking ../../astf/param_ipv6.py
+executing /auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/bp-sim-64-debug --pcap --tcp_cfg /tmp/astf_sim_hhaim.json -o /auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/generated/sim_astf-param_ipv6.pcap --full -d 5.0
+ set dpdk queues mode to ONE_QUE 
+Using json file /tmp/astf_sim_hhaim.json
+append_server_ports -- 0(0x55cc8c2a9b10)
+TCP 80:
+  ip[0, ffffffff], server=0x55cc8c232358, pctx=0x55cc8c2a9b10
+[0x55cc8c25da30] total number of ports (1)
+remove_server_ports -- 0(0x55cc8c2a9b10)
+[0x55cc8c25da30] total number of ports (0)
+
+
+normal
+-------------
+ min_delta  : 10 usec 
+ cnt        : 0 
+ high_cnt   : 0 
+ max_d_time : 0 usec
+ sliding_average    : 0 usec
+ precent    : -nan %
+ histogram 
+ -----------
+                       |          client  |           server  | 
+ -----------------------------------------------------------------------------------------
+       m_active_flows  |               0  |                0  |  active open flows
+          m_est_flows  |               0  |                0  |  active established flows
+         m_tx_bw_l7_r  |       0.00  bps  |        0.00  bps  |  tx L7 bw acked
+   m_tx_bw_l7_total_r  |       0.00  bps  |        0.00  bps  |  tx L7 bw total
+         m_rx_bw_l7_r  |       0.00  bps  |        0.00  bps  |  rx L7 bw acked
+           m_tx_pps_r  |       0.00  pps  |        0.00  pps  |  tx pps
+           m_rx_pps_r  |       0.00  pps  |        0.00  pps  |  rx pps
+           m_avg_size  |         0.00  B  |          0.00  B  |  average pkt size
+           m_tx_ratio  |         0.00  %  |          0.00  %  |  Tx acked/sent ratio
+                    -  |             ---  |              ---  |  
+   m_traffic_duration  |       0.15  sec  |        0.15  sec  |  measured traffic duration
+                    -  |             ---  |              ---  |  
+                  TCP  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+     tcps_connattempt  |               5  |                0  |  connections initiated
+         tcps_accepts  |               0  |                5  |  connections accepted
+        tcps_connects  |               5  |                5  |  connections established
+          tcps_closed  |               5  |                5  |  conn. closed (includes drops)
+       tcps_segstimed  |              15  |               20  |  segs where we tried to get rtt
+      tcps_rttupdated  |              15  |               20  |  times we succeeded
+          tcps_delack  |               5  |                0  |  delayed acks sent
+        tcps_sndtotal  |              25  |              125  |  total packets sent
+         tcps_sndpack  |               5  |              115  |  data packets sent
+         tcps_sndbyte  |            1245  |           160470  |  data bytes sent by application
+      tcps_sndbyte_ok  |            1245  |           160470  |  data bytes sent by tcp
+         tcps_sndctrl  |               5  |                0  |  control (SYN|FIN|RST) packets sent
+         tcps_sndacks  |              15  |               10  |  ack-only packets sent 
+         tcps_rcvpack  |             120  |               10  |  packets received in sequence
+         tcps_rcvbyte  |          160470  |             1245  |  bytes received in sequence
+      tcps_rcvackpack  |              10  |               20  |  rcvd ack packets
+      tcps_rcvackbyte  |            1245  |           160470  |  tx bytes acked by rcvd acks 
+   tcps_rcvackbyte_of  |               5  |               10  |  tx bytes acked by rcvd acks - overflow acked
+         tcps_preddat  |             110  |                0  |  times hdr predict ok for data pkts 
+                    -  |             ---  |              ---  |  
+                  UDP  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+           Flow Table  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+ took time: 22msec (freq: 100) 
+
+checking ../../astf/tcp_param_change.py
+executing /auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/bp-sim-64-debug --pcap --tcp_cfg /tmp/astf_sim_hhaim.json -o /auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/generated/sim_astf-tcp_param_change.pcap --full -d 5.0
+ set dpdk queues mode to ONE_QUE 
+Using json file /tmp/astf_sim_hhaim.json
+append_server_ports -- 0(0x5645d2967b10)
+TCP 8080:
+  ip[0, ffffffff], server=0x5645d2969708, pctx=0x5645d2967b10
+TCP 80:
+  ip[0, ffffffff], server=0x5645d29696c8, pctx=0x5645d2967b10
+[0x5645d291ba30] total number of ports (2)
+remove_server_ports -- 0(0x5645d2967b10)
+[0x5645d291ba30] total number of ports (0)
+
+
+normal
+-------------
+ min_delta  : 10 usec 
+ cnt        : 0 
+ high_cnt   : 0 
+ max_d_time : 0 usec
+ sliding_average    : 0 usec
+ precent    : -nan %
+ histogram 
+ -----------
+                       |          client  |           server  | 
+ -----------------------------------------------------------------------------------------
+       m_active_flows  |               0  |                0  |  active open flows
+          m_est_flows  |               0  |                0  |  active established flows
+         m_tx_bw_l7_r  |       0.00  bps  |        0.00  bps  |  tx L7 bw acked
+   m_tx_bw_l7_total_r  |       0.00  bps  |        0.00  bps  |  tx L7 bw total
+         m_rx_bw_l7_r  |       0.00  bps  |        0.00  bps  |  rx L7 bw acked
+           m_tx_pps_r  |       0.00  pps  |        0.00  pps  |  tx pps
+           m_rx_pps_r  |       0.00  pps  |        0.00  pps  |  rx pps
+           m_avg_size  |         0.00  B  |          0.00  B  |  average pkt size
+           m_tx_ratio  |         0.00  %  |          0.00  %  |  Tx acked/sent ratio
+                    -  |             ---  |              ---  |  
+   m_traffic_duration  |       0.15  sec  |        0.15  sec  |  measured traffic duration
+                    -  |             ---  |              ---  |  
+                  TCP  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+     tcps_connattempt  |              10  |                0  |  connections initiated
+         tcps_accepts  |               0  |               10  |  connections accepted
+        tcps_connects  |              10  |               10  |  connections established
+          tcps_closed  |              10  |               10  |  conn. closed (includes drops)
+       tcps_segstimed  |              30  |               65  |  segs where we tried to get rtt
+      tcps_rttupdated  |              30  |               65  |  times we succeeded
+          tcps_delack  |              35  |                0  |  delayed acks sent
+        tcps_sndtotal  |              75  |              500  |  total packets sent
+         tcps_sndpack  |              10  |              480  |  data packets sent
+         tcps_sndbyte  |            2490  |           320940  |  data bytes sent by application
+      tcps_sndbyte_ok  |            2490  |           320940  |  data bytes sent by tcp
+         tcps_sndctrl  |              10  |                0  |  control (SYN|FIN|RST) packets sent
+         tcps_sndacks  |              55  |               20  |  ack-only packets sent 
+         tcps_rcvpack  |             490  |               20  |  packets received in sequence
+         tcps_rcvbyte  |          320940  |             2490  |  bytes received in sequence
+      tcps_rcvackpack  |              20  |               65  |  rcvd ack packets
+      tcps_rcvackbyte  |            2490  |           320940  |  tx bytes acked by rcvd acks 
+   tcps_rcvackbyte_of  |              10  |               20  |  tx bytes acked by rcvd acks - overflow acked
+         tcps_preddat  |             470  |                0  |  times hdr predict ok for data pkts 
+                    -  |             ---  |              ---  |  
+                  UDP  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+           Flow Table  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+ took time: 19msec (freq: 100) 
+
+checking ../../astf/param_tcp_rxbufsize.py
+executing /auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/bp-sim-64-debug --pcap --tcp_cfg /tmp/astf_sim_hhaim.json -o /auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/generated/sim_astf-param_tcp_rxbufsize.pcap --full -d 5.0
+ set dpdk queues mode to ONE_QUE 
+Using json file /tmp/astf_sim_hhaim.json
+append_server_ports -- 0(0x5569ba9464b0)
+TCP 80:
+  ip[0, ffffffff], server=0x5569ba9185e8, pctx=0x5569ba9464b0
+[0x5569ba929a30] total number of ports (1)
+remove_server_ports -- 0(0x5569ba9464b0)
+[0x5569ba929a30] total number of ports (0)
+
+
+normal
+-------------
+ min_delta  : 10 usec 
+ cnt        : 0 
+ high_cnt   : 0 
+ max_d_time : 0 usec
+ sliding_average    : 0 usec
+ precent    : -nan %
+ histogram 
+ -----------
+                       |          client  |           server  | 
+ -----------------------------------------------------------------------------------------
+       m_active_flows  |               0  |                0  |  active open flows
+          m_est_flows  |               0  |                0  |  active established flows
+         m_tx_bw_l7_r  |       0.00  bps  |        0.00  bps  |  tx L7 bw acked
+   m_tx_bw_l7_total_r  |       0.00  bps  |        0.00  bps  |  tx L7 bw total
+         m_rx_bw_l7_r  |       0.00  bps  |        0.00  bps  |  rx L7 bw acked
+           m_tx_pps_r  |       0.00  pps  |        0.00  pps  |  tx pps
+           m_rx_pps_r  |       0.00  pps  |        0.00  pps  |  rx pps
+           m_avg_size  |         0.00  B  |          0.00  B  |  average pkt size
+           m_tx_ratio  |         0.00  %  |          0.00  %  |  Tx acked/sent ratio
+                    -  |             ---  |              ---  |  
+   m_traffic_duration  |       0.12  sec  |        0.12  sec  |  measured traffic duration
+                    -  |             ---  |              ---  |  
+                  TCP  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+     tcps_connattempt  |               5  |                0  |  connections initiated
+         tcps_accepts  |               0  |                5  |  connections accepted
+        tcps_connects  |               5  |                5  |  connections established
+          tcps_closed  |               5  |                5  |  conn. closed (includes drops)
+       tcps_segstimed  |              15  |               20  |  segs where we tried to get rtt
+      tcps_rttupdated  |              15  |               20  |  times we succeeded
+          tcps_delack  |               5  |                0  |  delayed acks sent
+        tcps_sndtotal  |              25  |              125  |  total packets sent
+         tcps_sndpack  |               5  |              115  |  data packets sent
+         tcps_sndbyte  |            1245  |           160470  |  data bytes sent by application
+      tcps_sndbyte_ok  |            1245  |           160470  |  data bytes sent by tcp
+         tcps_sndctrl  |               5  |                0  |  control (SYN|FIN|RST) packets sent
+         tcps_sndacks  |              15  |               10  |  ack-only packets sent 
+         tcps_rcvpack  |             120  |               10  |  packets received in sequence
+         tcps_rcvbyte  |          160470  |             1245  |  bytes received in sequence
+      tcps_rcvackpack  |              10  |               20  |  rcvd ack packets
+      tcps_rcvackbyte  |            1245  |           160470  |  tx bytes acked by rcvd acks 
+   tcps_rcvackbyte_of  |               5  |               10  |  tx bytes acked by rcvd acks - overflow acked
+         tcps_preddat  |             110  |                0  |  times hdr predict ok for data pkts 
+                    -  |             ---  |              ---  |  
+                  UDP  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+           Flow Table  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+ took time: 17msec (freq: 100) 
+
+checking ../../astf/param_tcp_no_timestamp.py
+executing /auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/bp-sim-64-debug --pcap --tcp_cfg /tmp/astf_sim_hhaim.json -o /auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/generated/sim_astf-param_tcp_no_timestamp.pcap --full -d 5.0
+ set dpdk queues mode to ONE_QUE 
+Using json file /tmp/astf_sim_hhaim.json
+append_server_ports -- 0(0x55b883b7f370)
+TCP 80:
+  ip[0, ffffffff], server=0x55b883b4ba88, pctx=0x55b883b7f370
+[0x55b883b62a30] total number of ports (1)
+remove_server_ports -- 0(0x55b883b7f370)
+[0x55b883b62a30] total number of ports (0)
+
+
+normal
+-------------
+ min_delta  : 10 usec 
+ cnt        : 0 
+ high_cnt   : 0 
+ max_d_time : 0 usec
+ sliding_average    : 0 usec
+ precent    : -nan %
+ histogram 
+ -----------
+                       |          client  |           server  | 
+ -----------------------------------------------------------------------------------------
+       m_active_flows  |               0  |                0  |  active open flows
+          m_est_flows  |               0  |                0  |  active established flows
+         m_tx_bw_l7_r  |       0.00  bps  |        0.00  bps  |  tx L7 bw acked
+   m_tx_bw_l7_total_r  |       0.00  bps  |        0.00  bps  |  tx L7 bw total
+         m_rx_bw_l7_r  |       0.00  bps  |        0.00  bps  |  rx L7 bw acked
+           m_tx_pps_r  |       0.00  pps  |        0.00  pps  |  tx pps
+           m_rx_pps_r  |       0.00  pps  |        0.00  pps  |  rx pps
+           m_avg_size  |         0.00  B  |          0.00  B  |  average pkt size
+           m_tx_ratio  |         0.00  %  |          0.00  %  |  Tx acked/sent ratio
+                    -  |             ---  |              ---  |  
+   m_traffic_duration  |       0.17  sec  |        0.17  sec  |  measured traffic duration
+                    -  |             ---  |              ---  |  
+                  TCP  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+     tcps_connattempt  |               5  |                0  |  connections initiated
+         tcps_accepts  |               0  |                5  |  connections accepted
+        tcps_connects  |               5  |                5  |  connections established
+          tcps_closed  |               5  |                5  |  conn. closed (includes drops)
+       tcps_segstimed  |              15  |               20  |  segs where we tried to get rtt
+      tcps_rttupdated  |              15  |               20  |  times we succeeded
+          tcps_delack  |               5  |                0  |  delayed acks sent
+        tcps_sndtotal  |              25  |              120  |  total packets sent
+         tcps_sndpack  |               5  |              110  |  data packets sent
+         tcps_sndbyte  |            1245  |           160470  |  data bytes sent by application
+      tcps_sndbyte_ok  |            1245  |           160470  |  data bytes sent by tcp
+         tcps_sndctrl  |               5  |                0  |  control (SYN|FIN|RST) packets sent
+         tcps_sndacks  |              15  |               10  |  ack-only packets sent 
+         tcps_rcvpack  |             115  |               10  |  packets received in sequence
+         tcps_rcvbyte  |          160470  |             1245  |  bytes received in sequence
+      tcps_rcvackpack  |              10  |               20  |  rcvd ack packets
+      tcps_rcvackbyte  |            1245  |           160470  |  tx bytes acked by rcvd acks 
+   tcps_rcvackbyte_of  |               5  |               10  |  tx bytes acked by rcvd acks - overflow acked
+         tcps_preddat  |             105  |                0  |  times hdr predict ok for data pkts 
+                    -  |             ---  |              ---  |  
+                  UDP  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+           Flow Table  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+ took time: 22msec (freq: 100) 
+
+checking ../../astf/param_tcp_keepalive.py
+executing /auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/bp-sim-64-debug --pcap --tcp_cfg /tmp/astf_sim_hhaim.json -o /auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/generated/sim_astf-param_tcp_keepalive.pcap --full -d 5.0
+ set dpdk queues mode to ONE_QUE 
+Using json file /tmp/astf_sim_hhaim.json
+append_server_ports -- 0(0x558dfb3535e0)
+TCP 80:
+  ip[0, ffffffff], server=0x558dfb3255e8, pctx=0x558dfb3535e0
+[0x558dfb336a30] total number of ports (1)
+remove_server_ports -- 0(0x558dfb3535e0)
+[0x558dfb336a30] total number of ports (0)
+
+
+normal
+-------------
+ min_delta  : 10 usec 
+ cnt        : 0 
+ high_cnt   : 0 
+ max_d_time : 0 usec
+ sliding_average    : 0 usec
+ precent    : -nan %
+ histogram 
+ -----------
+                       |          client  |           server  | 
+ -----------------------------------------------------------------------------------------
+       m_active_flows  |               0  |                0  |  active open flows
+          m_est_flows  |               0  |                0  |  active established flows
+         m_tx_bw_l7_r  |       0.00  bps  |        0.00  bps  |  tx L7 bw acked
+   m_tx_bw_l7_total_r  |       0.00  bps  |        0.00  bps  |  tx L7 bw total
+         m_rx_bw_l7_r  |       0.00  bps  |        0.00  bps  |  rx L7 bw acked
+           m_tx_pps_r  |       0.00  pps  |        0.00  pps  |  tx pps
+           m_rx_pps_r  |       0.00  pps  |        0.00  pps  |  rx pps
+           m_avg_size  |         0.00  B  |          0.00  B  |  average pkt size
+           m_tx_ratio  |         0.00  %  |          0.00  %  |  Tx acked/sent ratio
+                    -  |             ---  |              ---  |  
+   m_traffic_duration  |       0.16  sec  |        0.16  sec  |  measured traffic duration
+                    -  |             ---  |              ---  |  
+                  TCP  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+     tcps_connattempt  |               5  |                0  |  connections initiated
+         tcps_accepts  |               0  |                5  |  connections accepted
+        tcps_connects  |               5  |                5  |  connections established
+          tcps_closed  |               5  |                5  |  conn. closed (includes drops)
+       tcps_segstimed  |              15  |               20  |  segs where we tried to get rtt
+      tcps_rttupdated  |              15  |               20  |  times we succeeded
+          tcps_delack  |               5  |                0  |  delayed acks sent
+        tcps_sndtotal  |              25  |              125  |  total packets sent
+         tcps_sndpack  |               5  |              115  |  data packets sent
+         tcps_sndbyte  |            1245  |           160470  |  data bytes sent by application
+      tcps_sndbyte_ok  |            1245  |           160470  |  data bytes sent by tcp
+         tcps_sndctrl  |               5  |                0  |  control (SYN|FIN|RST) packets sent
+         tcps_sndacks  |              15  |               10  |  ack-only packets sent 
+         tcps_rcvpack  |             120  |               10  |  packets received in sequence
+         tcps_rcvbyte  |          160470  |             1245  |  bytes received in sequence
+      tcps_rcvackpack  |              10  |               20  |  rcvd ack packets
+      tcps_rcvackbyte  |            1245  |           160470  |  tx bytes acked by rcvd acks 
+   tcps_rcvackbyte_of  |               5  |               10  |  tx bytes acked by rcvd acks - overflow acked
+         tcps_preddat  |             110  |                0  |  times hdr predict ok for data pkts 
+                    -  |             ---  |              ---  |  
+                  UDP  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+           Flow Table  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+ took time: 22msec (freq: 100) 
+
+checking ../../astf/param_tcp_delay_ack.py
+executing /auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/bp-sim-64-debug --pcap --tcp_cfg /tmp/astf_sim_hhaim.json -o /auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/generated/sim_astf-param_tcp_delay_ack.pcap --full -d 5.0
+ set dpdk queues mode to ONE_QUE 
+Using json file /tmp/astf_sim_hhaim.json
+append_server_ports -- 0(0x56070530b370)
+TCP 80:
+  ip[0, ffffffff], server=0x5607052d7a88, pctx=0x56070530b370
+[0x5607052eea30] total number of ports (1)
+remove_server_ports -- 0(0x56070530b370)
+[0x5607052eea30] total number of ports (0)
+
+
+normal
+-------------
+ min_delta  : 10 usec 
+ cnt        : 0 
+ high_cnt   : 0 
+ max_d_time : 0 usec
+ sliding_average    : 0 usec
+ precent    : -nan %
+ histogram 
+ -----------
+                       |          client  |           server  | 
+ -----------------------------------------------------------------------------------------
+       m_active_flows  |               0  |                0  |  active open flows
+          m_est_flows  |               0  |                0  |  active established flows
+         m_tx_bw_l7_r  |       0.00  bps  |        0.00  bps  |  tx L7 bw acked
+   m_tx_bw_l7_total_r  |       0.00  bps  |        0.00  bps  |  tx L7 bw total
+         m_rx_bw_l7_r  |       0.00  bps  |        0.00  bps  |  rx L7 bw acked
+           m_tx_pps_r  |       0.00  pps  |        0.00  pps  |  tx pps
+           m_rx_pps_r  |       0.00  pps  |        0.00  pps  |  rx pps
+           m_avg_size  |         0.00  B  |          0.00  B  |  average pkt size
+           m_tx_ratio  |         0.00  %  |          0.00  %  |  Tx acked/sent ratio
+                    -  |             ---  |              ---  |  
+   m_traffic_duration  |       0.17  sec  |        0.17  sec  |  measured traffic duration
+                    -  |             ---  |              ---  |  
+                  TCP  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+     tcps_connattempt  |               5  |                0  |  connections initiated
+         tcps_accepts  |               0  |                5  |  connections accepted
+        tcps_connects  |               5  |                5  |  connections established
+          tcps_closed  |               5  |                5  |  conn. closed (includes drops)
+       tcps_segstimed  |              15  |               20  |  segs where we tried to get rtt
+      tcps_rttupdated  |              15  |               20  |  times we succeeded
+          tcps_delack  |               5  |                0  |  delayed acks sent
+        tcps_sndtotal  |              25  |              125  |  total packets sent
+         tcps_sndpack  |               5  |              115  |  data packets sent
+         tcps_sndbyte  |            1245  |           160470  |  data bytes sent by application
+      tcps_sndbyte_ok  |            1245  |           160470  |  data bytes sent by tcp
+         tcps_sndctrl  |               5  |                0  |  control (SYN|FIN|RST) packets sent
+         tcps_sndacks  |              15  |               10  |  ack-only packets sent 
+         tcps_rcvpack  |             120  |               10  |  packets received in sequence
+         tcps_rcvbyte  |          160470  |             1245  |  bytes received in sequence
+      tcps_rcvackpack  |              10  |               20  |  rcvd ack packets
+      tcps_rcvackbyte  |            1245  |           160470  |  tx bytes acked by rcvd acks 
+   tcps_rcvackbyte_of  |               5  |               10  |  tx bytes acked by rcvd acks - overflow acked
+         tcps_preddat  |             110  |                0  |  times hdr predict ok for data pkts 
+                    -  |             ---  |              ---  |  
+                  UDP  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+           Flow Table  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+ took time: 24msec (freq: 100) 
+
+checking ../../astf/param_tcp_rxbufsize_8k.py
+executing /auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/bp-sim-64-debug --pcap --tcp_cfg /tmp/astf_sim_hhaim.json -o /auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/generated/sim_astf-param_tcp_rxbufsize_8k.pcap --full -d 5.0
+ set dpdk queues mode to ONE_QUE 
+Using json file /tmp/astf_sim_hhaim.json
+append_server_ports -- 0(0x557baeef54b0)
+TCP 80:
+  ip[0, ffffffff], server=0x557baeec75e8, pctx=0x557baeef54b0
+[0x557baeed8a30] total number of ports (1)
+remove_server_ports -- 0(0x557baeef54b0)
+[0x557baeed8a30] total number of ports (0)
+
+
+normal
+-------------
+ min_delta  : 10 usec 
+ cnt        : 0 
+ high_cnt   : 0 
+ max_d_time : 0 usec
+ sliding_average    : 0 usec
+ precent    : -nan %
+ histogram 
+ -----------
+                       |          client  |           server  | 
+ -----------------------------------------------------------------------------------------
+       m_active_flows  |               0  |                0  |  active open flows
+          m_est_flows  |               0  |                0  |  active established flows
+         m_tx_bw_l7_r  |       0.00  bps  |        0.00  bps  |  tx L7 bw acked
+   m_tx_bw_l7_total_r  |       0.00  bps  |        0.00  bps  |  tx L7 bw total
+         m_rx_bw_l7_r  |       0.00  bps  |        0.00  bps  |  rx L7 bw acked
+           m_tx_pps_r  |       0.00  pps  |        0.00  pps  |  tx pps
+           m_rx_pps_r  |       0.00  pps  |        0.00  pps  |  rx pps
+           m_avg_size  |         0.00  B  |          0.00  B  |  average pkt size
+           m_tx_ratio  |         0.00  %  |          0.00  %  |  Tx acked/sent ratio
+                    -  |             ---  |              ---  |  
+   m_traffic_duration  |       0.12  sec  |        0.12  sec  |  measured traffic duration
+                    -  |             ---  |              ---  |  
+                  TCP  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+     tcps_connattempt  |               5  |                0  |  connections initiated
+         tcps_accepts  |               0  |                5  |  connections accepted
+        tcps_connects  |               5  |                5  |  connections established
+          tcps_closed  |               5  |                5  |  conn. closed (includes drops)
+       tcps_segstimed  |              15  |               30  |  segs where we tried to get rtt
+      tcps_rttupdated  |              15  |               30  |  times we succeeded
+        tcps_sndtotal  |              35  |              130  |  total packets sent
+         tcps_sndpack  |               5  |              120  |  data packets sent
+         tcps_sndbyte  |            1245  |           160470  |  data bytes sent by application
+      tcps_sndbyte_ok  |            1245  |           160470  |  data bytes sent by tcp
+         tcps_sndctrl  |               5  |                0  |  control (SYN|FIN|RST) packets sent
+         tcps_sndacks  |              25  |               10  |  ack-only packets sent 
+         tcps_rcvpack  |             125  |               10  |  packets received in sequence
+         tcps_rcvbyte  |          160470  |             1245  |  bytes received in sequence
+      tcps_rcvackpack  |              10  |               30  |  rcvd ack packets
+      tcps_rcvackbyte  |            1245  |           160470  |  tx bytes acked by rcvd acks 
+   tcps_rcvackbyte_of  |               5  |               10  |  tx bytes acked by rcvd acks - overflow acked
+         tcps_preddat  |             115  |                0  |  times hdr predict ok for data pkts 
+         tcps_predack  |               0  |               15  |  times hdr predict ok for acks
+                    -  |             ---  |              ---  |  
+                  UDP  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+           Flow Table  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+ took time: 18msec (freq: 100) 
+
+checking ../../astf/param_mss_initwnd.py
+executing /auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/bp-sim-64-debug --pcap --tcp_cfg /tmp/astf_sim_hhaim.json -o /auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/generated/sim_astf-param_mss_initwnd.pcap --full -d 5.0
+ set dpdk queues mode to ONE_QUE 
+Using json file /tmp/astf_sim_hhaim.json
+append_server_ports -- 0(0x55562be44490)
+TCP 80:
+  ip[0, ffffffff], server=0x55562be165e8, pctx=0x55562be44490
+[0x55562be27a30] total number of ports (1)
+remove_server_ports -- 0(0x55562be44490)
+[0x55562be27a30] total number of ports (0)
+
+
+normal
+-------------
+ min_delta  : 10 usec 
+ cnt        : 0 
+ high_cnt   : 0 
+ max_d_time : 0 usec
+ sliding_average    : 0 usec
+ precent    : -nan %
+ histogram 
+ -----------
+                       |          client  |           server  | 
+ -----------------------------------------------------------------------------------------
+       m_active_flows  |               0  |                0  |  active open flows
+          m_est_flows  |               0  |                0  |  active established flows
+         m_tx_bw_l7_r  |       0.00  bps  |        0.00  bps  |  tx L7 bw acked
+   m_tx_bw_l7_total_r  |       0.00  bps  |        0.00  bps  |  tx L7 bw total
+         m_rx_bw_l7_r  |       0.00  bps  |        0.00  bps  |  rx L7 bw acked
+           m_tx_pps_r  |       0.00  pps  |        0.00  pps  |  tx pps
+           m_rx_pps_r  |       0.00  pps  |        0.00  pps  |  rx pps
+           m_avg_size  |         0.00  B  |          0.00  B  |  average pkt size
+           m_tx_ratio  |         0.00  %  |          0.00  %  |  Tx acked/sent ratio
+                    -  |             ---  |              ---  |  
+   m_traffic_duration  |       0.14  sec  |        0.14  sec  |  measured traffic duration
+                    -  |             ---  |              ---  |  
+                  TCP  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+     tcps_connattempt  |               5  |                0  |  connections initiated
+         tcps_accepts  |               0  |                5  |  connections accepted
+        tcps_connects  |               5  |                5  |  connections established
+          tcps_closed  |               5  |                5  |  conn. closed (includes drops)
+       tcps_segstimed  |              15  |               40  |  segs where we tried to get rtt
+      tcps_rttupdated  |              15  |               40  |  times we succeeded
+          tcps_delack  |              25  |                0  |  delayed acks sent
+        tcps_sndtotal  |              45  |              130  |  total packets sent
+         tcps_sndpack  |               5  |              120  |  data packets sent
+         tcps_sndbyte  |            1245  |           160470  |  data bytes sent by application
+      tcps_sndbyte_ok  |            1245  |           160470  |  data bytes sent by tcp
+         tcps_sndctrl  |               5  |                0  |  control (SYN|FIN|RST) packets sent
+         tcps_sndacks  |              35  |               10  |  ack-only packets sent 
+         tcps_rcvpack  |             125  |               10  |  packets received in sequence
+         tcps_rcvbyte  |          160470  |             1245  |  bytes received in sequence
+      tcps_rcvackpack  |              10  |               40  |  rcvd ack packets
+      tcps_rcvackbyte  |            1245  |           160470  |  tx bytes acked by rcvd acks 
+   tcps_rcvackbyte_of  |               5  |               10  |  tx bytes acked by rcvd acks - overflow acked
+         tcps_preddat  |             115  |                0  |  times hdr predict ok for data pkts 
+                    -  |             ---  |              ---  |  
+                  UDP  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+           Flow Table  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+ took time: 18msec (freq: 100) 
+
+checking ../../astf/http_manual_commands_delay.py
+executing /auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/bp-sim-64-debug --pcap --tcp_cfg /tmp/astf_sim_hhaim.json -o /auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/generated/sim_astf-http_manual_commands_delay.pcap --full -d 5.0
+ set dpdk queues mode to ONE_QUE 
+Using json file /tmp/astf_sim_hhaim.json
+append_server_ports -- 0(0x55880f2a6ea0)
+TCP 80:
+  ip[0, ffffffff], server=0x55880f25ad18, pctx=0x55880f2a6ea0
+[0x55880f25aa10] total number of ports (1)
+remove_server_ports -- 0(0x55880f2a6ea0)
+[0x55880f25aa10] total number of ports (0)
+
+
+normal
+-------------
+ min_delta  : 10 usec 
+ cnt        : 0 
+ high_cnt   : 0 
+ max_d_time : 0 usec
+ sliding_average    : 0 usec
+ precent    : -nan %
+ histogram 
+ -----------
+                       |          client  |           server  | 
+ -----------------------------------------------------------------------------------------
+       m_active_flows  |               0  |                0  |  active open flows
+          m_est_flows  |               0  |                0  |  active established flows
+         m_tx_bw_l7_r  |       0.00  bps  |        0.00  bps  |  tx L7 bw acked
+   m_tx_bw_l7_total_r  |       0.00  bps  |        0.00  bps  |  tx L7 bw total
+         m_rx_bw_l7_r  |       0.00  bps  |        0.00  bps  |  rx L7 bw acked
+           m_tx_pps_r  |       0.00  pps  |        0.00  pps  |  tx pps
+           m_rx_pps_r  |       0.00  pps  |        0.00  pps  |  rx pps
+           m_avg_size  |         0.00  B  |          0.00  B  |  average pkt size
+           m_tx_ratio  |         0.00  %  |          0.00  %  |  Tx acked/sent ratio
+                    -  |             ---  |              ---  |  
+   m_traffic_duration  |       0.13  sec  |        0.13  sec  |  measured traffic duration
+                    -  |             ---  |              ---  |  
+                  TCP  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+     tcps_connattempt  |               5  |                0  |  connections initiated
+         tcps_accepts  |               0  |                5  |  connections accepted
+        tcps_connects  |               5  |                5  |  connections established
+          tcps_closed  |               5  |                5  |  conn. closed (includes drops)
+       tcps_segstimed  |              15  |               15  |  segs where we tried to get rtt
+      tcps_rttupdated  |              15  |               15  |  times we succeeded
+        tcps_sndtotal  |              20  |               20  |  total packets sent
+         tcps_sndpack  |               5  |                5  |  data packets sent
+         tcps_sndbyte  |            1245  |              640  |  data bytes sent by application
+      tcps_sndbyte_ok  |            1245  |              640  |  data bytes sent by tcp
+         tcps_sndctrl  |               5  |                0  |  control (SYN|FIN|RST) packets sent
+         tcps_sndacks  |              10  |               15  |  ack-only packets sent 
+         tcps_rcvpack  |              10  |               10  |  packets received in sequence
+         tcps_rcvbyte  |             640  |             1245  |  bytes received in sequence
+      tcps_rcvackpack  |              10  |               15  |  rcvd ack packets
+      tcps_rcvackbyte  |            1245  |              640  |  tx bytes acked by rcvd acks 
+   tcps_rcvackbyte_of  |               5  |               10  |  tx bytes acked by rcvd acks - overflow acked
+         tcps_preddat  |               5  |                0  |  times hdr predict ok for data pkts 
+                    -  |             ---  |              ---  |  
+                  UDP  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+           Flow Table  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+ took time: 17msec (freq: 100) 
+
+checking ../../astf/http_manual_commands_rst.py
+executing /auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/bp-sim-64-debug --pcap --tcp_cfg /tmp/astf_sim_hhaim.json -o /auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/generated/sim_astf-http_manual_commands_rst.pcap --full -d 5.0
+ set dpdk queues mode to ONE_QUE 
+Using json file /tmp/astf_sim_hhaim.json
+append_server_ports -- 0(0x564a29a33100)
+TCP 80:
+  ip[0, ffffffff], server=0x564a299e8148, pctx=0x564a29a33100
+[0x564a299e9980] total number of ports (1)
+remove_server_ports -- 0(0x564a29a33100)
+[0x564a299e9980] total number of ports (0)
+
+
+normal
+-------------
+ min_delta  : 10 usec 
+ cnt        : 0 
+ high_cnt   : 0 
+ max_d_time : 0 usec
+ sliding_average    : 0 usec
+ precent    : -nan %
+ histogram 
+ -----------
+                       |          client  |           server  | 
+ -----------------------------------------------------------------------------------------
+       m_active_flows  |               0  |                0  |  active open flows
+          m_est_flows  |               0  |                0  |  active established flows
+         m_tx_bw_l7_r  |       0.00  bps  |        0.00  bps  |  tx L7 bw acked
+   m_tx_bw_l7_total_r  |       0.00  bps  |        0.00  bps  |  tx L7 bw total
+         m_rx_bw_l7_r  |       0.00  bps  |        0.00  bps  |  rx L7 bw acked
+           m_tx_pps_r  |       0.00  pps  |        0.00  pps  |  tx pps
+           m_rx_pps_r  |       0.00  pps  |        0.00  pps  |  rx pps
+           m_avg_size  |         0.00  B  |          0.00  B  |  average pkt size
+           m_tx_ratio  |         0.00  %  |          0.00  %  |  Tx acked/sent ratio
+                    -  |             ---  |              ---  |  
+   m_traffic_duration  |       0.11  sec  |        0.11  sec  |  measured traffic duration
+                    -  |             ---  |              ---  |  
+                  TCP  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+     tcps_connattempt  |               5  |                0  |  connections initiated
+         tcps_accepts  |               0  |                5  |  connections accepted
+        tcps_connects  |               5  |                5  |  connections established
+          tcps_closed  |               5  |                5  |  conn. closed (includes drops)
+       tcps_segstimed  |              10  |               10  |  segs where we tried to get rtt
+      tcps_rttupdated  |              10  |               10  |  times we succeeded
+        tcps_sndtotal  |              20  |               10  |  total packets sent
+         tcps_sndpack  |               5  |                5  |  data packets sent
+         tcps_sndbyte  |            1245  |              640  |  data bytes sent by application
+      tcps_sndbyte_ok  |            1245  |              640  |  data bytes sent by tcp
+         tcps_sndctrl  |              10  |                0  |  control (SYN|FIN|RST) packets sent
+         tcps_sndacks  |               5  |                5  |  ack-only packets sent 
+         tcps_rcvpack  |               5  |                5  |  packets received in sequence
+         tcps_rcvbyte  |             640  |             1245  |  bytes received in sequence
+      tcps_rcvackpack  |               5  |               10  |  rcvd ack packets
+      tcps_rcvackbyte  |            1245  |              640  |  tx bytes acked by rcvd acks 
+   tcps_rcvackbyte_of  |               0  |                5  |  tx bytes acked by rcvd acks - overflow acked
+           tcps_drops  |               5  |                5  |  connections dropped
+                    -  |             ---  |              ---  |  
+                  UDP  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+           Flow Table  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+ took time: 18msec (freq: 100) 
+
+checking ../../astf/http_manual_commands_fin_ack.py
+executing /auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/bp-sim-64-debug --pcap --tcp_cfg /tmp/astf_sim_hhaim.json -o /auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/generated/sim_astf-http_manual_commands_fin_ack.pcap --full -d 5.0
+ set dpdk queues mode to ONE_QUE 
+Using json file /tmp/astf_sim_hhaim.json
+append_server_ports -- 0(0x561462232de0)
+TCP 80:
+  ip[0, ffffffff], server=0x561462233308, pctx=0x561462232de0
+[0x5614621e5b40] total number of ports (1)
+remove_server_ports -- 0(0x561462232de0)
+[0x5614621e5b40] total number of ports (0)
+
+
+normal
+-------------
+ min_delta  : 10 usec 
+ cnt        : 0 
+ high_cnt   : 0 
+ max_d_time : 0 usec
+ sliding_average    : 0 usec
+ precent    : -nan %
+ histogram 
+ -----------
+                       |          client  |           server  | 
+ -----------------------------------------------------------------------------------------
+       m_active_flows  |               0  |                0  |  active open flows
+          m_est_flows  |               0  |                0  |  active established flows
+         m_tx_bw_l7_r  |       0.00  bps  |        0.00  bps  |  tx L7 bw acked
+   m_tx_bw_l7_total_r  |       0.00  bps  |        0.00  bps  |  tx L7 bw total
+         m_rx_bw_l7_r  |       0.00  bps  |        0.00  bps  |  rx L7 bw acked
+           m_tx_pps_r  |       0.00  pps  |        0.00  pps  |  tx pps
+           m_rx_pps_r  |       0.00  pps  |        0.00  pps  |  rx pps
+           m_avg_size  |         0.00  B  |          0.00  B  |  average pkt size
+           m_tx_ratio  |         0.00  %  |          0.00  %  |  Tx acked/sent ratio
+                    -  |             ---  |              ---  |  
+   m_traffic_duration  |       0.11  sec  |        0.10  sec  |  measured traffic duration
+                    -  |             ---  |              ---  |  
+                  TCP  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+     tcps_connattempt  |               5  |                0  |  connections initiated
+         tcps_accepts  |               0  |                5  |  connections accepted
+        tcps_connects  |               5  |                5  |  connections established
+          tcps_closed  |               5  |                5  |  conn. closed (includes drops)
+       tcps_segstimed  |              15  |               15  |  segs where we tried to get rtt
+      tcps_rttupdated  |              15  |               15  |  times we succeeded
+        tcps_sndtotal  |              20  |               20  |  total packets sent
+         tcps_sndpack  |               5  |                5  |  data packets sent
+         tcps_sndbyte  |            1245  |              640  |  data bytes sent by application
+      tcps_sndbyte_ok  |            1245  |              640  |  data bytes sent by tcp
+         tcps_sndctrl  |               5  |                5  |  control (SYN|FIN|RST) packets sent
+         tcps_sndacks  |              10  |               10  |  ack-only packets sent 
+         tcps_rcvpack  |              10  |               10  |  packets received in sequence
+         tcps_rcvbyte  |             640  |             1245  |  bytes received in sequence
+      tcps_rcvackpack  |              10  |               15  |  rcvd ack packets
+      tcps_rcvackbyte  |            1245  |              640  |  tx bytes acked by rcvd acks 
+   tcps_rcvackbyte_of  |               5  |               10  |  tx bytes acked by rcvd acks - overflow acked
+                    -  |             ---  |              ---  |  
+                  UDP  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+           Flow Table  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+ took time: 15msec (freq: 100) 
+
+checking ../../astf/http_manual_commands_delay_client.py
+executing /auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/bp-sim-64-debug --pcap --tcp_cfg /tmp/astf_sim_hhaim.json -o /auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/generated/sim_astf-http_manual_commands_delay_client.pcap --full -d 5.0
+ set dpdk queues mode to ONE_QUE 
+Using json file /tmp/astf_sim_hhaim.json
+append_server_ports -- 0(0x55d04970d220)
+TCP 80:
+  ip[0, ffffffff], server=0x55d04970e168, pctx=0x55d04970d220
+[0x55d0496c39b0] total number of ports (1)
+remove_server_ports -- 0(0x55d04970d220)
+[0x55d0496c39b0] total number of ports (0)
+
+
+normal
+-------------
+ min_delta  : 10 usec 
+ cnt        : 0 
+ high_cnt   : 0 
+ max_d_time : 0 usec
+ sliding_average    : 0 usec
+ precent    : -nan %
+ histogram 
+ -----------
+                       |          client  |           server  | 
+ -----------------------------------------------------------------------------------------
+       m_active_flows  |               0  |                0  |  active open flows
+          m_est_flows  |               0  |                0  |  active established flows
+         m_tx_bw_l7_r  |       0.00  bps  |        0.00  bps  |  tx L7 bw acked
+   m_tx_bw_l7_total_r  |       0.00  bps  |        0.00  bps  |  tx L7 bw total
+         m_rx_bw_l7_r  |       0.00  bps  |        0.00  bps  |  rx L7 bw acked
+           m_tx_pps_r  |       0.00  pps  |        0.00  pps  |  tx pps
+           m_rx_pps_r  |       0.00  pps  |        0.00  pps  |  rx pps
+           m_avg_size  |         0.00  B  |          0.00  B  |  average pkt size
+           m_tx_ratio  |         0.00  %  |          0.00  %  |  Tx acked/sent ratio
+                    -  |             ---  |              ---  |  
+   m_traffic_duration  |       0.11  sec  |        0.11  sec  |  measured traffic duration
+                    -  |             ---  |              ---  |  
+                  TCP  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+     tcps_connattempt  |               5  |                0  |  connections initiated
+         tcps_accepts  |               0  |                5  |  connections accepted
+        tcps_connects  |               5  |                5  |  connections established
+          tcps_closed  |               5  |                5  |  conn. closed (includes drops)
+       tcps_segstimed  |              20  |               15  |  segs where we tried to get rtt
+      tcps_rttupdated  |              20  |               15  |  times we succeeded
+        tcps_sndtotal  |              25  |               20  |  total packets sent
+         tcps_sndpack  |              10  |                5  |  data packets sent
+         tcps_sndbyte  |            1245  |              640  |  data bytes sent by application
+      tcps_sndbyte_ok  |            1245  |              640  |  data bytes sent by tcp
+         tcps_sndctrl  |               5  |                0  |  control (SYN|FIN|RST) packets sent
+         tcps_sndacks  |              10  |               15  |  ack-only packets sent 
+         tcps_rcvpack  |              10  |               15  |  packets received in sequence
+         tcps_rcvbyte  |             640  |             1245  |  bytes received in sequence
+      tcps_rcvackpack  |              15  |               15  |  rcvd ack packets
+      tcps_rcvackbyte  |            1245  |              640  |  tx bytes acked by rcvd acks 
+   tcps_rcvackbyte_of  |               5  |               10  |  tx bytes acked by rcvd acks - overflow acked
+         tcps_preddat  |               0  |                5  |  times hdr predict ok for data pkts 
+                    -  |             ---  |              ---  |  
+                  UDP  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+           Flow Table  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+ took time: 16msec (freq: 100) 
+
+checking ../../astf/http_manual_commands_delay_client2.py
+executing /auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/bp-sim-64-debug --pcap --tcp_cfg /tmp/astf_sim_hhaim.json -o /auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/generated/sim_astf-http_manual_commands_delay_client2.pcap --full -d 5.0
+ set dpdk queues mode to ONE_QUE 
+Using json file /tmp/astf_sim_hhaim.json
+append_server_ports -- 0(0x55d61e437e60)
+TCP 80:
+  ip[0, ffffffff], server=0x55d61e438388, pctx=0x55d61e437e60
+[0x55d61e3eba10] total number of ports (1)
+remove_server_ports -- 0(0x55d61e437e60)
+[0x55d61e3eba10] total number of ports (0)
+
+
+normal
+-------------
+ min_delta  : 10 usec 
+ cnt        : 0 
+ high_cnt   : 0 
+ max_d_time : 0 usec
+ sliding_average    : 0 usec
+ precent    : -nan %
+ histogram 
+ -----------
+                       |          client  |           server  | 
+ -----------------------------------------------------------------------------------------
+       m_active_flows  |               0  |                0  |  active open flows
+          m_est_flows  |               0  |                0  |  active established flows
+         m_tx_bw_l7_r  |       0.00  bps  |        0.00  bps  |  tx L7 bw acked
+   m_tx_bw_l7_total_r  |       0.00  bps  |        0.00  bps  |  tx L7 bw total
+         m_rx_bw_l7_r  |       0.00  bps  |        0.00  bps  |  rx L7 bw acked
+           m_tx_pps_r  |       0.00  pps  |        0.00  pps  |  tx pps
+           m_rx_pps_r  |       0.00  pps  |        0.00  pps  |  rx pps
+           m_avg_size  |         0.00  B  |          0.00  B  |  average pkt size
+           m_tx_ratio  |         0.00  %  |          0.00  %  |  Tx acked/sent ratio
+                    -  |             ---  |              ---  |  
+   m_traffic_duration  |       0.16  sec  |        0.16  sec  |  measured traffic duration
+                    -  |             ---  |              ---  |  
+                  TCP  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+     tcps_connattempt  |               5  |                0  |  connections initiated
+         tcps_accepts  |               0  |                5  |  connections accepted
+        tcps_connects  |               5  |                5  |  connections established
+          tcps_closed  |               5  |                5  |  conn. closed (includes drops)
+       tcps_segstimed  |              15  |               15  |  segs where we tried to get rtt
+      tcps_rttupdated  |              15  |               15  |  times we succeeded
+        tcps_sndtotal  |              25  |               15  |  total packets sent
+         tcps_sndpack  |               5  |                5  |  data packets sent
+         tcps_sndbyte  |            1245  |              640  |  data bytes sent by application
+      tcps_sndbyte_ok  |            1245  |              640  |  data bytes sent by tcp
+         tcps_sndctrl  |               5  |                0  |  control (SYN|FIN|RST) packets sent
+         tcps_sndacks  |              15  |               10  |  ack-only packets sent 
+         tcps_rcvpack  |              10  |               10  |  packets received in sequence
+         tcps_rcvbyte  |             640  |             1245  |  bytes received in sequence
+      tcps_rcvackpack  |              10  |               15  |  rcvd ack packets
+      tcps_rcvackbyte  |            1245  |              640  |  tx bytes acked by rcvd acks 
+   tcps_rcvackbyte_of  |               5  |               10  |  tx bytes acked by rcvd acks - overflow acked
+         tcps_preddat  |               0  |                5  |  times hdr predict ok for data pkts 
+                    -  |             ---  |              ---  |  
+                  UDP  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+           Flow Table  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+ took time: 22msec (freq: 100) 
+
+checking ../../astf/http_manual_commands_delay_rand.py
+executing /auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/bp-sim-64-debug --pcap --tcp_cfg /tmp/astf_sim_hhaim.json -o /auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/generated/sim_astf-http_manual_commands_delay_rand.pcap --full -d 5.0
+ set dpdk queues mode to ONE_QUE 
+Using json file /tmp/astf_sim_hhaim.json
+append_server_ports -- 0(0x559910e50010)
+TCP 80:
+  ip[0, ffffffff], server=0x559910e50f98, pctx=0x559910e50010
+[0x559910e069b0] total number of ports (1)
+remove_server_ports -- 0(0x559910e50010)
+[0x559910e069b0] total number of ports (0)
+
+
+normal
+-------------
+ min_delta  : 10 usec 
+ cnt        : 0 
+ high_cnt   : 0 
+ max_d_time : 0 usec
+ sliding_average    : 0 usec
+ precent    : -nan %
+ histogram 
+ -----------
+                       |          client  |           server  | 
+ -----------------------------------------------------------------------------------------
+       m_active_flows  |               0  |                0  |  active open flows
+          m_est_flows  |               0  |                0  |  active established flows
+         m_tx_bw_l7_r  |       0.00  bps  |        0.00  bps  |  tx L7 bw acked
+   m_tx_bw_l7_total_r  |       0.00  bps  |        0.00  bps  |  tx L7 bw total
+         m_rx_bw_l7_r  |       0.00  bps  |        0.00  bps  |  rx L7 bw acked
+           m_tx_pps_r  |       0.00  pps  |        0.00  pps  |  tx pps
+           m_rx_pps_r  |       0.00  pps  |        0.00  pps  |  rx pps
+           m_avg_size  |         0.00  B  |          0.00  B  |  average pkt size
+           m_tx_ratio  |         0.00  %  |          0.00  %  |  Tx acked/sent ratio
+                    -  |             ---  |              ---  |  
+   m_traffic_duration  |       0.17  sec  |        0.17  sec  |  measured traffic duration
+                    -  |             ---  |              ---  |  
+                  TCP  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+     tcps_connattempt  |               5  |                0  |  connections initiated
+         tcps_accepts  |               0  |                5  |  connections accepted
+        tcps_connects  |               5  |                5  |  connections established
+          tcps_closed  |               5  |                5  |  conn. closed (includes drops)
+       tcps_segstimed  |              15  |               15  |  segs where we tried to get rtt
+      tcps_rttupdated  |              15  |               15  |  times we succeeded
+        tcps_sndtotal  |              20  |               20  |  total packets sent
+         tcps_sndpack  |               5  |                5  |  data packets sent
+         tcps_sndbyte  |            1245  |              640  |  data bytes sent by application
+      tcps_sndbyte_ok  |            1245  |              640  |  data bytes sent by tcp
+         tcps_sndctrl  |               5  |                0  |  control (SYN|FIN|RST) packets sent
+         tcps_sndacks  |              10  |               15  |  ack-only packets sent 
+         tcps_rcvpack  |              10  |               10  |  packets received in sequence
+         tcps_rcvbyte  |             640  |             1245  |  bytes received in sequence
+      tcps_rcvackpack  |              10  |               15  |  rcvd ack packets
+      tcps_rcvackbyte  |            1245  |              640  |  tx bytes acked by rcvd acks 
+   tcps_rcvackbyte_of  |               5  |               10  |  tx bytes acked by rcvd acks - overflow acked
+         tcps_preddat  |               5  |                0  |  times hdr predict ok for data pkts 
+                    -  |             ---  |              ---  |  
+                  UDP  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+           Flow Table  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+ took time: 23msec (freq: 100) 
+
+checking ../../astf/http_manual_commands_loop.py
+executing /auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/bp-sim-64-debug --pcap --tcp_cfg /tmp/astf_sim_hhaim.json -o /auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/generated/sim_astf-http_manual_commands_loop.pcap --full -d 5.0
+ set dpdk queues mode to ONE_QUE 
+Using json file /tmp/astf_sim_hhaim.json
+append_server_ports -- 0(0x557e698fd780)
+TCP 80:
+  ip[0, ffffffff], server=0x557e698b3cb8, pctx=0x557e698fd780
+[0x557e698b39b0] total number of ports (1)
+remove_server_ports -- 0(0x557e698fd780)
+[0x557e698b39b0] total number of ports (0)
+
+
+normal
+-------------
+ min_delta  : 10 usec 
+ cnt        : 0 
+ high_cnt   : 0 
+ max_d_time : 0 usec
+ sliding_average    : 0 usec
+ precent    : -nan %
+ histogram 
+ -----------
+                       |          client  |           server  | 
+ -----------------------------------------------------------------------------------------
+       m_active_flows  |               0  |                0  |  active open flows
+          m_est_flows  |               0  |                0  |  active established flows
+         m_tx_bw_l7_r  |       0.00  bps  |        0.00  bps  |  tx L7 bw acked
+   m_tx_bw_l7_total_r  |       0.00  bps  |        0.00  bps  |  tx L7 bw total
+         m_rx_bw_l7_r  |       0.00  bps  |        0.00  bps  |  rx L7 bw acked
+           m_tx_pps_r  |       0.00  pps  |        0.00  pps  |  tx pps
+           m_rx_pps_r  |       0.00  pps  |        0.00  pps  |  rx pps
+           m_avg_size  |         0.00  B  |          0.00  B  |  average pkt size
+           m_tx_ratio  |         0.00  %  |          0.00  %  |  Tx acked/sent ratio
+                    -  |             ---  |              ---  |  
+   m_traffic_duration  |       0.31  sec  |        0.31  sec  |  measured traffic duration
+                    -  |             ---  |              ---  |  
+                  TCP  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+     tcps_connattempt  |               5  |                0  |  connections initiated
+         tcps_accepts  |               0  |                5  |  connections accepted
+        tcps_connects  |               5  |                5  |  connections established
+          tcps_closed  |               5  |                5  |  conn. closed (includes drops)
+       tcps_segstimed  |              15  |               60  |  segs where we tried to get rtt
+      tcps_rttupdated  |              15  |               60  |  times we succeeded
+        tcps_sndtotal  |              65  |               70  |  total packets sent
+         tcps_sndpack  |               5  |               50  |  data packets sent
+         tcps_sndbyte  |            1245  |             6400  |  data bytes sent by application
+      tcps_sndbyte_ok  |            1245  |             6400  |  data bytes sent by tcp
+         tcps_sndctrl  |               5  |                5  |  control (SYN|FIN|RST) packets sent
+         tcps_sndacks  |              55  |               15  |  ack-only packets sent 
+         tcps_rcvpack  |              55  |               10  |  packets received in sequence
+         tcps_rcvbyte  |            6400  |             1245  |  bytes received in sequence
+      tcps_rcvackpack  |              10  |               60  |  rcvd ack packets
+      tcps_rcvackbyte  |            1245  |             6400  |  tx bytes acked by rcvd acks 
+   tcps_rcvackbyte_of  |               5  |               10  |  tx bytes acked by rcvd acks - overflow acked
+         tcps_preddat  |              50  |                0  |  times hdr predict ok for data pkts 
+                    -  |             ---  |              ---  |  
+                  UDP  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+           Flow Table  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+ took time: 34msec (freq: 100) 
+
+checking ../../astf/http_manual_commands_pipeline.py
+executing /auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/bp-sim-64-debug --pcap --tcp_cfg /tmp/astf_sim_hhaim.json -o /auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/generated/sim_astf-http_manual_commands_pipeline.pcap --full -d 5.0
+ set dpdk queues mode to ONE_QUE 
+Using json file /tmp/astf_sim_hhaim.json
+append_server_ports -- 0(0x55efa0674fe0)
+TCP 80:
+  ip[0, ffffffff], server=0x55efa06c2118, pctx=0x55efa0674fe0
+[0x55efa06778c0] total number of ports (1)
+remove_server_ports -- 0(0x55efa0674fe0)
+[0x55efa06778c0] total number of ports (0)
+
+
+normal
+-------------
+ min_delta  : 10 usec 
+ cnt        : 0 
+ high_cnt   : 0 
+ max_d_time : 0 usec
+ sliding_average    : 0 usec
+ precent    : -nan %
+ histogram 
+ -----------
+                       |          client  |           server  | 
+ -----------------------------------------------------------------------------------------
+       m_active_flows  |               0  |                0  |  active open flows
+          m_est_flows  |               0  |                0  |  active established flows
+         m_tx_bw_l7_r  |       0.00  bps  |        0.00  bps  |  tx L7 bw acked
+   m_tx_bw_l7_total_r  |       0.00  bps  |        0.00  bps  |  tx L7 bw total
+         m_rx_bw_l7_r  |       0.00  bps  |        0.00  bps  |  rx L7 bw acked
+           m_tx_pps_r  |       0.00  pps  |        0.00  pps  |  tx pps
+           m_rx_pps_r  |       0.00  pps  |        0.00  pps  |  rx pps
+           m_avg_size  |         0.00  B  |          0.00  B  |  average pkt size
+           m_tx_ratio  |         0.00  %  |          0.00  %  |  Tx acked/sent ratio
+                    -  |             ---  |              ---  |  
+   m_traffic_duration  |       0.16  sec  |        0.16  sec  |  measured traffic duration
+                    -  |             ---  |              ---  |  
+                  TCP  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+     tcps_connattempt  |               5  |                0  |  connections initiated
+         tcps_accepts  |               0  |                5  |  connections accepted
+        tcps_connects  |               5  |                5  |  connections established
+          tcps_closed  |               5  |                5  |  conn. closed (includes drops)
+       tcps_segstimed  |              15  |               15  |  segs where we tried to get rtt
+      tcps_rttupdated  |              15  |               15  |  times we succeeded
+        tcps_sndtotal  |              20  |               15  |  total packets sent
+         tcps_sndpack  |               5  |                5  |  data packets sent
+         tcps_sndbyte  |            6225  |             3225  |  data bytes sent by application
+      tcps_sndbyte_ok  |            6225  |             3225  |  data bytes sent by tcp
+         tcps_sndctrl  |               5  |                0  |  control (SYN|FIN|RST) packets sent
+         tcps_sndacks  |              10  |               10  |  ack-only packets sent 
+         tcps_rcvpack  |              10  |               10  |  packets received in sequence
+         tcps_rcvbyte  |            3225  |             6225  |  bytes received in sequence
+      tcps_rcvackpack  |              10  |               15  |  rcvd ack packets
+      tcps_rcvackbyte  |            6225  |             3225  |  tx bytes acked by rcvd acks 
+   tcps_rcvackbyte_of  |               5  |               10  |  tx bytes acked by rcvd acks - overflow acked
+                    -  |             ---  |              ---  |  
+                  UDP  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+           Flow Table  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+ took time: 21msec (freq: 100) 
+
+checking ../../astf/http_manual_commands_pipeline2.py
+executing /auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/bp-sim-64-debug --pcap --tcp_cfg /tmp/astf_sim_hhaim.json -o /auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/generated/sim_astf-http_manual_commands_pipeline2.pcap --full -d 5.0
+ set dpdk queues mode to ONE_QUE 
+Using json file /tmp/astf_sim_hhaim.json
+append_server_ports -- 0(0x5649419a88e0)
+TCP 80:
+  ip[0, ffffffff], server=0x56494195cfe8, pctx=0x5649419a88e0
+[0x56494195e9b0] total number of ports (1)
+remove_server_ports -- 0(0x5649419a88e0)
+[0x56494195e9b0] total number of ports (0)
+
+
+normal
+-------------
+ min_delta  : 10 usec 
+ cnt        : 0 
+ high_cnt   : 0 
+ max_d_time : 0 usec
+ sliding_average    : 0 usec
+ precent    : -nan %
+ histogram 
+ -----------
+                       |          client  |           server  | 
+ -----------------------------------------------------------------------------------------
+       m_active_flows  |               0  |                0  |  active open flows
+          m_est_flows  |               0  |                0  |  active established flows
+         m_tx_bw_l7_r  |       0.00  bps  |        0.00  bps  |  tx L7 bw acked
+   m_tx_bw_l7_total_r  |       0.00  bps  |        0.00  bps  |  tx L7 bw total
+         m_rx_bw_l7_r  |       0.00  bps  |        0.00  bps  |  rx L7 bw acked
+           m_tx_pps_r  |       0.00  pps  |        0.00  pps  |  tx pps
+           m_rx_pps_r  |       0.00  pps  |        0.00  pps  |  rx pps
+           m_avg_size  |         0.00  B  |          0.00  B  |  average pkt size
+           m_tx_ratio  |         0.00  %  |          0.00  %  |  Tx acked/sent ratio
+                    -  |             ---  |              ---  |  
+   m_traffic_duration  |       0.11  sec  |        0.11  sec  |  measured traffic duration
+                    -  |             ---  |              ---  |  
+                  TCP  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+     tcps_connattempt  |               5  |                0  |  connections initiated
+         tcps_accepts  |               0  |                5  |  connections accepted
+        tcps_connects  |               5  |                5  |  connections established
+          tcps_closed  |               5  |                5  |  conn. closed (includes drops)
+       tcps_segstimed  |              35  |               15  |  segs where we tried to get rtt
+      tcps_rttupdated  |              35  |               15  |  times we succeeded
+        tcps_sndtotal  |              40  |               35  |  total packets sent
+         tcps_sndpack  |              25  |                5  |  data packets sent
+         tcps_sndbyte  |            6225  |             3225  |  data bytes sent by application
+      tcps_sndbyte_ok  |            6225  |             3225  |  data bytes sent by tcp
+         tcps_sndctrl  |               5  |                0  |  control (SYN|FIN|RST) packets sent
+         tcps_sndacks  |              10  |               30  |  ack-only packets sent 
+         tcps_rcvpack  |              10  |               30  |  packets received in sequence
+         tcps_rcvbyte  |            3225  |             6225  |  bytes received in sequence
+      tcps_rcvackpack  |              30  |               15  |  rcvd ack packets
+      tcps_rcvackbyte  |            6225  |             3225  |  tx bytes acked by rcvd acks 
+   tcps_rcvackbyte_of  |               5  |               10  |  tx bytes acked by rcvd acks - overflow acked
+         tcps_preddat  |               0  |               20  |  times hdr predict ok for data pkts 
+                    -  |             ---  |              ---  |  
+                  UDP  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+           Flow Table  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+ took time: 15msec (freq: 100) 
+
+checking ../../astf/http_manual_commands_rst.py
+executing /auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/bp-sim-64-debug --pcap --tcp_cfg /tmp/astf_sim_hhaim.json -o /auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/generated/sim_astf-http_manual_commands_rst.pcap --full -d 5.0
+ set dpdk queues mode to ONE_QUE 
+Using json file /tmp/astf_sim_hhaim.json
+append_server_ports -- 0(0x55a4e3b58100)
+TCP 80:
+  ip[0, ffffffff], server=0x55a4e3b0d148, pctx=0x55a4e3b58100
+[0x55a4e3b0e980] total number of ports (1)
+remove_server_ports -- 0(0x55a4e3b58100)
+[0x55a4e3b0e980] total number of ports (0)
+
+
+normal
+-------------
+ min_delta  : 10 usec 
+ cnt        : 0 
+ high_cnt   : 0 
+ max_d_time : 0 usec
+ sliding_average    : 0 usec
+ precent    : -nan %
+ histogram 
+ -----------
+                       |          client  |           server  | 
+ -----------------------------------------------------------------------------------------
+       m_active_flows  |               0  |                0  |  active open flows
+          m_est_flows  |               0  |                0  |  active established flows
+         m_tx_bw_l7_r  |       0.00  bps  |        0.00  bps  |  tx L7 bw acked
+   m_tx_bw_l7_total_r  |       0.00  bps  |        0.00  bps  |  tx L7 bw total
+         m_rx_bw_l7_r  |       0.00  bps  |        0.00  bps  |  rx L7 bw acked
+           m_tx_pps_r  |       0.00  pps  |        0.00  pps  |  tx pps
+           m_rx_pps_r  |       0.00  pps  |        0.00  pps  |  rx pps
+           m_avg_size  |         0.00  B  |          0.00  B  |  average pkt size
+           m_tx_ratio  |         0.00  %  |          0.00  %  |  Tx acked/sent ratio
+                    -  |             ---  |              ---  |  
+   m_traffic_duration  |       0.11  sec  |        0.11  sec  |  measured traffic duration
+                    -  |             ---  |              ---  |  
+                  TCP  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+     tcps_connattempt  |               5  |                0  |  connections initiated
+         tcps_accepts  |               0  |                5  |  connections accepted
+        tcps_connects  |               5  |                5  |  connections established
+          tcps_closed  |               5  |                5  |  conn. closed (includes drops)
+       tcps_segstimed  |              10  |               10  |  segs where we tried to get rtt
+      tcps_rttupdated  |              10  |               10  |  times we succeeded
+        tcps_sndtotal  |              20  |               10  |  total packets sent
+         tcps_sndpack  |               5  |                5  |  data packets sent
+         tcps_sndbyte  |            1245  |              640  |  data bytes sent by application
+      tcps_sndbyte_ok  |            1245  |              640  |  data bytes sent by tcp
+         tcps_sndctrl  |              10  |                0  |  control (SYN|FIN|RST) packets sent
+         tcps_sndacks  |               5  |                5  |  ack-only packets sent 
+         tcps_rcvpack  |               5  |                5  |  packets received in sequence
+         tcps_rcvbyte  |             640  |             1245  |  bytes received in sequence
+      tcps_rcvackpack  |               5  |               10  |  rcvd ack packets
+      tcps_rcvackbyte  |            1245  |              640  |  tx bytes acked by rcvd acks 
+   tcps_rcvackbyte_of  |               0  |                5  |  tx bytes acked by rcvd acks - overflow acked
+           tcps_drops  |               5  |                5  |  connections dropped
+                    -  |             ---  |              ---  |  
+                  UDP  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+           Flow Table  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+ took time: 17msec (freq: 100) 
+
+checking ../../astf/http_simple_limit.py
+executing /auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/bp-sim-64-debug --pcap --tcp_cfg /tmp/astf_sim_hhaim.json -o /auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/generated/sim_astf-http_simple_limit.pcap --full -d 5.0
+ set dpdk queues mode to ONE_QUE 
+Using json file /tmp/astf_sim_hhaim.json
+append_server_ports -- 0(0x56466d70ef60)
+TCP 80:
+  ip[0, ffffffff], server=0x56466d6d6228, pctx=0x56466d70ef60
+[0x56466d6f2a30] total number of ports (1)
+remove_server_ports -- 0(0x56466d70ef60)
+[0x56466d6f2a30] total number of ports (0)
+
+
+normal
+-------------
+ min_delta  : 10 usec 
+ cnt        : 0 
+ high_cnt   : 0 
+ max_d_time : 0 usec
+ sliding_average    : 0 usec
+ precent    : -nan %
+ histogram 
+ -----------
+                       |          client  |           server  | 
+ -----------------------------------------------------------------------------------------
+       m_active_flows  |               0  |                0  |  active open flows
+          m_est_flows  |               0  |                0  |  active established flows
+         m_tx_bw_l7_r  |       0.00  bps  |        0.00  bps  |  tx L7 bw acked
+   m_tx_bw_l7_total_r  |       0.00  bps  |        0.00  bps  |  tx L7 bw total
+         m_rx_bw_l7_r  |       0.00  bps  |        0.00  bps  |  rx L7 bw acked
+           m_tx_pps_r  |       0.00  pps  |        0.00  pps  |  tx pps
+           m_rx_pps_r  |       0.00  pps  |        0.00  pps  |  rx pps
+           m_avg_size  |         0.00  B  |          0.00  B  |  average pkt size
+           m_tx_ratio  |         0.00  %  |          0.00  %  |  Tx acked/sent ratio
+                    -  |             ---  |              ---  |  
+   m_traffic_duration  |       0.04  sec  |        0.04  sec  |  measured traffic duration
+                    -  |             ---  |              ---  |  
+                  TCP  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+     tcps_connattempt  |               2  |                0  |  connections initiated
+         tcps_accepts  |               0  |                2  |  connections accepted
+        tcps_connects  |               2  |                2  |  connections established
+          tcps_closed  |               2  |                2  |  conn. closed (includes drops)
+       tcps_segstimed  |               6  |                8  |  segs where we tried to get rtt
+      tcps_rttupdated  |               6  |                8  |  times we succeeded
+          tcps_delack  |               2  |                0  |  delayed acks sent
+        tcps_sndtotal  |              10  |               50  |  total packets sent
+         tcps_sndpack  |               2  |               46  |  data packets sent
+         tcps_sndbyte  |             498  |            64188  |  data bytes sent by application
+      tcps_sndbyte_ok  |             498  |            64188  |  data bytes sent by tcp
+         tcps_sndctrl  |               2  |                0  |  control (SYN|FIN|RST) packets sent
+         tcps_sndacks  |               6  |                4  |  ack-only packets sent 
+         tcps_rcvpack  |              48  |                4  |  packets received in sequence
+         tcps_rcvbyte  |           64188  |              498  |  bytes received in sequence
+      tcps_rcvackpack  |               4  |                8  |  rcvd ack packets
+      tcps_rcvackbyte  |             498  |            64188  |  tx bytes acked by rcvd acks 
+   tcps_rcvackbyte_of  |               2  |                4  |  tx bytes acked by rcvd acks - overflow acked
+         tcps_preddat  |              44  |                0  |  times hdr predict ok for data pkts 
+                    -  |             ---  |              ---  |  
+                  UDP  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+           Flow Table  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+ took time: 18msec (freq: 100) 
+
+checking ../../astf/param_tcp_rxbufsize_pt.py
+executing /auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/bp-sim-64-debug --pcap --tcp_cfg /tmp/astf_sim_hhaim.json -o /auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/generated/sim_astf-param_tcp_rxbufsize_pt.pcap --full -d 5.0
+ set dpdk queues mode to ONE_QUE 
+Using json file /tmp/astf_sim_hhaim.json
+append_server_ports -- 0(0x559e38486540)
+TCP 80:
+  ip[0, ffffffff], server=0x559e38458958, pctx=0x559e38486540
+[0x559e38469a30] total number of ports (1)
+remove_server_ports -- 0(0x559e38486540)
+[0x559e38469a30] total number of ports (0)
+
+
+normal
+-------------
+ min_delta  : 10 usec 
+ cnt        : 0 
+ high_cnt   : 0 
+ max_d_time : 0 usec
+ sliding_average    : 0 usec
+ precent    : -nan %
+ histogram 
+ -----------
+                       |          client  |           server  | 
+ -----------------------------------------------------------------------------------------
+       m_active_flows  |               0  |                0  |  active open flows
+          m_est_flows  |               0  |                0  |  active established flows
+         m_tx_bw_l7_r  |       0.00  bps  |        0.00  bps  |  tx L7 bw acked
+   m_tx_bw_l7_total_r  |       0.00  bps  |        0.00  bps  |  tx L7 bw total
+         m_rx_bw_l7_r  |       0.00  bps  |        0.00  bps  |  rx L7 bw acked
+           m_tx_pps_r  |       0.00  pps  |        0.00  pps  |  tx pps
+           m_rx_pps_r  |       0.00  pps  |        0.00  pps  |  rx pps
+           m_avg_size  |         0.00  B  |          0.00  B  |  average pkt size
+           m_tx_ratio  |         0.00  %  |          0.00  %  |  Tx acked/sent ratio
+                    -  |             ---  |              ---  |  
+   m_traffic_duration  |       0.17  sec  |        0.17  sec  |  measured traffic duration
+                    -  |             ---  |              ---  |  
+                  TCP  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+     tcps_connattempt  |               5  |                0  |  connections initiated
+         tcps_accepts  |               0  |                5  |  connections accepted
+        tcps_connects  |               5  |                5  |  connections established
+          tcps_closed  |               5  |                5  |  conn. closed (includes drops)
+       tcps_segstimed  |              15  |               30  |  segs where we tried to get rtt
+      tcps_rttupdated  |              15  |               30  |  times we succeeded
+        tcps_sndtotal  |              35  |              130  |  total packets sent
+         tcps_sndpack  |               5  |              120  |  data packets sent
+         tcps_sndbyte  |            1245  |           160470  |  data bytes sent by application
+      tcps_sndbyte_ok  |            1245  |           160470  |  data bytes sent by tcp
+         tcps_sndctrl  |               5  |                0  |  control (SYN|FIN|RST) packets sent
+         tcps_sndacks  |              25  |               10  |  ack-only packets sent 
+         tcps_rcvpack  |             125  |               10  |  packets received in sequence
+         tcps_rcvbyte  |          160470  |             1245  |  bytes received in sequence
+      tcps_rcvackpack  |              10  |               30  |  rcvd ack packets
+      tcps_rcvackbyte  |            1245  |           160470  |  tx bytes acked by rcvd acks 
+   tcps_rcvackbyte_of  |               5  |               10  |  tx bytes acked by rcvd acks - overflow acked
+         tcps_preddat  |             115  |                0  |  times hdr predict ok for data pkts 
+                    -  |             ---  |              ---  |  
+                  UDP  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+           Flow Table  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+ took time: 23msec (freq: 100) 
+
+checking ../../astf/param_sch_rampup.py
+executing /auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/bp-sim-64-debug --pcap --tcp_cfg /tmp/astf_sim_hhaim.json -o /auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/generated/sim_astf-param_sch_rampup.pcap --full -d 5.0
+ set dpdk queues mode to ONE_QUE 
+Using json file /tmp/astf_sim_hhaim.json
+append_server_ports -- 0(0x55792f13d120)
+TCP 80:
+  ip[0, ffffffff], server=0x55792f111f88, pctx=0x55792f13d120
+[0x55792f120a30] total number of ports (1)
+remove_server_ports -- 0(0x55792f13d120)
+[0x55792f120a30] total number of ports (0)
+
+
+normal
+-------------
+ min_delta  : 10 usec 
+ cnt        : 0 
+ high_cnt   : 0 
+ max_d_time : 0 usec
+ sliding_average    : 0 usec
+ precent    : -nan %
+ histogram 
+ -----------
+                       |          client  |           server  | 
+ -----------------------------------------------------------------------------------------
+       m_active_flows  |               0  |                0  |  active open flows
+          m_est_flows  |               0  |                0  |  active established flows
+         m_tx_bw_l7_r  |       0.00  bps  |        0.00  bps  |  tx L7 bw acked
+   m_tx_bw_l7_total_r  |       0.00  bps  |        0.00  bps  |  tx L7 bw total
+         m_rx_bw_l7_r  |       0.00  bps  |        0.00  bps  |  rx L7 bw acked
+           m_tx_pps_r  |       0.00  pps  |        0.00  pps  |  tx pps
+           m_rx_pps_r  |       0.00  pps  |        0.00  pps  |  rx pps
+           m_avg_size  |         0.00  B  |          0.00  B  |  average pkt size
+           m_tx_ratio  |         0.00  %  |          0.00  %  |  Tx acked/sent ratio
+                    -  |             ---  |              ---  |  
+   m_traffic_duration  |       0.13  sec  |        0.13  sec  |  measured traffic duration
+                    -  |             ---  |              ---  |  
+                  TCP  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+     tcps_connattempt  |               8  |                0  |  connections initiated
+         tcps_accepts  |               0  |                8  |  connections accepted
+        tcps_connects  |               8  |                8  |  connections established
+          tcps_closed  |               8  |                8  |  conn. closed (includes drops)
+       tcps_segstimed  |              24  |               32  |  segs where we tried to get rtt
+      tcps_rttupdated  |              24  |               32  |  times we succeeded
+          tcps_delack  |               8  |                0  |  delayed acks sent
+        tcps_sndtotal  |              40  |              200  |  total packets sent
+         tcps_sndpack  |               8  |              184  |  data packets sent
+         tcps_sndbyte  |            1992  |           256752  |  data bytes sent by application
+      tcps_sndbyte_ok  |            1992  |           256752  |  data bytes sent by tcp
+         tcps_sndctrl  |               8  |                0  |  control (SYN|FIN|RST) packets sent
+         tcps_sndacks  |              24  |               16  |  ack-only packets sent 
+         tcps_rcvpack  |             192  |               16  |  packets received in sequence
+         tcps_rcvbyte  |          256752  |             1992  |  bytes received in sequence
+      tcps_rcvackpack  |              16  |               32  |  rcvd ack packets
+      tcps_rcvackbyte  |            1992  |           256752  |  tx bytes acked by rcvd acks 
+   tcps_rcvackbyte_of  |               8  |               16  |  tx bytes acked by rcvd acks - overflow acked
+         tcps_preddat  |             176  |                0  |  times hdr predict ok for data pkts 
+                    -  |             ---  |              ---  |  
+                  UDP  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+           Flow Table  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+ took time: 17msec (freq: 100) 
+
+checking ../../astf/http_manual_commands_pipeline4.py
+executing /auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/bp-sim-64-debug --pcap --tcp_cfg /tmp/astf_sim_hhaim.json -o /auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/generated/sim_astf-http_manual_commands_pipeline4.pcap --full -d 5.0
+ set dpdk queues mode to ONE_QUE 
+Using json file /tmp/astf_sim_hhaim.json
+append_server_ports -- 0(0x55da60fd0c30)
+TCP 80:
+  ip[0, ffffffff], server=0x55da60f84fe8, pctx=0x55da60fd0c30
+[0x55da60f869b0] total number of ports (1)
+remove_server_ports -- 0(0x55da60fd0c30)
+[0x55da60f869b0] total number of ports (0)
+
+
+normal
+-------------
+ min_delta  : 10 usec 
+ cnt        : 0 
+ high_cnt   : 0 
+ max_d_time : 0 usec
+ sliding_average    : 0 usec
+ precent    : -nan %
+ histogram 
+ -----------
+                       |          client  |           server  | 
+ -----------------------------------------------------------------------------------------
+       m_active_flows  |               0  |                0  |  active open flows
+          m_est_flows  |               0  |                0  |  active established flows
+         m_tx_bw_l7_r  |       0.00  bps  |        0.00  bps  |  tx L7 bw acked
+   m_tx_bw_l7_total_r  |       0.00  bps  |        0.00  bps  |  tx L7 bw total
+         m_rx_bw_l7_r  |       0.00  bps  |        0.00  bps  |  rx L7 bw acked
+           m_tx_pps_r  |       0.00  pps  |        0.00  pps  |  tx pps
+           m_rx_pps_r  |       0.00  pps  |        0.00  pps  |  rx pps
+           m_avg_size  |         0.00  B  |          0.00  B  |  average pkt size
+           m_tx_ratio  |         0.00  %  |          0.00  %  |  Tx acked/sent ratio
+                    -  |             ---  |              ---  |  
+   m_traffic_duration  |       0.15  sec  |        0.15  sec  |  measured traffic duration
+                    -  |             ---  |              ---  |  
+                  TCP  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+     tcps_connattempt  |               5  |                0  |  connections initiated
+         tcps_accepts  |               0  |                5  |  connections accepted
+        tcps_connects  |               5  |                5  |  connections established
+          tcps_closed  |               5  |                5  |  conn. closed (includes drops)
+       tcps_segstimed  |              35  |               35  |  segs where we tried to get rtt
+      tcps_rttupdated  |              35  |               35  |  times we succeeded
+        tcps_sndtotal  |              40  |               60  |  total packets sent
+         tcps_sndpack  |              25  |               25  |  data packets sent
+         tcps_sndbyte  |            2525  |             6225  |  data bytes sent by application
+      tcps_sndbyte_ok  |            2525  |             6225  |  data bytes sent by tcp
+         tcps_sndctrl  |               5  |                0  |  control (SYN|FIN|RST) packets sent
+         tcps_sndacks  |              10  |               35  |  ack-only packets sent 
+         tcps_rcvpack  |              30  |               30  |  packets received in sequence
+         tcps_rcvbyte  |            6225  |             2525  |  bytes received in sequence
+      tcps_rcvackpack  |              30  |               35  |  rcvd ack packets
+      tcps_rcvackbyte  |            2525  |             6225  |  tx bytes acked by rcvd acks 
+   tcps_rcvackbyte_of  |               5  |               10  |  tx bytes acked by rcvd acks - overflow acked
+         tcps_preddat  |              25  |                0  |  times hdr predict ok for data pkts 
+                    -  |             ---  |              ---  |  
+                  UDP  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+           Flow Table  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+ took time: 21msec (freq: 100) 
+
+checking ../../astf/udp_pcap.py
+executing /auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/bp-sim-64-debug --pcap --tcp_cfg /tmp/astf_sim_hhaim.json -o /auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/generated/sim_astf-udp_pcap.pcap --full -d 5.0
+ set dpdk queues mode to ONE_QUE 
+Using json file /tmp/astf_sim_hhaim.json
+append_server_ports -- 0(0x5593ff9457c0)
+UDP 53:
+  ip[0, ffffffff], server=0x5593ff93ab28, pctx=0x5593ff9457c0
+[0x5593ff944b40] total number of ports (1)
+remove_server_ports -- 0(0x5593ff9457c0)
+[0x5593ff944b40] total number of ports (0)
+
+
+normal
+-------------
+ min_delta  : 10 usec 
+ cnt        : 0 
+ high_cnt   : 0 
+ max_d_time : 0 usec
+ sliding_average    : 0 usec
+ precent    : -nan %
+ histogram 
+ -----------
+                       |          client  |           server  | 
+ -----------------------------------------------------------------------------------------
+       m_active_flows  |               0  |                0  |  active open flows
+          m_est_flows  |               0  |                0  |  active established flows
+         m_tx_bw_l7_r  |       0.00  bps  |        0.00  bps  |  tx L7 bw acked
+   m_tx_bw_l7_total_r  |       0.00  bps  |        0.00  bps  |  tx L7 bw total
+         m_rx_bw_l7_r  |       0.00  bps  |        0.00  bps  |  rx L7 bw acked
+           m_tx_pps_r  |       0.00  pps  |        0.00  pps  |  tx pps
+           m_rx_pps_r  |       0.00  pps  |        0.00  pps  |  rx pps
+           m_avg_size  |         0.00  B  |          0.00  B  |  average pkt size
+           m_tx_ratio  |         0.00  %  |          0.00  %  |  Tx acked/sent ratio
+                    -  |             ---  |              ---  |  
+   m_traffic_duration  |       0.10  sec  |        0.10  sec  |  measured traffic duration
+                    -  |             ---  |              ---  |  
+                  TCP  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+                  UDP  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+         udps_accepts  |               0  |                5  |  connections accepted
+        udps_connects  |               5  |                0  |  connections established
+          udps_closed  |               5  |                5  |  conn. closed (includes drops)
+         udps_sndbyte  |             155  |              235  |  data bytes transmitted
+          udps_sndpkt  |               5  |                5  |  data packets transmitted
+         udps_rcvbyte  |             235  |              155  |  data bytes received
+          udps_rcvpkt  |               5  |                5  |  data packets received
+                    -  |             ---  |              ---  |  
+           Flow Table  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+ took time: 17msec (freq: 100) 
+
+checking ../../astf/udp_sip.py
+executing /auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/bp-sim-64-debug --pcap --tcp_cfg /tmp/astf_sim_hhaim.json -o /auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/generated/sim_astf-udp_sip.pcap --full -d 5.0
+ set dpdk queues mode to ONE_QUE 
+Using json file /tmp/astf_sim_hhaim.json
+append_server_ports -- 0(0x56108f86ffe0)
+UDP 5060:
+  ip[0, ffffffff], server=0x56108f872cb8, pctx=0x56108f86ffe0
+[0x56108f8728c0] total number of ports (1)
+remove_server_ports -- 0(0x56108f86ffe0)
+[0x56108f8728c0] total number of ports (0)
+
+
+normal
+-------------
+ min_delta  : 10 usec 
+ cnt        : 0 
+ high_cnt   : 0 
+ max_d_time : 0 usec
+ sliding_average    : 0 usec
+ precent    : -nan %
+ histogram 
+ -----------
+                       |          client  |           server  | 
+ -----------------------------------------------------------------------------------------
+       m_active_flows  |               0  |                0  |  active open flows
+          m_est_flows  |               0  |                0  |  active established flows
+         m_tx_bw_l7_r  |       0.00  bps  |        0.00  bps  |  tx L7 bw acked
+   m_tx_bw_l7_total_r  |       0.00  bps  |        0.00  bps  |  tx L7 bw total
+         m_rx_bw_l7_r  |       0.00  bps  |        0.00  bps  |  rx L7 bw acked
+           m_tx_pps_r  |       0.00  pps  |        0.00  pps  |  tx pps
+           m_rx_pps_r  |       0.00  pps  |        0.00  pps  |  rx pps
+           m_avg_size  |         0.00  B  |          0.00  B  |  average pkt size
+           m_tx_ratio  |         0.00  %  |          0.00  %  |  Tx acked/sent ratio
+                    -  |             ---  |              ---  |  
+   m_traffic_duration  |       0.10  sec  |        0.10  sec  |  measured traffic duration
+                    -  |             ---  |              ---  |  
+                  TCP  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+                  UDP  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+         udps_accepts  |               0  |                5  |  connections accepted
+        udps_connects  |               5  |                0  |  connections established
+          udps_closed  |               5  |                5  |  conn. closed (includes drops)
+         udps_sndbyte  |            5145  |             6720  |  data bytes transmitted
+          udps_sndpkt  |              15  |               20  |  data packets transmitted
+         udps_rcvbyte  |            6720  |             5145  |  data bytes received
+          udps_rcvpkt  |              20  |               15  |  data packets received
+                    -  |             ---  |              ---  |  
+           Flow Table  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+ took time: 17msec (freq: 100) 
+
+checking ../../astf/udp1.py
+executing /auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/bp-sim-64-debug --pcap --tcp_cfg /tmp/astf_sim_hhaim.json -o /auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/generated/sim_astf-udp1.pcap --full -d 5.0
+ set dpdk queues mode to ONE_QUE 
+Using json file /tmp/astf_sim_hhaim.json
+append_server_ports -- 0(0x564c2e895da0)
+UDP 80:
+  ip[0, ffffffff], server=0x564c2e84b958, pctx=0x564c2e895da0
+[0x564c2e848b20] total number of ports (1)
+remove_server_ports -- 0(0x564c2e895da0)
+[0x564c2e848b20] total number of ports (0)
+
+
+normal
+-------------
+ min_delta  : 10 usec 
+ cnt        : 0 
+ high_cnt   : 0 
+ max_d_time : 0 usec
+ sliding_average    : 0 usec
+ precent    : -nan %
+ histogram 
+ -----------
+                       |          client  |           server  | 
+ -----------------------------------------------------------------------------------------
+       m_active_flows  |               0  |                0  |  active open flows
+          m_est_flows  |               0  |                0  |  active established flows
+         m_tx_bw_l7_r  |       0.00  bps  |        0.00  bps  |  tx L7 bw acked
+   m_tx_bw_l7_total_r  |       0.00  bps  |        0.00  bps  |  tx L7 bw total
+         m_rx_bw_l7_r  |       0.00  bps  |        0.00  bps  |  rx L7 bw acked
+           m_tx_pps_r  |       0.00  pps  |        0.00  pps  |  tx pps
+           m_rx_pps_r  |       0.00  pps  |        0.00  pps  |  rx pps
+           m_avg_size  |         0.00  B  |          0.00  B  |  average pkt size
+           m_tx_ratio  |         0.00  %  |          0.00  %  |  Tx acked/sent ratio
+                    -  |             ---  |              ---  |  
+   m_traffic_duration  |       0.11  sec  |        0.11  sec  |  measured traffic duration
+                    -  |             ---  |              ---  |  
+                  TCP  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+                  UDP  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+         udps_accepts  |               0  |                5  |  connections accepted
+        udps_connects  |               5  |                0  |  connections established
+          udps_closed  |               5  |                5  |  conn. closed (includes drops)
+         udps_sndbyte  |            1245  |              640  |  data bytes transmitted
+          udps_sndpkt  |               5  |                5  |  data packets transmitted
+         udps_rcvbyte  |             640  |             1245  |  data bytes received
+          udps_rcvpkt  |               5  |                5  |  data packets received
+                    -  |             ---  |              ---  |  
+           Flow Table  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+ took time: 16msec (freq: 100) 
+
+checking ../../astf/udp2.py
+executing /auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/bp-sim-64-debug --pcap --tcp_cfg /tmp/astf_sim_hhaim.json -o /auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/generated/sim_astf-udp2.pcap --full -d 5.0
+ set dpdk queues mode to ONE_QUE 
+Using json file /tmp/astf_sim_hhaim.json
+append_server_ports -- 0(0x564c5836dda0)
+UDP 80:
+  ip[0, ffffffff], server=0x564c58323958, pctx=0x564c5836dda0
+[0x564c58320b20] total number of ports (1)
+remove_server_ports -- 0(0x564c5836dda0)
+[0x564c58320b20] total number of ports (0)
+
+
+normal
+-------------
+ min_delta  : 10 usec 
+ cnt        : 0 
+ high_cnt   : 0 
+ max_d_time : 0 usec
+ sliding_average    : 0 usec
+ precent    : -nan %
+ histogram 
+ -----------
+                       |          client  |           server  | 
+ -----------------------------------------------------------------------------------------
+       m_active_flows  |               0  |                0  |  active open flows
+          m_est_flows  |               0  |                0  |  active established flows
+         m_tx_bw_l7_r  |       0.00  bps  |        0.00  bps  |  tx L7 bw acked
+   m_tx_bw_l7_total_r  |       0.00  bps  |        0.00  bps  |  tx L7 bw total
+         m_rx_bw_l7_r  |       0.00  bps  |        0.00  bps  |  rx L7 bw acked
+           m_tx_pps_r  |       0.00  pps  |        0.00  pps  |  tx pps
+           m_rx_pps_r  |       0.00  pps  |        0.00  pps  |  rx pps
+           m_avg_size  |         0.00  B  |          0.00  B  |  average pkt size
+           m_tx_ratio  |         0.00  %  |          0.00  %  |  Tx acked/sent ratio
+                    -  |             ---  |              ---  |  
+   m_traffic_duration  |       0.11  sec  |        0.11  sec  |  measured traffic duration
+                    -  |             ---  |              ---  |  
+                  TCP  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+                  UDP  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+         udps_accepts  |               0  |                5  |  connections accepted
+        udps_connects  |               5  |                0  |  connections established
+          udps_closed  |               5  |                5  |  conn. closed (includes drops)
+         udps_sndbyte  |            1245  |              640  |  data bytes transmitted
+          udps_sndpkt  |               5  |                5  |  data packets transmitted
+         udps_rcvbyte  |             640  |             1245  |  data bytes received
+          udps_rcvpkt  |               5  |                5  |  data packets received
+                    -  |             ---  |              ---  |  
+           Flow Table  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+ took time: 17msec (freq: 100) 
+
+checking ../../astf/long_keepalive.py
+executing /auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/bp-sim-64-debug --pcap --tcp_cfg /tmp/astf_sim_hhaim.json -o /auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/generated/sim_astf-long_keepalive.pcap --full -d 5.0
+ set dpdk queues mode to ONE_QUE 
+Using json file /tmp/astf_sim_hhaim.json
+append_server_ports -- 0(0x556081b707c0)
+TCP 80:
+  ip[0, ffffffff], server=0x556081b713c8, pctx=0x556081b707c0
+[0x556081b6fb40] total number of ports (1)
+remove_server_ports -- 0(0x556081b707c0)
+[0x556081b6fb40] total number of ports (0)
+
+
+normal
+-------------
+ min_delta  : 10 usec 
+ cnt        : 0 
+ high_cnt   : 0 
+ max_d_time : 0 usec
+ sliding_average    : 0 usec
+ precent    : -nan %
+ histogram 
+ -----------
+                       |          client  |           server  | 
+ -----------------------------------------------------------------------------------------
+       m_active_flows  |               0  |                0  |  active open flows
+          m_est_flows  |               0  |                0  |  active established flows
+         m_tx_bw_l7_r  |       0.00  bps  |        0.00  bps  |  tx L7 bw acked
+   m_tx_bw_l7_total_r  |       0.00  bps  |        0.00  bps  |  tx L7 bw total
+         m_rx_bw_l7_r  |       0.00  bps  |        0.00  bps  |  rx L7 bw acked
+           m_tx_pps_r  |       0.00  pps  |        0.00  pps  |  tx pps
+           m_rx_pps_r  |       0.00  pps  |        0.00  pps  |  rx pps
+           m_avg_size  |         0.00  B  |          0.00  B  |  average pkt size
+           m_tx_ratio  |         0.00  %  |          0.00  %  |  Tx acked/sent ratio
+                    -  |             ---  |              ---  |  
+   m_traffic_duration  |       0.14  sec  |        0.13  sec  |  measured traffic duration
+                    -  |             ---  |              ---  |  
+                  TCP  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+     tcps_connattempt  |               1  |                0  |  connections initiated
+         tcps_accepts  |               0  |                1  |  connections accepted
+        tcps_connects  |               1  |                1  |  connections established
+          tcps_closed  |               1  |                1  |  conn. closed (includes drops)
+       tcps_segstimed  |               2  |                2  |  segs where we tried to get rtt
+      tcps_rttupdated  |               2  |                2  |  times we succeeded
+        tcps_sndtotal  |               4  |                3  |  total packets sent
+         tcps_sndctrl  |               2  |                1  |  control (SYN|FIN|RST) packets sent
+         tcps_sndacks  |               2  |                2  |  ack-only packets sent 
+         tcps_rcvpack  |               1  |                1  |  packets received in sequence
+      tcps_rcvackpack  |               1  |                2  |  rcvd ack packets
+   tcps_rcvackbyte_of  |               1  |                2  |  tx bytes acked by rcvd acks - overflow acked
+       tcps_rcvdupack  |               0  |                1  | *rcvd duplicate acks
+                    -  |             ---  |              ---  |  
+                  UDP  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+           Flow Table  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+ took time: 17msec (freq: 100) 
+
+checking ../../astf/param_no_delay_counter.py
+executing /auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/bp-sim-64-debug --pcap --tcp_cfg /tmp/astf_sim_hhaim.json -o /auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/generated/sim_astf-param_no_delay_counter.pcap --full -d 5.0
+ set dpdk queues mode to ONE_QUE 
+Using json file /tmp/astf_sim_hhaim.json
+append_server_ports -- 0(0x557a3295d4b0)
+TCP 80:
+  ip[0, ffffffff], server=0x557a32931f88, pctx=0x557a3295d4b0
+[0x557a32940a30] total number of ports (1)
+remove_server_ports -- 0(0x557a3295d4b0)
+[0x557a32940a30] total number of ports (0)
+
+
+normal
+-------------
+ min_delta  : 10 usec 
+ cnt        : 0 
+ high_cnt   : 0 
+ max_d_time : 0 usec
+ sliding_average    : 0 usec
+ precent    : -nan %
+ histogram 
+ -----------
+                       |          client  |           server  | 
+ -----------------------------------------------------------------------------------------
+       m_active_flows  |               0  |                0  |  active open flows
+          m_est_flows  |               0  |                0  |  active established flows
+         m_tx_bw_l7_r  |       0.00  bps  |        0.00  bps  |  tx L7 bw acked
+   m_tx_bw_l7_total_r  |       0.00  bps  |        0.00  bps  |  tx L7 bw total
+         m_rx_bw_l7_r  |       0.00  bps  |        0.00  bps  |  rx L7 bw acked
+           m_tx_pps_r  |       0.00  pps  |        0.00  pps  |  tx pps
+           m_rx_pps_r  |       0.00  pps  |        0.00  pps  |  rx pps
+           m_avg_size  |         0.00  B  |          0.00  B  |  average pkt size
+           m_tx_ratio  |         0.00  %  |          0.00  %  |  Tx acked/sent ratio
+                    -  |             ---  |              ---  |  
+   m_traffic_duration  |       0.02  sec  |        0.02  sec  |  measured traffic duration
+                    -  |             ---  |              ---  |  
+                  TCP  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+     tcps_connattempt  |               1  |                0  |  connections initiated
+         tcps_accepts  |               0  |                1  |  connections accepted
+        tcps_connects  |               1  |                1  |  connections established
+          tcps_closed  |               1  |                1  |  conn. closed (includes drops)
+       tcps_segstimed  |               3  |                7  |  segs where we tried to get rtt
+      tcps_rttupdated  |               3  |               11  |  times we succeeded
+          tcps_delack  |               1  |                0  |  delayed acks sent
+        tcps_sndtotal  |              12  |               25  |  total packets sent
+         tcps_sndpack  |               1  |               23  |  data packets sent
+         tcps_sndbyte  |             249  |            32094  |  data bytes sent by application
+      tcps_sndbyte_ok  |             249  |            32094  |  data bytes sent by tcp
+         tcps_sndctrl  |               1  |                0  |  control (SYN|FIN|RST) packets sent
+         tcps_sndacks  |              10  |                2  |  ack-only packets sent 
+         tcps_rcvpack  |              24  |                2  |  packets received in sequence
+         tcps_rcvbyte  |           32094  |              249  |  bytes received in sequence
+      tcps_rcvackpack  |               2  |               11  |  rcvd ack packets
+      tcps_rcvackbyte  |             249  |            32094  |  tx bytes acked by rcvd acks 
+   tcps_rcvackbyte_of  |               1  |                2  |  tx bytes acked by rcvd acks - overflow acked
+         tcps_preddat  |              22  |                0  |  times hdr predict ok for data pkts 
+                    -  |             ---  |              ---  |  
+                  UDP  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+           Flow Table  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+ took time: 21msec (freq: 100) 
+
+]]></system-out></testcase><testcase classname="astf_basic_tests.CAstfPcapFull_Test" name="test_astf_cc_caps" time="0.574"><system-out><![CDATA[checking ../../astf/http_simple.py --cc ../../astf/http_simple.py
+executing /auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/bp-sim-64-debug --pcap --tcp_cfg /tmp/astf_sim_hhaim.json -o /auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/generated/sim_astf-http_simple_cc_http_simple.pcap --full -d 5.0 --client-cfg /auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/astf/cc_http_simple.yaml
+ set dpdk queues mode to ONE_QUE 
+Using json file /tmp/astf_sim_hhaim.json
+append_server_ports -- 0(0x55d315a51ad0)
+TCP 80:
+  ip[0, ffffffff], server=0x55d315a1f8a8, pctx=0x55d315a51ad0
+[0x55d315a35650] total number of ports (1)
+remove_server_ports -- 0(0x55d315a51ad0)
+[0x55d315a35650] total number of ports (0)
+
+
+normal
+-------------
+ min_delta  : 10 usec 
+ cnt        : 0 
+ high_cnt   : 0 
+ max_d_time : 0 usec
+ sliding_average    : 0 usec
+ precent    : -nan %
+ histogram 
+ -----------
+                       |          client  |           server  | 
+ -----------------------------------------------------------------------------------------
+       m_active_flows  |               0  |                0  |  active open flows
+          m_est_flows  |               0  |                0  |  active established flows
+         m_tx_bw_l7_r  |       0.00  bps  |        0.00  bps  |  tx L7 bw acked
+   m_tx_bw_l7_total_r  |       0.00  bps  |        0.00  bps  |  tx L7 bw total
+         m_rx_bw_l7_r  |       0.00  bps  |        0.00  bps  |  rx L7 bw acked
+           m_tx_pps_r  |       0.00  pps  |        0.00  pps  |  tx pps
+           m_rx_pps_r  |       0.00  pps  |        0.00  pps  |  rx pps
+           m_avg_size  |         0.00  B  |          0.00  B  |  average pkt size
+           m_tx_ratio  |         0.00  %  |          0.00  %  |  Tx acked/sent ratio
+                    -  |             ---  |              ---  |  
+   m_traffic_duration  |       0.14  sec  |        0.14  sec  |  measured traffic duration
+                    -  |             ---  |              ---  |  
+                  TCP  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+     tcps_connattempt  |              14  |                0  |  connections initiated
+         tcps_accepts  |               0  |               14  |  connections accepted
+        tcps_connects  |              14  |               14  |  connections established
+          tcps_closed  |              14  |               14  |  conn. closed (includes drops)
+       tcps_segstimed  |              42  |               56  |  segs where we tried to get rtt
+      tcps_rttupdated  |              42  |               56  |  times we succeeded
+          tcps_delack  |              14  |                0  |  delayed acks sent
+        tcps_sndtotal  |              70  |              350  |  total packets sent
+         tcps_sndpack  |              14  |              322  |  data packets sent
+         tcps_sndbyte  |            3486  |           449316  |  data bytes sent by application
+      tcps_sndbyte_ok  |            3486  |           449316  |  data bytes sent by tcp
+         tcps_sndctrl  |              14  |                0  |  control (SYN|FIN|RST) packets sent
+         tcps_sndacks  |              42  |               28  |  ack-only packets sent 
+         tcps_rcvpack  |             336  |               28  |  packets received in sequence
+         tcps_rcvbyte  |          449316  |             3486  |  bytes received in sequence
+      tcps_rcvackpack  |              28  |               56  |  rcvd ack packets
+      tcps_rcvackbyte  |            3486  |           449316  |  tx bytes acked by rcvd acks 
+   tcps_rcvackbyte_of  |              14  |               28  |  tx bytes acked by rcvd acks - overflow acked
+         tcps_preddat  |             308  |                0  |  times hdr predict ok for data pkts 
+                    -  |             ---  |              ---  |  
+                  UDP  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+           Flow Table  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+ took time: 18msec (freq: 100) 
+
+checking ../../astf/http_simple.py --cc ../../astf/http_simple.py
+executing /auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/bp-sim-64-debug --pcap --tcp_cfg /tmp/astf_sim_hhaim.json -o /auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/generated/sim_astf-http_simple_cc_http_simple2.pcap --full -d 5.0 --client-cfg /auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/astf/cc_http_simple2.yaml
+ set dpdk queues mode to ONE_QUE 
+Using json file /tmp/astf_sim_hhaim.json
+append_server_ports -- 0(0x564f3434d9c0)
+TCP 80:
+  ip[0, ffffffff], server=0x564f3431b798, pctx=0x564f3434d9c0
+[0x564f34331540] total number of ports (1)
+remove_server_ports -- 0(0x564f3434d9c0)
+[0x564f34331540] total number of ports (0)
+
+
+normal
+-------------
+ min_delta  : 10 usec 
+ cnt        : 0 
+ high_cnt   : 0 
+ max_d_time : 0 usec
+ sliding_average    : 0 usec
+ precent    : -nan %
+ histogram 
+ -----------
+                       |          client  |           server  | 
+ -----------------------------------------------------------------------------------------
+       m_active_flows  |               0  |                0  |  active open flows
+          m_est_flows  |               0  |                0  |  active established flows
+         m_tx_bw_l7_r  |       0.00  bps  |        0.00  bps  |  tx L7 bw acked
+   m_tx_bw_l7_total_r  |       0.00  bps  |        0.00  bps  |  tx L7 bw total
+         m_rx_bw_l7_r  |       0.00  bps  |        0.00  bps  |  rx L7 bw acked
+           m_tx_pps_r  |       0.00  pps  |        0.00  pps  |  tx pps
+           m_rx_pps_r  |       0.00  pps  |        0.00  pps  |  rx pps
+           m_avg_size  |         0.00  B  |          0.00  B  |  average pkt size
+           m_tx_ratio  |         0.00  %  |          0.00  %  |  Tx acked/sent ratio
+                    -  |             ---  |              ---  |  
+   m_traffic_duration  |       0.16  sec  |        0.16  sec  |  measured traffic duration
+                    -  |             ---  |              ---  |  
+                  TCP  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+     tcps_connattempt  |              14  |                0  |  connections initiated
+         tcps_accepts  |               0  |               14  |  connections accepted
+        tcps_connects  |              14  |               14  |  connections established
+          tcps_closed  |              14  |               14  |  conn. closed (includes drops)
+       tcps_segstimed  |              42  |               56  |  segs where we tried to get rtt
+      tcps_rttupdated  |              42  |               56  |  times we succeeded
+          tcps_delack  |              14  |                0  |  delayed acks sent
+        tcps_sndtotal  |              70  |              350  |  total packets sent
+         tcps_sndpack  |              14  |              322  |  data packets sent
+         tcps_sndbyte  |            3486  |           449316  |  data bytes sent by application
+      tcps_sndbyte_ok  |            3486  |           449316  |  data bytes sent by tcp
+         tcps_sndctrl  |              14  |                0  |  control (SYN|FIN|RST) packets sent
+         tcps_sndacks  |              42  |               28  |  ack-only packets sent 
+         tcps_rcvpack  |             336  |               28  |  packets received in sequence
+         tcps_rcvbyte  |          449316  |             3486  |  bytes received in sequence
+      tcps_rcvackpack  |              28  |               56  |  rcvd ack packets
+      tcps_rcvackbyte  |            3486  |           449316  |  tx bytes acked by rcvd acks 
+   tcps_rcvackbyte_of  |              14  |               28  |  tx bytes acked by rcvd acks - overflow acked
+         tcps_preddat  |             308  |                0  |  times hdr predict ok for data pkts 
+                    -  |             ---  |              ---  |  
+                  UDP  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+           Flow Table  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+ took time: 20msec (freq: 100) 
+
+]]></system-out></testcase><testcase classname="astf_basic_tests.CAstfPcap_Test" name="test_caps" time="0.091"><system-out><![CDATA[executing /auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/bp-sim-64-debug --tcp_cfg /tmp/astf_sim_hhaim.json -o /auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/exp/astf_test_out
+ set dpdk queues mode to ONE_QUE 
+append_server_ports -- 0(0x56236b21d870)
+TCP 80:
+  ip[0, ffffffff], server=0x56236afc6788, pctx=0x56236b21d870
+[0x56236afd0ad8] total number of ports (1)
+ cmds : 2 stream: 1
+ --------------
+ cmd : 0  tcTX_BUFFER 249 bytes
+ cmd : 1  tcRX_BUFFER enable RX , tcRX_BUFFER wait for 32094 RX bytes 
+ cmds : 2 stream: 1
+ --------------
+ cmd : 0  tcRX_BUFFER enable RX , tcRX_BUFFER wait for 249 RX bytes 
+ cmd : 1  tcTX_BUFFER 32094 bytes
+
+0x56236b21df70 SYN_SENT:output  (10000001) -> (30000001) SYN_SENT :0@0, urp=0<SYN>
+	rcv_(nxt,wnd,up) (0,0,0) snd_(una,nxt,max) (0,1,1)
+	snd_(wnd,cwnd) (0,14600)
+
+0x56236b21df70 SYN_SENT:input  (10000001) -> (30000001) ESTABLISHED :<SYN,ACK>
+	rcv_(nxt,wnd,up) (1,32768,1) snd_(una,nxt,max) (1,1,1)
+	snd_(wnd,cwnd) (32768,14600)
+
+0x56236b21df70 ESTABLISHED:output  (10000001) -> (30000001) ESTABLISHED :[1..fa)@1, urp=0<ACK,PUSH>
+	rcv_(nxt,wnd,up) (1,32768,1) snd_(una,nxt,max) (1,fa,fa)
+	snd_(wnd,cwnd) (32768,14600)
+
+0x56236b21df70 ESTABLISHED:input  (10000001) -> (30000001) ESTABLISHED :[1..5a9)@fa, urp=0<ACK>
+	rcv_(nxt,wnd,up) (5a9,32768,1) snd_(una,nxt,max) (fa,fa,fa)
+	snd_(wnd,cwnd) (32768,16060)
+
+0x56236b21df70 ESTABLISHED:output  (10000001) -> (30000001) ESTABLISHED :fa@3e39, urp=0<ACK>
+	rcv_(nxt,wnd,up) (3e39,32768,1) snd_(una,nxt,max) (fa,fa,fa)
+	snd_(wnd,cwnd) (32768,16060)
+
+0x56236b21df70 FIN_WAIT_1:output  (10000001) -> (30000001) FIN_WAIT_1 :fa@7d5f, urp=0<ACK,FIN>
+	rcv_(nxt,wnd,up) (7d5f,32768,1) snd_(una,nxt,max) (fa,fb,fb)
+	snd_(wnd,cwnd) (32768,16060)
+
+0x56236b21df70 FIN_WAIT_1:input  (10000001) -> (30000001) TIME_WAIT :7d5f@fb, urp=0<ACK,FIN>
+	rcv_(nxt,wnd,up) (7d60,32768,7d5f) snd_(una,nxt,max) (fb,fb,fb)
+	snd_(wnd,cwnd) (32768,17520)
+
+0x56236b21df70 TIME_WAIT:output  (10000001) -> (30000001) TIME_WAIT :fb@7d60, urp=0<ACK>
+	rcv_(nxt,wnd,up) (7d60,32768,7d5f) snd_(una,nxt,max) (fb,fb,fb)
+	snd_(wnd,cwnd) (32768,17520)
+                       |          client  |           server  | 
+ -----------------------------------------------------------------------------------------
+       m_active_flows  |               0  |                0  |  active open flows
+          m_est_flows  |               0  |                0  |  active established flows
+         m_tx_bw_l7_r  |       0.00  bps  |        0.00  bps  |  tx L7 bw acked
+   m_tx_bw_l7_total_r  |       0.00  bps  |        0.00  bps  |  tx L7 bw total
+         m_rx_bw_l7_r  |       0.00  bps  |        0.00  bps  |  rx L7 bw acked
+           m_tx_pps_r  |       0.00  pps  |        0.00  pps  |  tx pps
+           m_rx_pps_r  |       0.00  pps  |        0.00  pps  |  rx pps
+           m_avg_size  |         0.00  B  |          0.00  B  |  average pkt size
+           m_tx_ratio  |         0.00  %  |          0.00  %  |  Tx acked/sent ratio
+                    -  |             ---  |              ---  |  
+   m_traffic_duration  |       0.00  sec  |        0.00  sec  |  measured traffic duration
+                    -  |             ---  |              ---  |  
+                  TCP  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+     tcps_connattempt  |               1  |                0  |  connections initiated
+         tcps_accepts  |               0  |                1  |  connections accepted
+        tcps_connects  |               1  |                1  |  connections established
+          tcps_closed  |               1  |                1  |  conn. closed (includes drops)
+       tcps_segstimed  |               3  |                4  |  segs where we tried to get rtt
+      tcps_rttupdated  |               3  |                4  |  times we succeeded
+          tcps_delack  |               1  |                0  |  delayed acks sent
+        tcps_sndtotal  |               5  |               25  |  total packets sent
+         tcps_sndpack  |               1  |               23  |  data packets sent
+         tcps_sndbyte  |             249  |            32094  |  data bytes sent by application
+      tcps_sndbyte_ok  |             249  |            32094  |  data bytes sent by tcp
+         tcps_sndctrl  |               1  |                0  |  control (SYN|FIN|RST) packets sent
+         tcps_sndacks  |               3  |                2  |  ack-only packets sent 
+         tcps_rcvpack  |              24  |                2  |  packets received in sequence
+         tcps_rcvbyte  |           32094  |              249  |  bytes received in sequence
+      tcps_rcvackpack  |               2  |                4  |  rcvd ack packets
+      tcps_rcvackbyte  |             249  |            32094  |  tx bytes acked by rcvd acks 
+   tcps_rcvackbyte_of  |               1  |                2  |  tx bytes acked by rcvd acks - overflow acked
+         tcps_preddat  |              22  |                0  |  times hdr predict ok for data pkts 
+                    -  |             ---  |              ---  |  
+                  UDP  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+           Flow Table  |             ---  |              ---  |  
+                    -  |             ---  |              ---  |  
+
+]]></system-out></testcase><testcase classname="bpf_test.BPF_Test" name="test_bpf_arp" time="0.002"></testcase><testcase classname="bpf_test.BPF_Test" name="test_bpf_ipv6" time="0.001"></testcase><testcase classname="bpf_test.BPF_Test" name="test_bpf_multiple_matches" time="0.004"></testcase><testcase classname="bpf_test.BPF_Test" name="test_bpf_vlan" time="0.004"></testcase><testcase classname="cpp_gtests_test.CPP_Test" name="test_astf_sim_utl_sfr" time="0.000"><system-out><![CDATA[sceasr-b20.cisco.com
+Can run only at csi-trex-05, skip here
+]]></system-out></testcase><testcase classname="cpp_gtests_test.CPP_Test" name="test_bp_sim_client_cfg" time="0.118"></testcase><testcase classname="cpp_gtests_test.CPP_Test" name="test_gtests_all" time="7.320"></testcase><testcase classname="cpp_gtests_test.CPP_Test" name="test_gtests_astf_negative" time="3.225"><system-out><![CDATA[
+Total negative tests: 2
+Failed (as expected): 2
+Did not fail: 0
+]]></system-out></testcase><testcase classname="cpp_gtests_test.CPP_Test" name="test_gtests_astf_positive" time="2.711"></testcase><testcase classname="cpp_gtests_test.CPP_Test" name="test_gtests_tcp_valgrind" time="6.216"></testcase><testcase classname="cpp_gtests_test.CPP_Test" name="test_gtests_valgrind" time="4.415"></testcase><testcase classname="filters_test.ToggleFilter_Test" name="test_dict_toggeling" time="0.001"></testcase><testcase classname="filters_test.ToggleFilter_Test" name="test_dict_toggeling_negative" time="0.001"></testcase><testcase classname="filters_test.ToggleFilter_Test" name="test_dont_show_after_init" time="0.000"></testcase><testcase classname="filters_test.ToggleFilter_Test" name="test_init_with_dict" time="0.001"></testcase><testcase classname="filters_test.ToggleFilter_Test" name="test_init_with_list" time="0.000"></testcase><testcase classname="filters_test.ToggleFilter_Test" name="test_init_with_non_iterable" time="0.000"></testcase><testcase classname="filters_test.ToggleFilter_Test" name="test_init_with_set" time="0.000"></testcase><testcase classname="filters_test.ToggleFilter_Test" name="test_init_with_tuple" time="0.000"></testcase><testcase classname="filters_test.ToggleFilter_Test" name="test_list_toggeling" time="0.000"></testcase><testcase classname="filters_test.ToggleFilter_Test" name="test_list_toggling_negative" time="0.000"></testcase><testcase classname="filters_test.ToggleFilter_Test" name="test_toggle_multiple_items" time="0.000"></testcase><testcase classname="misc_methods_test.MiscMethods_Test" name="test_gen_ipv4_to_limit" time="0.002"></testcase><testcase classname="misc_methods_test.MiscMethods_Test" name="test_gen_ipv6_to_limit" time="0.031"></testcase><testcase classname="misc_methods_test.MiscMethods_Test" name="test_get_ipv4_client_addr" time="0.000"></testcase><testcase classname="misc_methods_test.MiscMethods_Test" name="test_get_ipv6_client_addr" time="0.001"></testcase><testcase classname="misc_methods_test.MiscMethods_Test" name="test_ipv4_client_addr_exception" time="0.000"></testcase><testcase classname="misc_methods_test.MiscMethods_Test" name="test_ipv4_gen" time="0.004"></testcase><testcase classname="misc_methods_test.MiscMethods_Test" name="test_ipv6_client_addr_exception" time="0.000"></testcase><testcase classname="misc_methods_test.MiscMethods_Test" name="test_ipv6_gen" time="0.004"></testcase><testcase classname="platform_cmd_cache_test.CCommandCache_Test" name="test_add" time="0.001"></testcase><testcase classname="platform_cmd_cache_test.CCommandCache_Test" name="test_clear_cache" time="0.000"></testcase><testcase classname="platform_cmd_cache_test.CCommandCache_Test" name="test_dump_config" time="0.001"></testcase><testcase classname="platform_cmd_cache_test.CCommandCache_Test" name="test_get_config_list" time="0.000"></testcase><testcase classname="platform_cmd_link_test.CCommandLink_Test" name="test_clear_history" time="0.001"><system-out><![CDATA[show ip interface brief
+]]></system-out></testcase><testcase classname="platform_cmd_link_test.CCommandLink_Test" name="test_run_cached_command" time="0.001"><system-out><![CDATA[configure terminal
+interface GigabitEthernet0/0/1
+ip nbar protocol-discovery
+interface GigabitEthernet0/0/2
+ip nbar protocol-discovery
+exit
+arp 1.1.1.1 0000.0001.0000 arpa
+arp 1.1.2.1 0000.0002.0000 arpa
+exit
+show ip nbar protocol-discovery stats packet-count
+configure terminal
+interface GigabitEthernet0/0/1
+ip nbar protocol-discovery
+interface GigabitEthernet0/0/2
+ip nbar protocol-discovery
+exit
+arp 1.1.1.1 0000.0001.0000 arpa
+arp 1.1.2.1 0000.0002.0000 arpa
+exit
+show ip nbar protocol-discovery stats packet-count
+]]></system-out></testcase><testcase classname="platform_cmd_link_test.CCommandLink_Test" name="test_run_mixed_commands" time="0.001"><system-out><![CDATA[show ip nbar protocol-discovery stats packet-count
+configure terminal
+interface GigabitEthernet0/0/1
+ip nbar protocol-discovery
+interface GigabitEthernet0/0/2
+ip nbar protocol-discovery
+exit
+arp 1.1.1.1 0000.0001.0000 arpa
+arp 1.1.2.1 0000.0002.0000 arpa
+exit
+show ip nbar protocol-discovery stats packet-count
+show ip interface brief
+]]></system-out></testcase><testcase classname="platform_cmd_link_test.CCommandLink_Test" name="test_run_single_command" time="0.001"><system-out><![CDATA[show ip nbar protocol-discovery stats packet-count
+]]></system-out></testcase><testcase classname="platform_cmd_link_test.CCommandLink_Test" name="test_transmit" time="0.000"></testcase><testcase classname="platform_device_cfg_test.CDeviceCfg_Test" name="test_get_interfaces_cfg" time="0.026"></testcase><testcase classname="platform_dual_if_obj_test.CDualIfObj_Test" name="test_get_vrf_name" time="0.000"></testcase><testcase classname="platform_dual_if_obj_test.CDualIfObj_Test" name="test_id_allocation" time="0.000"></testcase><testcase classname="platform_dual_if_obj_test.CDualIfObj_Test" name="test_is_duplicated" time="0.000"></testcase><testcase classname="platform_if_manager_test.CIfManager_Test" name="test_load_config" time="0.024"></testcase><testcase classname="platform_if_obj_test.CIfObj_Test" name="test_get_dest_mac" time="0.000"></testcase><testcase classname="platform_if_obj_test.CIfObj_Test" name="test_get_ipv4_addr" time="0.000"></testcase><testcase classname="platform_if_obj_test.CIfObj_Test" name="test_get_ipv6_addr" time="0.000"></testcase><testcase classname="platform_if_obj_test.CIfObj_Test" name="test_get_name" time="0.000"></testcase><testcase classname="platform_if_obj_test.CIfObj_Test" name="test_get_src_mac_addr" time="0.000"></testcase><testcase classname="platform_if_obj_test.CIfObj_Test" name="test_get_type" time="0.000"></testcase><testcase classname="platform_if_obj_test.CIfObj_Test" name="test_id_allocation" time="0.000"></testcase><testcase classname="platform_if_obj_test.CIfObj_Test" name="test_isClient" time="0.000"></testcase><testcase classname="platform_if_obj_test.CIfObj_Test" name="test_isServer" time="0.000"></testcase><testcase classname="scapy_isolated_test.CScapy_Test" name="test_scapy_ipfix" time="0.052"><system-out><![CDATA[
+]]></system-out></testcase><testcase classname="scapy_isolated_test.CScapy_Test" name="test_scapy_offsets_pcap" time="0.682"><system-out><![CDATA[
+]]></system-out></testcase><testcase classname="scapy_isolated_test.CScapy_Test" name="test_scapy_offsets_udp_build" time="0.622"><system-out><![CDATA[
+]]></system-out></testcase><testcase classname="scapy_isolated_test.CScapy_Test" name="test_scapy_offsets_udp_nobuild" time="0.512"><system-out><![CDATA[
+]]></system-out></testcase><testcase classname="scapy_isolated_test.CScapy_Test" name="test_scapy_utils" time="0.005"><system-out><![CDATA[
+]]></system-out></testcase><testcase classname="scapy_pkt_builder_test.CTRexPktBuilderSanitySCapy_Test" name="test_next_var_negative" time="0.003"></testcase><testcase classname="scapy_pkt_builder_test.CTRexPktBuilderSanitySCapy_Test" name="test_next_var_order" time="0.006"></testcase><testcase classname="scapy_pkt_builder_test.CTRexPktBuilderSanitySCapy_Test" name="test_simple_fix_icmp" time="0.005"><system-out><![CDATA[instructions:
+- init_value: 1
+  max_value: 4
+  min_value: 1
+  name: a
+  next_var: null
+  op: inc
+  size: 4
+  split_to_cores: true
+  step: 1
+  type: flow_var
+- add_value: 0
+  is_big_endian: true
+  name: a
+  pkt_offset: 37
+  type: write_flow_var
+- l2_len: 14
+  l3_len: 40
+  type: fix_checksum_icmpv6
+
+{'instructions': [{'type': 'flow_var', 'name': 'a', 'size': 4, 'op': 'inc', 'next_var': None, 'split_to_cores': True, 'init_value': 1, 'min_value': 1, 'max_value': 4, 'step': 1}, {'type': 'write_flow_var', 'name': 'a', 'pkt_offset': 37, 'add_value': 0, 'is_big_endian': True}, {'type': 'fix_checksum_icmpv6', 'l2_len': 14, 'l3_len': 40}]}
+]]></system-out></testcase><testcase classname="scapy_pkt_builder_test.CTRexPktBuilderSanitySCapy_Test" name="test_simple_mac_default" time="0.002"></testcase><testcase classname="scapy_pkt_builder_test.CTRexPktBuilderSanitySCapy_Test" name="test_simple_no_vm1" time="0.003"><system-out><![CDATA[instructions: []
+
+]]></system-out></testcase><testcase classname="scapy_pkt_builder_test.CTRexPktBuilderSanitySCapy_Test" name="test_simple_pkt_loader" time="0.004"><system-out><![CDATA[
+PacketMetadata(sec=0, usec=0, wirelen=60, caplen=60)
+0000  62 27 5C 78 30 30 50 56 5C 78 38 30 5C 72 28 5C  b'\x00PV\x80\r(\
+0010  78 30 30 5C 78 64 65 5C 78 30 31 5C 6E 5C 78 30  x00\xde\x01\n\x0
+0020  31 5C 78 30 30 5C 78 30 38 5C 78 30 30 45 5C 78  1\x00\x08\x00E\x
+0030  30 30 5C 78 30 30 2E 5C 78 30 30 5C 78 30 30 40  00\x00.\x00\x00@
+0040  5C 78 30 30 40 5C 78 31 31 6F 5C 78 62 64 65 5C  \x00@\x11o\xbde\
+0050  78 30 30 5C 78 30 30 5C 78 30 31 66 5C 78 30 30  x00\x00\x01f\x00
+0060  5C 78 30 30 5C 78 30 31 5C 78 30 37 5C 78 64 31  \x00\x01\x07\xd1
+0070  5C 78 30 37 5C 78 64 31 5C 78 30 30 5C 78 31 61  \x07\xd1\x00\x1a
+0080  5C 78 30 34 5C 78 39 38 5C 78 64 65 5C 78 61 64  \x04\x98\xde\xad
+0090  5C 78 62 65 5C 78 65 66 5C 78 30 30 5C 78 30 31  \xbe\xef\x00\x01
+00a0  5C 78 30 36 5C 78 30 37 5C 78 30 38 5C 74 5C 6E  \x06\x07\x08\t\n
+00b0  5C 78 30 62 5C 78 30 30 5C 78 39 62 5C 78 65 37  \x0b\x00\x9b\xe7
+00c0  5C 78 64 62 5C 78 38 32 4D 27                    \xdb\x82M'
+None
+]]></system-out></testcase><testcase classname="scapy_pkt_builder_test.CTRexPktBuilderSanitySCapy_Test" name="test_simple_pkt_loader1" time="0.006"><system-out><![CDATA[
+0000  00 50 56 80 0D 28 00 DE 01 0A 01 00 08 00 45 00  .PV..(........E.
+0010  02 40 00 00 40 00 40 11 6D AB 65 00 00 01 66 00  .@..@.@.m.e...f.
+0020  00 01 07 D2 07 D2 02 2C CA 08 DE AD BE EF 00 01  .......,........
+0030  06 07 08 09 0A 0B 0C 0D 0E 0F 10 11 12 13 14 15  ................
+0040  16 17 18 19 1A 1B 1C 1D 1E 1F 20 21 22 23 24 25  .......... !"#$%
+0050  26 27 28 29 2A 2B 2C 2D 2E 2F 30 31 32 33 34 35  &'()*+,-./012345
+0060  36 37 38 39 3A 3B 3C 3D 3E 3F 40 41 42 43 44 45  6789:;<=>?@ABCDE
+0070  46 47 48 49 4A 4B 4C 4D 4E 4F 50 51 52 53 54 55  FGHIJKLMNOPQRSTU
+0080  56 57 58 59 5A 5B 5C 5D 5E 5F 60 61 62 63 64 65  VWXYZ[\]^_`abcde
+0090  66 67 68 69 6A 6B 6C 6D 6E 6F 70 71 72 73 74 75  fghijklmnopqrstu
+00a0  76 77 78 79 7A 7B 7C 7D 7E 7F 80 81 82 83 84 85  vwxyz{|}~.......
+00b0  86 87 88 89 8A 8B 8C 8D 8E 8F 90 91 92 93 94 95  ................
+00c0  96 97 98 99 9A 9B 9C 9D 9E 9F A0 A1 A2 A3 A4 A5  ................
+00d0  A6 A7 A8 A9 AA AB AC AD AE AF B0 B1 B2 B3 B4 B5  ................
+00e0  B6 B7 B8 B9 BA BB BC BD BE BF C0 C1 C2 C3 C4 C5  ................
+00f0  C6 C7 C8 C9 CA CB CC CD CE CF D0 D1 D2 D3 D4 D5  ................
+0100  D6 D7 D8 D9 DA DB DC DD DE DF E0 E1 E2 E3 E4 E5  ................
+0110  E6 E7 E8 E9 EA EB EC ED EE EF F0 F1 F2 F3 F4 F5  ................
+0120  F6 F7 F8 F9 FA FB FC FD FE FF 00 01 02 03 04 05  ................
+0130  06 07 08 09 0A 0B 0C 0D 0E 0F 10 11 12 13 14 15  ................
+0140  16 17 18 19 1A 1B 1C 1D 1E 1F 20 21 22 23 24 25  .......... !"#$%
+0150  26 27 28 29 2A 2B 2C 2D 2E 2F 30 31 32 33 34 35  &'()*+,-./012345
+0160  36 37 38 39 3A 3B 3C 3D 3E 3F 40 41 42 43 44 45  6789:;<=>?@ABCDE
+0170  46 47 48 49 4A 4B 4C 4D 4E 4F 50 51 52 53 54 55  FGHIJKLMNOPQRSTU
+0180  56 57 58 59 5A 5B 5C 5D 5E 5F 60 61 62 63 64 65  VWXYZ[\]^_`abcde
+0190  66 67 68 69 6A 6B 6C 6D 6E 6F 70 71 72 73 74 75  fghijklmnopqrstu
+01a0  76 77 78 79 7A 7B 7C 7D 7E 7F 80 81 82 83 84 85  vwxyz{|}~.......
+01b0  86 87 88 89 8A 8B 8C 8D 8E 8F 90 91 92 93 94 95  ................
+01c0  96 97 98 99 9A 9B 9C 9D 9E 9F A0 A1 A2 A3 A4 A5  ................
+01d0  A6 A7 A8 A9 AA AB AC AD AE AF B0 B1 B2 B3 B4 B5  ................
+01e0  B6 B7 B8 B9 BA BB BC BD BE BF C0 C1 C2 C3 C4 C5  ................
+01f0  C6 C7 C8 C9 CA CB CC CD CE CF D0 D1 D2 D3 D4 D5  ................
+0200  D6 D7 D8 D9 DA DB DC DD DE DF E0 E1 E2 E3 E4 E5  ................
+0210  E6 E7 E8 E9 EA EB EC ED EE EF F0 F1 F2 F3 F4 F5  ................
+0220  F6 F7 F8 F9 FA FB FC FD FE FF 00 01 02 03 04 05  ................
+0230  06 07 08 09 0A 0B 0C 0D 0E 0F 10 11 12 13 14 15  ................
+0240  16 17 18 19 1A 1B 1C 1D 00 9B E7 DB 83 79        .............y
+None
+590
+]]></system-out></testcase><testcase classname="scapy_pkt_builder_test.CTRexPktBuilderSanitySCapy_Test" name="test_simple_pkt_loader2" time="0.004"></testcase><testcase classname="scapy_pkt_builder_test.CTRexPktBuilderSanitySCapy_Test" name="test_simple_pkt_loader3" time="0.004"><system-out><![CDATA[
+0000  00 00 00 01 00 00 00 00 00 02 00 00 08 00 45 00  ..............E.
+0010  00 5C 00 01 00 00 40 11 3A 8F 10 00 00 01 30 00  .\....@.:.....0.
+0020  00 01 04 01 00 0C 00 48 10 A5 55 55 55 55 55 55  .......H..UUUUUU
+0030  55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55  UUUUUUUUUUUUUUUU
+0040  55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55  UUUUUUUUUUUUUUUU
+0050  55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55  UUUUUUUUUUUUUUUU
+0060  55 55 55 55 55 55 55 55 55 55                    UUUUUUUUUU
+###[ Ethernet ]### 
+  dst       = 00:00:00:01:00:00
+  src       = 00:00:00:02:00:00
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 92
+     id        = 1
+     flags     = 
+     frag      = 0
+     ttl       = 64
+     proto     = udp
+     chksum    = 0x3a8f
+     src       = 16.0.0.1
+     dst       = 48.0.0.1
+     \options   \
+###[ UDP ]### 
+        sport     = 1025
+        dport     = 12
+        len       = 72
+        chksum    = 0x10a5
+###[ Raw ]### 
+           load      = 'UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU'
+
+]]></system-out></testcase><testcase classname="scapy_pkt_builder_test.CTRexPktBuilderSanitySCapy_Test" name="test_simple_random_pkt_size" time="0.008"><system-out><![CDATA[instructions:
+- init_value: 64
+  max_value: 9230
+  min_value: 64
+  name: fv_rand
+  next_var: null
+  op: random
+  size: 2
+  split_to_cores: true
+  step: 1
+  type: flow_var
+- name: fv_rand
+  type: trim_pkt_size
+- add_value: -14
+  is_big_endian: true
+  name: fv_rand
+  pkt_offset: 16
+  type: write_flow_var
+- pkt_offset: 14
+  type: fix_checksum_ipv4
+- add_value: -34
+  is_big_endian: true
+  name: fv_rand
+  pkt_offset: 38
+  type: write_flow_var
+
+]]></system-out></testcase><testcase classname="scapy_pkt_builder_test.CTRexPktBuilderSanitySCapy_Test" name="test_simple_random_pkt_size_list" time="0.008"><system-out><![CDATA[instructions:
+- name: fv_rand
+  next_var: null
+  op: random
+  size: 2
+  split_to_cores: true
+  step: 1
+  type: flow_var
+  value_list:
+  - 256
+  - 64
+  - 128
+  - 512
+  - 4096
+  - 8192
+  - 1024
+  - 2048
+  - 9230
+- name: fv_rand
+  type: trim_pkt_size
+- add_value: -14
+  is_big_endian: true
+  name: fv_rand
+  pkt_offset: 16
+  type: write_flow_var
+- pkt_offset: 14
+  type: fix_checksum_ipv4
+- add_value: -34
+  is_big_endian: true
+  name: fv_rand
+  pkt_offset: 38
+  type: write_flow_var
+
+]]></system-out></testcase><testcase classname="scapy_pkt_builder_test.CTRexPktBuilderSanitySCapy_Test" name="test_simple_scapy_128_udp" time="0.006"><system-out><![CDATA[###[ Ethernet ]### 
+  dst       = 00:00:00:01:00:00
+  src       = 00:00:00:01:00:00
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 114
+     id        = 1
+     flags     = 
+     frag      = 0
+     ttl       = 64
+     proto     = udp
+     chksum    = 0x3a79
+     src       = 16.0.0.1
+     dst       = 48.0.0.1
+     \options   \
+###[ UDP ]### 
+        sport     = 1025
+        dport     = 12
+        len       = 94
+        chksum    = 0xcb33
+###[ Raw ]### 
+           load      = '55555555555555555555555555555555555555555555555555555555555555555555555555555555555555'
+
+0000  00 00 00 01 00 00 00 00 00 01 00 00 08 00 45 00  ..............E.
+0010  00 72 00 01 00 00 40 11 3A 79 10 00 00 01 30 00  .r....@.:y....0.
+0020  00 01 04 01 00 0C 00 5E CB 33 35 35 35 35 35 35  .......^.3555555
+0030  35 35 35 35 35 35 35 35 35 35 35 35 35 35 35 35  5555555555555555
+0040  35 35 35 35 35 35 35 35 35 35 35 35 35 35 35 35  5555555555555555
+0050  35 35 35 35 35 35 35 35 35 35 35 35 35 35 35 35  5555555555555555
+0060  35 35 35 35 35 35 35 35 35 35 35 35 35 35 35 35  5555555555555555
+0070  35 35 35 35 35 35 35 35 35 35 35 35 35 35 35 35  5555555555555555
+]]></system-out></testcase><testcase classname="scapy_pkt_builder_test.CTRexPktBuilderSanitySCapy_Test" name="test_simple_scapy_9k_ip_len" time="0.003"></testcase><testcase classname="scapy_pkt_builder_test.CTRexPktBuilderSanitySCapy_Test" name="test_simple_scapy_ipv6_1" time="0.005"><system-out><![CDATA[start 
+0000  00 00 00 01 00 00 00 00 00 02 00 00 86 DD 60 00  ..............`.
+0010  00 00 00 48 11 40 00 00 00 00 00 00 00 00 00 00  ...H.@..........
+0020  00 00 00 00 00 02 00 00 00 00 00 00 00 00 00 00  ................
+0030  00 00 00 00 00 01 04 01 00 0C 00 48 50 A4 55 55  ...........HP.UU
+0040  55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55  UUUUUUUUUUUUUUUU
+0050  55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55  UUUUUUUUUUUUUUUU
+0060  55 55 55 55 55 55 55 55 55 55 55 55 55 55 55 55  UUUUUUUUUUUUUUUU
+0070  55 55 55 55 55 55 55 55 55 55 55 55 55 55        UUUUUUUUUUUUUU
+###[ Ethernet ]### 
+  dst       = 00:00:00:01:00:00
+  src       = 00:00:00:02:00:00
+  type      = IPv6
+###[ IPv6 ]### 
+     version   = 6
+     tc        = 0
+     fl        = 0
+     plen      = 72
+     nh        = UDP
+     hlim      = 64
+     src       = ::2
+     dst       = ::1
+###[ UDP ]### 
+        sport     = 1025
+        dport     = 12
+        len       = 72
+        chksum    = 0x50a4
+###[ Raw ]### 
+           load      = 'UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU'
+
+]]></system-out></testcase><testcase classname="scapy_pkt_builder_test.CTRexPktBuilderSanitySCapy_Test" name="test_simple_scapy_vlan" time="0.007"><system-out><![CDATA[Ethernet offset : 0
+802.1Q offset : 14
+802.1Q offset : 18
+IP offset : 22
+UDP offset : 42
+Raw offset : 50
+###[ Ethernet ]### 
+  dst       = 00:00:00:01:00:00
+  src       = 00:00:00:01:00:00
+  type      = n_802_1Q
+###[ 802.1Q ]### 
+     prio      = 0
+     id        = 0
+     vlan      = 12
+     type      = n_802_1Q
+###[ 802.1Q ]### 
+        prio      = 0
+        id        = 0
+        vlan      = 17
+        type      = IPv4
+###[ IP ]### 
+           version   = 4
+           ihl       = 5
+           tos       = 0x0
+           len       = 37
+           id        = 1
+           flags     = 
+           frag      = 0
+           ttl       = 64
+           proto     = udp
+           chksum    = 0x40bd
+           src       = 10.0.0.10
+           dst       = 48.0.0.1
+           \options   \
+###[ UDP ]### 
+              sport     = 1025
+              dport     = 12
+              len       = 17
+              chksum    = 0xb7df
+###[ Raw ]### 
+                 load      = '555555555'
+
+0000  00 00 00 01 00 00 00 00 00 01 00 00 81 00 00 0C  ................
+0010  81 00 00 11 08 00 45 00 00 25 00 01 00 00 40 11  ......E..%....@.
+0020  40 BD 0A 00 00 0A 30 00 00 01 04 01 00 0C 00 11  @.....0.........
+0030  B7 DF 35 35 35 35 35 35 35 35 35                 ..555555555
+]]></system-out></testcase><testcase classname="scapy_pkt_builder_test.CTRexPktBuilderSanitySCapy_Test" name="test_simple_teredo" time="0.005"></testcase><testcase classname="scapy_pkt_builder_test.CTRexPktBuilderSanitySCapy_Test" name="test_simple_tuple_gen" time="0.006"><system-out><![CDATA[instructions:
+- flags: 0
+  ip_max: 10
+  ip_min: 1
+  limit_flows: 100000
+  name: tuple
+  port_max: 65535
+  port_min: 1025
+  type: tuple_flow_var
+- add_value: 0
+  is_big_endian: true
+  name: tuple.ip
+  pkt_offset: 30
+  type: write_flow_var
+- pkt_offset: 18
+  type: fix_checksum_ipv4
+- add_value: 0
+  is_big_endian: true
+  name: tuple.port
+  pkt_offset: 38
+  type: write_flow_var
+
+]]></system-out></testcase><testcase classname="scapy_pkt_builder_test.CTRexPktBuilderSanitySCapy_Test" name="test_simple_vm1" time="0.006"><system-out><![CDATA[instructions:
+- init_value: 268435457
+  max_value: 268435466
+  min_value: 268435457
+  name: a
+  next_var: null
+  op: inc
+  size: 4
+  split_to_cores: true
+  step: 1
+  type: flow_var
+- add_value: 0
+  is_big_endian: true
+  name: a
+  pkt_offset: 26
+  type: write_flow_var
+- pkt_offset: 14
+  type: fix_checksum_ipv4
+
+{'instructions': [{'type': 'flow_var', 'name': 'a', 'size': 4, 'op': 'inc', 'next_var': None, 'split_to_cores': True, 'init_value': 268435457, 'min_value': 268435457, 'max_value': 268435466, 'step': 1}, {'type': 'write_flow_var', 'name': 'a', 'pkt_offset': 26, 'add_value': 0, 'is_big_endian': True}, {'type': 'fix_checksum_ipv4', 'pkt_offset': 14}]}
+]]></system-out></testcase><testcase classname="scapy_pkt_builder_test.CTRexPktBuilderSanitySCapy_Test" name="test_simple_vm2" time="0.004"></testcase><testcase classname="scapy_pkt_builder_test.CTRexPktBuilderSanitySCapy_Test" name="test_simple_vm3" time="0.003"></testcase><testcase classname="scapy_pkt_builder_test.CTRexPktBuilderSanitySCapy_Test" name="test_simple_vm4" time="0.005"><system-out><![CDATA[instructions:
+- name: a
+  next_var: null
+  op: inc
+  size: 4
+  split_to_cores: true
+  step: 1
+  type: flow_var
+  value_list:
+  - 268435457
+  - 268435460
+  - 268435461
+  - 268435458
+  - 268435459
+  - 268435462
+- add_value: 0
+  is_big_endian: true
+  name: a
+  pkt_offset: 26
+  type: write_flow_var
+- pkt_offset: 14
+  type: fix_checksum_ipv4
+
+{'instructions': [{'type': 'flow_var', 'name': 'a', 'size': 4, 'op': 'inc', 'next_var': None, 'split_to_cores': True, 'value_list': [268435457, 268435460, 268435461, 268435458, 268435459, 268435462], 'step': 1}, {'type': 'write_flow_var', 'name': 'a', 'pkt_offset': 26, 'add_value': 0, 'is_big_endian': True}, {'type': 'fix_checksum_ipv4', 'pkt_offset': 14}]}
+]]></system-out></testcase><testcase classname="stl_basic_tests.CStlBasic_Test" name="test_dependent_vars_params" time="1.223"><system-out><![CDATA[
+Testing profile: dependent_vars_all.py
+executing command: '/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/bp-sim-64-debug --pcap --sl --cores 1 --limit 50 -f /tmp/tmpcnr77ebe -o generated/a.pcap'
+
+Testing profile: dependent_vars_all.py
+executing command: '/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/bp-sim-64-debug --pcap --sl --cores 2 --limit 50 -f /tmp/tmpwulndnp1 -o generated/a.pcap'
+Merging cores output to a single pcap file...
+
+
+Testing profile: dependent_vars_all.py
+executing command: '/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/bp-sim-64-debug --pcap --sl --cores 1 --limit 50 -f /tmp/tmpckx91gaj -o generated/a.pcap'
+
+Testing profile: dependent_vars_all.py
+executing command: '/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/bp-sim-64-debug --pcap --sl --cores 2 --limit 50 -f /tmp/tmpdsn9dwnb -o generated/a.pcap'
+Merging cores output to a single pcap file...
+
+
+Testing profile: dependent_vars_all.py
+executing command: '/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/bp-sim-64-debug --pcap --sl --cores 1 --limit 50 -f /tmp/tmpearzxsyo -o generated/a.pcap'
+
+Testing profile: dependent_vars_all.py
+executing command: '/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/bp-sim-64-debug --pcap --sl --cores 2 --limit 50 -f /tmp/tmphu9k55eq -o generated/a.pcap'
+Merging cores output to a single pcap file...
+
+
+Testing profile: dependent_vars_all.py
+executing command: '/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/bp-sim-64-debug --pcap --sl --cores 1 --limit 50 -f /tmp/tmp19088fqp -o generated/a.pcap'
+
+Testing profile: dependent_vars_all.py
+executing command: '/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/bp-sim-64-debug --pcap --sl --cores 2 --limit 50 -f /tmp/tmp2f8sa6pk -o generated/a.pcap'
+Merging cores output to a single pcap file...
+
+
+Testing profile: dependent_vars_all.py
+executing command: '/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/bp-sim-64-debug --pcap --sl --cores 1 --limit 50 -f /tmp/tmppqr_dar_ -o generated/a.pcap'
+
+Testing profile: dependent_vars_all.py
+executing command: '/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/bp-sim-64-debug --pcap --sl --cores 2 --limit 50 -f /tmp/tmp1ia11pn_ -o generated/a.pcap'
+Merging cores output to a single pcap file...
+
+
+Testing profile: dependent_vars_all.py
+executing command: '/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/bp-sim-64-debug --pcap --sl --cores 1 --limit 50 -f /tmp/tmp1y7docjh -o generated/a.pcap'
+
+Testing profile: dependent_vars_all.py
+executing command: '/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/bp-sim-64-debug --pcap --sl --cores 2 --limit 50 -f /tmp/tmp3_5ckosy -o generated/a.pcap'
+Merging cores output to a single pcap file...
+
+
+Testing profile: dependent_vars_all.py
+executing command: '/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/bp-sim-64-debug --pcap --sl --cores 1 --limit 50 -f /tmp/tmpeihxefcd -o generated/a.pcap'
+
+Testing profile: dependent_vars_all.py
+executing command: '/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/bp-sim-64-debug --pcap --sl --cores 2 --limit 50 -f /tmp/tmp1_bb2m4i -o generated/a.pcap'
+Merging cores output to a single pcap file...
+
+
+Testing profile: dependent_vars_all.py
+executing command: '/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/bp-sim-64-debug --pcap --sl --cores 1 --limit 50 -f /tmp/tmpw16buol1 -o generated/a.pcap'
+
+Testing profile: dependent_vars_all.py
+executing command: '/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/bp-sim-64-debug --pcap --sl --cores 2 --limit 50 -f /tmp/tmpuzqsi60l -o generated/a.pcap'
+Merging cores output to a single pcap file...
+
+]]></system-out></testcase></testsuite>

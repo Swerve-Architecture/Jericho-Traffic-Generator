@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite name="nosetests" tests="2" errors="0" failures="0" skip="0"><testcase classname="stateless_tests.stl_general_test.STLBasic_Test" name="test_connectivity" time="20.219"><system-out><![CDATA[
+
+Configuring DUT... done. (11s)
+Configured DUT
+Starting TRex... done. (8s)
+Started TRex
+Connecting.
+Connected
+Mapping ports.
+Got ports mapping: {'map': {0: 1, 1: 0}, 'bi': [(0, 1)], 'unknown': []}
+]]></system-out></testcase><testcase classname="stateless_tests.stl_rx_test.STLRX_Test" name="test_one_stream" time="0.172"><system-out><![CDATA[
+
+num cores 4 num 9k mbufs 4096 num 4k mbufs 4096
+
+injecting 1000 packets on port 0
+
+]]></system-out></testcase></testsuite>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite name="nosetests" tests="2" errors="0" failures="0" skip="1"><testcase classname="astf_tests.astf_general_test.ASTFBasic_Test" name="test_connectivity" time="0.623"><system-out><![CDATA[
+Starting TRex... done. (0s)
+Started TRex
+Connecting.
+Connected
+Mapping ports.
+Got ports mapping: {'map': {0: 1, 1: 0}, 'bi': [(0, 1)], 'unknown': []}
+]]></system-out></testcase><testcase classname="astf_tests.astf_vlan_test.ASTFVLAN_Test" name="test_latency_vlan" time="0.087"><skipped type="unittest.case.SkipTest" message="Skip frpm dpdk virtio stop supporting vlan"><![CDATA[SkipTest: Skip frpm dpdk virtio stop supporting vlan
+]]></skipped><system-out><![CDATA[Skip: Skip frpm dpdk virtio stop supporting vlan
+]]></system-out></testcase></testsuite>

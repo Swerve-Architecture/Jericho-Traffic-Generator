@@ -1,0 +1,991 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite name="nosetests" tests="39" errors="38" failures="0" skip="0"><testcase classname="stateless_tests.stl_general_test.STLBasic_Test" name="test_connectivity" time="0.516"><system-out><![CDATA[
+Starting TRex... done. (0s)
+Started TRex
+Connecting.
+Connected
+Mapping ports.
+Got ports mapping: {'map': {0: 1, 1: 0}, 'bi': [(0, 1)], 'unknown': []}
+]]></system-out></testcase><testcase classname="stateless_tests.stl_benchmark_test.STLBenchmark_Test" name="test_CPU_benchmark" time="67.007"><error type="trex.common.trex_exceptions.TRexError" message="'get_stats' - connection to the server had been lost: 'CTRL + C detected'"><![CDATA[Traceback (most recent call last):
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 51, in wrap2
+    ret = f(*args, **kwargs)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/stl/trex_stl_client.py", line 1455, in get_stats
+    output = self._get_stats_common(ports, sync_now)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_client.py", line 2824, in _get_stats_common
+    rc = StatsBatch.update(stats.values(), self.conn.rpc)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/stats/trex_stats.py", line 291, in update
+    return StatsBatch._run_until_completion(co_list, rpc)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/stats/trex_stats.py", line 301, in _run_until_completion
+    rc_batch = rpc.transmit_batch(batch)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 243, in transmit_batch
+    return batch.invoke(retry = retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 52, in invoke
+    response_batch.add(self.rpc_client.send_msg(batch_json))
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 250, in send_msg
+    return self.__send_msg(msg, retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 262, in __send_msg
+    response = self.send_raw_msg(self.zipper.compress(buffer), retry = retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 299, in send_raw_msg
+    raise e
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 295, in send_raw_msg
+    return self._send_raw_msg_safe(msg, retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 319, in _send_raw_msg_safe
+    response = self.socket.recv()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/pyzmq-ctypes/zmq/socket.py", line 214, in recv
+    _retry_sys_call(zmq_msg_recv, zmq_msg, self.handle, flags)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/pyzmq-ctypes/zmq/utils.py", line 44, in _retry_sys_call
+    rc = f(*args)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/unittest/case.py", line 60, in testPartExecutor
+    yield
+  File "/usr/lib64/python3.6/unittest/case.py", line 622, in run
+    testMethod()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateless_tests/stl_benchmark_test.py", line 47, in test_CPU_benchmark
+    stats = self.stl_trex.get_stats()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 56, in wrap2
+    raise TRexError("'{0}' - connection to the server had been lost: '{1}'".format(func_name, client.conn.get_disconnection_cause()))
+trex.common.trex_exceptions.TRexError: 'get_stats' - connection to the server had been lost: 'CTRL + C detected'
+]]></error><system-out><![CDATA[
+Testing profile stl/udp_for_benchmarks.py, kwargs: {'packet_len': 64}
+Done (9s), CPU util: 3.97289, norm_pps_per_core:  3.72mpps norm_bw_per_core:   1.91Gb/core
+Testing profile stl/udp_for_benchmarks.py, kwargs: {'packet_len': 64, 'stream_count': 10}
+Done (8s), CPU util: 5.06542, norm_pps_per_core:  2.91mpps norm_bw_per_core:   1.49Gb/core
+Testing profile stl/udp_for_benchmarks.py, kwargs: {'packet_len': 64, 'stream_count': 100}
+Done (3s), CPU util: 4.74812, norm_pps_per_core:  2.58mpps norm_bw_per_core:   1.32Gb/core
+Testing profile stl/udp_for_benchmarks.py, kwargs: {'packet_len': 128}
+Done (3s), CPU util: 3.5274, norm_pps_per_core:  2.15mpps norm_bw_per_core:   1.77Gb/core
+Testing profile stl/udp_for_benchmarks.py, kwargs: {'packet_len': 256}
+Done (5s), CPU util: 2.13356, norm_pps_per_core:  2.08mpps norm_bw_per_core:   4.04Gb/core
+Testing profile stl/udp_for_benchmarks.py, kwargs: {'packet_len': 512}
+Done (7s), CPU util: 1.52004, norm_pps_per_core:  1.54mpps norm_bw_per_core:   6.23Gb/core
+Testing profile stl/udp_for_benchmarks.py, kwargs: {'packet_len': 1500}
+Done (4s), CPU util: 1.22067, norm_pps_per_core:  0.73mpps norm_bw_per_core:   6.97Gb/core
+Testing profile stl/udp_for_benchmarks.py, kwargs: {'packet_len': 4000}
+Done (9s), CPU util: 1.26885, norm_pps_per_core:  0.25mpps norm_bw_per_core:   7.81Gb/core
+Testing profile stl/udp_for_benchmarks.py, kwargs: {'packet_len': 9000}
+]]></system-out></testcase><testcase classname="stateless_tests.stl_benchmark_test.STLBenchmark_Test" name="test_CPU_benchmark" time="67.023"><error type="trex.common.trex_exceptions.TRexError" message="'reset' - connection to the server had been lost: 'CTRL + C detected'"><![CDATA[Traceback (most recent call last):
+  File "/usr/lib64/python3.6/unittest/case.py", line 60, in testPartExecutor
+    yield
+  File "/usr/lib64/python3.6/unittest/case.py", line 625, in run
+    self.tearDown()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateless_tests/stl_benchmark_test.py", line 111, in tearDown
+    self.stl_trex.reset()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 45, in wrap2
+    raise TRexError("'{0}' - connection to the server had been lost: '{1}'".format(func_name, client.conn.get_disconnection_cause()))
+trex.common.trex_exceptions.TRexError: 'reset' - connection to the server had been lost: 'CTRL + C detected'
+]]></error><system-out><![CDATA[
+Testing profile stl/udp_for_benchmarks.py, kwargs: {'packet_len': 64}
+Done (9s), CPU util: 3.97289, norm_pps_per_core:  3.72mpps norm_bw_per_core:   1.91Gb/core
+Testing profile stl/udp_for_benchmarks.py, kwargs: {'packet_len': 64, 'stream_count': 10}
+Done (8s), CPU util: 5.06542, norm_pps_per_core:  2.91mpps norm_bw_per_core:   1.49Gb/core
+Testing profile stl/udp_for_benchmarks.py, kwargs: {'packet_len': 64, 'stream_count': 100}
+Done (3s), CPU util: 4.74812, norm_pps_per_core:  2.58mpps norm_bw_per_core:   1.32Gb/core
+Testing profile stl/udp_for_benchmarks.py, kwargs: {'packet_len': 128}
+Done (3s), CPU util: 3.5274, norm_pps_per_core:  2.15mpps norm_bw_per_core:   1.77Gb/core
+Testing profile stl/udp_for_benchmarks.py, kwargs: {'packet_len': 256}
+Done (5s), CPU util: 2.13356, norm_pps_per_core:  2.08mpps norm_bw_per_core:   4.04Gb/core
+Testing profile stl/udp_for_benchmarks.py, kwargs: {'packet_len': 512}
+Done (7s), CPU util: 1.52004, norm_pps_per_core:  1.54mpps norm_bw_per_core:   6.23Gb/core
+Testing profile stl/udp_for_benchmarks.py, kwargs: {'packet_len': 1500}
+Done (4s), CPU util: 1.22067, norm_pps_per_core:  0.73mpps norm_bw_per_core:   6.97Gb/core
+Testing profile stl/udp_for_benchmarks.py, kwargs: {'packet_len': 4000}
+Done (9s), CPU util: 1.26885, norm_pps_per_core:  0.25mpps norm_bw_per_core:   7.81Gb/core
+Testing profile stl/udp_for_benchmarks.py, kwargs: {'packet_len': 9000}
+]]></system-out></testcase><testcase classname="stateless_tests.stl_capture_test.STLCapture_Test" name="test_arp_capture" time="0.303"><error type="trex.common.trex_exceptions.TRexError" message="'connect' - interrupted by a keyboard signal (probably ctrl + c)"><![CDATA[Traceback (most recent call last):
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 51, in wrap2
+    ret = f(*args, **kwargs)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_client.py", line 1302, in connect
+    rc = self._connect()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_client.py", line 439, in _connect
+    rc = self.conn.connect()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_conn.py", line 76, in connect
+    rc = self.__connect()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_conn.py", line 178, in __connect
+    rc = self.rpc.transmit("api_sync_v2", params = self.ctx.api_ver)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 222, in transmit
+    rc = self.invoke_rpc_method(method_name, params, max_retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 189, in invoke_rpc_method
+    return self.send_msg(msg, retry = retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 250, in send_msg
+    return self.__send_msg(msg, retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 262, in __send_msg
+    response = self.send_raw_msg(self.zipper.compress(buffer), retry = retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 299, in send_raw_msg
+    raise e
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 295, in send_raw_msg
+    return self._send_raw_msg_safe(msg, retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 319, in _send_raw_msg_safe
+    response = self.socket.recv()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/pyzmq-ctypes/zmq/socket.py", line 214, in recv
+    _retry_sys_call(zmq_msg_recv, zmq_msg, self.handle, flags)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/pyzmq-ctypes/zmq/utils.py", line 44, in _retry_sys_call
+    rc = f(*args)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/unittest/case.py", line 60, in testPartExecutor
+    yield
+  File "/usr/lib64/python3.6/unittest/case.py", line 618, in run
+    self.setUp()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateless_tests/stl_capture_test.py", line 40, in setUp
+    self.c.connect()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 58, in wrap2
+    raise TRexError("'{0}' - interrupted by a keyboard signal (probably ctrl + c)".format(func_name))
+trex.common.trex_exceptions.TRexError: 'connect' - interrupted by a keyboard signal (probably ctrl + c)
+]]></error></testcase><testcase classname="stateless_tests.stl_capture_test.STLCapture_Test" name="test_basic_capture" time="3.009"><error type="trex.common.trex_exceptions.TRexError" message="?[1m*** [RPC] - Failed to get server response from tcp://10.56.192.189:4501?[22m"><![CDATA[Traceback (most recent call last):
+  File "/usr/lib64/python3.6/unittest/case.py", line 60, in testPartExecutor
+    yield
+  File "/usr/lib64/python3.6/unittest/case.py", line 618, in run
+    self.setUp()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateless_tests/stl_capture_test.py", line 40, in setUp
+    self.c.connect()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 51, in wrap2
+    ret = f(*args, **kwargs)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_client.py", line 1305, in connect
+    raise TRexError(rc)
+trex.common.trex_exceptions.TRexError: ?[1m*** [RPC] - Failed to get server response from tcp://10.56.192.189:4501?[22m
+]]></error></testcase><testcase classname="stateless_tests.stl_capture_test.STLCapture_Test" name="test_ping_capture" time="3.007"><error type="trex.common.trex_exceptions.TRexError" message="?[1m*** [RPC] - Failed to get server response from tcp://10.56.192.189:4501?[22m"><![CDATA[Traceback (most recent call last):
+  File "/usr/lib64/python3.6/unittest/case.py", line 60, in testPartExecutor
+    yield
+  File "/usr/lib64/python3.6/unittest/case.py", line 618, in run
+    self.setUp()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateless_tests/stl_capture_test.py", line 40, in setUp
+    self.c.connect()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 51, in wrap2
+    ret = f(*args, **kwargs)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_client.py", line 1305, in connect
+    raise TRexError(rc)
+trex.common.trex_exceptions.TRexError: ?[1m*** [RPC] - Failed to get server response from tcp://10.56.192.189:4501?[22m
+]]></error></testcase><testcase classname="stateless_tests.stl_capture_test.STLCapture_Test" name="test_rx_from_capture_port_with_filter" time="3.009"><error type="trex.common.trex_exceptions.TRexError" message="?[1m*** [RPC] - Failed to get server response from tcp://10.56.192.189:4501?[22m"><![CDATA[Traceback (most recent call last):
+  File "/usr/lib64/python3.6/unittest/case.py", line 60, in testPartExecutor
+    yield
+  File "/usr/lib64/python3.6/unittest/case.py", line 618, in run
+    self.setUp()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateless_tests/stl_capture_test.py", line 40, in setUp
+    self.c.connect()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 51, in wrap2
+    ret = f(*args, **kwargs)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_client.py", line 1305, in connect
+    raise TRexError(rc)
+trex.common.trex_exceptions.TRexError: ?[1m*** [RPC] - Failed to get server response from tcp://10.56.192.189:4501?[22m
+]]></error></testcase><testcase classname="stateless_tests.stl_capture_test.STLCapture_Test" name="test_stress_capture" time="3.009"><error type="trex.common.trex_exceptions.TRexError" message="?[1m*** [RPC] - Failed to get server response from tcp://10.56.192.189:4501?[22m"><![CDATA[Traceback (most recent call last):
+  File "/usr/lib64/python3.6/unittest/case.py", line 60, in testPartExecutor
+    yield
+  File "/usr/lib64/python3.6/unittest/case.py", line 618, in run
+    self.setUp()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateless_tests/stl_capture_test.py", line 40, in setUp
+    self.c.connect()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 51, in wrap2
+    ret = f(*args, **kwargs)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_client.py", line 1305, in connect
+    raise TRexError(rc)
+trex.common.trex_exceptions.TRexError: ?[1m*** [RPC] - Failed to get server response from tcp://10.56.192.189:4501?[22m
+]]></error></testcase><testcase classname="stateless_tests.stl_capture_test.STLCapture_Test" name="test_stress_tx_rx" time="3.008"><error type="trex.common.trex_exceptions.TRexError" message="?[1m*** [RPC] - Failed to get server response from tcp://10.56.192.189:4501?[22m"><![CDATA[Traceback (most recent call last):
+  File "/usr/lib64/python3.6/unittest/case.py", line 60, in testPartExecutor
+    yield
+  File "/usr/lib64/python3.6/unittest/case.py", line 618, in run
+    self.setUp()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateless_tests/stl_capture_test.py", line 40, in setUp
+    self.c.connect()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 51, in wrap2
+    ret = f(*args, **kwargs)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_client.py", line 1305, in connect
+    raise TRexError(rc)
+trex.common.trex_exceptions.TRexError: ?[1m*** [RPC] - Failed to get server response from tcp://10.56.192.189:4501?[22m
+]]></error></testcase><testcase classname="stateless_tests.stl_capture_test.STLCapture_Test" name="test_tx_from_capture_port" time="3.008"><error type="trex.common.trex_exceptions.TRexError" message="?[1m*** [RPC] - Failed to get server response from tcp://10.56.192.189:4501?[22m"><![CDATA[Traceback (most recent call last):
+  File "/usr/lib64/python3.6/unittest/case.py", line 60, in testPartExecutor
+    yield
+  File "/usr/lib64/python3.6/unittest/case.py", line 618, in run
+    self.setUp()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateless_tests/stl_capture_test.py", line 40, in setUp
+    self.c.connect()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 51, in wrap2
+    ret = f(*args, **kwargs)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_client.py", line 1305, in connect
+    raise TRexError(rc)
+trex.common.trex_exceptions.TRexError: ?[1m*** [RPC] - Failed to get server response from tcp://10.56.192.189:4501?[22m
+]]></error></testcase><testcase classname="stateless_tests.stl_capture_test.STLCapture_Test" name="STLCapture_Test:teardown" time="6.019"><error type="trex.common.trex_exceptions.TRexError" message="?[1m*** [RPC] - Failed to get server response from tcp://10.56.192.189:4501?[22m"><![CDATA[Traceback (most recent call last):
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python3/nose/suite.py", line 229, in run
+    self.tearDown()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python3/nose/suite.py", line 352, in tearDown
+    self.teardownContext(ancestor)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python3/nose/suite.py", line 368, in teardownContext
+    try_run(context, names)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python3/nose/util.py", line 470, in try_run
+    return func()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateless_tests/stl_capture_test.py", line 58, in tearDownClass
+    CTRexScenario.stl_trex.connect()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 51, in wrap2
+    ret = f(*args, **kwargs)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_client.py", line 1305, in connect
+    raise TRexError(rc)
+trex.common.trex_exceptions.TRexError: ?[1m*** [RPC] - Failed to get server response from tcp://10.56.192.189:4501?[22m
+]]></error></testcase><testcase classname="stateless_tests.stl_client_test.STLClient_Test" name="test_all_profiles" time="3.010"><error type="trex.common.trex_exceptions.TRexError" message="?[1m*** [RPC] - Failed to get server response from tcp://10.56.192.189:4501?[22m"><![CDATA[Traceback (most recent call last):
+  File "/usr/lib64/python3.6/unittest/case.py", line 60, in testPartExecutor
+    yield
+  File "/usr/lib64/python3.6/unittest/case.py", line 618, in run
+    self.setUp()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateless_tests/stl_client_test.py", line 194, in setUp
+    self.c.connect()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 51, in wrap2
+    ret = f(*args, **kwargs)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_client.py", line 1305, in connect
+    raise TRexError(rc)
+trex.common.trex_exceptions.TRexError: ?[1m*** [RPC] - Failed to get server response from tcp://10.56.192.189:4501?[22m
+]]></error></testcase><testcase classname="stateless_tests.stl_client_test.STLClient_Test" name="test_basic_connect_disconnect" time="3.007"><error type="trex.common.trex_exceptions.TRexError" message="?[1m*** [RPC] - Failed to get server response from tcp://10.56.192.189:4501?[22m"><![CDATA[Traceback (most recent call last):
+  File "/usr/lib64/python3.6/unittest/case.py", line 60, in testPartExecutor
+    yield
+  File "/usr/lib64/python3.6/unittest/case.py", line 618, in run
+    self.setUp()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateless_tests/stl_client_test.py", line 194, in setUp
+    self.c.connect()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 51, in wrap2
+    ret = f(*args, **kwargs)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_client.py", line 1305, in connect
+    raise TRexError(rc)
+trex.common.trex_exceptions.TRexError: ?[1m*** [RPC] - Failed to get server response from tcp://10.56.192.189:4501?[22m
+]]></error></testcase><testcase classname="stateless_tests.stl_client_test.STLClient_Test" name="test_basic_cont" time="3.008"><error type="trex.common.trex_exceptions.TRexError" message="?[1m*** [RPC] - Failed to get server response from tcp://10.56.192.189:4501?[22m"><![CDATA[Traceback (most recent call last):
+  File "/usr/lib64/python3.6/unittest/case.py", line 60, in testPartExecutor
+    yield
+  File "/usr/lib64/python3.6/unittest/case.py", line 618, in run
+    self.setUp()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateless_tests/stl_client_test.py", line 194, in setUp
+    self.c.connect()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 51, in wrap2
+    ret = f(*args, **kwargs)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_client.py", line 1305, in connect
+    raise TRexError(rc)
+trex.common.trex_exceptions.TRexError: ?[1m*** [RPC] - Failed to get server response from tcp://10.56.192.189:4501?[22m
+]]></error></testcase><testcase classname="stateless_tests.stl_client_test.STLClient_Test" name="test_basic_cont_dynamic_profile" time="3.008"><error type="trex.common.trex_exceptions.TRexError" message="?[1m*** [RPC] - Failed to get server response from tcp://10.56.192.189:4501?[22m"><![CDATA[Traceback (most recent call last):
+  File "/usr/lib64/python3.6/unittest/case.py", line 60, in testPartExecutor
+    yield
+  File "/usr/lib64/python3.6/unittest/case.py", line 618, in run
+    self.setUp()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateless_tests/stl_client_test.py", line 194, in setUp
+    self.c.connect()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 51, in wrap2
+    ret = f(*args, **kwargs)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_client.py", line 1305, in connect
+    raise TRexError(rc)
+trex.common.trex_exceptions.TRexError: ?[1m*** [RPC] - Failed to get server response from tcp://10.56.192.189:4501?[22m
+]]></error></testcase><testcase classname="stateless_tests.stl_client_test.STLClient_Test" name="test_basic_multi_burst" time="3.008"><error type="trex.common.trex_exceptions.TRexError" message="?[1m*** [RPC] - Failed to get server response from tcp://10.56.192.189:4501?[22m"><![CDATA[Traceback (most recent call last):
+  File "/usr/lib64/python3.6/unittest/case.py", line 60, in testPartExecutor
+    yield
+  File "/usr/lib64/python3.6/unittest/case.py", line 618, in run
+    self.setUp()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateless_tests/stl_client_test.py", line 194, in setUp
+    self.c.connect()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 51, in wrap2
+    ret = f(*args, **kwargs)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_client.py", line 1305, in connect
+    raise TRexError(rc)
+trex.common.trex_exceptions.TRexError: ?[1m*** [RPC] - Failed to get server response from tcp://10.56.192.189:4501?[22m
+]]></error></testcase><testcase classname="stateless_tests.stl_client_test.STLClient_Test" name="test_basic_single_burst" time="3.007"><error type="trex.common.trex_exceptions.TRexError" message="?[1m*** [RPC] - Failed to get server response from tcp://10.56.192.189:4501?[22m"><![CDATA[Traceback (most recent call last):
+  File "/usr/lib64/python3.6/unittest/case.py", line 60, in testPartExecutor
+    yield
+  File "/usr/lib64/python3.6/unittest/case.py", line 618, in run
+    self.setUp()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateless_tests/stl_client_test.py", line 194, in setUp
+    self.c.connect()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 51, in wrap2
+    ret = f(*args, **kwargs)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_client.py", line 1305, in connect
+    raise TRexError(rc)
+trex.common.trex_exceptions.TRexError: ?[1m*** [RPC] - Failed to get server response from tcp://10.56.192.189:4501?[22m
+]]></error></testcase><testcase classname="stateless_tests.stl_client_test.STLClient_Test" name="test_bpf" time="3.010"><error type="trex.common.trex_exceptions.TRexError" message="?[1m*** [RPC] - Failed to get server response from tcp://10.56.192.189:4501?[22m"><![CDATA[Traceback (most recent call last):
+  File "/usr/lib64/python3.6/unittest/case.py", line 60, in testPartExecutor
+    yield
+  File "/usr/lib64/python3.6/unittest/case.py", line 618, in run
+    self.setUp()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateless_tests/stl_client_test.py", line 194, in setUp
+    self.c.connect()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 51, in wrap2
+    ret = f(*args, **kwargs)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_client.py", line 1305, in connect
+    raise TRexError(rc)
+trex.common.trex_exceptions.TRexError: ?[1m*** [RPC] - Failed to get server response from tcp://10.56.192.189:4501?[22m
+]]></error></testcase><testcase classname="stateless_tests.stl_client_test.STLClient_Test" name="test_core_pinning" time="3.008"><error type="trex.common.trex_exceptions.TRexError" message="?[1m*** [RPC] - Failed to get server response from tcp://10.56.192.189:4501?[22m"><![CDATA[Traceback (most recent call last):
+  File "/usr/lib64/python3.6/unittest/case.py", line 60, in testPartExecutor
+    yield
+  File "/usr/lib64/python3.6/unittest/case.py", line 618, in run
+    self.setUp()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateless_tests/stl_client_test.py", line 194, in setUp
+    self.c.connect()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 51, in wrap2
+    ret = f(*args, **kwargs)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_client.py", line 1305, in connect
+    raise TRexError(rc)
+trex.common.trex_exceptions.TRexError: ?[1m*** [RPC] - Failed to get server response from tcp://10.56.192.189:4501?[22m
+]]></error></testcase><testcase classname="stateless_tests.stl_client_test.STLClient_Test" name="test_core_pinning_latency" time="2.229"><error type="trex.common.trex_exceptions.TRexError" message="'connect' - interrupted by a keyboard signal (probably ctrl + c)"><![CDATA[Traceback (most recent call last):
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 51, in wrap2
+    ret = f(*args, **kwargs)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_client.py", line 1302, in connect
+    rc = self._connect()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_client.py", line 439, in _connect
+    rc = self.conn.connect()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_conn.py", line 76, in connect
+    rc = self.__connect()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_conn.py", line 178, in __connect
+    rc = self.rpc.transmit("api_sync_v2", params = self.ctx.api_ver)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 222, in transmit
+    rc = self.invoke_rpc_method(method_name, params, max_retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 189, in invoke_rpc_method
+    return self.send_msg(msg, retry = retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 250, in send_msg
+    return self.__send_msg(msg, retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 262, in __send_msg
+    response = self.send_raw_msg(self.zipper.compress(buffer), retry = retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 299, in send_raw_msg
+    raise e
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 295, in send_raw_msg
+    return self._send_raw_msg_safe(msg, retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 319, in _send_raw_msg_safe
+    response = self.socket.recv()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/pyzmq-ctypes/zmq/socket.py", line 214, in recv
+    _retry_sys_call(zmq_msg_recv, zmq_msg, self.handle, flags)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/pyzmq-ctypes/zmq/utils.py", line 44, in _retry_sys_call
+    rc = f(*args)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/unittest/case.py", line 60, in testPartExecutor
+    yield
+  File "/usr/lib64/python3.6/unittest/case.py", line 618, in run
+    self.setUp()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateless_tests/stl_client_test.py", line 194, in setUp
+    self.c.connect()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 58, in wrap2
+    raise TRexError("'{0}' - interrupted by a keyboard signal (probably ctrl + c)".format(func_name))
+trex.common.trex_exceptions.TRexError: 'connect' - interrupted by a keyboard signal (probably ctrl + c)
+]]></error></testcase><testcase classname="stateless_tests.stl_client_test.STLClient_Test" name="test_latency_pause_resume" time="0.485"><error type="trex.common.trex_exceptions.TRexError" message="'connect' - interrupted by a keyboard signal (probably ctrl + c)"><![CDATA[Traceback (most recent call last):
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 51, in wrap2
+    ret = f(*args, **kwargs)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_client.py", line 1302, in connect
+    rc = self._connect()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_client.py", line 439, in _connect
+    rc = self.conn.connect()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_conn.py", line 76, in connect
+    rc = self.__connect()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_conn.py", line 178, in __connect
+    rc = self.rpc.transmit("api_sync_v2", params = self.ctx.api_ver)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 222, in transmit
+    rc = self.invoke_rpc_method(method_name, params, max_retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 189, in invoke_rpc_method
+    return self.send_msg(msg, retry = retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 250, in send_msg
+    return self.__send_msg(msg, retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 262, in __send_msg
+    response = self.send_raw_msg(self.zipper.compress(buffer), retry = retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 299, in send_raw_msg
+    raise e
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 295, in send_raw_msg
+    return self._send_raw_msg_safe(msg, retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 319, in _send_raw_msg_safe
+    response = self.socket.recv()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/pyzmq-ctypes/zmq/socket.py", line 214, in recv
+    _retry_sys_call(zmq_msg_recv, zmq_msg, self.handle, flags)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/pyzmq-ctypes/zmq/utils.py", line 44, in _retry_sys_call
+    rc = f(*args)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/unittest/case.py", line 60, in testPartExecutor
+    yield
+  File "/usr/lib64/python3.6/unittest/case.py", line 618, in run
+    self.setUp()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateless_tests/stl_client_test.py", line 194, in setUp
+    self.c.connect()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 58, in wrap2
+    raise TRexError("'{0}' - interrupted by a keyboard signal (probably ctrl + c)".format(func_name))
+trex.common.trex_exceptions.TRexError: 'connect' - interrupted by a keyboard signal (probably ctrl + c)
+]]></error></testcase><testcase classname="stateless_tests.stl_client_test.STLClient_Test" name="test_latency_pause_resume_dynamic_profile" time="0.263"><error type="trex.common.trex_exceptions.TRexError" message="'connect' - interrupted by a keyboard signal (probably ctrl + c)"><![CDATA[Traceback (most recent call last):
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 51, in wrap2
+    ret = f(*args, **kwargs)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_client.py", line 1302, in connect
+    rc = self._connect()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_client.py", line 439, in _connect
+    rc = self.conn.connect()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_conn.py", line 76, in connect
+    rc = self.__connect()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_conn.py", line 178, in __connect
+    rc = self.rpc.transmit("api_sync_v2", params = self.ctx.api_ver)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 222, in transmit
+    rc = self.invoke_rpc_method(method_name, params, max_retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 189, in invoke_rpc_method
+    return self.send_msg(msg, retry = retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 250, in send_msg
+    return self.__send_msg(msg, retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 262, in __send_msg
+    response = self.send_raw_msg(self.zipper.compress(buffer), retry = retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 299, in send_raw_msg
+    raise e
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 295, in send_raw_msg
+    return self._send_raw_msg_safe(msg, retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 319, in _send_raw_msg_safe
+    response = self.socket.recv()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/pyzmq-ctypes/zmq/socket.py", line 214, in recv
+    _retry_sys_call(zmq_msg_recv, zmq_msg, self.handle, flags)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/pyzmq-ctypes/zmq/utils.py", line 44, in _retry_sys_call
+    rc = f(*args)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/unittest/case.py", line 60, in testPartExecutor
+    yield
+  File "/usr/lib64/python3.6/unittest/case.py", line 618, in run
+    self.setUp()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateless_tests/stl_client_test.py", line 194, in setUp
+    self.c.connect()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 58, in wrap2
+    raise TRexError("'{0}' - interrupted by a keyboard signal (probably ctrl + c)".format(func_name))
+trex.common.trex_exceptions.TRexError: 'connect' - interrupted by a keyboard signal (probably ctrl + c)
+]]></error></testcase><testcase classname="stateless_tests.stl_client_test.STLClient_Test" name="test_pause_resume_update_dynamic_profile" time="0.208"><error type="trex.common.trex_exceptions.TRexError" message="'connect' - interrupted by a keyboard signal (probably ctrl + c)"><![CDATA[Traceback (most recent call last):
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 51, in wrap2
+    ret = f(*args, **kwargs)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_client.py", line 1302, in connect
+    rc = self._connect()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_client.py", line 439, in _connect
+    rc = self.conn.connect()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_conn.py", line 76, in connect
+    rc = self.__connect()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_conn.py", line 178, in __connect
+    rc = self.rpc.transmit("api_sync_v2", params = self.ctx.api_ver)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 222, in transmit
+    rc = self.invoke_rpc_method(method_name, params, max_retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 189, in invoke_rpc_method
+    return self.send_msg(msg, retry = retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 250, in send_msg
+    return self.__send_msg(msg, retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 262, in __send_msg
+    response = self.send_raw_msg(self.zipper.compress(buffer), retry = retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 299, in send_raw_msg
+    raise e
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 295, in send_raw_msg
+    return self._send_raw_msg_safe(msg, retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 319, in _send_raw_msg_safe
+    response = self.socket.recv()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/pyzmq-ctypes/zmq/socket.py", line 214, in recv
+    _retry_sys_call(zmq_msg_recv, zmq_msg, self.handle, flags)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/pyzmq-ctypes/zmq/utils.py", line 44, in _retry_sys_call
+    rc = f(*args)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/unittest/case.py", line 60, in testPartExecutor
+    yield
+  File "/usr/lib64/python3.6/unittest/case.py", line 618, in run
+    self.setUp()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateless_tests/stl_client_test.py", line 194, in setUp
+    self.c.connect()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 58, in wrap2
+    raise TRexError("'{0}' - interrupted by a keyboard signal (probably ctrl + c)".format(func_name))
+trex.common.trex_exceptions.TRexError: 'connect' - interrupted by a keyboard signal (probably ctrl + c)
+]]></error></testcase><testcase classname="stateless_tests.stl_client_test.STLClient_Test" name="test_pause_resume_update_streams" time="0.248"><error type="trex.common.trex_exceptions.TRexError" message="'connect' - interrupted by a keyboard signal (probably ctrl + c)"><![CDATA[Traceback (most recent call last):
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 51, in wrap2
+    ret = f(*args, **kwargs)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_client.py", line 1302, in connect
+    rc = self._connect()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_client.py", line 439, in _connect
+    rc = self.conn.connect()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_conn.py", line 76, in connect
+    rc = self.__connect()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_conn.py", line 178, in __connect
+    rc = self.rpc.transmit("api_sync_v2", params = self.ctx.api_ver)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 222, in transmit
+    rc = self.invoke_rpc_method(method_name, params, max_retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 189, in invoke_rpc_method
+    return self.send_msg(msg, retry = retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 250, in send_msg
+    return self.__send_msg(msg, retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 262, in __send_msg
+    response = self.send_raw_msg(self.zipper.compress(buffer), retry = retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 299, in send_raw_msg
+    raise e
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 295, in send_raw_msg
+    return self._send_raw_msg_safe(msg, retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 319, in _send_raw_msg_safe
+    response = self.socket.recv()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/pyzmq-ctypes/zmq/socket.py", line 214, in recv
+    _retry_sys_call(zmq_msg_recv, zmq_msg, self.handle, flags)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/pyzmq-ctypes/zmq/utils.py", line 44, in _retry_sys_call
+    rc = f(*args)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/unittest/case.py", line 60, in testPartExecutor
+    yield
+  File "/usr/lib64/python3.6/unittest/case.py", line 618, in run
+    self.setUp()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateless_tests/stl_client_test.py", line 194, in setUp
+    self.c.connect()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 58, in wrap2
+    raise TRexError("'{0}' - interrupted by a keyboard signal (probably ctrl + c)".format(func_name))
+trex.common.trex_exceptions.TRexError: 'connect' - interrupted by a keyboard signal (probably ctrl + c)
+]]></error></testcase><testcase classname="stateless_tests.stl_client_test.STLClient_Test" name="test_pcap_remote" time="0.049"><error type="trex.common.trex_exceptions.TRexError" message="'connect' - interrupted by a keyboard signal (probably ctrl + c)"><![CDATA[Traceback (most recent call last):
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 51, in wrap2
+    ret = f(*args, **kwargs)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_client.py", line 1302, in connect
+    rc = self._connect()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_client.py", line 439, in _connect
+    rc = self.conn.connect()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_conn.py", line 76, in connect
+    rc = self.__connect()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_conn.py", line 178, in __connect
+    rc = self.rpc.transmit("api_sync_v2", params = self.ctx.api_ver)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 222, in transmit
+    rc = self.invoke_rpc_method(method_name, params, max_retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 189, in invoke_rpc_method
+    return self.send_msg(msg, retry = retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 250, in send_msg
+    return self.__send_msg(msg, retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 262, in __send_msg
+    response = self.send_raw_msg(self.zipper.compress(buffer), retry = retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 299, in send_raw_msg
+    raise e
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 295, in send_raw_msg
+    return self._send_raw_msg_safe(msg, retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 319, in _send_raw_msg_safe
+    response = self.socket.recv()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/pyzmq-ctypes/zmq/socket.py", line 214, in recv
+    _retry_sys_call(zmq_msg_recv, zmq_msg, self.handle, flags)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/pyzmq-ctypes/zmq/utils.py", line 44, in _retry_sys_call
+    rc = f(*args)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/unittest/case.py", line 60, in testPartExecutor
+    yield
+  File "/usr/lib64/python3.6/unittest/case.py", line 618, in run
+    self.setUp()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateless_tests/stl_client_test.py", line 194, in setUp
+    self.c.connect()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 58, in wrap2
+    raise TRexError("'{0}' - interrupted by a keyboard signal (probably ctrl + c)".format(func_name))
+trex.common.trex_exceptions.TRexError: 'connect' - interrupted by a keyboard signal (probably ctrl + c)
+]]></error></testcase><testcase classname="stateless_tests.stl_client_test.STLClient_Test" name="test_push_pcap" time="0.048"><error type="trex.common.trex_exceptions.TRexError" message="'connect' - interrupted by a keyboard signal (probably ctrl + c)"><![CDATA[Traceback (most recent call last):
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 51, in wrap2
+    ret = f(*args, **kwargs)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_client.py", line 1302, in connect
+    rc = self._connect()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_client.py", line 439, in _connect
+    rc = self.conn.connect()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_conn.py", line 76, in connect
+    rc = self.__connect()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_conn.py", line 178, in __connect
+    rc = self.rpc.transmit("api_sync_v2", params = self.ctx.api_ver)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 222, in transmit
+    rc = self.invoke_rpc_method(method_name, params, max_retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 189, in invoke_rpc_method
+    return self.send_msg(msg, retry = retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 250, in send_msg
+    return self.__send_msg(msg, retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 262, in __send_msg
+    response = self.send_raw_msg(self.zipper.compress(buffer), retry = retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 299, in send_raw_msg
+    raise e
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 295, in send_raw_msg
+    return self._send_raw_msg_safe(msg, retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 319, in _send_raw_msg_safe
+    response = self.socket.recv()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/pyzmq-ctypes/zmq/socket.py", line 214, in recv
+    _retry_sys_call(zmq_msg_recv, zmq_msg, self.handle, flags)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/pyzmq-ctypes/zmq/utils.py", line 44, in _retry_sys_call
+    rc = f(*args)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/unittest/case.py", line 60, in testPartExecutor
+    yield
+  File "/usr/lib64/python3.6/unittest/case.py", line 618, in run
+    self.setUp()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateless_tests/stl_client_test.py", line 194, in setUp
+    self.c.connect()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 58, in wrap2
+    raise TRexError("'{0}' - interrupted by a keyboard signal (probably ctrl + c)".format(func_name))
+trex.common.trex_exceptions.TRexError: 'connect' - interrupted by a keyboard signal (probably ctrl + c)
+]]></error></testcase><testcase classname="stateless_tests.stl_client_test.STLClient_Test" name="test_random_duration_dynamic_profile" time="0.050"><error type="trex.common.trex_exceptions.TRexError" message="'connect' - interrupted by a keyboard signal (probably ctrl + c)"><![CDATA[Traceback (most recent call last):
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 51, in wrap2
+    ret = f(*args, **kwargs)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_client.py", line 1302, in connect
+    rc = self._connect()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_client.py", line 439, in _connect
+    rc = self.conn.connect()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_conn.py", line 76, in connect
+    rc = self.__connect()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_conn.py", line 178, in __connect
+    rc = self.rpc.transmit("api_sync_v2", params = self.ctx.api_ver)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 222, in transmit
+    rc = self.invoke_rpc_method(method_name, params, max_retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 189, in invoke_rpc_method
+    return self.send_msg(msg, retry = retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 250, in send_msg
+    return self.__send_msg(msg, retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 262, in __send_msg
+    response = self.send_raw_msg(self.zipper.compress(buffer), retry = retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 299, in send_raw_msg
+    raise e
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 295, in send_raw_msg
+    return self._send_raw_msg_safe(msg, retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 319, in _send_raw_msg_safe
+    response = self.socket.recv()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/pyzmq-ctypes/zmq/socket.py", line 214, in recv
+    _retry_sys_call(zmq_msg_recv, zmq_msg, self.handle, flags)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/pyzmq-ctypes/zmq/utils.py", line 44, in _retry_sys_call
+    rc = f(*args)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/unittest/case.py", line 60, in testPartExecutor
+    yield
+  File "/usr/lib64/python3.6/unittest/case.py", line 618, in run
+    self.setUp()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateless_tests/stl_client_test.py", line 194, in setUp
+    self.c.connect()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 58, in wrap2
+    raise TRexError("'{0}' - interrupted by a keyboard signal (probably ctrl + c)".format(func_name))
+trex.common.trex_exceptions.TRexError: 'connect' - interrupted by a keyboard signal (probably ctrl + c)
+]]></error></testcase><testcase classname="stateless_tests.stl_client_test.STLClient_Test" name="test_random_dynamic_add_remove" time="0.046"><error type="trex.common.trex_exceptions.TRexError" message="'connect' - interrupted by a keyboard signal (probably ctrl + c)"><![CDATA[Traceback (most recent call last):
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 51, in wrap2
+    ret = f(*args, **kwargs)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_client.py", line 1302, in connect
+    rc = self._connect()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_client.py", line 439, in _connect
+    rc = self.conn.connect()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_conn.py", line 76, in connect
+    rc = self.__connect()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_conn.py", line 178, in __connect
+    rc = self.rpc.transmit("api_sync_v2", params = self.ctx.api_ver)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 222, in transmit
+    rc = self.invoke_rpc_method(method_name, params, max_retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 189, in invoke_rpc_method
+    return self.send_msg(msg, retry = retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 250, in send_msg
+    return self.__send_msg(msg, retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 262, in __send_msg
+    response = self.send_raw_msg(self.zipper.compress(buffer), retry = retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 299, in send_raw_msg
+    raise e
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 295, in send_raw_msg
+    return self._send_raw_msg_safe(msg, retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 319, in _send_raw_msg_safe
+    response = self.socket.recv()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/pyzmq-ctypes/zmq/socket.py", line 214, in recv
+    _retry_sys_call(zmq_msg_recv, zmq_msg, self.handle, flags)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/pyzmq-ctypes/zmq/utils.py", line 44, in _retry_sys_call
+    rc = f(*args)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/unittest/case.py", line 60, in testPartExecutor
+    yield
+  File "/usr/lib64/python3.6/unittest/case.py", line 618, in run
+    self.setUp()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateless_tests/stl_client_test.py", line 194, in setUp
+    self.c.connect()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 58, in wrap2
+    raise TRexError("'{0}' - interrupted by a keyboard signal (probably ctrl + c)".format(func_name))
+trex.common.trex_exceptions.TRexError: 'connect' - interrupted by a keyboard signal (probably ctrl + c)
+]]></error></testcase><testcase classname="stateless_tests.stl_client_test.STLClient_Test" name="test_resolve_vlans" time="0.059"><error type="trex.common.trex_exceptions.TRexError" message="'connect' - interrupted by a keyboard signal (probably ctrl + c)"><![CDATA[Traceback (most recent call last):
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 51, in wrap2
+    ret = f(*args, **kwargs)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_client.py", line 1302, in connect
+    rc = self._connect()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_client.py", line 439, in _connect
+    rc = self.conn.connect()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_conn.py", line 76, in connect
+    rc = self.__connect()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_conn.py", line 178, in __connect
+    rc = self.rpc.transmit("api_sync_v2", params = self.ctx.api_ver)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 222, in transmit
+    rc = self.invoke_rpc_method(method_name, params, max_retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 189, in invoke_rpc_method
+    return self.send_msg(msg, retry = retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 250, in send_msg
+    return self.__send_msg(msg, retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 262, in __send_msg
+    response = self.send_raw_msg(self.zipper.compress(buffer), retry = retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 299, in send_raw_msg
+    raise e
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 295, in send_raw_msg
+    return self._send_raw_msg_safe(msg, retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 319, in _send_raw_msg_safe
+    response = self.socket.recv()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/pyzmq-ctypes/zmq/socket.py", line 214, in recv
+    _retry_sys_call(zmq_msg_recv, zmq_msg, self.handle, flags)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/pyzmq-ctypes/zmq/utils.py", line 44, in _retry_sys_call
+    rc = f(*args)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/unittest/case.py", line 60, in testPartExecutor
+    yield
+  File "/usr/lib64/python3.6/unittest/case.py", line 618, in run
+    self.setUp()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateless_tests/stl_client_test.py", line 194, in setUp
+    self.c.connect()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 58, in wrap2
+    raise TRexError("'{0}' - interrupted by a keyboard signal (probably ctrl + c)".format(func_name))
+trex.common.trex_exceptions.TRexError: 'connect' - interrupted by a keyboard signal (probably ctrl + c)
+]]></error></testcase><testcase classname="stateless_tests.stl_client_test.STLClient_Test" name="test_stress_connect_disconnect" time="0.063"><error type="trex.common.trex_exceptions.TRexError" message="'connect' - interrupted by a keyboard signal (probably ctrl + c)"><![CDATA[Traceback (most recent call last):
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 51, in wrap2
+    ret = f(*args, **kwargs)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_client.py", line 1302, in connect
+    rc = self._connect()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_client.py", line 439, in _connect
+    rc = self.conn.connect()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_conn.py", line 76, in connect
+    rc = self.__connect()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_conn.py", line 178, in __connect
+    rc = self.rpc.transmit("api_sync_v2", params = self.ctx.api_ver)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 222, in transmit
+    rc = self.invoke_rpc_method(method_name, params, max_retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 189, in invoke_rpc_method
+    return self.send_msg(msg, retry = retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 250, in send_msg
+    return self.__send_msg(msg, retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 262, in __send_msg
+    response = self.send_raw_msg(self.zipper.compress(buffer), retry = retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 299, in send_raw_msg
+    raise e
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 295, in send_raw_msg
+    return self._send_raw_msg_safe(msg, retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 319, in _send_raw_msg_safe
+    response = self.socket.recv()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/pyzmq-ctypes/zmq/socket.py", line 214, in recv
+    _retry_sys_call(zmq_msg_recv, zmq_msg, self.handle, flags)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/pyzmq-ctypes/zmq/utils.py", line 44, in _retry_sys_call
+    rc = f(*args)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/unittest/case.py", line 60, in testPartExecutor
+    yield
+  File "/usr/lib64/python3.6/unittest/case.py", line 618, in run
+    self.setUp()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateless_tests/stl_client_test.py", line 194, in setUp
+    self.c.connect()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 58, in wrap2
+    raise TRexError("'{0}' - interrupted by a keyboard signal (probably ctrl + c)".format(func_name))
+trex.common.trex_exceptions.TRexError: 'connect' - interrupted by a keyboard signal (probably ctrl + c)
+]]></error></testcase><testcase classname="stateless_tests.stl_client_test.STLClient_Test" name="test_stress_tx" time="0.025"><error type="trex.common.trex_exceptions.TRexError" message="'connect' - interrupted by a keyboard signal (probably ctrl + c)"><![CDATA[Traceback (most recent call last):
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 51, in wrap2
+    ret = f(*args, **kwargs)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_client.py", line 1302, in connect
+    rc = self._connect()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_client.py", line 439, in _connect
+    rc = self.conn.connect()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_conn.py", line 76, in connect
+    rc = self.__connect()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_conn.py", line 178, in __connect
+    rc = self.rpc.transmit("api_sync_v2", params = self.ctx.api_ver)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 222, in transmit
+    rc = self.invoke_rpc_method(method_name, params, max_retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 189, in invoke_rpc_method
+    return self.send_msg(msg, retry = retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 250, in send_msg
+    return self.__send_msg(msg, retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 262, in __send_msg
+    response = self.send_raw_msg(self.zipper.compress(buffer), retry = retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 299, in send_raw_msg
+    raise e
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 295, in send_raw_msg
+    return self._send_raw_msg_safe(msg, retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 319, in _send_raw_msg_safe
+    response = self.socket.recv()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/pyzmq-ctypes/zmq/socket.py", line 214, in recv
+    _retry_sys_call(zmq_msg_recv, zmq_msg, self.handle, flags)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/pyzmq-ctypes/zmq/utils.py", line 44, in _retry_sys_call
+    rc = f(*args)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/unittest/case.py", line 60, in testPartExecutor
+    yield
+  File "/usr/lib64/python3.6/unittest/case.py", line 618, in run
+    self.setUp()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateless_tests/stl_client_test.py", line 194, in setUp
+    self.c.connect()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 58, in wrap2
+    raise TRexError("'{0}' - interrupted by a keyboard signal (probably ctrl + c)".format(func_name))
+trex.common.trex_exceptions.TRexError: 'connect' - interrupted by a keyboard signal (probably ctrl + c)
+]]></error></testcase><testcase classname="stateless_tests.stl_client_test.STLClient_Test" name="test_tx_from_rx" time="0.049"><error type="trex.common.trex_exceptions.TRexError" message="'connect' - interrupted by a keyboard signal (probably ctrl + c)"><![CDATA[Traceback (most recent call last):
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 51, in wrap2
+    ret = f(*args, **kwargs)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_client.py", line 1302, in connect
+    rc = self._connect()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_client.py", line 439, in _connect
+    rc = self.conn.connect()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_conn.py", line 76, in connect
+    rc = self.__connect()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_conn.py", line 178, in __connect
+    rc = self.rpc.transmit("api_sync_v2", params = self.ctx.api_ver)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 222, in transmit
+    rc = self.invoke_rpc_method(method_name, params, max_retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 189, in invoke_rpc_method
+    return self.send_msg(msg, retry = retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 250, in send_msg
+    return self.__send_msg(msg, retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 262, in __send_msg
+    response = self.send_raw_msg(self.zipper.compress(buffer), retry = retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 299, in send_raw_msg
+    raise e
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 295, in send_raw_msg
+    return self._send_raw_msg_safe(msg, retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 319, in _send_raw_msg_safe
+    response = self.socket.recv()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/pyzmq-ctypes/zmq/socket.py", line 214, in recv
+    _retry_sys_call(zmq_msg_recv, zmq_msg, self.handle, flags)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/pyzmq-ctypes/zmq/utils.py", line 44, in _retry_sys_call
+    rc = f(*args)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/unittest/case.py", line 60, in testPartExecutor
+    yield
+  File "/usr/lib64/python3.6/unittest/case.py", line 618, in run
+    self.setUp()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateless_tests/stl_client_test.py", line 194, in setUp
+    self.c.connect()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 58, in wrap2
+    raise TRexError("'{0}' - interrupted by a keyboard signal (probably ctrl + c)".format(func_name))
+trex.common.trex_exceptions.TRexError: 'connect' - interrupted by a keyboard signal (probably ctrl + c)
+]]></error></testcase><testcase classname="stateless_tests.stl_client_test.STLClient_Test" name="STLClient_Test:teardown" time="0.098"><error type="trex.common.trex_exceptions.TRexError" message="'connect' - interrupted by a keyboard signal (probably ctrl + c)"><![CDATA[Traceback (most recent call last):
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 51, in wrap2
+    ret = f(*args, **kwargs)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_client.py", line 1302, in connect
+    rc = self._connect()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_client.py", line 439, in _connect
+    rc = self.conn.connect()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_conn.py", line 76, in connect
+    rc = self.__connect()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_conn.py", line 178, in __connect
+    rc = self.rpc.transmit("api_sync_v2", params = self.ctx.api_ver)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 222, in transmit
+    rc = self.invoke_rpc_method(method_name, params, max_retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 189, in invoke_rpc_method
+    return self.send_msg(msg, retry = retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 250, in send_msg
+    return self.__send_msg(msg, retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 262, in __send_msg
+    response = self.send_raw_msg(self.zipper.compress(buffer), retry = retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 299, in send_raw_msg
+    raise e
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 295, in send_raw_msg
+    return self._send_raw_msg_safe(msg, retry)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_req_resp_client.py", line 319, in _send_raw_msg_safe
+    response = self.socket.recv()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/pyzmq-ctypes/zmq/socket.py", line 214, in recv
+    _retry_sys_call(zmq_msg_recv, zmq_msg, self.handle, flags)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/pyzmq-ctypes/zmq/utils.py", line 44, in _retry_sys_call
+    rc = f(*args)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python3/nose/suite.py", line 229, in run
+    self.tearDown()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python3/nose/suite.py", line 352, in tearDown
+    self.teardownContext(ancestor)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python3/nose/suite.py", line 368, in teardownContext
+    try_run(context, names)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python3/nose/util.py", line 470, in try_run
+    return func()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateless_tests/stl_client_test.py", line 227, in tearDownClass
+    CTRexScenario.stl_trex.connect()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 58, in wrap2
+    raise TRexError("'{0}' - interrupted by a keyboard signal (probably ctrl + c)".format(func_name))
+trex.common.trex_exceptions.TRexError: 'connect' - interrupted by a keyboard signal (probably ctrl + c)
+]]></error></testcase><testcase classname="stateless_tests.stl_core_id_pinning_test.CoreID_Test" name="test_core_id_negative" time="0.006"><error type="trex.common.trex_exceptions.TRexError" message="'get_server_system_info' - is not valid while disconnected"><![CDATA[Traceback (most recent call last):
+  File "/usr/lib64/python3.6/unittest/case.py", line 60, in testPartExecutor
+    yield
+  File "/usr/lib64/python3.6/unittest/case.py", line 618, in run
+    self.setUp()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateless_tests/stl_core_id_pinning_test.py", line 18, in setUp
+    self.num_cores = self.c.get_server_system_info().get('dp_core_count_per_port')
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 48, in wrap2
+    raise TRexError("'{0}' - is not valid while disconnected".format(func_name))
+trex.common.trex_exceptions.TRexError: 'get_server_system_info' - is not valid while disconnected
+]]></error></testcase><testcase classname="stateless_tests.stl_core_id_pinning_test.CoreID_Test" name="test_core_id_pinning_several_cores" time="0.003"><error type="trex.common.trex_exceptions.TRexError" message="'get_server_system_info' - is not valid while disconnected"><![CDATA[Traceback (most recent call last):
+  File "/usr/lib64/python3.6/unittest/case.py", line 60, in testPartExecutor
+    yield
+  File "/usr/lib64/python3.6/unittest/case.py", line 618, in run
+    self.setUp()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateless_tests/stl_core_id_pinning_test.py", line 18, in setUp
+    self.num_cores = self.c.get_server_system_info().get('dp_core_count_per_port')
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 48, in wrap2
+    raise TRexError("'{0}' - is not valid while disconnected".format(func_name))
+trex.common.trex_exceptions.TRexError: 'get_server_system_info' - is not valid while disconnected
+]]></error></testcase><testcase classname="stateless_tests.stl_core_id_pinning_test.CoreID_Test" name="test_core_id_pinning_several_streams" time="0.003"><error type="trex.common.trex_exceptions.TRexError" message="'get_server_system_info' - is not valid while disconnected"><![CDATA[Traceback (most recent call last):
+  File "/usr/lib64/python3.6/unittest/case.py", line 60, in testPartExecutor
+    yield
+  File "/usr/lib64/python3.6/unittest/case.py", line 618, in run
+    self.setUp()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateless_tests/stl_core_id_pinning_test.py", line 18, in setUp
+    self.num_cores = self.c.get_server_system_info().get('dp_core_count_per_port')
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 48, in wrap2
+    raise TRexError("'{0}' - is not valid while disconnected".format(func_name))
+trex.common.trex_exceptions.TRexError: 'get_server_system_info' - is not valid while disconnected
+]]></error></testcase><testcase classname="stateless_tests.stl_core_id_pinning_test.CoreID_Test" name="test_core_id_pinning_single" time="0.003"><error type="trex.common.trex_exceptions.TRexError" message="'get_server_system_info' - is not valid while disconnected"><![CDATA[Traceback (most recent call last):
+  File "/usr/lib64/python3.6/unittest/case.py", line 60, in testPartExecutor
+    yield
+  File "/usr/lib64/python3.6/unittest/case.py", line 618, in run
+    self.setUp()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateless_tests/stl_core_id_pinning_test.py", line 18, in setUp
+    self.num_cores = self.c.get_server_system_info().get('dp_core_count_per_port')
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 48, in wrap2
+    raise TRexError("'{0}' - is not valid while disconnected".format(func_name))
+trex.common.trex_exceptions.TRexError: 'get_server_system_info' - is not valid while disconnected
+]]></error></testcase><testcase classname="stateless_tests.stl_core_id_pinning_test.CoreID_Test" name="test_core_id_pinning_single_burst_loop" time="0.003"><error type="trex.common.trex_exceptions.TRexError" message="'get_server_system_info' - is not valid while disconnected"><![CDATA[Traceback (most recent call last):
+  File "/usr/lib64/python3.6/unittest/case.py", line 60, in testPartExecutor
+    yield
+  File "/usr/lib64/python3.6/unittest/case.py", line 618, in run
+    self.setUp()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateless_tests/stl_core_id_pinning_test.py", line 18, in setUp
+    self.num_cores = self.c.get_server_system_info().get('dp_core_count_per_port')
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 48, in wrap2
+    raise TRexError("'{0}' - is not valid while disconnected".format(func_name))
+trex.common.trex_exceptions.TRexError: 'get_server_system_info' - is not valid while disconnected
+]]></error></testcase><testcase classname="stateless_tests.stl_cpp_tests.STLCPP_Test" name="test_mlx5_xstats" time="0.005"><error type="trex.common.trex_exceptions.TRexError" message="'get_port_info' - is not valid while disconnected"><![CDATA[Traceback (most recent call last):
+  File "/usr/lib64/python3.6/unittest/case.py", line 60, in testPartExecutor
+    yield
+  File "/usr/lib64/python3.6/unittest/case.py", line 618, in run
+    self.setUp()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateless_tests/stl_cpp_tests.py", line 14, in setUp
+    port_info = self.c.get_port_info(ports = self.rx_port)[0]
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 48, in wrap2
+    raise TRexError("'{0}' - is not valid while disconnected".format(func_name))
+trex.common.trex_exceptions.TRexError: 'get_port_info' - is not valid while disconnected
+]]></error><system-out><![CDATA[
+]]></system-out></testcase></testsuite>

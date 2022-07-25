@@ -1,0 +1,11 @@
+Version : v2.87
+DPDK version: DPDK 21.02.0-rc1
+User    : hhaim
+Date    : Feb  8 2021 , 02:18:15
+Uuid    : dab027f4-69a2-11eb-832c-641225363740
+Git SHA : d96dd9ab35acefe7ff00c81c025d113a2f4fe148
+Compiled with GCC: 7.4.0
+Compiled with glibc: 2.16 (host: 2.19)
+Sanitized image: no
+Modes: ['bird', 'emu']
+Router: Model: ASR1001x, Image: None

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite name="nosetests" tests="2" errors="0" failures="0" skip="0"><testcase classname="astf_tests.astf_general_test.ASTFBasic_Test" name="test_connectivity" time="0.500"><system-out><![CDATA[
+Starting TRex... done. (0s)
+Started TRex
+Connecting.
+Connected
+Mapping ports.
+Got ports mapping: {'bi': [(0, 1)], 'map': {0: 1, 1: 0}, 'unknown': []}
+]]></system-out></testcase><testcase classname="astf_tests.astf_resilience_test.ASTFResilience_Test" name="test_astf_params" time="3.043"><system-out><![CDATA[
+Creating profile with params: {'templates': 1, 'client_ips': 256, 'server_ips': 256}
+Profile size: 1739
+Load took: 0.003
+Start took: 0.111
+Creating profile with params: {'templates': 256, 'client_ips': 256, 'server_ips': 256}
+Profile size: 170029
+Load took: 0.017
+Start took: 0.112
+Creating profile with params: {'templates': 1, 'client_ips': 256, 'server_ips': 65536}
+Profile size: 2479
+Load took: 0.004
+Start took: 0.11
+Creating profile with params: {'templates': 256, 'client_ips': 256, 'server_ips': 65536}
+Profile size: 170769
+Load took: 0.014
+Start took: 0.111
+Creating profile with params: {'templates': 1, 'client_ips': 65536, 'server_ips': 256}
+Profile size: 3219
+Load took: 0.004
+Start took: 0.316
+Creating profile with params: {'templates': 256, 'client_ips': 65536, 'server_ips': 256}
+Profile size: 172021
+Load took: 0.014
+Start took: 0.624
+]]></system-out></testcase></testsuite>

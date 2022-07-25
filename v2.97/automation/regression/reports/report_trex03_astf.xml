@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite name="nosetests" tests="2" errors="1" failures="0" skip="0"><testcase classname="astf_tests.astf_general_test.ASTFBasic_Test" name="test_connectivity" time="0.551"><system-out><![CDATA[
+Starting TRex... done. (0s)
+Started TRex
+Connecting.
+Connected
+Mapping ports.
+Got ports mapping: {'map': {0: 1, 1: 0}, 'bi': [(0, 1)], 'unknown': []}
+]]></system-out></testcase><testcase classname="astf_tests.astf_template_group_test.ASTFTemplateGroup_Test" name="test_astf_template_group_edge_cases_dynamic_profile" time="3.570"><error type="trex.common.trex_exceptions.TRexError" message="ASTF profile_id timjdbaksm does not exist."><![CDATA[Traceback (most recent call last):
+  File "/sw/packages/python/2.7.4/lib/python2.7/unittest/case.py", line 332, in run
+    testMethod()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/astf_tests/astf_template_group_test.py", line 364, in test_astf_template_group_edge_cases_dynamic_profile
+    self.c.clear_stats(pid_input=str(random_profile))
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 51, in wrap2
+    ret = f(*args, **kwargs)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/astf/trex_astf_client.py", line 781, in clear_stats
+    valid_pids = self.validate_profile_id_input(pid_input)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/astf/trex_astf_client.py", line 239, in validate_profile_id_input
+    raise TRexError("ASTF profile_id %s does not exist." % profile_id)
+TRexError: ASTF profile_id timjdbaksm does not exist.
+]]></error><system-out><![CDATA[Creating random name for the dynamic profile
+Dynamic profile name : idkjcrctnm
+Creating random name for the dynamic profile
+Dynamic profile name : timjdbaksm
+]]></system-out></testcase></testsuite>

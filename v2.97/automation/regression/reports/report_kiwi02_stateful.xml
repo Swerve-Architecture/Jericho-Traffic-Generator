@@ -1,0 +1,583 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite name="nosetests" tests="25" errors="2" failures="0" skip="3"><testcase classname="stateful_tests.trex_client_cfg_test.CTRexClientCfg_Test" name="test_client_cfg_nbar" time="0.001"><skipped type="unittest.case.SkipTest" message="Can't run currently on kiwi02"><![CDATA[SkipTest: Can't run currently on kiwi02
+]]></skipped><system-out><![CDATA[Skip: Can't run currently on kiwi02
+]]></system-out></testcase><testcase classname="stateful_tests.trex_client_cfg_test.CTRexClientCfg_Test" name="test_client_cfg_vlan" time="0.000"><skipped type="unittest.case.SkipTest" message="Can't run currently on kiwi02"><![CDATA[SkipTest: Can't run currently on kiwi02
+]]></skipped><system-out><![CDATA[Skip: Can't run currently on kiwi02
+]]></system-out></testcase><testcase classname="stateful_tests.trex_imix_test.CTRexIMIX_Test" name="test_high_active_negative" time="2.339"><system-out><![CDATA[
+]]></system-out></testcase><testcase classname="stateful_tests.trex_imix_test.CTRexIMIX_Test" name="test_jumbo" time="123.680"><system-out><![CDATA[
+
+LATEST RESULT OBJECT:
+Is valid history?       True
+Done warmup?            True
+Expected tx rate:       {u'm_tx_expected_pps': 440000.0, u'm_tx_expected_bps': 32503678976.0, u'm_tx_expected_cps': 440000.0}
+Current tx rate:        {u'm_tx_bps': 19995346944.0, u'm_tx_cps': 0.0, u'm_tx_pps': 273228.4}
+Minimum latency:        {u'min-2': 10, u'min-3': 10, u'min-0': 10, u'min-1': 10}
+Maximum latency:        {u'max-0': 150, u'max-1': 150, u'max-2': 150, u'max-3': 150}
+Average latency:        {'all': 143.2, u'port2': 136.0, u'port3': 127.1, u'port0': 162.4, u'port1': 147.3}
+Average window latency: {'all': 142.364, u'port2': 134.631, u'port3': 125.07, u'port0': 162.204, u'port1': 147.551}
+Total drops:            0
+Drop rate:              0.0
+History size so far:    100
+
+router drop stats: {'total_drops': 0}
+TRex drop stats: 0
+TRex CPU utilization: 7.02%, norm_cpu is : 463.05 Gb/core
+Err percent: 28.465596933
+]]></system-out></testcase><testcase classname="stateful_tests.trex_imix_test.CTRexIMIX_Test" name="test_routing_imix" time="83.836"><system-out><![CDATA[
+
+LATEST RESULT OBJECT:
+Is valid history?       True
+Done warmup?            True
+Expected tx rate:       {u'm_tx_expected_pps': 11054784.0, u'm_tx_expected_bps': 31999729664.0, u'm_tx_expected_cps': 11054784.0}
+Current tx rate:        {u'm_tx_bps': 20357222400.0, u'm_tx_cps': 0.0, u'm_tx_pps': 7034874.5}
+Minimum latency:        {u'min-2': 10, u'min-3': 10, u'min-0': 10, u'min-1': 10}
+Maximum latency:        {u'max-0': 45, u'max-1': 45, u'max-2': 45, u'max-3': 45}
+Average latency:        {'all': 33.925, u'port2': 38.0, u'port3': 32.8, u'port0': 31.7, u'port1': 33.2}
+Average window latency: {'all': 33.301, u'port2': 37.359, u'port3': 31.77, u'port0': 31.405, u'port1': 32.671}
+Total drops:            0
+Drop rate:              0.0
+History size so far:    63
+
+router drop stats: {'total_drops': 0}
+TRex drop stats: 0
+TRex CPU utilization: 47.16%, norm_cpu is : 16.84 Gb/core
+Err percent: 56.9698824556
+]]></system-out></testcase><testcase classname="stateful_tests.trex_imix_test.CTRexIMIX_Test" name="test_routing_imix_64" time="55.352"><system-out><![CDATA[
+
+LATEST RESULT OBJECT:
+Is valid history?       True
+Done warmup?            True
+Expected tx rate:       {u'm_tx_expected_pps': 16000000.0, u'm_tx_expected_bps': 8192000000.0, u'm_tx_expected_cps': 16000000.0}
+Current tx rate:        {u'm_tx_bps': 4449526784.0, u'm_tx_cps': 0.0, u'm_tx_pps': 8690410.0}
+Minimum latency:        {u'min-2': 10, u'min-3': 10, u'min-0': 10, u'min-1': 10}
+Maximum latency:        {u'max-0': 25, u'max-1': 35, u'max-2': 25, u'max-3': 25}
+Average latency:        {'all': 22.625, u'port2': 22.0, u'port3': 23.0, u'port0': 22.0, u'port1': 23.5}
+Average window latency: {'all': 22.139, u'port2': 21.603, u'port3': 22.432, u'port0': 21.568, u'port1': 22.953}
+Total drops:            0
+Drop rate:              0.0
+History size so far:    34
+
+router drop stats: {'total_drops': 0}
+TRex drop stats: 0
+TRex CPU utilization: 65.45%, norm_cpu is : 3.07 Gb/core
+Err percent: 58.6468283112
+]]></system-out></testcase><testcase classname="stateful_tests.trex_imix_test.CTRexIMIX_Test" name="test_short_flow" time="53.328"><system-out><![CDATA[
+
+LATEST RESULT OBJECT:
+Is valid history?       True
+Done warmup?            True
+Expected tx rate:       {u'm_tx_expected_pps': 20000000.0, u'm_tx_expected_bps': 10560000000.0, u'm_tx_expected_cps': 2000000.0}
+Current tx rate:        {u'm_tx_bps': 5753129984.0, u'm_tx_cps': 1089343.4, u'm_tx_pps': 10896082.0}
+Minimum latency:        {u'min-2': 10, u'min-3': 10, u'min-0': 10, u'min-1': 10}
+Maximum latency:        {u'max-0': 35, u'max-1': 35, u'max-2': 35, u'max-3': 35}
+Average latency:        {'all': 23.5, u'port2': 24.0, u'port3': 24.0, u'port0': 23.0, u'port1': 23.0}
+Average window latency: {'all': 23.022, u'port2': 23.464, u'port3': 23.515, u'port0': 22.573, u'port1': 22.536}
+Total drops:            0
+Drop rate:              0.0
+History size so far:    33
+
+router drop stats: {'total_drops': 0}
+TRex drop stats: 0
+TRex CPU utilization: 71.03%, norm_cpu is : 3.71 Gb/core
+Err percent: 99.6291053218
+]]></system-out></testcase><testcase classname="stateful_tests.trex_imix_test.CTRexIMIX_Test" name="test_short_flow_high_active" time="84.200"><system-out><![CDATA[
+
+LATEST RESULT OBJECT:
+Is valid history?       True
+Done warmup?            True
+Expected tx rate:       {u'm_tx_expected_pps': 20000000.0, u'm_tx_expected_bps': 10560000000.0, u'm_tx_expected_cps': 2000000.0}
+Current tx rate:        {u'm_tx_bps': 6696177664.0, u'm_tx_cps': 1267946.0, u'm_tx_pps': 12682155.0}
+Minimum latency:        {u'min-2': 10, u'min-3': 10, u'min-0': 10, u'min-1': 10}
+Maximum latency:        {u'max-0': 35, u'max-1': 35, u'max-2': 35, u'max-3': 35}
+Average latency:        {'all': 23.475, u'port2': 23.9, u'port3': 24.0, u'port0': 23.0, u'port1': 23.0}
+Average window latency: {'all': 23.53, u'port2': 23.468, u'port3': 23.746, u'port0': 24.048, u'port1': 22.859}
+Total drops:            0
+Drop rate:              0.0
+History size so far:    63
+
+router drop stats: {'total_drops': 0}
+TRex drop stats: 0
+TRex CPU utilization: 72.63%, norm_cpu is : 3.6 Gb/core
+Err percent: 99.6404314059
+]]></system-out></testcase><testcase classname="stateful_tests.trex_imix_test.CTRexIMIX_Test" name="test_short_flow_high_active2" time="85.417"><system-out><![CDATA[
+
+LATEST RESULT OBJECT:
+Is valid history?       True
+Done warmup?            True
+Expected tx rate:       {u'm_tx_expected_pps': 15000000.0, u'm_tx_expected_bps': 7920000000.0, u'm_tx_expected_cps': 1500000.0}
+Current tx rate:        {u'm_tx_bps': 4463462400.0, u'm_tx_cps': 845142.4, u'm_tx_pps': 8453529.0}
+Minimum latency:        {u'min-2': 10, u'min-3': 10, u'min-0': 10, u'min-1': 10}
+Maximum latency:        {u'max-0': 35, u'max-1': 35, u'max-2': 35, u'max-3': 35}
+Average latency:        {'all': 23.0, u'port2': 23.0, u'port3': 23.0, u'port0': 23.0, u'port1': 23.0}
+Average window latency: {'all': 22.784, u'port2': 22.749, u'port3': 22.923, u'port0': 22.732, u'port1': 22.732}
+Total drops:            0
+Drop rate:              0.0
+History size so far:    65
+
+router drop stats: {'total_drops': 0}
+TRex drop stats: 0
+TRex CPU utilization: 65.27%, norm_cpu is : 2.91 Gb/core
+Err percent: 99.7085360732
+]]></system-out></testcase><testcase classname="stateful_tests.trex_imix_test.CTRexIMIX_Test" name="test_static_routing_imix" time="82.292"><system-out><![CDATA[
+
+LATEST RESULT OBJECT:
+Is valid history?       True
+Done warmup?            True
+Expected tx rate:       {u'm_tx_expected_pps': 11054784.0, u'm_tx_expected_bps': 31999729664.0, u'm_tx_expected_cps': 11054784.0}
+Current tx rate:        {u'm_tx_bps': 20364752896.0, u'm_tx_cps': 0.0, u'm_tx_pps': 7037473.0}
+Minimum latency:        {u'min-2': 10, u'min-3': 10, u'min-0': 10, u'min-1': 10}
+Maximum latency:        {u'max-0': 45, u'max-1': 45, u'max-2': 45, u'max-3': 55}
+Average latency:        {'all': 34.225, u'port2': 35.5, u'port3': 42.0, u'port0': 32.0, u'port1': 27.4}
+Average window latency: {'all': 34.136, u'port2': 34.733, u'port3': 41.494, u'port0': 32.444, u'port1': 27.871}
+Total drops:            0
+Drop rate:              0.0
+History size so far:    63
+
+
+LATEST DUMP:
+{u'trex-event': {u'type': 100, u'data': {u'cause': u'test has ended'}, u'name': u'trex-event'}, u'trex-latecny': {u'data': {u'jitter-2': 0.0, u'error-2': 0.0, u'error-3': 0.0, u'error-0': 0.0, u'error-1': 0.0, u'unknown': 0, u'max-0': 53.0, u'max-1': 52.0, u'max-2': 56.0, u'max-3': 58.0, u'c-max-2': 47.3, u'c-max-3': 49.7, u'c-max-0': 40.0, u'c-max-1': 37.3, u'avg-2': 35.5, u'avg-3': 42.0, u'jitter-1': 0.0, u'jitter-0': 0.0, u'avg-0': 32.0, u'avg-1': 27.4, u'jitter-3': 0.0}, u'type': 0, u'name': u'trex-latecny'}, u'trex-global': {u'data': {u'm_cpu_util_raw': 47.0, u'm_total_tx_bps-2': 5206472704.0, u'm_total_tx_bps-3': 4977587200.0, u'm_total_tx_bps-0': 5029400064.0, u'm_total_tx_bps-1': 5151293440.0, u'm_cpu_util': 47.6, u'm_total_alloc_error': 0, u'm_active_flows': 1194.0, u'ierrors-3': 0, u'm_total_servers': 65528, u'm_total_rx_bps-1': 5029401600.0, u'm_total_rx_bps-2': 4977638912.0, u'm_total_rx_bps-3': 5206486528.0, u'm_platform_factor': 1.0, u'obytes-1': 60722064106, u'm_socket_util': 0.007645, u'm_total_nat_learn_error': 0, u'm_total_clients': 248, u'm_cpu_util-3': 47.6, u'unknown': 0, u'ierrors-2': 0, u'ts': {u'freq': 2000000000, u'value': 32633921895425794}, u'ierrors-0': 0, u'ierrors-1': 0, u'opackets-3': 159116709, u'opackets-2': 172647325, u'opackets-1': 173501699, u'opackets-0': 158262336, u'm_rx_pps': 7037525.0, u'template': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], u'm_total_rx_bytes': 240013871684, u'm_total_rx_pkts': 663528069, u'm_rx_core_pps': -1.0, u'm_total_nat_active': 0, u'oerrors-3': 0, u'm_total_nat_syn_wait': 0, u'oerrors-0': 0, u'oerrors-1': 0, u'oerrors-2': 0, u'm_rx_drop_bps': 0.0, u'm_rx_bps': 20364900352.0, u'm_total_queue_full': 0, u'm_cpu_util-1': 47.6, u'm_total_rx_pps-2': 1687909.6, u'm_total_rx_pps-3': 1831432.5, u'm_total_rx_pps-0': 1839898.8, u'm_total_rx_pps-1': 1678284.2, u'obytes-3': 58655014158, u'm_open_flows': 1194.0, u'm_tx_expected_pps': 11054784.0, u'm_rx_cpu_util': 0.2499, u'm_total_nat_no_fid': 0, u'obytes-2': 61351921652, u'm_cpu_util-0': 47.6, u'm_total_queue_drop': 0, u'm_active_sockets': 1194, u'm_total_tx_pkts': 663528069, u'm_tx_bps': 20364752896.0, u'm_total_rx_bps-0': 5151372800.0, u'm_tx_pps': 7037473.0, u'ipackets-2': 159116709, u'm_total_nat_open': 0, u'm_total_tx_pps-0': 1678284.0, u'm_total_tx_pps-1': 1839871.5, u'm_total_tx_pps-2': 1831426.8, u'm_total_tx_pps-3': 1687891.0, u'm_bw_per_core': 10.7, u'm_total_nat_time_out': 0, u'ibytes-1': 59284871768, u'ibytes-0': 60722064106, u'ibytes-3': 61351921652, u'ibytes-2': 58655014158, u'm_cpu_util-2': 47.6, u'm_total_tx_bytes': 240013871684, u'm_tx_expected_bps': 31999729664.0, u'm_tx_cps': 0.0, u'ipackets-1': 158262336, u'ipackets-0': 173501699, u'ipackets-3': 172647325, u'obytes-0': 59284871768, u'm_total_nat_time_out_wait_ack': 0, u'm_tx_expected_cps': 11054784.0}, u'type': 0, u'name': u'trex-global'}, 'trex-latency-v2': {u'data': {u'port-0': {u'hist': {u'cnt': 59804, u'max_usec': 53, u'min_usec': 10, u'high_cnt': 59804, u's_avg': 32.015625, u's_max': 39.963, u'histogram': [{u'val': 5412, u'key': 20}, {u'val': 51526, u'key': 30}, {u'val': 3317, u'key': 40}, {u'val': 6, u'key': 50}]}, u'stats': {u'm_seq_error': 0, u'm_l3_cs_err': 0, u'm_pkt_ok': 60261, u'm_no_ipv4_option': 0, u'm_unsup_prot': 0, u'm_no_id': 0, u'm_jitter': 0, u'm_no_magic': 0, u'm_tx_pkt_err': 0, u'm_rx_check': 0, u'tx_arp': 0, u'm_length_error': 0, u'm_l4_cs_err': 0, u'ipv6_n_solic': 0, u'm_tx_pkt_ok': 60261, u'ignore_bytes': 0}}, u'port-1': {u'hist': {u'cnt': 59804, u'max_usec': 52, u'min_usec': 10, u'high_cnt': 59804, u's_avg': 27.373274, u's_max': 37.265, u'histogram': [{u'val': 38759, u'key': 20}, {u'val': 21212, u'key': 30}, {u'val': 286, u'key': 40}, {u'val': 4, u'key': 50}]}, u'stats': {u'm_seq_error': 0, u'm_l3_cs_err': 0, u'm_pkt_ok': 60261, u'm_no_ipv4_option': 0, u'm_unsup_prot': 0, u'm_no_id': 0, u'm_jitter': 0, u'm_no_magic': 0, u'm_tx_pkt_err': 0, u'm_rx_check': 0, u'tx_arp': 0, u'm_length_error': 0, u'm_l4_cs_err': 0, u'ipv6_n_solic': 0, u'm_tx_pkt_ok': 60261, u'ignore_bytes': 0}}, u'port-2': {u'hist': {u'cnt': 59804, u'max_usec': 56, u'min_usec': 10, u'high_cnt': 59804, u's_avg': 35.539063, u's_max': 47.327, u'histogram': [{u'val': 10443, u'key': 20}, {u'val': 36254, u'key': 30}, {u'val': 13554, u'key': 40}, {u'val': 10, u'key': 50}]}, u'stats': {u'm_seq_error': 0, u'm_l3_cs_err': 0, u'm_pkt_ok': 60261, u'm_no_ipv4_option': 0, u'm_unsup_prot': 0, u'm_no_id': 0, u'm_jitter': 0, u'm_no_magic': 0, u'm_tx_pkt_err': 0, u'm_rx_check': 0, u'tx_arp': 0, u'm_length_error': 0, u'm_l4_cs_err': 0, u'ipv6_n_solic': 0, u'm_tx_pkt_ok': 60261, u'ignore_bytes': 0}}, u'port-3': {u'hist': {u'cnt': 59804, u'max_usec': 58, u'min_usec': 10, u'high_cnt': 59804, u's_avg': 42.0, u's_max': 49.6945, u'histogram': [{u'val': 264, u'key': 20}, {u'val': 3249, u'key': 30}, {u'val': 56676, u'key': 40}, {u'val': 72, u'key': 50}]}, u'stats': {u'm_seq_error': 0, u'm_l3_cs_err': 0, u'm_pkt_ok': 60261, u'm_no_ipv4_option': 0, u'm_unsup_prot': 0, u'm_no_id': 0, u'm_jitter': 0, u'm_no_magic': 0, u'm_tx_pkt_err': 0, u'm_rx_check': 0, u'tx_arp': 0, u'm_length_error': 0, u'm_l4_cs_err': 0, u'ipv6_n_solic': 0, u'm_tx_pkt_ok': 60261, u'ignore_bytes': 0}}, u'unknown': 0, u'cpu_util': 0.249888}, u'type': 0, u'name': u'trex-latecny-v2'}, u'tx-gen': {u'data': {u'realtime-hist': {u'cnt': 0, u'max_usec': 0, u'min_usec': 10, u'high_cnt': 0, u's_avg': 0.0, u's_max': 0.0, u'histogram': []}, u'unknown': 0}, u'type': 0, u'name': u'tx-gen'}, u'template_info': {u'data': [u'cap2/udp_64B.pcap', u'cap2/udp_594B.pcap', u'cap2/udp_1518B.pcap', u'cap2/udp_64B.pcap', u'cap2/udp_594B.pcap', u'cap2/udp_1518B.pcap'], u'type': 0, u'name': u'template_info'}, 'trex-latency': {u'data': {u'jitter-2': 0.0, u'error-2': 0.0, u'error-3': 0.0, u'error-0': 0.0, u'error-1': 0.0, u'unknown': 0, u'max-0': 53.0, u'max-1': 52.0, u'max-2': 56.0, u'max-3': 58.0, u'c-max-2': 47.3, u'c-max-3': 49.7, u'c-max-0': 40.0, u'c-max-1': 37.3, u'avg-2': 35.5, u'avg-3': 42.0, u'jitter-1': 0.0, u'jitter-0': 0.0, u'avg-0': 32.0, u'avg-1': 27.4, u'jitter-3': 0.0}, u'type': 0, u'name': u'trex-latecny'}, u'trex-latecny-v2': {u'data': {u'port-0': {u'hist': {u'cnt': 59804, u'max_usec': 53, u'min_usec': 10, u'high_cnt': 59804, u's_avg': 32.015625, u's_max': 39.963, u'histogram': [{u'val': 5412, u'key': 20}, {u'val': 51526, u'key': 30}, {u'val': 3317, u'key': 40}, {u'val': 6, u'key': 50}]}, u'stats': {u'm_seq_error': 0, u'm_l3_cs_err': 0, u'm_pkt_ok': 60261, u'm_no_ipv4_option': 0, u'm_unsup_prot': 0, u'm_no_id': 0, u'm_jitter': 0, u'm_no_magic': 0, u'm_tx_pkt_err': 0, u'm_rx_check': 0, u'tx_arp': 0, u'm_length_error': 0, u'm_l4_cs_err': 0, u'ipv6_n_solic': 0, u'm_tx_pkt_ok': 60261, u'ignore_bytes': 0}}, u'port-1': {u'hist': {u'cnt': 59804, u'max_usec': 52, u'min_usec': 10, u'high_cnt': 59804, u's_avg': 27.373274, u's_max': 37.265, u'histogram': [{u'val': 38759, u'key': 20}, {u'val': 21212, u'key': 30}, {u'val': 286, u'key': 40}, {u'val': 4, u'key': 50}]}, u'stats': {u'm_seq_error': 0, u'm_l3_cs_err': 0, u'm_pkt_ok': 60261, u'm_no_ipv4_option': 0, u'm_unsup_prot': 0, u'm_no_id': 0, u'm_jitter': 0, u'm_no_magic': 0, u'm_tx_pkt_err': 0, u'm_rx_check': 0, u'tx_arp': 0, u'm_length_error': 0, u'm_l4_cs_err': 0, u'ipv6_n_solic': 0, u'm_tx_pkt_ok': 60261, u'ignore_bytes': 0}}, u'port-2': {u'hist': {u'cnt': 59804, u'max_usec': 56, u'min_usec': 10, u'high_cnt': 59804, u's_avg': 35.539063, u's_max': 47.327, u'histogram': [{u'val': 10443, u'key': 20}, {u'val': 36254, u'key': 30}, {u'val': 13554, u'key': 40}, {u'val': 10, u'key': 50}]}, u'stats': {u'm_seq_error': 0, u'm_l3_cs_err': 0, u'm_pkt_ok': 60261, u'm_no_ipv4_option': 0, u'm_unsup_prot': 0, u'm_no_id': 0, u'm_jitter': 0, u'm_no_magic': 0, u'm_tx_pkt_err': 0, u'm_rx_check': 0, u'tx_arp': 0, u'm_length_error': 0, u'm_l4_cs_err': 0, u'ipv6_n_solic': 0, u'm_tx_pkt_ok': 60261, u'ignore_bytes': 0}}, u'port-3': {u'hist': {u'cnt': 59804, u'max_usec': 58, u'min_usec': 10, u'high_cnt': 59804, u's_avg': 42.0, u's_max': 49.6945, u'histogram': [{u'val': 264, u'key': 20}, {u'val': 3249, u'key': 30}, {u'val': 56676, u'key': 40}, {u'val': 72, u'key': 50}]}, u'stats': {u'm_seq_error': 0, u'm_l3_cs_err': 0, u'm_pkt_ok': 60261, u'm_no_ipv4_option': 0, u'm_unsup_prot': 0, u'm_no_id': 0, u'm_jitter': 0, u'm_no_magic': 0, u'm_tx_pkt_err': 0, u'm_rx_check': 0, u'tx_arp': 0, u'm_length_error': 0, u'm_l4_cs_err': 0, u'ipv6_n_solic': 0, u'm_tx_pkt_ok': 60261, u'ignore_bytes': 0}}, u'unknown': 0, u'cpu_util': 0.249888}, u'type': 0, u'name': u'trex-latecny-v2'}}
+router drop stats: {'total_drops': 0}
+TRex drop stats: 0
+TRex CPU utilization: 47.04%, norm_cpu is : 16.88 Gb/core
+Err percent: 56.7611393772
+]]></system-out></testcase><testcase classname="stateful_tests.trex_imix_test.CTRexIMIX_Test" name="test_static_routing_imix_asymmetric" time="123.369"><system-out><![CDATA[
+
+LATEST RESULT OBJECT:
+Is valid history?       True
+Done warmup?            True
+Expected tx rate:       {u'm_tx_expected_pps': 5527392.0, u'm_tx_expected_bps': 15999864832.0, u'm_tx_expected_cps': 5527392.0}
+Current tx rate:        {u'm_tx_bps': 9843161088.0, u'm_tx_cps': 0.0, u'm_tx_pps': 3402569.5}
+Minimum latency:        {u'min-2': 10, u'min-3': 10, u'min-0': 10, u'min-1': 10}
+Maximum latency:        {u'max-0': 35, u'max-1': 45, u'max-2': 35, u'max-3': 45}
+Average latency:        {'all': 26.275, u'port2': 22.1, u'port3': 31.0, u'port0': 22.0, u'port1': 30.0}
+Average window latency: {'all': 26.707, u'port2': 22.074, u'port3': 31.067, u'port0': 22.019, u'port1': 31.666}
+Total drops:            0
+Drop rate:              0.0
+History size so far:    100
+
+router drop stats: {'total_drops': 0}
+TRex drop stats: 0
+TRex CPU utilization: 77.62%, norm_cpu is : 20.52 Gb/core
+Err percent: 47.1086469656
+]]></system-out></testcase><testcase classname="stateful_tests.trex_ipv6_test.CTRexIPv6_Test" name="test_ipv6_negative" time="81.920"><error type="exceptions.Exception" message="Test failed. Reasons:&#10;ERROR 0.0 &lt;  0.5      packet drop ratio is not high enough"><![CDATA[Traceback (most recent call last):
+  File "/sw/packages/python/2.7.4/lib/python2.7/unittest/case.py", line 361, in run
+    self.tearDown()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateful_tests/trex_ipv6_test.py", line 96, in tearDown
+    CTRexGeneral_Test.tearDown(self)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateful_tests/trex_general_test.py", line 507, in tearDown
+    raise Exception('Test failed. Reasons:\n%s' % '\n'.join(self.fail_reasons))
+Exception: Test failed. Reasons:
+ERROR 0.0 <  0.5      packet drop ratio is not high enough
+]]></error><system-out><![CDATA[
+
+LATEST RESULT OBJECT:
+Is valid history?       True
+Done warmup?            True
+Expected tx rate:       {u'm_tx_expected_pps': 6884340.5, u'm_tx_expected_bps': 33177688064.0, u'm_tx_expected_cps': 131927.2}
+Current tx rate:        {u'm_tx_bps': 21206581248.0, u'm_tx_cps': 84434.9, u'm_tx_pps': 4404146.0}
+Minimum latency:        {u'min-2': 10, u'min-3': 10, u'min-0': 10, u'min-1': 10}
+Maximum latency:        {u'max-0': 150, u'max-1': 150, u'max-2': 150, u'max-3': 150}
+Average latency:        {'all': 63.65, u'port2': 58.8, u'port3': 59.6, u'port0': 71.0, u'port1': 65.2}
+Average window latency: {'all': 51.475, u'port2': 47.641, u'port3': 50.744, u'port0': 55.916, u'port1': 51.597}
+Total drops:            0
+Drop rate:              0.0
+History size so far:    63
+
+Error: ERROR 0.0 <  0.5      packet drop ratio is not high enough
+]]></system-out></testcase><testcase classname="stateful_tests.trex_ipv6_test.CTRexIPv6_Test" name="test_ipv6_simple" time="89.956"><system-out><![CDATA[
+
+LATEST RESULT OBJECT:
+Is valid history?       True
+Done warmup?            True
+Expected tx rate:       {u'm_tx_expected_pps': 6884340.5, u'm_tx_expected_bps': 33177688064.0, u'm_tx_expected_cps': 131927.2}
+Current tx rate:        {u'm_tx_bps': 21284489216.0, u'm_tx_cps': 84746.7, u'm_tx_pps': 4420346.0}
+Minimum latency:        {u'min-2': 10, u'min-3': 10, u'min-0': 10, u'min-1': 10}
+Maximum latency:        {u'max-0': 150, u'max-1': 150, u'max-2': 150, u'max-3': 150}
+Average latency:        {'all': 62.85, u'port2': 58.9, u'port3': 60.7, u'port0': 68.8, u'port1': 63.0}
+Average window latency: {'all': 50.33, u'port2': 47.292, u'port3': 50.451, u'port0': 53.746, u'port1': 49.832}
+Total drops:            0
+Drop rate:              0.0
+History size so far:    63
+
+router drop stats: {u'TenGigabitEthernet0/0/0': 92610829, u'TenGigabitEthernet0/1/0': 95852024, u'TenGigabitEthernet0/2/0': 95555774, u'TenGigabitEthernet0/3/0': 92907903, 'total_drops': 376926530}
+TRex drop stats: 0
+TRex CPU utilization: 24.62%, norm_cpu is : 32.95 Gb/core
+Err percent: 70.8521218063
+]]></system-out></testcase><testcase classname="stateful_tests.trex_nat_test.CTRexNat_Test" name="test_nat_simple_mode1" time="130.616"><system-out><![CDATA[
+
+LATEST RESULT OBJECT:
+Is valid history?       True
+Done warmup?            True
+Expected tx rate:       {u'm_tx_expected_pps': 1027120.0, u'm_tx_expected_bps': 7677971968.0, u'm_tx_expected_cps': 27760.0}
+Current tx rate:        {u'm_tx_bps': 4838284288.0, u'm_tx_cps': 17032.3, u'm_tx_pps': 648870.5}
+Minimum latency:        {u'min-2': 10, u'min-3': 10, u'min-0': 10, u'min-1': 10}
+Maximum latency:        {u'max-0': 45, u'max-1': 75, u'max-2': 45, u'max-3': 45}
+Average latency:        {'all': 35.25, u'port2': 35.0, u'port3': 36.0, u'port0': 34.0, u'port1': 36.0}
+Average window latency: {'all': 34.794, u'port2': 34.966, u'port3': 35.139, u'port0': 34.596, u'port1': 34.476}
+Total drops:            8
+Drop rate:              0.0
+History size so far:    100
+
+
+LATEST DUMP:
+{u'trex-latecny-v2': {u'data': {u'port-0': {u'hist': {u'cnt': 99980, u'max_usec': 62, u'min_usec': 10, u'high_cnt': 99980, u's_avg': 34.007813, u's_max': 38.965, u'histogram': [{u'val': 99702, u'key': 30}, {u'val': 495, u'key': 40}, {u'val': 42, u'key': 50}, {u'val': 17, u'key': 60}, {u'val': 2, u'key': 90}, {u'val': 6, u'key': 100}]}, u'stats': {u'm_seq_error': 0, u'm_l3_cs_err': 0, u'm_pkt_ok': 100264, u'm_no_ipv4_option': 0, u'm_unsup_prot': 0, u'm_no_id': 0, u'm_jitter': 0, u'm_no_magic': 0, u'm_tx_pkt_err': 0, u'm_rx_check': 0, u'tx_arp': 0, u'm_length_error': 0, u'm_l4_cs_err': 0, u'ipv6_n_solic': 0, u'm_tx_pkt_ok': 100265, u'ignore_bytes': 0}}, u'port-1': {u'hist': {u'cnt': 99981, u'max_usec': 84, u'min_usec': 10, u'high_cnt': 99981, u's_avg': 35.976284, u's_max': 76.085, u'histogram': [{u'val': 98851, u'key': 30}, {u'val': 387, u'key': 40}, {u'val': 181, u'key': 50}, {u'val': 126, u'key': 60}, {u'val': 654, u'key': 70}, {u'val': 58, u'key': 80}, {u'val': 7, u'key': 90}, {u'val': 1, u'key': 300}]}, u'stats': {u'm_seq_error': 0, u'm_l3_cs_err': 0, u'm_pkt_ok': 100265, u'm_no_ipv4_option': 0, u'm_unsup_prot': 0, u'm_no_id': 0, u'm_jitter': 0, u'm_no_magic': 0, u'm_tx_pkt_err': 0, u'm_rx_check': 0, u'tx_arp': 0, u'm_length_error': 0, u'm_l4_cs_err': 0, u'ipv6_n_solic': 0, u'm_tx_pkt_ok': 100264, u'ignore_bytes': 0}}, u'port-2': {u'hist': {u'cnt': 99980, u'max_usec': 62, u'min_usec': 10, u'high_cnt': 99980, u's_avg': 35.007813, u's_max': 40.286, u'histogram': [{u'val': 99625, u'key': 30}, {u'val': 578, u'key': 40}, {u'val': 49, u'key': 50}, {u'val': 5, u'key': 60}, {u'val': 2, u'key': 90}, {u'val': 5, u'key': 100}]}, u'stats': {u'm_seq_error': 0, u'm_l3_cs_err': 0, u'm_pkt_ok': 100264, u'm_no_ipv4_option': 0, u'm_unsup_prot': 0, u'm_no_id': 0, u'm_jitter': 0, u'm_no_magic': 0, u'm_tx_pkt_err': 0, u'm_rx_check': 0, u'tx_arp': 0, u'm_length_error': 0, u'm_l4_cs_err': 0, u'ipv6_n_solic': 0, u'm_tx_pkt_ok': 100265, u'ignore_bytes': 0}}, u'port-3': {u'hist': {u'cnt': 99981, u'max_usec': 54, u'min_usec': 10, u'high_cnt': 99981, u's_avg': 36.007813, u's_max': 40.357, u'histogram': [{u'val': 99744, u'key': 30}, {u'val': 508, u'key': 40}, {u'val': 3, u'key': 50}, {u'val': 2, u'key': 60}, {u'val': 7, u'key': 90}, {u'val': 1, u'key': 300}]}, u'stats': {u'm_seq_error': 0, u'm_l3_cs_err': 0, u'm_pkt_ok': 100265, u'm_no_ipv4_option': 0, u'm_unsup_prot': 0, u'm_no_id': 0, u'm_jitter': 0, u'm_no_magic': 0, u'm_tx_pkt_err': 0, u'm_rx_check': 0, u'tx_arp': 0, u'm_length_error': 0, u'm_l4_cs_err': 0, u'ipv6_n_solic': 0, u'm_tx_pkt_ok': 100264, u'ignore_bytes': 0}}, u'unknown': 0, u'cpu_util': 1.645502}, u'type': 0, u'name': u'trex-latecny-v2'}, u'trex-latecny': {u'data': {u'jitter-2': 0.0, u'error-2': 0.0, u'error-3': 0.0, u'error-0': 0.0, u'error-1': 0.0, u'unknown': 0, u'max-0': 62.0, u'max-1': 84.0, u'max-2': 62.0, u'max-3': 54.0, u'c-max-2': 40.3, u'c-max-3': 40.4, u'c-max-0': 39.0, u'c-max-1': 76.1, u'avg-2': 35.0, u'avg-3': 36.0, u'jitter-1': 0.0, u'jitter-0': 0.0, u'avg-0': 34.0, u'avg-1': 36.0, u'jitter-3': 0.0}, u'type': 0, u'name': u'trex-latecny'}, u'trex-global': {u'data': {u'm_cpu_util_raw': 13.0, u'm_total_tx_bps-2': 79569208.0, u'm_total_tx_bps-3': 2339730944.0, u'm_total_tx_bps-0': 79559184.0, u'm_total_tx_bps-1': 2339425280.0, u'm_cpu_util': 14.3, u'm_total_alloc_error': 0, u'm_active_flows': 0.0, u'ierrors-3': 0, u'm_total_servers': 65534, u'm_total_rx_bps-1': 79559488.0, u'm_total_rx_bps-2': 2339787776.0, u'm_total_rx_bps-3': 79570736.0, u'm_platform_factor': 1.0, u'obytes-1': 46412875688, u'm_socket_util': 0.0, u'm_total_nat_learn_error': 0, u'm_total_clients': 254, u'm_cpu_util-3': 13.4, u'unknown': 0, u'ierrors-2': 0, u'ts': {u'freq': 2000000000, u'value': 32634764710020500}, u'ierrors-0': 0, u'ierrors-1': 0, u'opackets-3': 32024172, u'opackets-2': 19532213, u'opackets-1': 32024172, u'opackets-0': 19532213, u'm_rx_pps': 648881.8, u'template': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], u'm_total_rx_bytes': 96000841244, u'm_total_rx_pkts': 103112762, u'm_rx_core_pps': -1.0, u'm_total_nat_active': 0, u'oerrors-3': 0, u'm_total_nat_syn_wait': 0, u'oerrors-0': 0, u'oerrors-1': 0, u'oerrors-2': 0, u'm_rx_drop_bps': 0.0, u'm_rx_bps': 4838383104.0, u'm_total_queue_full': 0, u'm_cpu_util-1': 15.2, u'm_total_rx_pps-2': 201619.0, u'm_total_rx_pps-3': 122844.4, u'm_total_rx_pps-0': 201591.3, u'm_total_rx_pps-1': 122827.1, u'obytes-3': 46412875688, u'm_open_flows': 2776000.0, u'm_tx_expected_pps': 1027120.0, u'm_rx_cpu_util': 1.646, u'm_total_nat_no_fid': 0, u'obytes-2': 1587545190, u'm_cpu_util-0': 15.2, u'm_total_queue_drop': 0, u'm_active_sockets': 0, u'm_total_tx_pkts': 103112770, u'm_tx_bps': 4838284288.0, u'm_total_rx_bps-0': 2339465216.0, u'm_tx_pps': 648870.5, u'ipackets-2': 32024172, u'm_total_nat_open': 2776000, u'm_total_tx_pps-0': 122826.6, u'm_total_tx_pps-1': 201587.7, u'm_total_tx_pps-2': 122842.1, u'm_total_tx_pps-3': 201614.2, u'm_bw_per_core': 33.8, u'm_total_nat_time_out': 8, u'ibytes-1': 1587544934, u'ibytes-0': 46412875688, u'ibytes-3': 1587544934, u'ibytes-2': 46412875688, u'm_cpu_util-2': 13.4, u'm_total_tx_bytes': 96000841756, u'm_tx_expected_bps': 7677971968.0, u'm_tx_cps': 17032.3, u'ipackets-1': 19532209, u'ipackets-0': 32024172, u'ipackets-3': 19532209, u'obytes-0': 1587545190, u'm_total_nat_time_out_wait_ack': 0, u'm_tx_expected_cps': 27760.0}, u'type': 0, u'name': u'trex-global'}, 'trex-latency-v2': {u'data': {u'port-0': {u'hist': {u'cnt': 99980, u'max_usec': 62, u'min_usec': 10, u'high_cnt': 99980, u's_avg': 34.007813, u's_max': 38.965, u'histogram': [{u'val': 99702, u'key': 30}, {u'val': 495, u'key': 40}, {u'val': 42, u'key': 50}, {u'val': 17, u'key': 60}, {u'val': 2, u'key': 90}, {u'val': 6, u'key': 100}]}, u'stats': {u'm_seq_error': 0, u'm_l3_cs_err': 0, u'm_pkt_ok': 100264, u'm_no_ipv4_option': 0, u'm_unsup_prot': 0, u'm_no_id': 0, u'm_jitter': 0, u'm_no_magic': 0, u'm_tx_pkt_err': 0, u'm_rx_check': 0, u'tx_arp': 0, u'm_length_error': 0, u'm_l4_cs_err': 0, u'ipv6_n_solic': 0, u'm_tx_pkt_ok': 100265, u'ignore_bytes': 0}}, u'port-1': {u'hist': {u'cnt': 99981, u'max_usec': 84, u'min_usec': 10, u'high_cnt': 99981, u's_avg': 35.976284, u's_max': 76.085, u'histogram': [{u'val': 98851, u'key': 30}, {u'val': 387, u'key': 40}, {u'val': 181, u'key': 50}, {u'val': 126, u'key': 60}, {u'val': 654, u'key': 70}, {u'val': 58, u'key': 80}, {u'val': 7, u'key': 90}, {u'val': 1, u'key': 300}]}, u'stats': {u'm_seq_error': 0, u'm_l3_cs_err': 0, u'm_pkt_ok': 100265, u'm_no_ipv4_option': 0, u'm_unsup_prot': 0, u'm_no_id': 0, u'm_jitter': 0, u'm_no_magic': 0, u'm_tx_pkt_err': 0, u'm_rx_check': 0, u'tx_arp': 0, u'm_length_error': 0, u'm_l4_cs_err': 0, u'ipv6_n_solic': 0, u'm_tx_pkt_ok': 100264, u'ignore_bytes': 0}}, u'port-2': {u'hist': {u'cnt': 99980, u'max_usec': 62, u'min_usec': 10, u'high_cnt': 99980, u's_avg': 35.007813, u's_max': 40.286, u'histogram': [{u'val': 99625, u'key': 30}, {u'val': 578, u'key': 40}, {u'val': 49, u'key': 50}, {u'val': 5, u'key': 60}, {u'val': 2, u'key': 90}, {u'val': 5, u'key': 100}]}, u'stats': {u'm_seq_error': 0, u'm_l3_cs_err': 0, u'm_pkt_ok': 100264, u'm_no_ipv4_option': 0, u'm_unsup_prot': 0, u'm_no_id': 0, u'm_jitter': 0, u'm_no_magic': 0, u'm_tx_pkt_err': 0, u'm_rx_check': 0, u'tx_arp': 0, u'm_length_error': 0, u'm_l4_cs_err': 0, u'ipv6_n_solic': 0, u'm_tx_pkt_ok': 100265, u'ignore_bytes': 0}}, u'port-3': {u'hist': {u'cnt': 99981, u'max_usec': 54, u'min_usec': 10, u'high_cnt': 99981, u's_avg': 36.007813, u's_max': 40.357, u'histogram': [{u'val': 99744, u'key': 30}, {u'val': 508, u'key': 40}, {u'val': 3, u'key': 50}, {u'val': 2, u'key': 60}, {u'val': 7, u'key': 90}, {u'val': 1, u'key': 300}]}, u'stats': {u'm_seq_error': 0, u'm_l3_cs_err': 0, u'm_pkt_ok': 100265, u'm_no_ipv4_option': 0, u'm_unsup_prot': 0, u'm_no_id': 0, u'm_jitter': 0, u'm_no_magic': 0, u'm_tx_pkt_err': 0, u'm_rx_check': 0, u'tx_arp': 0, u'm_length_error': 0, u'm_l4_cs_err': 0, u'ipv6_n_solic': 0, u'm_tx_pkt_ok': 100264, u'ignore_bytes': 0}}, u'unknown': 0, u'cpu_util': 1.645502}, u'type': 0, u'name': u'trex-latecny-v2'}, u'tx-gen': {u'data': {u'realtime-hist': {u'cnt': 0, u'max_usec': 0, u'min_usec': 10, u'high_cnt': 0, u's_avg': 0.0, u's_max': 0.0, u'histogram': []}, u'unknown': 0}, u'type': 0, u'name': u'tx-gen'}, 'trex-latency': {u'data': {u'jitter-2': 0.0, u'error-2': 0.0, u'error-3': 0.0, u'error-0': 0.0, u'error-1': 0.0, u'unknown': 0, u'max-0': 62.0, u'max-1': 84.0, u'max-2': 62.0, u'max-3': 54.0, u'c-max-2': 40.3, u'c-max-3': 40.4, u'c-max-0': 39.0, u'c-max-1': 76.1, u'avg-2': 35.0, u'avg-3': 36.0, u'jitter-1': 0.0, u'jitter-0': 0.0, u'avg-0': 34.0, u'avg-1': 36.0, u'jitter-3': 0.0}, u'type': 0, u'name': u'trex-latecny'}, u'trex-event': {u'type': 100, u'data': {u'cause': u'test has ended'}, u'name': u'trex-event'}}
+router drop stats: {u'TenGigabitEthernet0/0/0': 5535376, u'TenGigabitEthernet1/3/0': 4, u'TenGigabitEthernet0/3/0': 5549465, 'total_drops': 22553795, u'TenGigabitEthernet0/2/0': 5729704, u'TenGigabitEthernet1/1/0': 4, u'TenGigabitEthernet0/1/0': 5739242}
+TRex drop stats: 8
+TRex CPU utilization: 13.86%, norm_cpu is : 55.36 Gb/core
+Err percent: 22.2057945356
+{'num_of_hits': 570264478300, 'static_active_trans': 0, 'dynamic_active_trans': 1561541, 'num_of_misses': 17558796050, 'total_active_trans': 1561541}
+]]></system-out></testcase><testcase classname="stateful_tests.trex_nat_test.CTRexNat_Test" name="test_nat_simple_mode1_udp" time="131.188"><system-out><![CDATA[
+
+LATEST RESULT OBJECT:
+Is valid history?       True
+Done warmup?            True
+Expected tx rate:       {u'm_tx_expected_pps': 20000.0, u'm_tx_expected_bps': 13600000.0, u'm_tx_expected_cps': 10000.0}
+Current tx rate:        {u'm_tx_bps': 6993161.0, u'm_tx_cps': 4128.4, u'm_tx_pps': 10856.9}
+Minimum latency:        {u'min-2': 10, u'min-3': 10, u'min-0': 10, u'min-1': 10}
+Maximum latency:        {u'max-0': 45, u'max-1': 45, u'max-2': 45, u'max-3': 45}
+Average latency:        {'all': 36.1, u'port2': 36.0, u'port3': 36.8, u'port0': 35.8, u'port1': 35.8}
+Average window latency: {'all': 35.368, u'port2': 35.696, u'port3': 35.749, u'port0': 35.04, u'port1': 34.987}
+Total drops:            0
+Drop rate:              0.0
+History size so far:    100
+
+
+LATEST DUMP:
+{u'trex-latecny-v2': {u'data': {u'port-0': {u'hist': {u'cnt': 100965, u'max_usec': 55, u'min_usec': 10, u'high_cnt': 100965, u's_avg': 35.78125, u's_max': 45.0765, u'histogram': [{u'val': 100774, u'key': 30}, {u'val': 484, u'key': 40}, {u'val': 6, u'key': 50}]}, u'stats': {u'm_seq_error': 0, u'm_l3_cs_err': 0, u'm_pkt_ok': 101264, u'm_no_ipv4_option': 0, u'm_unsup_prot': 0, u'm_no_id': 0, u'm_jitter': 1, u'm_no_magic': 0, u'm_tx_pkt_err': 0, u'm_rx_check': 0, u'tx_arp': 0, u'm_length_error': 0, u'm_l4_cs_err': 0, u'ipv6_n_solic': 0, u'm_tx_pkt_ok': 101265, u'ignore_bytes': 0}}, u'port-1': {u'hist': {u'cnt': 100966, u'max_usec': 55, u'min_usec': 10, u'high_cnt': 100966, u's_avg': 35.75, u's_max': 45.622, u'histogram': [{u'val': 100814, u'key': 30}, {u'val': 446, u'key': 40}, {u'val': 4, u'key': 50}, {u'val': 1, u'key': 100}]}, u'stats': {u'm_seq_error': 0, u'm_l3_cs_err': 0, u'm_pkt_ok': 101265, u'm_no_ipv4_option': 0, u'm_unsup_prot': 0, u'm_no_id': 0, u'm_jitter': 1, u'm_no_magic': 0, u'm_tx_pkt_err': 0, u'm_rx_check': 0, u'tx_arp': 0, u'm_length_error': 0, u'm_l4_cs_err': 0, u'ipv6_n_solic': 0, u'm_tx_pkt_ok': 101264, u'ignore_bytes': 0}}, u'port-2': {u'hist': {u'cnt': 100965, u'max_usec': 55, u'min_usec': 10, u'high_cnt': 100965, u's_avg': 36.0, u's_max': 44.989, u'histogram': [{u'val': 100683, u'key': 30}, {u'val': 578, u'key': 40}, {u'val': 3, u'key': 50}]}, u'stats': {u'm_seq_error': 0, u'm_l3_cs_err': 0, u'm_pkt_ok': 101264, u'm_no_ipv4_option': 0, u'm_unsup_prot': 0, u'm_no_id': 0, u'm_jitter': 1, u'm_no_magic': 0, u'm_tx_pkt_err': 0, u'm_rx_check': 0, u'tx_arp': 0, u'm_length_error': 0, u'm_l4_cs_err': 0, u'ipv6_n_solic': 0, u'm_tx_pkt_ok': 101265, u'ignore_bytes': 0}}, u'port-3': {u'hist': {u'cnt': 100966, u'max_usec': 54, u'min_usec': 10, u'high_cnt': 100966, u's_avg': 36.75, u's_max': 45.651, u'histogram': [{u'val': 100508, u'key': 30}, {u'val': 752, u'key': 40}, {u'val': 4, u'key': 50}, {u'val': 1, u'key': 100}]}, u'stats': {u'm_seq_error': 0, u'm_l3_cs_err': 0, u'm_pkt_ok': 101265, u'm_no_ipv4_option': 0, u'm_unsup_prot': 0, u'm_no_id': 0, u'm_jitter': 1, u'm_no_magic': 0, u'm_tx_pkt_err': 0, u'm_rx_check': 0, u'tx_arp': 0, u'm_length_error': 0, u'm_l4_cs_err': 0, u'ipv6_n_solic': 0, u'm_tx_pkt_ok': 101264, u'ignore_bytes': 0}}, u'unknown': 0, u'cpu_util': 0.258744}, u'type': 0, u'name': u'trex-latecny-v2'}, u'trex-latecny': {u'data': {u'jitter-2': 1.0, u'error-2': 0.0, u'error-3': 0.0, u'error-0': 0.0, u'error-1': 0.0, u'unknown': 0, u'max-0': 55.0, u'max-1': 55.0, u'max-2': 55.0, u'max-3': 54.0, u'c-max-2': 45.0, u'c-max-3': 45.7, u'c-max-0': 45.1, u'c-max-1': 45.6, u'avg-2': 36.0, u'avg-3': 36.8, u'jitter-1': 1.0, u'jitter-0': 1.0, u'avg-0': 35.8, u'avg-1': 35.8, u'jitter-3': 1.0}, u'type': 0, u'name': u'trex-latecny'}, u'trex-global': {u'data': {u'm_cpu_util_raw': 0.0, u'm_total_tx_bps-2': 1611851.5, u'm_total_tx_bps-3': 1885409.2, u'm_total_tx_bps-0': 1611235.4, u'm_total_tx_bps-1': 1884665.1, u'm_cpu_util': 0.4732, u'm_total_alloc_error': 0, u'm_active_flows': 0.0, u'ierrors-3': 0, u'm_total_servers': 254, u'm_total_rx_bps-1': 1611247.2, u'm_total_rx_bps-2': 1885409.2, u'm_total_rx_bps-3': 1611851.5, u'm_platform_factor': 1.0, u'obytes-1': 53183331, u'm_socket_util': 0.0, u'm_total_nat_learn_error': 0, u'm_total_clients': 510, u'm_cpu_util-3': 0.329, u'unknown': 0, u'ierrors-2': 0, u'ts': {u'freq': 2000000000, u'value': 32635027462853474}, u'ierrors-0': 0, u'ierrors-1': 0, u'opackets-3': 601263, u'opackets-2': 601264, u'opackets-1': 601263, u'opackets-0': 601264, u'm_rx_pps': 10857.0, u'template': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], u'm_total_rx_bytes': 196733488, u'm_total_rx_pkts': 2405054, u'm_rx_core_pps': -1.0, u'm_total_nat_active': 0, u'oerrors-3': 0, u'm_total_nat_syn_wait': 0, u'oerrors-0': 0, u'oerrors-1': 0, u'oerrors-2': 0, u'm_rx_drop_bps': 0.0, u'm_rx_bps': 6993188.0, u'm_total_queue_full': 0, u'm_cpu_util-1': 0.6174, u'm_total_rx_pps-2': 2720.9, u'm_total_rx_pps-3': 2708.5, u'm_total_rx_pps-0': 2719.9, u'm_total_rx_pps-1': 2707.6, u'obytes-3': 53183331, u'm_open_flows': 999998.0, u'm_tx_expected_pps': 20000.0, u'm_rx_cpu_util': 0.2587, u'm_total_nat_no_fid': 0, u'obytes-2': 45183413, u'm_cpu_util-0': 0.6174, u'm_total_queue_drop': 0, u'm_active_sockets': 0, u'm_total_tx_pkts': 2405054, u'm_tx_bps': 6993161.0, u'm_total_rx_bps-0': 1884679.5, u'm_tx_pps': 10856.9, u'ipackets-2': 601263, u'm_total_nat_open': 999998, u'm_total_tx_pps-0': 2707.5, u'm_total_tx_pps-1': 2719.9, u'm_total_tx_pps-2': 2708.5, u'm_total_tx_pps-3': 2720.9, u'm_bw_per_core': 1.478, u'm_total_nat_time_out': 0, u'ibytes-1': 45183413, u'ibytes-0': 53183331, u'ibytes-3': 45183413, u'ibytes-2': 53183331, u'm_cpu_util-2': 0.329, u'm_total_tx_bytes': 196733488, u'm_tx_expected_bps': 13600000.0, u'm_tx_cps': 4128.4, u'ipackets-1': 601264, u'ipackets-0': 601263, u'ipackets-3': 601264, u'obytes-0': 45183413, u'm_total_nat_time_out_wait_ack': 0, u'm_tx_expected_cps': 10000.0}, u'type': 0, u'name': u'trex-global'}, 'trex-latency-v2': {u'data': {u'port-0': {u'hist': {u'cnt': 100965, u'max_usec': 55, u'min_usec': 10, u'high_cnt': 100965, u's_avg': 35.78125, u's_max': 45.0765, u'histogram': [{u'val': 100774, u'key': 30}, {u'val': 484, u'key': 40}, {u'val': 6, u'key': 50}]}, u'stats': {u'm_seq_error': 0, u'm_l3_cs_err': 0, u'm_pkt_ok': 101264, u'm_no_ipv4_option': 0, u'm_unsup_prot': 0, u'm_no_id': 0, u'm_jitter': 1, u'm_no_magic': 0, u'm_tx_pkt_err': 0, u'm_rx_check': 0, u'tx_arp': 0, u'm_length_error': 0, u'm_l4_cs_err': 0, u'ipv6_n_solic': 0, u'm_tx_pkt_ok': 101265, u'ignore_bytes': 0}}, u'port-1': {u'hist': {u'cnt': 100966, u'max_usec': 55, u'min_usec': 10, u'high_cnt': 100966, u's_avg': 35.75, u's_max': 45.622, u'histogram': [{u'val': 100814, u'key': 30}, {u'val': 446, u'key': 40}, {u'val': 4, u'key': 50}, {u'val': 1, u'key': 100}]}, u'stats': {u'm_seq_error': 0, u'm_l3_cs_err': 0, u'm_pkt_ok': 101265, u'm_no_ipv4_option': 0, u'm_unsup_prot': 0, u'm_no_id': 0, u'm_jitter': 1, u'm_no_magic': 0, u'm_tx_pkt_err': 0, u'm_rx_check': 0, u'tx_arp': 0, u'm_length_error': 0, u'm_l4_cs_err': 0, u'ipv6_n_solic': 0, u'm_tx_pkt_ok': 101264, u'ignore_bytes': 0}}, u'port-2': {u'hist': {u'cnt': 100965, u'max_usec': 55, u'min_usec': 10, u'high_cnt': 100965, u's_avg': 36.0, u's_max': 44.989, u'histogram': [{u'val': 100683, u'key': 30}, {u'val': 578, u'key': 40}, {u'val': 3, u'key': 50}]}, u'stats': {u'm_seq_error': 0, u'm_l3_cs_err': 0, u'm_pkt_ok': 101264, u'm_no_ipv4_option': 0, u'm_unsup_prot': 0, u'm_no_id': 0, u'm_jitter': 1, u'm_no_magic': 0, u'm_tx_pkt_err': 0, u'm_rx_check': 0, u'tx_arp': 0, u'm_length_error': 0, u'm_l4_cs_err': 0, u'ipv6_n_solic': 0, u'm_tx_pkt_ok': 101265, u'ignore_bytes': 0}}, u'port-3': {u'hist': {u'cnt': 100966, u'max_usec': 54, u'min_usec': 10, u'high_cnt': 100966, u's_avg': 36.75, u's_max': 45.651, u'histogram': [{u'val': 100508, u'key': 30}, {u'val': 752, u'key': 40}, {u'val': 4, u'key': 50}, {u'val': 1, u'key': 100}]}, u'stats': {u'm_seq_error': 0, u'm_l3_cs_err': 0, u'm_pkt_ok': 101265, u'm_no_ipv4_option': 0, u'm_unsup_prot': 0, u'm_no_id': 0, u'm_jitter': 1, u'm_no_magic': 0, u'm_tx_pkt_err': 0, u'm_rx_check': 0, u'tx_arp': 0, u'm_length_error': 0, u'm_l4_cs_err': 0, u'ipv6_n_solic': 0, u'm_tx_pkt_ok': 101264, u'ignore_bytes': 0}}, u'unknown': 0, u'cpu_util': 0.258744}, u'type': 0, u'name': u'trex-latecny-v2'}, u'tx-gen': {u'data': {u'realtime-hist': {u'cnt': 0, u'max_usec': 0, u'min_usec': 10, u'high_cnt': 0, u's_avg': 0.0, u's_max': 0.0, u'histogram': []}, u'unknown': 0}, u'type': 0, u'name': u'tx-gen'}, 'trex-latency': {u'data': {u'jitter-2': 1.0, u'error-2': 0.0, u'error-3': 0.0, u'error-0': 0.0, u'error-1': 0.0, u'unknown': 0, u'max-0': 55.0, u'max-1': 55.0, u'max-2': 55.0, u'max-3': 54.0, u'c-max-2': 45.0, u'c-max-3': 45.7, u'c-max-0': 45.1, u'c-max-1': 45.6, u'avg-2': 36.0, u'avg-3': 36.8, u'jitter-1': 1.0, u'jitter-0': 1.0, u'avg-0': 35.8, u'avg-1': 35.8, u'jitter-3': 1.0}, u'type': 0, u'name': u'trex-latecny'}, u'trex-event': {u'type': 100, u'data': {u'cause': u'test has ended'}, u'name': u'trex-event'}}
+router drop stats: {'total_drops': 0}
+TRex drop stats: 0
+TRex CPU utilization: 0.12%, norm_cpu is : 12.87 Gb/core
+Err percent: 71.5865330508
+{'num_of_hits': 570265383355, 'static_active_trans': 0, 'dynamic_active_trans': 282656, 'num_of_misses': 17559296051, 'total_active_trans': 282656}
+]]></system-out></testcase><testcase classname="stateful_tests.trex_nat_test.CTRexNat_Test" name="test_nat_simple_mode2" time="132.147"><system-out><![CDATA[
+
+LATEST RESULT OBJECT:
+Is valid history?       True
+Done warmup?            True
+Expected tx rate:       {u'm_tx_expected_pps': 1027120.0, u'm_tx_expected_bps': 7677971968.0, u'm_tx_expected_cps': 27760.0}
+Current tx rate:        {u'm_tx_bps': 4850725888.0, u'm_tx_cps': 17074.7, u'm_tx_pps': 650401.3}
+Minimum latency:        {u'min-2': 10, u'min-3': 10, u'min-0': 10, u'min-1': 10}
+Maximum latency:        {u'max-0': 45, u'max-1': 45, u'max-2': 45, u'max-3': 45}
+Average latency:        {'all': 34.8, u'port2': 35.0, u'port3': 35.0, u'port0': 35.1, u'port1': 34.1}
+Average window latency: {'all': 34.686, u'port2': 34.378, u'port3': 34.508, u'port0': 35.716, u'port1': 34.141}
+Total drops:            17
+Drop rate:              0.0
+History size so far:    100
+
+
+LATEST DUMP:
+{u'trex-latecny-v2': {u'data': {u'port-0': {u'hist': {u'cnt': 99974, u'max_usec': 60, u'min_usec': 10, u'high_cnt': 99974, u's_avg': 35.09375, u's_max': 38.784, u'histogram': [{u'val': 97053, u'key': 30}, {u'val': 3137, u'key': 40}, {u'val': 75, u'key': 50}, {u'val': 1, u'key': 60}]}, u'stats': {u'm_seq_error': 0, u'm_l3_cs_err': 0, u'm_pkt_ok': 100266, u'm_no_ipv4_option': 0, u'm_unsup_prot': 0, u'm_no_id': 0, u'm_jitter': 1, u'm_no_magic': 0, u'm_tx_pkt_err': 0, u'm_rx_check': 0, u'tx_arp': 0, u'm_length_error': 0, u'm_l4_cs_err': 0, u'ipv6_n_solic': 0, u'm_tx_pkt_ok': 100267, u'ignore_bytes': 0}}, u'port-1': {u'hist': {u'cnt': 99975, u'max_usec': 61, u'min_usec': 10, u'high_cnt': 99975, u's_avg': 34.112415, u's_max': 38.107, u'histogram': [{u'val': 99508, u'key': 30}, {u'val': 753, u'key': 40}, {u'val': 4, u'key': 50}, {u'val': 1, u'key': 60}, {u'val': 1, u'key': 100}]}, u'stats': {u'm_seq_error': 0, u'm_l3_cs_err': 0, u'm_pkt_ok': 100267, u'm_no_ipv4_option': 0, u'm_unsup_prot': 0, u'm_no_id': 0, u'm_jitter': 0, u'm_no_magic': 0, u'm_tx_pkt_err': 0, u'm_rx_check': 0, u'tx_arp': 0, u'm_length_error': 0, u'm_l4_cs_err': 0, u'ipv6_n_solic': 0, u'm_tx_pkt_ok': 100266, u'ignore_bytes': 0}}, u'port-2': {u'hist': {u'cnt': 99974, u'max_usec': 65, u'min_usec': 10, u'high_cnt': 99974, u's_avg': 35.03125, u's_max': 39.617, u'histogram': [{u'val': 99583, u'key': 30}, {u'val': 639, u'key': 40}, {u'val': 19, u'key': 50}, {u'val': 25, u'key': 60}]}, u'stats': {u'm_seq_error': 0, u'm_l3_cs_err': 0, u'm_pkt_ok': 100266, u'm_no_ipv4_option': 0, u'm_unsup_prot': 0, u'm_no_id': 0, u'm_jitter': 0, u'm_no_magic': 0, u'm_tx_pkt_err': 0, u'm_rx_check': 0, u'tx_arp': 0, u'm_length_error': 0, u'm_l4_cs_err': 0, u'ipv6_n_solic': 0, u'm_tx_pkt_ok': 100267, u'ignore_bytes': 0}}, u'port-3': {u'hist': {u'cnt': 99975, u'max_usec': 54, u'min_usec': 10, u'high_cnt': 99975, u's_avg': 35.03125, u's_max': 41.175, u'histogram': [{u'val': 99429, u'key': 30}, {u'val': 835, u'key': 40}, {u'val': 2, u'key': 50}, {u'val': 1, u'key': 100}]}, u'stats': {u'm_seq_error': 0, u'm_l3_cs_err': 0, u'm_pkt_ok': 100267, u'm_no_ipv4_option': 0, u'm_unsup_prot': 0, u'm_no_id': 0, u'm_jitter': 0, u'm_no_magic': 0, u'm_tx_pkt_err': 0, u'm_rx_check': 0, u'tx_arp': 0, u'm_length_error': 0, u'm_l4_cs_err': 0, u'ipv6_n_solic': 0, u'm_tx_pkt_ok': 100266, u'ignore_bytes': 0}}, u'unknown': 0, u'cpu_util': 0.725311}, u'type': 0, u'name': u'trex-latecny-v2'}, u'trex-latecny': {u'data': {u'jitter-2': 0.0, u'error-2': 0.0, u'error-3': 0.0, u'error-0': 0.0, u'error-1': 0.0, u'unknown': 0, u'max-0': 60.0, u'max-1': 61.0, u'max-2': 65.0, u'max-3': 54.0, u'c-max-2': 39.6, u'c-max-3': 41.2, u'c-max-0': 38.8, u'c-max-1': 38.1, u'avg-2': 35.0, u'avg-3': 35.0, u'jitter-1': 0.0, u'jitter-0': 1.0, u'avg-0': 35.1, u'avg-1': 34.1, u'jitter-3': 0.0}, u'type': 0, u'name': u'trex-latecny'}, u'trex-global': {u'data': {u'm_cpu_util_raw': 14.0, u'm_total_tx_bps-2': 80306488.0, u'm_total_tx_bps-3': 2345246976.0, u'm_total_tx_bps-0': 80296040.0, u'm_total_tx_bps-1': 2344876544.0, u'm_cpu_util': 14.0, u'm_total_alloc_error': 0, u'm_active_flows': 0.0, u'ierrors-3': 0, u'm_total_servers': 65534, u'm_total_rx_bps-1': 80158152.0, u'm_total_rx_bps-2': 2345285632.0, u'm_total_rx_bps-3': 80170040.0, u'm_platform_factor': 1.0, u'obytes-1': 46412742084, u'm_socket_util': 0.0, u'm_total_nat_learn_error': 0, u'm_total_clients': 254, u'm_cpu_util-3': 13.5, u'unknown': 0, u'ierrors-2': 0, u'ts': {u'freq': 2000000000, u'value': 32635289580971680}, u'ierrors-0': 0, u'ierrors-1': 0, u'opackets-3': 32024059, u'opackets-2': 19532150, u'opackets-1': 32024082, u'opackets-0': 19532163, u'm_rx_pps': 650408.4, u'template': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], u'm_total_rx_bytes': 96017186513, u'm_total_rx_pkts': 103112437, u'm_rx_core_pps': -1.0, u'm_total_nat_active': 0, u'oerrors-3': 0, u'm_total_nat_syn_wait': 2775983, u'oerrors-0': 0, u'oerrors-1': 0, u'oerrors-2': 0, u'm_rx_drop_bps': 0.0, u'm_rx_bps': 4850552320.0, u'm_total_queue_full': 0, u'm_cpu_util-1': 14.6, u'm_total_rx_pps-2': 202094.1, u'm_total_rx_pps-3': 123134.2, u'm_total_rx_pps-0': 202064.2, u'm_total_rx_pps-1': 123115.9, u'obytes-3': 46412708650, u'm_open_flows': 2776000.0, u'm_tx_expected_pps': 1027120.0, u'm_rx_cpu_util': 0.7253, u'm_total_nat_no_fid': 0, u'obytes-2': 1598643947, u'm_cpu_util-0': 14.6, u'm_total_queue_drop': 0, u'm_active_sockets': 0, u'm_total_tx_pkts': 103112454, u'm_tx_bps': 4850725888.0, u'm_total_rx_bps-0': 2344938496.0, u'm_tx_pps': 650401.3, u'ipackets-2': 32024059, u'm_total_nat_open': 2776000, u'm_total_tx_pps-0': 123117.9, u'm_total_tx_pps-1': 202058.9, u'm_total_tx_pps-2': 123133.8, u'm_total_tx_pps-3': 202090.7, u'm_bw_per_core': 34.6, u'm_total_nat_time_out': 17, u'ibytes-1': 1595868462, u'ibytes-0': 46412742084, u'ibytes-3': 1595867317, u'ibytes-2': 46412708650, u'm_cpu_util-2': 13.5, u'm_total_tx_bytes': 96022739703, u'm_tx_expected_bps': 7677971968.0, u'm_tx_cps': 17074.7, u'ipackets-1': 19532155, u'ipackets-0': 32024082, u'ipackets-3': 19532141, u'obytes-0': 1598645022, u'm_total_nat_time_out_wait_ack': 0, u'm_tx_expected_cps': 27760.0}, u'type': 0, u'name': u'trex-global'}, 'trex-latency-v2': {u'data': {u'port-0': {u'hist': {u'cnt': 99974, u'max_usec': 60, u'min_usec': 10, u'high_cnt': 99974, u's_avg': 35.09375, u's_max': 38.784, u'histogram': [{u'val': 97053, u'key': 30}, {u'val': 3137, u'key': 40}, {u'val': 75, u'key': 50}, {u'val': 1, u'key': 60}]}, u'stats': {u'm_seq_error': 0, u'm_l3_cs_err': 0, u'm_pkt_ok': 100266, u'm_no_ipv4_option': 0, u'm_unsup_prot': 0, u'm_no_id': 0, u'm_jitter': 1, u'm_no_magic': 0, u'm_tx_pkt_err': 0, u'm_rx_check': 0, u'tx_arp': 0, u'm_length_error': 0, u'm_l4_cs_err': 0, u'ipv6_n_solic': 0, u'm_tx_pkt_ok': 100267, u'ignore_bytes': 0}}, u'port-1': {u'hist': {u'cnt': 99975, u'max_usec': 61, u'min_usec': 10, u'high_cnt': 99975, u's_avg': 34.112415, u's_max': 38.107, u'histogram': [{u'val': 99508, u'key': 30}, {u'val': 753, u'key': 40}, {u'val': 4, u'key': 50}, {u'val': 1, u'key': 60}, {u'val': 1, u'key': 100}]}, u'stats': {u'm_seq_error': 0, u'm_l3_cs_err': 0, u'm_pkt_ok': 100267, u'm_no_ipv4_option': 0, u'm_unsup_prot': 0, u'm_no_id': 0, u'm_jitter': 0, u'm_no_magic': 0, u'm_tx_pkt_err': 0, u'm_rx_check': 0, u'tx_arp': 0, u'm_length_error': 0, u'm_l4_cs_err': 0, u'ipv6_n_solic': 0, u'm_tx_pkt_ok': 100266, u'ignore_bytes': 0}}, u'port-2': {u'hist': {u'cnt': 99974, u'max_usec': 65, u'min_usec': 10, u'high_cnt': 99974, u's_avg': 35.03125, u's_max': 39.617, u'histogram': [{u'val': 99583, u'key': 30}, {u'val': 639, u'key': 40}, {u'val': 19, u'key': 50}, {u'val': 25, u'key': 60}]}, u'stats': {u'm_seq_error': 0, u'm_l3_cs_err': 0, u'm_pkt_ok': 100266, u'm_no_ipv4_option': 0, u'm_unsup_prot': 0, u'm_no_id': 0, u'm_jitter': 0, u'm_no_magic': 0, u'm_tx_pkt_err': 0, u'm_rx_check': 0, u'tx_arp': 0, u'm_length_error': 0, u'm_l4_cs_err': 0, u'ipv6_n_solic': 0, u'm_tx_pkt_ok': 100267, u'ignore_bytes': 0}}, u'port-3': {u'hist': {u'cnt': 99975, u'max_usec': 54, u'min_usec': 10, u'high_cnt': 99975, u's_avg': 35.03125, u's_max': 41.175, u'histogram': [{u'val': 99429, u'key': 30}, {u'val': 835, u'key': 40}, {u'val': 2, u'key': 50}, {u'val': 1, u'key': 100}]}, u'stats': {u'm_seq_error': 0, u'm_l3_cs_err': 0, u'm_pkt_ok': 100267, u'm_no_ipv4_option': 0, u'm_unsup_prot': 0, u'm_no_id': 0, u'm_jitter': 0, u'm_no_magic': 0, u'm_tx_pkt_err': 0, u'm_rx_check': 0, u'tx_arp': 0, u'm_length_error': 0, u'm_l4_cs_err': 0, u'ipv6_n_solic': 0, u'm_tx_pkt_ok': 100266, u'ignore_bytes': 0}}, u'unknown': 0, u'cpu_util': 0.725311}, u'type': 0, u'name': u'trex-latecny-v2'}, u'tx-gen': {u'data': {u'realtime-hist': {u'cnt': 0, u'max_usec': 0, u'min_usec': 10, u'high_cnt': 0, u's_avg': 0.0, u's_max': 0.0, u'histogram': []}, u'unknown': 0}, u'type': 0, u'name': u'tx-gen'}, 'trex-latency': {u'data': {u'jitter-2': 0.0, u'error-2': 0.0, u'error-3': 0.0, u'error-0': 0.0, u'error-1': 0.0, u'unknown': 0, u'max-0': 60.0, u'max-1': 61.0, u'max-2': 65.0, u'max-3': 54.0, u'c-max-2': 39.6, u'c-max-3': 41.2, u'c-max-0': 38.8, u'c-max-1': 38.1, u'avg-2': 35.0, u'avg-3': 35.0, u'jitter-1': 0.0, u'jitter-0': 1.0, u'avg-0': 35.1, u'avg-1': 34.1, u'jitter-3': 0.0}, u'type': 0, u'name': u'trex-latecny'}, u'trex-event': {u'type': 100, u'data': {u'cause': u'test has ended'}, u'name': u'trex-event'}}
+router drop stats: {u'TenGigabitEthernet1/1/0': 8, u'TenGigabitEthernet1/3/0': 9, 'total_drops': 17}
+TRex drop stats: 17
+TRex CPU utilization: 13.76%, norm_cpu is : 55.58 Gb/core
+Err percent: 22.6757910267
+{'num_of_hits': 570365719754, 'static_active_trans': 0, 'dynamic_active_trans': 1630085, 'num_of_misses': 17562072035, 'total_active_trans': 1630085}
+]]></system-out></testcase><testcase classname="stateful_tests.trex_nat_test.CTRexNat_Test" name="test_nat_simple_mode3" time="131.087"><system-out><![CDATA[
+
+LATEST RESULT OBJECT:
+Is valid history?       True
+Done warmup?            True
+Expected tx rate:       {u'm_tx_expected_pps': 1027120.0, u'm_tx_expected_bps': 7677971968.0, u'm_tx_expected_cps': 27760.0}
+Current tx rate:        {u'm_tx_bps': 4839776256.0, u'm_tx_cps': 17039.2, u'm_tx_pps': 649076.6}
+Minimum latency:        {u'min-2': 10, u'min-3': 10, u'min-0': 10, u'min-1': 10}
+Maximum latency:        {u'max-0': 65, u'max-1': 85, u'max-2': 55, u'max-3': 45}
+Average latency:        {'all': 41.275, u'port2': 42.0, u'port3': 35.0, u'port0': 54.0, u'port1': 34.1}
+Average window latency: {'all': 39.832, u'port2': 37.4, u'port3': 34.525, u'port0': 52.725, u'port1': 34.676}
+Total drops:            17
+Drop rate:              0.0
+History size so far:    100
+
+
+LATEST DUMP:
+{u'trex-latecny-v2': {u'data': {u'port-0': {u'hist': {u'cnt': 99977, u'max_usec': 71, u'min_usec': 10, u'high_cnt': 99977, u's_avg': 54.000732, u's_max': 62.24, u'histogram': [{u'val': 2678, u'key': 30}, {u'val': 3759, u'key': 40}, {u'val': 90542, u'key': 50}, {u'val': 3283, u'key': 60}, {u'val': 4, u'key': 70}]}, u'stats': {u'm_seq_error': 0, u'm_l3_cs_err': 0, u'm_pkt_ok': 100266, u'm_no_ipv4_option': 0, u'm_unsup_prot': 0, u'm_no_id': 0, u'm_jitter': 1, u'm_no_magic': 0, u'm_tx_pkt_err': 0, u'm_rx_check': 0, u'tx_arp': 0, u'm_length_error': 0, u'm_l4_cs_err': 0, u'ipv6_n_solic': 0, u'm_tx_pkt_ok': 100267, u'ignore_bytes': 0}}, u'port-1': {u'hist': {u'cnt': 99978, u'max_usec': 90, u'min_usec': 10, u'high_cnt': 99978, u's_avg': 34.063232, u's_max': 75.981, u'histogram': [{u'val': 98160, u'key': 30}, {u'val': 462, u'key': 40}, {u'val': 347, u'key': 50}, {u'val': 510, u'key': 60}, {u'val': 416, u'key': 70}, {u'val': 370, u'key': 80}, {u'val': 1, u'key': 90}, {u'val': 1, u'key': 200}]}, u'stats': {u'm_seq_error': 0, u'm_l3_cs_err': 0, u'm_pkt_ok': 100267, u'm_no_ipv4_option': 0, u'm_unsup_prot': 0, u'm_no_id': 0, u'm_jitter': 1, u'm_no_magic': 0, u'm_tx_pkt_err': 0, u'm_rx_check': 0, u'tx_arp': 0, u'm_length_error': 0, u'm_l4_cs_err': 0, u'ipv6_n_solic': 0, u'm_tx_pkt_ok': 100266, u'ignore_bytes': 0}}, u'port-2': {u'hist': {u'cnt': 99977, u'max_usec': 66, u'min_usec': 10, u'high_cnt': 99977, u's_avg': 42.0, u's_max': 58.886, u'histogram': [{u'val': 84577, u'key': 30}, {u'val': 606, u'key': 40}, {u'val': 15020, u'key': 50}, {u'val': 63, u'key': 60}]}, u'stats': {u'm_seq_error': 0, u'm_l3_cs_err': 0, u'm_pkt_ok': 100266, u'm_no_ipv4_option': 0, u'm_unsup_prot': 0, u'm_no_id': 0, u'm_jitter': 1, u'm_no_magic': 0, u'm_tx_pkt_err': 0, u'm_rx_check': 0, u'tx_arp': 0, u'm_length_error': 0, u'm_l4_cs_err': 0, u'ipv6_n_solic': 0, u'm_tx_pkt_ok': 100267, u'ignore_bytes': 0}}, u'port-3': {u'hist': {u'cnt': 99978, u'max_usec': 52, u'min_usec': 10, u'high_cnt': 99978, u's_avg': 35.000366, u's_max': 46.111, u'histogram': [{u'val': 99799, u'key': 30}, {u'val': 464, u'key': 40}, {u'val': 3, u'key': 50}, {u'val': 1, u'key': 100}]}, u'stats': {u'm_seq_error': 0, u'm_l3_cs_err': 0, u'm_pkt_ok': 100267, u'm_no_ipv4_option': 0, u'm_unsup_prot': 0, u'm_no_id': 0, u'm_jitter': 1, u'm_no_magic': 0, u'm_tx_pkt_err': 0, u'm_rx_check': 0, u'tx_arp': 0, u'm_length_error': 0, u'm_l4_cs_err': 0, u'ipv6_n_solic': 0, u'm_tx_pkt_ok': 100266, u'ignore_bytes': 0}}, u'unknown': 0, u'cpu_util': 0.636837}, u'type': 0, u'name': u'trex-latecny-v2'}, u'trex-latecny': {u'data': {u'jitter-2': 1.0, u'error-2': 0.0, u'error-3': 0.0, u'error-0': 0.0, u'error-1': 0.0, u'unknown': 0, u'max-0': 71.0, u'max-1': 90.0, u'max-2': 66.0, u'max-3': 52.0, u'c-max-2': 58.9, u'c-max-3': 46.1, u'c-max-0': 62.2, u'c-max-1': 76.0, u'avg-2': 42.0, u'avg-3': 35.0, u'jitter-1': 1.0, u'jitter-0': 1.0, u'avg-0': 54.0, u'avg-1': 34.1, u'jitter-3': 1.0}, u'type': 0, u'name': u'trex-latecny'}, u'trex-global': {u'data': {u'm_cpu_util_raw': 13.0, u'm_total_tx_bps-2': 79595552.0, u'm_total_tx_bps-3': 2340428288.0, u'm_total_tx_bps-0': 79586552.0, u'm_total_tx_bps-1': 2340165888.0, u'm_cpu_util': 13.8, u'm_total_alloc_error': 0, u'm_active_flows': 0.0, u'ierrors-3': 0, u'm_total_servers': 65534, u'm_total_rx_bps-1': 79587872.0, u'm_total_rx_bps-2': 2340445440.0, u'm_total_rx_bps-3': 79594344.0, u'm_platform_factor': 1.0, u'obytes-1': 46412742084, u'm_socket_util': 0.0, u'm_total_nat_learn_error': 0, u'm_total_clients': 254, u'm_cpu_util-3': 13.2, u'unknown': 0, u'ierrors-2': 0, u'ts': {u'freq': 2000000000, u'value': 32635551427432500}, u'ierrors-0': 0, u'ierrors-1': 0, u'opackets-3': 32024059, u'opackets-2': 19532150, u'opackets-1': 32024082, u'opackets-0': 19532163, u'm_rx_pps': 649080.3, u'template': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], u'm_total_rx_bytes': 96000530615, u'm_total_rx_pkts': 103112437, u'm_rx_core_pps': -1.0, u'm_total_nat_active': 0, u'oerrors-3': 0, u'm_total_nat_syn_wait': 2775983, u'oerrors-0': 0, u'oerrors-1': 0, u'oerrors-2': 0, u'm_rx_drop_bps': 0.0, u'm_rx_bps': 4839818240.0, u'm_total_queue_full': 0, u'm_cpu_util-1': 14.4, u'm_total_rx_pps-2': 201676.9, u'm_total_rx_pps-3': 122879.3, u'm_total_rx_pps-0': 201654.8, u'm_total_rx_pps-1': 122869.3, u'obytes-3': 46412708650, u'm_open_flows': 2776000.0, u'm_tx_expected_pps': 1027120.0, u'm_rx_cpu_util': 0.6368, u'm_total_nat_no_fid': 0, u'obytes-2': 1587539947, u'm_cpu_util-0': 14.4, u'm_total_queue_drop': 0, u'm_active_sockets': 0, u'm_total_tx_pkts': 103112454, u'm_tx_bps': 4839776256.0, u'm_total_rx_bps-0': 2340190976.0, u'm_tx_pps': 649076.6, u'ipackets-2': 32024059, u'm_total_nat_open': 2776000, u'm_total_tx_pps-0': 122867.4, u'm_total_tx_pps-1': 201652.8, u'm_total_tx_pps-2': 122881.2, u'm_total_tx_pps-3': 201675.2, u'm_bw_per_core': 35.0, u'm_total_nat_time_out': 17, u'ibytes-1': 1587540510, u'ibytes-0': 46412742084, u'ibytes-3': 1587539371, u'ibytes-2': 46412708650, u'm_cpu_util-2': 13.2, u'm_total_tx_bytes': 96000531703, u'm_tx_expected_bps': 7677971968.0, u'm_tx_cps': 17039.2, u'ipackets-1': 19532155, u'ipackets-0': 32024082, u'ipackets-3': 19532141, u'obytes-0': 1587541022, u'm_total_nat_time_out_wait_ack': 0, u'm_tx_expected_cps': 27760.0}, u'type': 0, u'name': u'trex-global'}, 'trex-latency-v2': {u'data': {u'port-0': {u'hist': {u'cnt': 99977, u'max_usec': 71, u'min_usec': 10, u'high_cnt': 99977, u's_avg': 54.000732, u's_max': 62.24, u'histogram': [{u'val': 2678, u'key': 30}, {u'val': 3759, u'key': 40}, {u'val': 90542, u'key': 50}, {u'val': 3283, u'key': 60}, {u'val': 4, u'key': 70}]}, u'stats': {u'm_seq_error': 0, u'm_l3_cs_err': 0, u'm_pkt_ok': 100266, u'm_no_ipv4_option': 0, u'm_unsup_prot': 0, u'm_no_id': 0, u'm_jitter': 1, u'm_no_magic': 0, u'm_tx_pkt_err': 0, u'm_rx_check': 0, u'tx_arp': 0, u'm_length_error': 0, u'm_l4_cs_err': 0, u'ipv6_n_solic': 0, u'm_tx_pkt_ok': 100267, u'ignore_bytes': 0}}, u'port-1': {u'hist': {u'cnt': 99978, u'max_usec': 90, u'min_usec': 10, u'high_cnt': 99978, u's_avg': 34.063232, u's_max': 75.981, u'histogram': [{u'val': 98160, u'key': 30}, {u'val': 462, u'key': 40}, {u'val': 347, u'key': 50}, {u'val': 510, u'key': 60}, {u'val': 416, u'key': 70}, {u'val': 370, u'key': 80}, {u'val': 1, u'key': 90}, {u'val': 1, u'key': 200}]}, u'stats': {u'm_seq_error': 0, u'm_l3_cs_err': 0, u'm_pkt_ok': 100267, u'm_no_ipv4_option': 0, u'm_unsup_prot': 0, u'm_no_id': 0, u'm_jitter': 1, u'm_no_magic': 0, u'm_tx_pkt_err': 0, u'm_rx_check': 0, u'tx_arp': 0, u'm_length_error': 0, u'm_l4_cs_err': 0, u'ipv6_n_solic': 0, u'm_tx_pkt_ok': 100266, u'ignore_bytes': 0}}, u'port-2': {u'hist': {u'cnt': 99977, u'max_usec': 66, u'min_usec': 10, u'high_cnt': 99977, u's_avg': 42.0, u's_max': 58.886, u'histogram': [{u'val': 84577, u'key': 30}, {u'val': 606, u'key': 40}, {u'val': 15020, u'key': 50}, {u'val': 63, u'key': 60}]}, u'stats': {u'm_seq_error': 0, u'm_l3_cs_err': 0, u'm_pkt_ok': 100266, u'm_no_ipv4_option': 0, u'm_unsup_prot': 0, u'm_no_id': 0, u'm_jitter': 1, u'm_no_magic': 0, u'm_tx_pkt_err': 0, u'm_rx_check': 0, u'tx_arp': 0, u'm_length_error': 0, u'm_l4_cs_err': 0, u'ipv6_n_solic': 0, u'm_tx_pkt_ok': 100267, u'ignore_bytes': 0}}, u'port-3': {u'hist': {u'cnt': 99978, u'max_usec': 52, u'min_usec': 10, u'high_cnt': 99978, u's_avg': 35.000366, u's_max': 46.111, u'histogram': [{u'val': 99799, u'key': 30}, {u'val': 464, u'key': 40}, {u'val': 3, u'key': 50}, {u'val': 1, u'key': 100}]}, u'stats': {u'm_seq_error': 0, u'm_l3_cs_err': 0, u'm_pkt_ok': 100267, u'm_no_ipv4_option': 0, u'm_unsup_prot': 0, u'm_no_id': 0, u'm_jitter': 1, u'm_no_magic': 0, u'm_tx_pkt_err': 0, u'm_rx_check': 0, u'tx_arp': 0, u'm_length_error': 0, u'm_l4_cs_err': 0, u'ipv6_n_solic': 0, u'm_tx_pkt_ok': 100266, u'ignore_bytes': 0}}, u'unknown': 0, u'cpu_util': 0.636837}, u'type': 0, u'name': u'trex-latecny-v2'}, u'tx-gen': {u'data': {u'realtime-hist': {u'cnt': 0, u'max_usec': 0, u'min_usec': 10, u'high_cnt': 0, u's_avg': 0.0, u's_max': 0.0, u'histogram': []}, u'unknown': 0}, u'type': 0, u'name': u'tx-gen'}, 'trex-latency': {u'data': {u'jitter-2': 1.0, u'error-2': 0.0, u'error-3': 0.0, u'error-0': 0.0, u'error-1': 0.0, u'unknown': 0, u'max-0': 71.0, u'max-1': 90.0, u'max-2': 66.0, u'max-3': 52.0, u'c-max-2': 58.9, u'c-max-3': 46.1, u'c-max-0': 62.2, u'c-max-1': 76.0, u'avg-2': 42.0, u'avg-3': 35.0, u'jitter-1': 1.0, u'jitter-0': 1.0, u'avg-0': 54.0, u'avg-1': 34.1, u'jitter-3': 1.0}, u'type': 0, u'name': u'trex-latecny'}, u'trex-event': {u'type': 100, u'data': {u'cause': u'test has ended'}, u'name': u'trex-event'}}
+router drop stats: {u'TenGigabitEthernet1/1/0': 8, u'TenGigabitEthernet1/3/0': 9, 'total_drops': 17}
+TRex drop stats: 17
+TRex CPU utilization: 13.28%, norm_cpu is : 57.59 Gb/core
+Err percent: 27.1081811432
+{'num_of_hits': 570466056143, 'static_active_trans': 0, 'dynamic_active_trans': 1656172, 'num_of_misses': 17564848019, 'total_active_trans': 1656172}
+]]></system-out></testcase><testcase classname="stateful_tests.trex_nat_test.CTRexNat_Test" name="test_nat_simple_mode3_udp" time="132.432"><system-out><![CDATA[
+
+LATEST RESULT OBJECT:
+Is valid history?       True
+Done warmup?            True
+Expected tx rate:       {u'm_tx_expected_pps': 20000.0, u'm_tx_expected_bps': 13600000.0, u'm_tx_expected_cps': 10000.0}
+Current tx rate:        {u'm_tx_bps': 7065459.0, u'm_tx_cps': 4187.4, u'm_tx_pps': 10963.8}
+Minimum latency:        {u'min-2': 10, u'min-3': 10, u'min-0': 10, u'min-1': 10}
+Maximum latency:        {u'max-0': 45, u'max-1': 45, u'max-2': 45, u'max-3': 45}
+Average latency:        {'all': 37.125, u'port2': 37.3, u'port3': 37.3, u'port0': 37.3, u'port1': 36.6}
+Average window latency: {'all': 35.609, u'port2': 35.789, u'port3': 35.761, u'port0': 35.72, u'port1': 35.167}
+Total drops:            0
+Drop rate:              0.0
+History size so far:    100
+
+
+LATEST DUMP:
+{u'trex-latecny-v2': {u'data': {u'port-0': {u'hist': {u'cnt': 101039, u'max_usec': 65, u'min_usec': 10, u'high_cnt': 101039, u's_avg': 37.3125, u's_max': 47.7155, u'histogram': [{u'val': 99717, u'key': 30}, {u'val': 1496, u'key': 40}, {u'val': 23, u'key': 50}, {u'val': 3, u'key': 60}]}, u'stats': {u'm_seq_error': 0, u'm_l3_cs_err': 0, u'm_pkt_ok': 101239, u'm_no_ipv4_option': 0, u'm_unsup_prot': 0, u'm_no_id': 0, u'm_jitter': 1, u'm_no_magic': 0, u'm_tx_pkt_err': 0, u'm_rx_check': 0, u'tx_arp': 0, u'm_length_error': 0, u'm_l4_cs_err': 0, u'ipv6_n_solic': 0, u'm_tx_pkt_ok': 101240, u'ignore_bytes': 0}}, u'port-1': {u'hist': {u'cnt': 101040, u'max_usec': 60, u'min_usec': 10, u'high_cnt': 101040, u's_avg': 36.562499, u's_max': 45.51, u'histogram': [{u'val': 100308, u'key': 30}, {u'val': 907, u'key': 40}, {u'val': 22, u'key': 50}, {u'val': 2, u'key': 60}, {u'val': 1, u'key': 100}]}, u'stats': {u'm_seq_error': 0, u'm_l3_cs_err': 0, u'm_pkt_ok': 101240, u'm_no_ipv4_option': 0, u'm_unsup_prot': 0, u'm_no_id': 0, u'm_jitter': 1, u'm_no_magic': 0, u'm_tx_pkt_err': 0, u'm_rx_check': 0, u'tx_arp': 0, u'm_length_error': 0, u'm_l4_cs_err': 0, u'ipv6_n_solic': 0, u'm_tx_pkt_ok': 101239, u'ignore_bytes': 0}}, u'port-2': {u'hist': {u'cnt': 101039, u'max_usec': 97, u'min_usec': 10, u'high_cnt': 101039, u's_avg': 37.3125, u's_max': 45.784, u'histogram': [{u'val': 98854, u'key': 30}, {u'val': 2358, u'key': 40}, {u'val': 23, u'key': 50}, {u'val': 3, u'key': 60}, {u'val': 1, u'key': 90}]}, u'stats': {u'm_seq_error': 0, u'm_l3_cs_err': 0, u'm_pkt_ok': 101239, u'm_no_ipv4_option': 0, u'm_unsup_prot': 0, u'm_no_id': 0, u'm_jitter': 1, u'm_no_magic': 0, u'm_tx_pkt_err': 0, u'm_rx_check': 0, u'tx_arp': 0, u'm_length_error': 0, u'm_l4_cs_err': 0, u'ipv6_n_solic': 0, u'm_tx_pkt_ok': 101240, u'ignore_bytes': 0}}, u'port-3': {u'hist': {u'cnt': 101040, u'max_usec': 67, u'min_usec': 10, u'high_cnt': 101040, u's_avg': 37.3125, u's_max': 46.313, u'histogram': [{u'val': 99449, u'key': 30}, {u'val': 1760, u'key': 40}, {u'val': 25, u'key': 50}, {u'val': 5, u'key': 60}, {u'val': 1, u'key': 100}]}, u'stats': {u'm_seq_error': 0, u'm_l3_cs_err': 0, u'm_pkt_ok': 101240, u'm_no_ipv4_option': 0, u'm_unsup_prot': 0, u'm_no_id': 0, u'm_jitter': 1, u'm_no_magic': 0, u'm_tx_pkt_err': 0, u'm_rx_check': 0, u'tx_arp': 0, u'm_length_error': 0, u'm_l4_cs_err': 0, u'ipv6_n_solic': 0, u'm_tx_pkt_ok': 101239, u'ignore_bytes': 0}}, u'unknown': 0, u'cpu_util': 0.532478}, u'type': 0, u'name': u'trex-latecny-v2'}, u'trex-latecny': {u'data': {u'jitter-2': 1.0, u'error-2': 0.0, u'error-3': 0.0, u'error-0': 0.0, u'error-1': 0.0, u'unknown': 0, u'max-0': 65.0, u'max-1': 60.0, u'max-2': 97.0, u'max-3': 67.0, u'c-max-2': 45.8, u'c-max-3': 46.3, u'c-max-0': 47.7, u'c-max-1': 45.5, u'avg-2': 37.3, u'avg-3': 37.3, u'jitter-1': 1.0, u'jitter-0': 1.0, u'avg-0': 37.3, u'avg-1': 36.6, u'jitter-3': 1.0}, u'type': 0, u'name': u'trex-latecny'}, u'trex-global': {u'data': {u'm_cpu_util_raw': 0.0, u'm_total_tx_bps-2': 1628518.2, u'm_total_tx_bps-3': 1905234.0, u'm_total_tx_bps-0': 1626549.9, u'm_total_tx_bps-1': 1905157.1, u'm_cpu_util': 1.54, u'm_total_alloc_error': 0, u'm_active_flows': 0.0, u'ierrors-3': 0, u'm_total_servers': 254, u'm_total_rx_bps-1': 1628491.5, u'm_total_rx_bps-2': 1905207.1, u'm_total_rx_bps-3': 1628491.5, u'm_platform_factor': 1.0, u'obytes-1': 53181681, u'm_socket_util': 0.0, u'm_total_nat_learn_error': 0, u'm_total_clients': 510, u'm_cpu_util-3': 1.583, u'unknown': 0, u'ierrors-2': 0, u'ts': {u'freq': 2000000000, u'value': 32635818257991834}, u'ierrors-0': 0, u'ierrors-1': 0, u'opackets-3': 601238, u'opackets-2': 601239, u'opackets-1': 601238, u'opackets-0': 601239, u'm_rx_pps': 10963.8, u'template': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], u'm_total_rx_bytes': 196726888, u'm_total_rx_pkts': 2404954, u'm_rx_core_pps': -1.0, u'm_total_nat_active': 0, u'oerrors-3': 0, u'm_total_nat_syn_wait': 0, u'oerrors-0': 0, u'oerrors-1': 0, u'oerrors-2': 0, u'm_rx_drop_bps': 0.0, u'm_rx_bps': 7065160.0, u'm_total_queue_full': 0, u'm_cpu_util-1': 1.497, u'm_total_rx_pps-2': 2746.7, u'm_total_rx_pps-3': 2735.2, u'm_total_rx_pps-0': 2746.7, u'm_total_rx_pps-1': 2735.2, u'obytes-3': 53181681, u'm_open_flows': 999998.0, u'm_tx_expected_pps': 20000.0, u'm_rx_cpu_util': 0.5325, u'm_total_nat_no_fid': 0, u'obytes-2': 45181763, u'm_cpu_util-0': 1.497, u'm_total_queue_drop': 0, u'm_active_sockets': 0, u'm_total_tx_pkts': 2404954, u'm_tx_bps': 7065459.0, u'm_total_rx_bps-0': 1902969.8, u'm_tx_pps': 10963.8, u'ipackets-2': 601238, u'm_total_nat_open': 999998, u'm_total_tx_pps-0': 2735.1, u'm_total_tx_pps-1': 2746.7, u'm_total_tx_pps-2': 2735.2, u'm_total_tx_pps-3': 2746.8, u'm_bw_per_core': 0.4588, u'm_total_nat_time_out': 0, u'ibytes-1': 45181763, u'ibytes-0': 53181681, u'ibytes-3': 45181763, u'ibytes-2': 53181681, u'm_cpu_util-2': 1.583, u'm_total_tx_bytes': 196726888, u'm_tx_expected_bps': 13600000.0, u'm_tx_cps': 4187.4, u'ipackets-1': 601239, u'ipackets-0': 601238, u'ipackets-3': 601239, u'obytes-0': 45181763, u'm_total_nat_time_out_wait_ack': 0, u'm_tx_expected_cps': 10000.0}, u'type': 0, u'name': u'trex-global'}, 'trex-latency-v2': {u'data': {u'port-0': {u'hist': {u'cnt': 101039, u'max_usec': 65, u'min_usec': 10, u'high_cnt': 101039, u's_avg': 37.3125, u's_max': 47.7155, u'histogram': [{u'val': 99717, u'key': 30}, {u'val': 1496, u'key': 40}, {u'val': 23, u'key': 50}, {u'val': 3, u'key': 60}]}, u'stats': {u'm_seq_error': 0, u'm_l3_cs_err': 0, u'm_pkt_ok': 101239, u'm_no_ipv4_option': 0, u'm_unsup_prot': 0, u'm_no_id': 0, u'm_jitter': 1, u'm_no_magic': 0, u'm_tx_pkt_err': 0, u'm_rx_check': 0, u'tx_arp': 0, u'm_length_error': 0, u'm_l4_cs_err': 0, u'ipv6_n_solic': 0, u'm_tx_pkt_ok': 101240, u'ignore_bytes': 0}}, u'port-1': {u'hist': {u'cnt': 101040, u'max_usec': 60, u'min_usec': 10, u'high_cnt': 101040, u's_avg': 36.562499, u's_max': 45.51, u'histogram': [{u'val': 100308, u'key': 30}, {u'val': 907, u'key': 40}, {u'val': 22, u'key': 50}, {u'val': 2, u'key': 60}, {u'val': 1, u'key': 100}]}, u'stats': {u'm_seq_error': 0, u'm_l3_cs_err': 0, u'm_pkt_ok': 101240, u'm_no_ipv4_option': 0, u'm_unsup_prot': 0, u'm_no_id': 0, u'm_jitter': 1, u'm_no_magic': 0, u'm_tx_pkt_err': 0, u'm_rx_check': 0, u'tx_arp': 0, u'm_length_error': 0, u'm_l4_cs_err': 0, u'ipv6_n_solic': 0, u'm_tx_pkt_ok': 101239, u'ignore_bytes': 0}}, u'port-2': {u'hist': {u'cnt': 101039, u'max_usec': 97, u'min_usec': 10, u'high_cnt': 101039, u's_avg': 37.3125, u's_max': 45.784, u'histogram': [{u'val': 98854, u'key': 30}, {u'val': 2358, u'key': 40}, {u'val': 23, u'key': 50}, {u'val': 3, u'key': 60}, {u'val': 1, u'key': 90}]}, u'stats': {u'm_seq_error': 0, u'm_l3_cs_err': 0, u'm_pkt_ok': 101239, u'm_no_ipv4_option': 0, u'm_unsup_prot': 0, u'm_no_id': 0, u'm_jitter': 1, u'm_no_magic': 0, u'm_tx_pkt_err': 0, u'm_rx_check': 0, u'tx_arp': 0, u'm_length_error': 0, u'm_l4_cs_err': 0, u'ipv6_n_solic': 0, u'm_tx_pkt_ok': 101240, u'ignore_bytes': 0}}, u'port-3': {u'hist': {u'cnt': 101040, u'max_usec': 67, u'min_usec': 10, u'high_cnt': 101040, u's_avg': 37.3125, u's_max': 46.313, u'histogram': [{u'val': 99449, u'key': 30}, {u'val': 1760, u'key': 40}, {u'val': 25, u'key': 50}, {u'val': 5, u'key': 60}, {u'val': 1, u'key': 100}]}, u'stats': {u'm_seq_error': 0, u'm_l3_cs_err': 0, u'm_pkt_ok': 101240, u'm_no_ipv4_option': 0, u'm_unsup_prot': 0, u'm_no_id': 0, u'm_jitter': 1, u'm_no_magic': 0, u'm_tx_pkt_err': 0, u'm_rx_check': 0, u'tx_arp': 0, u'm_length_error': 0, u'm_l4_cs_err': 0, u'ipv6_n_solic': 0, u'm_tx_pkt_ok': 101239, u'ignore_bytes': 0}}, u'unknown': 0, u'cpu_util': 0.532478}, u'type': 0, u'name': u'trex-latecny-v2'}, u'tx-gen': {u'data': {u'realtime-hist': {u'cnt': 0, u'max_usec': 0, u'min_usec': 10, u'high_cnt': 0, u's_avg': 0.0, u's_max': 0.0, u'histogram': []}, u'unknown': 0}, u'type': 0, u'name': u'tx-gen'}, 'trex-latency': {u'data': {u'jitter-2': 1.0, u'error-2': 0.0, u'error-3': 0.0, u'error-0': 0.0, u'error-1': 0.0, u'unknown': 0, u'max-0': 65.0, u'max-1': 60.0, u'max-2': 97.0, u'max-3': 67.0, u'c-max-2': 45.8, u'c-max-3': 46.3, u'c-max-0': 47.7, u'c-max-1': 45.5, u'avg-2': 37.3, u'avg-3': 37.3, u'jitter-1': 1.0, u'jitter-0': 1.0, u'avg-0': 37.3, u'avg-1': 36.6, u'jitter-3': 1.0}, u'type': 0, u'name': u'trex-latecny'}, u'trex-event': {u'type': 100, u'data': {u'cause': u'test has ended'}, u'name': u'trex-event'}}
+router drop stats: {'total_drops': 0}
+TRex drop stats: 0
+TRex CPU utilization: 0.75%, norm_cpu is : 2.07 Gb/core
+Err percent: 95.4218641138
+{'num_of_hits': 570466961098, 'static_active_trans': 0, 'dynamic_active_trans': 276510, 'num_of_misses': 17565348019, 'total_active_trans': 276510}
+]]></system-out></testcase><testcase classname="stateful_tests.trex_nat_test.CTRexNoNat_Test" name="test_nat_learning" time="124.762"><system-out><![CDATA[
+
+LATEST RESULT OBJECT:
+Is valid history?       True
+Done warmup?            True
+Expected tx rate:       {u'm_tx_expected_pps': 1027120.0, u'm_tx_expected_bps': 7677971968.0, u'm_tx_expected_cps': 27760.0}
+Current tx rate:        {u'm_tx_bps': 4840886784.0, u'm_tx_cps': 17037.6, u'm_tx_pps': 649074.6}
+Minimum latency:        {u'min-2': 10, u'min-3': 10, u'min-0': 10, u'min-1': 10}
+Maximum latency:        {u'max-0': 55, u'max-1': 35, u'max-2': 55, u'max-3': 35}
+Average latency:        {'all': 29.25, u'port2': 38.0, u'port3': 22.0, u'port0': 35.0, u'port1': 22.0}
+Average window latency: {'all': 27.301, u'port2': 38.023, u'port3': 22.056, u'port0': 27.091, u'port1': 22.032}
+Total drops:            0
+Drop rate:              0.0
+History size so far:    100
+
+
+LATEST DUMP:
+{u'trex-latecny-v2': {u'data': {u'port-0': {u'hist': {u'cnt': 99980, u'max_usec': 60, u'min_usec': 10, u'high_cnt': 99980, u's_avg': 34.999023, u's_max': 51.018, u'histogram': [{u'val': 78642, u'key': 20}, {u'val': 331, u'key': 30}, {u'val': 19729, u'key': 40}, {u'val': 1561, u'key': 50}, {u'val': 1, u'key': 60}]}, u'stats': {u'm_seq_error': 0, u'm_l3_cs_err': 0, u'm_pkt_ok': 100264, u'm_no_ipv4_option': 0, u'm_unsup_prot': 0, u'm_no_id': 0, u'm_jitter': 0, u'm_no_magic': 0, u'm_tx_pkt_err': 0, u'm_rx_check': 0, u'tx_arp': 0, u'm_length_error': 0, u'm_l4_cs_err': 0, u'ipv6_n_solic': 0, u'm_tx_pkt_ok': 100265, u'ignore_bytes': 0}}, u'port-1': {u'hist': {u'cnt': 99981, u'max_usec': 38, u'min_usec': 10, u'high_cnt': 99981, u's_avg': 22.000977, u's_max': 27.665, u'histogram': [{u'val': 99937, u'key': 20}, {u'val': 328, u'key': 30}]}, u'stats': {u'm_seq_error': 0, u'm_l3_cs_err': 0, u'm_pkt_ok': 100265, u'm_no_ipv4_option': 0, u'm_unsup_prot': 0, u'm_no_id': 0, u'm_jitter': 0, u'm_no_magic': 0, u'm_tx_pkt_err': 0, u'm_rx_check': 0, u'tx_arp': 0, u'm_length_error': 0, u'm_l4_cs_err': 0, u'ipv6_n_solic': 0, u'm_tx_pkt_ok': 100264, u'ignore_bytes': 0}}, u'port-2': {u'hist': {u'cnt': 99980, u'max_usec': 63, u'min_usec': 10, u'high_cnt': 99980, u's_avg': 38.006836, u's_max': 52.865, u'histogram': [{u'val': 31030, u'key': 20}, {u'val': 17248, u'key': 30}, {u'val': 14422, u'key': 40}, {u'val': 37537, u'key': 50}, {u'val': 27, u'key': 60}]}, u'stats': {u'm_seq_error': 0, u'm_l3_cs_err': 0, u'm_pkt_ok': 100264, u'm_no_ipv4_option': 0, u'm_unsup_prot': 0, u'm_no_id': 0, u'm_jitter': 0, u'm_no_magic': 0, u'm_tx_pkt_err': 0, u'm_rx_check': 0, u'tx_arp': 0, u'm_length_error': 0, u'm_l4_cs_err': 0, u'ipv6_n_solic': 0, u'm_tx_pkt_ok': 100265, u'ignore_bytes': 0}}, u'port-3': {u'hist': {u'cnt': 99981, u'max_usec': 40, u'min_usec': 10, u'high_cnt': 99981, u's_avg': 22.000977, u's_max': 34.99, u'histogram': [{u'val': 99904, u'key': 20}, {u'val': 360, u'key': 30}, {u'val': 1, u'key': 40}]}, u'stats': {u'm_seq_error': 0, u'm_l3_cs_err': 0, u'm_pkt_ok': 100265, u'm_no_ipv4_option': 0, u'm_unsup_prot': 0, u'm_no_id': 0, u'm_jitter': 0, u'm_no_magic': 0, u'm_tx_pkt_err': 0, u'm_rx_check': 0, u'tx_arp': 0, u'm_length_error': 0, u'm_l4_cs_err': 0, u'ipv6_n_solic': 0, u'm_tx_pkt_ok': 100264, u'ignore_bytes': 0}}, u'unknown': 0, u'cpu_util': 0.747508}, u'type': 0, u'name': u'trex-latecny-v2'}, u'trex-latecny': {u'data': {u'jitter-2': 0.0, u'error-2': 0.0, u'error-3': 0.0, u'error-0': 0.0, u'error-1': 0.0, u'unknown': 0, u'max-0': 60.0, u'max-1': 38.0, u'max-2': 63.0, u'max-3': 40.0, u'c-max-2': 52.9, u'c-max-3': 35.0, u'c-max-0': 51.0, u'c-max-1': 27.7, u'avg-2': 38.0, u'avg-3': 22.0, u'jitter-1': 0.0, u'jitter-0': 0.0, u'avg-0': 35.0, u'avg-1': 22.0, u'jitter-3': 0.0}, u'type': 0, u'name': u'trex-latecny'}, u'trex-global': {u'data': {u'm_cpu_util_raw': 13.5, u'm_total_tx_bps-2': 80138584.0, u'm_total_tx_bps-3': 2340420096.0, u'm_total_tx_bps-0': 80130752.0, u'm_total_tx_bps-1': 2340197120.0, u'm_cpu_util': 14.2, u'm_total_alloc_error': 0, u'm_active_flows': 0.0, u'ierrors-3': 0, u'm_total_servers': 65534, u'm_total_rx_bps-1': 79994456.0, u'm_total_rx_bps-2': 2340456192.0, u'm_total_rx_bps-3': 80002272.0, u'm_platform_factor': 1.0, u'obytes-1': 46413009424, u'm_socket_util': 0.0, u'm_total_nat_learn_error': 0, u'm_total_clients': 254, u'm_cpu_util-3': 13.7, u'unknown': 0, u'ierrors-2': 0, u'ts': {u'freq': 2000000000, u'value': 32636075491862312}, u'ierrors-0': 0, u'ierrors-1': 0, u'opackets-3': 32024264, u'opackets-2': 19532265, u'opackets-1': 32024264, u'opackets-0': 19532265, u'm_rx_pps': 649078.6, u'template': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], u'm_total_rx_bytes': 96017773828, u'm_total_rx_pkts': 103113058, u'm_rx_core_pps': -1.0, u'm_total_nat_active': 0, u'oerrors-3': 0, u'm_total_nat_syn_wait': 2776000, u'oerrors-0': 0, u'oerrors-1': 0, u'oerrors-2': 0, u'm_rx_drop_bps': 0.0, u'm_rx_bps': 4840658944.0, u'm_total_queue_full': 0, u'm_cpu_util-1': 14.7, u'm_total_rx_pps-2': 201676.6, u'm_total_rx_pps-3': 122879.3, u'm_total_rx_pps-0': 201655.3, u'm_total_rx_pps-1': 122867.4, u'obytes-3': 46413009424, u'm_open_flows': 2776000.0, u'm_tx_expected_pps': 1027120.0, u'm_rx_cpu_util': 0.7475, u'm_total_nat_no_fid': 0, u'obytes-2': 1598653490, u'm_cpu_util-0': 14.7, u'm_total_queue_drop': 0, u'm_active_sockets': 0, u'm_total_tx_pkts': 103113058, u'm_tx_bps': 4840886784.0, u'm_total_rx_bps-0': 2340206080.0, u'm_tx_pps': 649074.6, u'ipackets-2': 32024264, u'm_total_nat_open': 2776000, u'm_total_tx_pps-0': 122867.4, u'm_total_tx_pps-1': 201654.4, u'm_total_tx_pps-2': 122879.3, u'm_total_tx_pps-3': 201673.5, u'm_bw_per_core': 34.0, u'm_total_nat_time_out': 0, u'ibytes-1': 1595877490, u'ibytes-0': 46413009424, u'ibytes-3': 1595877490, u'ibytes-2': 46413009424, u'm_cpu_util-2': 13.7, u'm_total_tx_bytes': 96023325828, u'm_tx_expected_bps': 7677971968.0, u'm_tx_cps': 17037.6, u'ipackets-1': 19532265, u'ipackets-0': 32024264, u'ipackets-3': 19532265, u'obytes-0': 1598653490, u'm_total_nat_time_out_wait_ack': 0, u'm_tx_expected_cps': 27760.0}, u'type': 0, u'name': u'trex-global'}, 'trex-latency-v2': {u'data': {u'port-0': {u'hist': {u'cnt': 99980, u'max_usec': 60, u'min_usec': 10, u'high_cnt': 99980, u's_avg': 34.999023, u's_max': 51.018, u'histogram': [{u'val': 78642, u'key': 20}, {u'val': 331, u'key': 30}, {u'val': 19729, u'key': 40}, {u'val': 1561, u'key': 50}, {u'val': 1, u'key': 60}]}, u'stats': {u'm_seq_error': 0, u'm_l3_cs_err': 0, u'm_pkt_ok': 100264, u'm_no_ipv4_option': 0, u'm_unsup_prot': 0, u'm_no_id': 0, u'm_jitter': 0, u'm_no_magic': 0, u'm_tx_pkt_err': 0, u'm_rx_check': 0, u'tx_arp': 0, u'm_length_error': 0, u'm_l4_cs_err': 0, u'ipv6_n_solic': 0, u'm_tx_pkt_ok': 100265, u'ignore_bytes': 0}}, u'port-1': {u'hist': {u'cnt': 99981, u'max_usec': 38, u'min_usec': 10, u'high_cnt': 99981, u's_avg': 22.000977, u's_max': 27.665, u'histogram': [{u'val': 99937, u'key': 20}, {u'val': 328, u'key': 30}]}, u'stats': {u'm_seq_error': 0, u'm_l3_cs_err': 0, u'm_pkt_ok': 100265, u'm_no_ipv4_option': 0, u'm_unsup_prot': 0, u'm_no_id': 0, u'm_jitter': 0, u'm_no_magic': 0, u'm_tx_pkt_err': 0, u'm_rx_check': 0, u'tx_arp': 0, u'm_length_error': 0, u'm_l4_cs_err': 0, u'ipv6_n_solic': 0, u'm_tx_pkt_ok': 100264, u'ignore_bytes': 0}}, u'port-2': {u'hist': {u'cnt': 99980, u'max_usec': 63, u'min_usec': 10, u'high_cnt': 99980, u's_avg': 38.006836, u's_max': 52.865, u'histogram': [{u'val': 31030, u'key': 20}, {u'val': 17248, u'key': 30}, {u'val': 14422, u'key': 40}, {u'val': 37537, u'key': 50}, {u'val': 27, u'key': 60}]}, u'stats': {u'm_seq_error': 0, u'm_l3_cs_err': 0, u'm_pkt_ok': 100264, u'm_no_ipv4_option': 0, u'm_unsup_prot': 0, u'm_no_id': 0, u'm_jitter': 0, u'm_no_magic': 0, u'm_tx_pkt_err': 0, u'm_rx_check': 0, u'tx_arp': 0, u'm_length_error': 0, u'm_l4_cs_err': 0, u'ipv6_n_solic': 0, u'm_tx_pkt_ok': 100265, u'ignore_bytes': 0}}, u'port-3': {u'hist': {u'cnt': 99981, u'max_usec': 40, u'min_usec': 10, u'high_cnt': 99981, u's_avg': 22.000977, u's_max': 34.99, u'histogram': [{u'val': 99904, u'key': 20}, {u'val': 360, u'key': 30}, {u'val': 1, u'key': 40}]}, u'stats': {u'm_seq_error': 0, u'm_l3_cs_err': 0, u'm_pkt_ok': 100265, u'm_no_ipv4_option': 0, u'm_unsup_prot': 0, u'm_no_id': 0, u'm_jitter': 0, u'm_no_magic': 0, u'm_tx_pkt_err': 0, u'm_rx_check': 0, u'tx_arp': 0, u'm_length_error': 0, u'm_l4_cs_err': 0, u'ipv6_n_solic': 0, u'm_tx_pkt_ok': 100264, u'ignore_bytes': 0}}, u'unknown': 0, u'cpu_util': 0.747508}, u'type': 0, u'name': u'trex-latecny-v2'}, u'tx-gen': {u'data': {u'realtime-hist': {u'cnt': 0, u'max_usec': 0, u'min_usec': 10, u'high_cnt': 0, u's_avg': 0.0, u's_max': 0.0, u'histogram': []}, u'unknown': 0}, u'type': 0, u'name': u'tx-gen'}, 'trex-latency': {u'data': {u'jitter-2': 0.0, u'error-2': 0.0, u'error-3': 0.0, u'error-0': 0.0, u'error-1': 0.0, u'unknown': 0, u'max-0': 60.0, u'max-1': 38.0, u'max-2': 63.0, u'max-3': 40.0, u'c-max-2': 52.9, u'c-max-3': 35.0, u'c-max-0': 51.0, u'c-max-1': 27.7, u'avg-2': 38.0, u'avg-3': 22.0, u'jitter-1': 0.0, u'jitter-0': 0.0, u'avg-0': 35.0, u'avg-1': 22.0, u'jitter-3': 0.0}, u'type': 0, u'name': u'trex-latecny'}, u'trex-event': {u'type': 100, u'data': {u'cause': u'test has ended'}, u'name': u'trex-event'}}
+router drop stats: {'total_drops': 0}
+TRex drop stats: 0
+TRex CPU utilization: 13.52%, norm_cpu is : 56.59 Gb/core
+Err percent: 24.9122119966
+]]></system-out></testcase><testcase classname="stateful_tests.trex_nbar_test.CTRexNbar_Test" name="test_nbar_simple" time="133.560"><error type="exceptions.Exception" message="Test failed. Reasons:&#10;NBAR classification contians a missmatch on the following protocols:&#10;&#9;Protocol citrix isn't part of classification results on interface TenGigabitEthernet0/0/0&#10;&#9;Protocol sip isn't part of classification results on interface TenGigabitEthernet0/0/0&#10;&#9;Protocol http isn't part of classification results on interface TenGigabitEthernet0/0/0&#10;&#9;Protocol exchange isn't part of classification results on interface TenGigabitEthernet0/0/0&#10;&#9;Protocol oracle-sqlnet isn't part of classification results on interface TenGigabitEthernet0/0/0&#10;&#9;Protocol rtsp isn't part of classification results on interface TenGigabitEthernet0/0/0&#10;&#9;Protocol smtp isn't part of classification results on interface TenGigabitEthernet0/0/0&#10;&#9;Protocol pop3 isn't part of classification results on interface TenGigabitEthernet0/0/0&#10;&#9;Protocol ssl isn't part of classification results on interface TenGigabitEthernet0/0/0&#10;&#9;Protocol rtp isn't part of classification results on interface TenGigabitEthernet0/0/0&#10;&#9;Protocol dns isn't part of classification results on interface TenGigabitEthernet0/0/0&#10;&#9;Protocol unknown isn't part of classification results on interface TenGigabitEthernet0/0/0&#10;&#9;Protocol rtp-audio isn't part of classification results on interface TenGigabitEthernet0/0/0&#10;&#9;Protocol sctp isn't part of classification results on interface TenGigabitEthernet0/0/0&#10;&#9;Protocol citrix isn't part of classification results on interface TenGigabitEthernet0/2/0&#10;&#9;Protocol sip isn't part of classification results on interface TenGigabitEthernet0/2/0&#10;&#9;Protocol http isn't part of classification results on interface TenGigabitEthernet0/2/0&#10;&#9;Protocol exchange isn't part of classification results on interface TenGigabitEthernet0/2/0&#10;&#9;Protocol oracle-sqlnet isn't part of classification results on interface TenGigabitEthernet0/2/0&#10;&#9;Protocol rtsp isn't part of classification results on interface TenGigabitEthernet0/2/0&#10;&#9;Protocol smtp isn't part of classification results on interface TenGigabitEthernet0/2/0&#10;&#9;Protocol pop3 isn't part of classification results on interface TenGigabitEthernet0/2/0&#10;&#9;Protocol ssl isn't part of classification results on interface TenGigabitEthernet0/2/0&#10;&#9;Protocol rtp isn't part of classification results on interface TenGigabitEthernet0/2/0&#10;&#9;Protocol dns isn't part of classification results on interface TenGigabitEthernet0/2/0&#10;&#9;Protocol unknown isn't part of classification results on interface TenGigabitEthernet0/2/0&#10;&#9;Protocol rtp-audio isn't part of classification results on interface TenGigabitEthernet0/2/0&#10;&#9;Protocol sctp isn't part of classification results on interface TenGigabitEthernet0/2/0"><![CDATA[Traceback (most recent call last):
+  File "/sw/packages/python/2.7.4/lib/python2.7/unittest/case.py", line 361, in run
+    self.tearDown()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateful_tests/trex_nbar_test.py", line 119, in tearDown
+    CTRexGeneral_Test.tearDown(self)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateful_tests/trex_general_test.py", line 507, in tearDown
+    raise Exception('Test failed. Reasons:\n%s' % '\n'.join(self.fail_reasons))
+Exception: Test failed. Reasons:
+NBAR classification contians a missmatch on the following protocols:
+	Protocol citrix isn't part of classification results on interface TenGigabitEthernet0/0/0
+	Protocol sip isn't part of classification results on interface TenGigabitEthernet0/0/0
+	Protocol http isn't part of classification results on interface TenGigabitEthernet0/0/0
+	Protocol exchange isn't part of classification results on interface TenGigabitEthernet0/0/0
+	Protocol oracle-sqlnet isn't part of classification results on interface TenGigabitEthernet0/0/0
+	Protocol rtsp isn't part of classification results on interface TenGigabitEthernet0/0/0
+	Protocol smtp isn't part of classification results on interface TenGigabitEthernet0/0/0
+	Protocol pop3 isn't part of classification results on interface TenGigabitEthernet0/0/0
+	Protocol ssl isn't part of classification results on interface TenGigabitEthernet0/0/0
+	Protocol rtp isn't part of classification results on interface TenGigabitEthernet0/0/0
+	Protocol dns isn't part of classification results on interface TenGigabitEthernet0/0/0
+	Protocol unknown isn't part of classification results on interface TenGigabitEthernet0/0/0
+	Protocol rtp-audio isn't part of classification results on interface TenGigabitEthernet0/0/0
+	Protocol sctp isn't part of classification results on interface TenGigabitEthernet0/0/0
+	Protocol citrix isn't part of classification results on interface TenGigabitEthernet0/2/0
+	Protocol sip isn't part of classification results on interface TenGigabitEthernet0/2/0
+	Protocol http isn't part of classification results on interface TenGigabitEthernet0/2/0
+	Protocol exchange isn't part of classification results on interface TenGigabitEthernet0/2/0
+	Protocol oracle-sqlnet isn't part of classification results on interface TenGigabitEthernet0/2/0
+	Protocol rtsp isn't part of classification results on interface TenGigabitEthernet0/2/0
+	Protocol smtp isn't part of classification results on interface TenGigabitEthernet0/2/0
+	Protocol pop3 isn't part of classification results on interface TenGigabitEthernet0/2/0
+	Protocol ssl isn't part of classification results on interface TenGigabitEthernet0/2/0
+	Protocol rtp isn't part of classification results on interface TenGigabitEthernet0/2/0
+	Protocol dns isn't part of classification results on interface TenGigabitEthernet0/2/0
+	Protocol unknown isn't part of classification results on interface TenGigabitEthernet0/2/0
+	Protocol rtp-audio isn't part of classification results on interface TenGigabitEthernet0/2/0
+	Protocol sctp isn't part of classification results on interface TenGigabitEthernet0/2/0
+]]></error><system-out><![CDATA[
+
+LATEST RESULT OBJECT:
+Is valid history?       True
+Done warmup?            True
+Expected tx rate:       {u'm_tx_expected_pps': 4302713.0, u'm_tx_expected_bps': 20083351552.0, u'm_tx_expected_cps': 82454.5}
+Current tx rate:        {u'm_tx_bps': 9884662784.0, u'm_tx_cps': 40573.6, u'm_tx_pps': 2119781.5}
+Minimum latency:        {u'min-2': 10, u'min-3': 10, u'min-0': 10, u'min-1': 10}
+Maximum latency:        {u'max-0': 150, u'max-1': 150, u'max-2': 150, u'max-3': 150}
+Average latency:        {'all': 51.65, u'port2': 52.8, u'port3': 51.0, u'port0': 51.9, u'port1': 50.9}
+Average window latency: {'all': 52.307, u'port2': 52.767, u'port3': 51.861, u'port0': 52.938, u'port1': 51.663}
+Total drops:            0
+Drop rate:              0.0
+History size so far:    100
+
+
+LATEST DUMP:
+{u'trex-event': {u'type': 100, u'data': {u'cause': u'test has ended'}, u'name': u'trex-event'}, u'trex-latecny': {u'data': {u'jitter-2': 2.0, u'error-2': 0.0, u'error-3': 0.0, u'error-0': 0.0, u'error-1': 0.0, u'unknown': 0, u'max-0': 131.0, u'max-1': 130.0, u'max-2': 130.0, u'max-3': 140.0, u'c-max-2': 104.2, u'c-max-3': 79.2, u'c-max-0': 95.9, u'c-max-1': 93.6, u'avg-2': 52.8, u'avg-3': 51.0, u'jitter-1': 2.0, u'jitter-0': 2.0, u'avg-0': 51.9, u'avg-1': 50.9, u'jitter-3': 2.0}, u'type': 0, u'name': u'trex-latecny'}, u'trex-global': {u'data': {u'm_cpu_util_raw': 63.5, u'm_total_tx_bps-2': 2578232832.0, u'm_total_tx_bps-3': 2526196224.0, u'm_total_tx_bps-0': 2372513280.0, u'm_total_tx_bps-1': 2407720704.0, u'm_cpu_util': 55.5, u'm_total_alloc_error': 0, u'm_active_flows': 85224.0, u'ierrors-3': 0, u'm_total_servers': 5620, u'm_total_rx_bps-1': 2372536576.0, u'm_total_rx_bps-2': 2526275584.0, u'm_total_rx_bps-3': 2578272768.0, u'm_platform_factor': 1.0, u'obytes-1': 59144083671, u'm_socket_util': 0.3114, u'm_total_nat_learn_error': 0, u'm_total_clients': 508, u'm_cpu_util-3': 54.4, u'unknown': 0, u'ierrors-2': 0, u'ts': {u'freq': 2000000000, u'value': 32636333832335431}, u'ierrors-0': 0, u'ierrors-1': 0, u'opackets-3': 99930210, u'opackets-2': 101650543, u'opackets-1': 101602478, u'opackets-0': 99978016, u'm_rx_pps': 2119828.2, u'template': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], u'm_total_rx_bytes': 234740180730, u'm_total_rx_pkts': 403161247, u'm_rx_core_pps': -1.0, u'm_total_nat_active': 0, u'oerrors-3': 0, u'm_total_nat_syn_wait': 0, u'oerrors-0': 0, u'oerrors-1': 0, u'oerrors-2': 0, u'm_rx_drop_bps': 0.0, u'm_rx_bps': 9884896256.0, u'm_total_queue_full': 0, u'm_cpu_util-1': 56.6, u'm_total_rx_pps-2': 541829.4, u'm_total_rx_pps-3': 552816.0, u'm_total_rx_pps-0': 515897.9, u'm_total_rx_pps-1': 509284.8, u'obytes-3': 58134620839, u'm_open_flows': 8245418.0, u'm_tx_expected_pps': 4302713.0, u'm_rx_cpu_util': 0.3842, u'm_total_nat_no_fid': 0, u'obytes-2': 59235602958, u'm_cpu_util-0': 56.6, u'm_total_queue_drop': 0, u'm_active_sockets': 99616, u'm_total_tx_pkts': 403161247, u'm_tx_bps': 9884662784.0, u'm_total_rx_bps-0': 2407811584.0, u'm_tx_pps': 2119781.5, u'ipackets-2': 99930210, u'm_total_nat_open': 0, u'm_total_tx_pps-0': 509280.7, u'm_total_tx_pps-1': 515879.8, u'm_total_tx_pps-2': 552808.6, u'm_total_tx_pps-3': 541812.5, u'm_bw_per_core': 8.906, u'm_total_nat_time_out': 0, u'ibytes-1': 58225873262, u'ibytes-0': 59144083671, u'ibytes-3': 59235602958, u'ibytes-2': 58134620839, u'm_cpu_util-2': 54.4, u'm_total_tx_bytes': 234740180730, u'm_tx_expected_bps': 20083351552.0, u'm_tx_cps': 40573.6, u'ipackets-1': 99978016, u'ipackets-0': 101602478, u'ipackets-3': 101650543, u'obytes-0': 58225873262, u'm_total_nat_time_out_wait_ack': 0, u'm_tx_expected_cps': 82454.5}, u'type': 0, u'name': u'trex-global'}, 'trex-latency-v2': {u'data': {u'port-0': {u'hist': {u'cnt': 101172, u'max_usec': 131, u'min_usec': 10, u'high_cnt': 101172, u's_avg': 51.874508, u's_max': 95.877, u'histogram': [{u'val': 11, u'key': 20}, {u'val': 555, u'key': 30}, {u'val': 44146, u'key': 40}, {u'val': 31637, u'key': 50}, {u'val': 17778, u'key': 60}, {u'val': 5363, u'key': 70}, {u'val': 1321, u'key': 80}, {u'val': 527, u'key': 90}, {u'val': 304, u'key': 100}]}, u'stats': {u'm_seq_error': 0, u'm_l3_cs_err': 0, u'm_pkt_ok': 101642, u'm_no_ipv4_option': 0, u'm_unsup_prot': 0, u'm_no_id': 0, u'm_jitter': 2, u'm_no_magic': 0, u'm_tx_pkt_err': 0, u'm_rx_check': 0, u'tx_arp': 0, u'm_length_error': 0, u'm_l4_cs_err': 0, u'ipv6_n_solic': 0, u'm_tx_pkt_ok': 101642, u'ignore_bytes': 0}}, u'port-1': {u'hist': {u'cnt': 101172, u'max_usec': 130, u'min_usec': 10, u'high_cnt': 101172, u's_avg': 50.876764, u's_max': 93.6325, u'histogram': [{u'val': 7, u'key': 20}, {u'val': 824, u'key': 30}, {u'val': 48151, u'key': 40}, {u'val': 32479, u'key': 50}, {u'val': 14985, u'key': 60}, {u'val': 3700, u'key': 70}, {u'val': 945, u'key': 80}, {u'val': 370, u'key': 90}, {u'val': 181, u'key': 100}]}, u'stats': {u'm_seq_error': 0, u'm_l3_cs_err': 0, u'm_pkt_ok': 101642, u'm_no_ipv4_option': 0, u'm_unsup_prot': 0, u'm_no_id': 0, u'm_jitter': 2, u'm_no_magic': 0, u'm_tx_pkt_err': 0, u'm_rx_check': 0, u'tx_arp': 0, u'm_length_error': 0, u'm_l4_cs_err': 0, u'ipv6_n_solic': 0, u'm_tx_pkt_ok': 101642, u'ignore_bytes': 0}}, u'port-2': {u'hist': {u'cnt': 101172, u'max_usec': 130, u'min_usec': 10, u'high_cnt': 101172, u's_avg': 52.787314, u's_max': 104.247, u'histogram': [{u'val': 9, u'key': 20}, {u'val': 395, u'key': 30}, {u'val': 46546, u'key': 40}, {u'val': 30910, u'key': 50}, {u'val': 16159, u'key': 60}, {u'val': 4869, u'key': 70}, {u'val': 1574, u'key': 80}, {u'val': 775, u'key': 90}, {u'val': 405, u'key': 100}]}, u'stats': {u'm_seq_error': 0, u'm_l3_cs_err': 0, u'm_pkt_ok': 101642, u'm_no_ipv4_option': 0, u'm_unsup_prot': 0, u'm_no_id': 0, u'm_jitter': 2, u'm_no_magic': 0, u'm_tx_pkt_err': 0, u'm_rx_check': 0, u'tx_arp': 0, u'm_length_error': 0, u'm_l4_cs_err': 0, u'ipv6_n_solic': 0, u'm_tx_pkt_ok': 101642, u'ignore_bytes': 0}}, u'port-3': {u'hist': {u'cnt': 101172, u'max_usec': 140, u'min_usec': 10, u'high_cnt': 101172, u's_avg': 51.018092, u's_max': 79.243, u'histogram': [{u'val': 8, u'key': 20}, {u'val': 372, u'key': 30}, {u'val': 50230, u'key': 40}, {u'val': 30831, u'key': 50}, {u'val': 13678, u'key': 60}, {u'val': 4038, u'key': 70}, {u'val': 1389, u'key': 80}, {u'val': 704, u'key': 90}, {u'val': 392, u'key': 100}]}, u'stats': {u'm_seq_error': 0, u'm_l3_cs_err': 0, u'm_pkt_ok': 101642, u'm_no_ipv4_option': 0, u'm_unsup_prot': 0, u'm_no_id': 0, u'm_jitter': 2, u'm_no_magic': 0, u'm_tx_pkt_err': 0, u'm_rx_check': 0, u'tx_arp': 0, u'm_length_error': 0, u'm_l4_cs_err': 0, u'ipv6_n_solic': 0, u'm_tx_pkt_ok': 101642, u'ignore_bytes': 0}}, u'unknown': 0, u'cpu_util': 0.38416}, u'type': 0, u'name': u'trex-latecny-v2'}, u'tx-gen': {u'data': {u'realtime-hist': {u'cnt': 0, u'max_usec': 0, u'min_usec': 10, u'high_cnt': 0, u's_avg': 0.0, u's_max': 0.0, u'histogram': []}, u'unknown': 0}, u'type': 0, u'name': u'tx-gen'}, u'template_info': {u'data': [u'avl/delay_10_http_get_0.pcap', u'avl/delay_10_http_post_0.pcap', u'avl/delay_10_https_0.pcap', u'avl/delay_10_http_browsing_0.pcap', u'avl/delay_10_exchange_0.pcap', u'avl/delay_10_mail_pop_0.pcap', u'avl/delay_10_mail_pop_1.pcap', u'avl/delay_10_mail_pop_2.pcap', u'avl/delay_10_oracle_0.pcap', u'avl/delay_10_rtp_160k_full.pcap', u'avl/delay_10_rtp_250k_full.pcap', u'avl/delay_10_smtp_0.pcap', u'avl/delay_10_smtp_1.pcap', u'avl/delay_10_smtp_2.pcap', u'avl/delay_10_video_call_0.pcap', u'avl/delay_10_sip_video_call_full.pcap', u'avl/delay_10_citrix_0.pcap', u'avl/delay_10_dns_0.pcap'], u'type': 0, u'name': u'template_info'}, 'trex-latency': {u'data': {u'jitter-2': 2.0, u'error-2': 0.0, u'error-3': 0.0, u'error-0': 0.0, u'error-1': 0.0, u'unknown': 0, u'max-0': 131.0, u'max-1': 130.0, u'max-2': 130.0, u'max-3': 140.0, u'c-max-2': 104.2, u'c-max-3': 79.2, u'c-max-0': 95.9, u'c-max-1': 93.6, u'avg-2': 52.8, u'avg-3': 51.0, u'jitter-1': 2.0, u'jitter-0': 2.0, u'avg-0': 51.9, u'avg-1': 50.9, u'jitter-3': 2.0}, u'type': 0, u'name': u'trex-latecny'}, u'trex-latecny-v2': {u'data': {u'port-0': {u'hist': {u'cnt': 101172, u'max_usec': 131, u'min_usec': 10, u'high_cnt': 101172, u's_avg': 51.874508, u's_max': 95.877, u'histogram': [{u'val': 11, u'key': 20}, {u'val': 555, u'key': 30}, {u'val': 44146, u'key': 40}, {u'val': 31637, u'key': 50}, {u'val': 17778, u'key': 60}, {u'val': 5363, u'key': 70}, {u'val': 1321, u'key': 80}, {u'val': 527, u'key': 90}, {u'val': 304, u'key': 100}]}, u'stats': {u'm_seq_error': 0, u'm_l3_cs_err': 0, u'm_pkt_ok': 101642, u'm_no_ipv4_option': 0, u'm_unsup_prot': 0, u'm_no_id': 0, u'm_jitter': 2, u'm_no_magic': 0, u'm_tx_pkt_err': 0, u'm_rx_check': 0, u'tx_arp': 0, u'm_length_error': 0, u'm_l4_cs_err': 0, u'ipv6_n_solic': 0, u'm_tx_pkt_ok': 101642, u'ignore_bytes': 0}}, u'port-1': {u'hist': {u'cnt': 101172, u'max_usec': 130, u'min_usec': 10, u'high_cnt': 101172, u's_avg': 50.876764, u's_max': 93.6325, u'histogram': [{u'val': 7, u'key': 20}, {u'val': 824, u'key': 30}, {u'val': 48151, u'key': 40}, {u'val': 32479, u'key': 50}, {u'val': 14985, u'key': 60}, {u'val': 3700, u'key': 70}, {u'val': 945, u'key': 80}, {u'val': 370, u'key': 90}, {u'val': 181, u'key': 100}]}, u'stats': {u'm_seq_error': 0, u'm_l3_cs_err': 0, u'm_pkt_ok': 101642, u'm_no_ipv4_option': 0, u'm_unsup_prot': 0, u'm_no_id': 0, u'm_jitter': 2, u'm_no_magic': 0, u'm_tx_pkt_err': 0, u'm_rx_check': 0, u'tx_arp': 0, u'm_length_error': 0, u'm_l4_cs_err': 0, u'ipv6_n_solic': 0, u'm_tx_pkt_ok': 101642, u'ignore_bytes': 0}}, u'port-2': {u'hist': {u'cnt': 101172, u'max_usec': 130, u'min_usec': 10, u'high_cnt': 101172, u's_avg': 52.787314, u's_max': 104.247, u'histogram': [{u'val': 9, u'key': 20}, {u'val': 395, u'key': 30}, {u'val': 46546, u'key': 40}, {u'val': 30910, u'key': 50}, {u'val': 16159, u'key': 60}, {u'val': 4869, u'key': 70}, {u'val': 1574, u'key': 80}, {u'val': 775, u'key': 90}, {u'val': 405, u'key': 100}]}, u'stats': {u'm_seq_error': 0, u'm_l3_cs_err': 0, u'm_pkt_ok': 101642, u'm_no_ipv4_option': 0, u'm_unsup_prot': 0, u'm_no_id': 0, u'm_jitter': 2, u'm_no_magic': 0, u'm_tx_pkt_err': 0, u'm_rx_check': 0, u'tx_arp': 0, u'm_length_error': 0, u'm_l4_cs_err': 0, u'ipv6_n_solic': 0, u'm_tx_pkt_ok': 101642, u'ignore_bytes': 0}}, u'port-3': {u'hist': {u'cnt': 101172, u'max_usec': 140, u'min_usec': 10, u'high_cnt': 101172, u's_avg': 51.018092, u's_max': 79.243, u'histogram': [{u'val': 8, u'key': 20}, {u'val': 372, u'key': 30}, {u'val': 50230, u'key': 40}, {u'val': 30831, u'key': 50}, {u'val': 13678, u'key': 60}, {u'val': 4038, u'key': 70}, {u'val': 1389, u'key': 80}, {u'val': 704, u'key': 90}, {u'val': 392, u'key': 100}]}, u'stats': {u'm_seq_error': 0, u'm_l3_cs_err': 0, u'm_pkt_ok': 101642, u'm_no_ipv4_option': 0, u'm_unsup_prot': 0, u'm_no_id': 0, u'm_jitter': 2, u'm_no_magic': 0, u'm_tx_pkt_err': 0, u'm_rx_check': 0, u'tx_arp': 0, u'm_length_error': 0, u'm_l4_cs_err': 0, u'ipv6_n_solic': 0, u'm_tx_pkt_ok': 101642, u'ignore_bytes': 0}}, u'unknown': 0, u'cpu_util': 0.38416}, u'type': 0, u'name': u'trex-latecny-v2'}}
+router drop stats: {'total_drops': 0}
+TRex drop stats: 0
+TRex CPU utilization: 52.99%, norm_cpu is : 18.43 Gb/core
+Err percent: 1.02608658373
+TEST CLASSIFICATION:
+{'TenGigabitEthernet0/0/0': {'percentage': {}, 'packets': {}}, 'TenGigabitEthernet1/0/0': {'percentage': {u'rtp-audio': 21.22, u'sip': 0.09, u'http': 30.4, u'exchange': 10.95, u'unknown': 3.2, u'rtsp': 2.75, u'smtp': 0.57, u'pop3': 0.36, u'ssl': 0.06, u'rtp': 11.34, u'dns': 1.95, u'citrix': 5.65, u'sctp': 0.1, u'oracle-sqlnet': 11.29, u'Total': 100.0}, 'packets': {u'rtp-audio': 21393622, u'sip': 95507, u'http': 30642912, u'exchange': 11044571, u'unknown': 3232122, u'rtsp': 2773815, u'smtp': 578737, u'pop3': 368325, u'ssl': 63240, u'rtp': 11437411, u'dns': 1974877, u'citrix': 5694769, u'sctp': 101627, u'oracle-sqlnet': 11388695, u'Total': 100790232}}, 'TenGigabitEthernet0/2/0': {'percentage': {}, 'packets': {}}, 'TenGigabitEthernet1/2/0': {'percentage': {u'rtp-audio': 21.22, u'sip': 0.09, u'http': 30.4, u'exchange': 10.95, u'unknown': 3.2, u'rtsp': 2.77, u'smtp': 0.57, u'pop3': 0.36, u'ssl': 0.06, u'rtp': 11.32, u'dns': 1.95, u'citrix': 5.65, u'sctp': 0.1, u'oracle-sqlnet': 11.29, u'Total': 100.0}, 'packets': {u'rtp-audio': 21393640, u'sip': 95507, u'http': 30642892, u'exchange': 11043343, u'unknown': 3232086, u'rtsp': 2792846, u'smtp': 578741, u'pop3': 368325, u'ssl': 64449, u'rtp': 11418549, u'dns': 1974878, u'citrix': 5694778, u'sctp': 101627, u'oracle-sqlnet': 11388699, u'Total': 100790362}}}
+'citrix'
+('Changes missmatchFlag to True. ', "\n\tProtocol citrix isn't part of classification results on interface TenGigabitEthernet0/0/0")
+'sip'
+('Changes missmatchFlag to True. ', "\n\tProtocol sip isn't part of classification results on interface TenGigabitEthernet0/0/0")
+'http'
+('Changes missmatchFlag to True. ', "\n\tProtocol http isn't part of classification results on interface TenGigabitEthernet0/0/0")
+'exchange'
+('Changes missmatchFlag to True. ', "\n\tProtocol exchange isn't part of classification results on interface TenGigabitEthernet0/0/0")
+'oracle-sqlnet'
+('Changes missmatchFlag to True. ', "\n\tProtocol oracle-sqlnet isn't part of classification results on interface TenGigabitEthernet0/0/0")
+'rtsp'
+('Changes missmatchFlag to True. ', "\n\tProtocol rtsp isn't part of classification results on interface TenGigabitEthernet0/0/0")
+'smtp'
+('Changes missmatchFlag to True. ', "\n\tProtocol smtp isn't part of classification results on interface TenGigabitEthernet0/0/0")
+'pop3'
+('Changes missmatchFlag to True. ', "\n\tProtocol pop3 isn't part of classification results on interface TenGigabitEthernet0/0/0")
+'ssl'
+('Changes missmatchFlag to True. ', "\n\tProtocol ssl isn't part of classification results on interface TenGigabitEthernet0/0/0")
+'rtp'
+('Changes missmatchFlag to True. ', "\n\tProtocol rtp isn't part of classification results on interface TenGigabitEthernet0/0/0")
+'dns'
+('Changes missmatchFlag to True. ', "\n\tProtocol dns isn't part of classification results on interface TenGigabitEthernet0/0/0")
+'unknown'
+('Changes missmatchFlag to True. ', "\n\tProtocol unknown isn't part of classification results on interface TenGigabitEthernet0/0/0")
+'rtp-audio'
+('Changes missmatchFlag to True. ', "\n\tProtocol rtp-audio isn't part of classification results on interface TenGigabitEthernet0/0/0")
+'sctp'
+('Changes missmatchFlag to True. ', "\n\tProtocol sctp isn't part of classification results on interface TenGigabitEthernet0/0/0")
+'citrix'
+('Changes missmatchFlag to True. ', "\n\tProtocol citrix isn't part of classification results on interface TenGigabitEthernet0/2/0")
+'sip'
+('Changes missmatchFlag to True. ', "\n\tProtocol sip isn't part of classification results on interface TenGigabitEthernet0/2/0")
+'http'
+('Changes missmatchFlag to True. ', "\n\tProtocol http isn't part of classification results on interface TenGigabitEthernet0/2/0")
+'exchange'
+('Changes missmatchFlag to True. ', "\n\tProtocol exchange isn't part of classification results on interface TenGigabitEthernet0/2/0")
+'oracle-sqlnet'
+('Changes missmatchFlag to True. ', "\n\tProtocol oracle-sqlnet isn't part of classification results on interface TenGigabitEthernet0/2/0")
+'rtsp'
+('Changes missmatchFlag to True. ', "\n\tProtocol rtsp isn't part of classification results on interface TenGigabitEthernet0/2/0")
+'smtp'
+('Changes missmatchFlag to True. ', "\n\tProtocol smtp isn't part of classification results on interface TenGigabitEthernet0/2/0")
+'pop3'
+('Changes missmatchFlag to True. ', "\n\tProtocol pop3 isn't part of classification results on interface TenGigabitEthernet0/2/0")
+'ssl'
+('Changes missmatchFlag to True. ', "\n\tProtocol ssl isn't part of classification results on interface TenGigabitEthernet0/2/0")
+'rtp'
+('Changes missmatchFlag to True. ', "\n\tProtocol rtp isn't part of classification results on interface TenGigabitEthernet0/2/0")
+'dns'
+('Changes missmatchFlag to True. ', "\n\tProtocol dns isn't part of classification results on interface TenGigabitEthernet0/2/0")
+'unknown'
+('Changes missmatchFlag to True. ', "\n\tProtocol unknown isn't part of classification results on interface TenGigabitEthernet0/2/0")
+'rtp-audio'
+('Changes missmatchFlag to True. ', "\n\tProtocol rtp-audio isn't part of classification results on interface TenGigabitEthernet0/2/0")
+'sctp'
+('Changes missmatchFlag to True. ', "\n\tProtocol sctp isn't part of classification results on interface TenGigabitEthernet0/2/0")
+Error: NBAR classification contians a missmatch on the following protocols:
+	Protocol citrix isn't part of classification results on interface TenGigabitEthernet0/0/0
+	Protocol sip isn't part of classification results on interface TenGigabitEthernet0/0/0
+	Protocol http isn't part of classification results on interface TenGigabitEthernet0/0/0
+	Protocol exchange isn't part of classification results on interface TenGigabitEthernet0/0/0
+	Protocol oracle-sqlnet isn't part of classification results on interface TenGigabitEthernet0/0/0
+	Protocol rtsp isn't part of classification results on interface TenGigabitEthernet0/0/0
+	Protocol smtp isn't part of classification results on interface TenGigabitEthernet0/0/0
+	Protocol pop3 isn't part of classification results on interface TenGigabitEthernet0/0/0
+	Protocol ssl isn't part of classification results on interface TenGigabitEthernet0/0/0
+	Protocol rtp isn't part of classification results on interface TenGigabitEthernet0/0/0
+	Protocol dns isn't part of classification results on interface TenGigabitEthernet0/0/0
+	Protocol unknown isn't part of classification results on interface TenGigabitEthernet0/0/0
+	Protocol rtp-audio isn't part of classification results on interface TenGigabitEthernet0/0/0
+	Protocol sctp isn't part of classification results on interface TenGigabitEthernet0/0/0
+	Protocol citrix isn't part of classification results on interface TenGigabitEthernet0/2/0
+	Protocol sip isn't part of classification results on interface TenGigabitEthernet0/2/0
+	Protocol http isn't part of classification results on interface TenGigabitEthernet0/2/0
+	Protocol exchange isn't part of classification results on interface TenGigabitEthernet0/2/0
+	Protocol oracle-sqlnet isn't part of classification results on interface TenGigabitEthernet0/2/0
+	Protocol rtsp isn't part of classification results on interface TenGigabitEthernet0/2/0
+	Protocol smtp isn't part of classification results on interface TenGigabitEthernet0/2/0
+	Protocol pop3 isn't part of classification results on interface TenGigabitEthernet0/2/0
+	Protocol ssl isn't part of classification results on interface TenGigabitEthernet0/2/0
+	Protocol rtp isn't part of classification results on interface TenGigabitEthernet0/2/0
+	Protocol dns isn't part of classification results on interface TenGigabitEthernet0/2/0
+	Protocol unknown isn't part of classification results on interface TenGigabitEthernet0/2/0
+	Protocol rtp-audio isn't part of classification results on interface TenGigabitEthernet0/2/0
+	Protocol sctp isn't part of classification results on interface TenGigabitEthernet0/2/0
+]]></system-out></testcase><testcase classname="stateful_tests.trex_rx_test.CTRexRx_Test" name="test_rx_check_http" time="135.983"><system-out><![CDATA[
+
+LATEST RESULT OBJECT:
+Is valid history?       True
+Done warmup?            True
+Expected tx rate:       {u'm_tx_expected_pps': 4108480.0, u'm_tx_expected_bps': 30711887872.0, u'm_tx_expected_cps': 111040.0}
+Current tx rate:        {u'm_tx_bps': 18156734464.0, u'm_tx_cps': 65572.0, u'm_tx_pps': 2428724.8}
+Minimum latency:        {u'min-2': 10, u'min-3': 10, u'min-0': 10, u'min-1': 10}
+Maximum latency:        {u'max-0': 150, u'max-1': 150, u'max-2': 150, u'max-3': 150}
+Average latency:        {'all': 84.9, u'port2': 78.7, u'port3': 86.0, u'port0': 88.9, u'port1': 86.0}
+Average window latency: {'all': 81.597, u'port2': 80.167, u'port3': 82.224, u'port0': 82.281, u'port1': 81.714}
+Total drops:            0
+Drop rate:              0.0
+History size so far:    100
+
+router drop stats: {'total_drops': 0}
+TRex drop stats: 0
+TRex CPU utilization: 30.54%, norm_cpu is : 50.1 Gb/core
+Err percent: 31.5911745546
+Total packets checked: 12802486
+Latency counters: {'m_seq_error': 2, 'm_no_ipv4_option': 0, 'm_unsup_prot': 0, 'm_no_id': 0, 'm_no_magic': 0, 'm_tx_pkt_err': 0, 'm_length_error': 0}
+rx_check counters: {'m_err_oo_early': 0, 'm_err_open_with_no_fif_pkt': 0, 'm_err_fif_seen_twice': 0, 'm_err_no_magic': 0, 'm_err_oo_late': 0, 'm_err_flow_length_changed': 0, 'm_err_wrong_pkt_id': 0, 'm_err_oo_dup': 0, 'm_err_drop': 0, 'm_err_aged': 0}
+No errors in rx_check.
+]]></system-out></testcase><testcase classname="stateful_tests.trex_rx_test.CTRexRx_Test" name="test_rx_check_http_ipv6" time="142.195"><system-out><![CDATA[
+
+LATEST RESULT OBJECT:
+Is valid history?       True
+Done warmup?            True
+Expected tx rate:       {u'm_tx_expected_pps': 4108480.0, u'm_tx_expected_bps': 31301732352.0, u'm_tx_expected_cps': 111040.0}
+Current tx rate:        {u'm_tx_bps': 18480590848.0, u'm_tx_cps': 65516.0, u'm_tx_pps': 2426034.5}
+Minimum latency:        {u'min-2': 10, u'min-3': 10, u'min-0': 10, u'min-1': 10}
+Maximum latency:        {u'max-0': 95, u'max-1': 95, u'max-2': 95, u'max-3': 95}
+Average latency:        {'all': 65.325, u'port2': 72.9, u'port3': 65.5, u'port0': 62.5, u'port1': 60.4}
+Average window latency: {'all': 67.813, u'port2': 65.684, u'port3': 72.825, u'port0': 66.601, u'port1': 66.142}
+Total drops:            0
+Drop rate:              0.0
+History size so far:    100
+
+router drop stats: {'total_drops': 0}
+TRex drop stats: 0
+TRex CPU utilization: 21.97%, norm_cpu is : 71.25 Gb/core
+Err percent: 52.4626972651
+Total packets checked: 12842846
+Latency counters: {'m_seq_error': 4, 'm_no_ipv4_option': 0, 'm_unsup_prot': 0, 'm_no_id': 0, 'm_no_magic': 0, 'm_tx_pkt_err': 0, 'm_length_error': 0}
+rx_check counters: {'m_err_oo_early': 0, 'm_err_open_with_no_fif_pkt': 0, 'm_err_fif_seen_twice': 0, 'm_err_no_magic': 0, 'm_err_oo_late': 0, 'm_err_flow_length_changed': 0, 'm_err_wrong_pkt_id': 0, 'm_err_oo_dup': 0, 'm_err_drop': 0, 'm_err_aged': 0}
+No errors in rx_check.
+]]></system-out></testcase><testcase classname="stateful_tests.trex_rx_test.CTRexRx_Test" name="test_rx_check_http_negative" time="12.816"><skipped type="unittest.case.SkipTest" message="No data in benchmark.yaml for test: test_rx_check_http_negative, param: cores. Skipping."><![CDATA[SkipTest: No data in benchmark.yaml for test: test_rx_check_http_negative, param: cores. Skipping.
+]]></skipped><system-out><![CDATA[
+Skip: No data in benchmark.yaml for test: test_rx_check_http_negative, param: cores. Skipping.
+]]></system-out></testcase><testcase classname="stateful_tests.trex_rx_test.CTRexRx_Test" name="test_rx_check_sfr" time="134.887"><system-out><![CDATA[
+
+LATEST RESULT OBJECT:
+Is valid history?       True
+Done warmup?            True
+Expected tx rate:       {u'm_tx_expected_pps': 5205243.0, u'm_tx_expected_bps': 24999583744.0, u'm_tx_expected_cps': 103068.0}
+Current tx rate:        {u'm_tx_bps': 13946244096.0, u'm_tx_cps': 57394.3, u'm_tx_pps': 2901298.2}
+Minimum latency:        {u'min-2': 10, u'min-3': 10, u'min-0': 10, u'min-1': 10}
+Maximum latency:        {u'max-0': 150, u'max-1': 150, u'max-2': 150, u'max-3': 150}
+Average latency:        {'all': 81.725, u'port2': 81.9, u'port3': 85.1, u'port0': 80.2, u'port1': 79.7}
+Average window latency: {'all': 83.676, u'port2': 80.113, u'port3': 91.077, u'port0': 78.236, u'port1': 85.277}
+Total drops:            0
+Drop rate:              0.0
+History size so far:    100
+
+router drop stats: {'total_drops': 0}
+TRex drop stats: 0
+TRex CPU utilization: 23.76%, norm_cpu is : 26.26 Gb/core
+Err percent: 55.2195903813
+Total packets checked: 15517077
+Latency counters: {'m_seq_error': 2, 'm_no_ipv4_option': 0, 'm_unsup_prot': 0, 'm_no_id': 0, 'm_no_magic': 0, 'm_tx_pkt_err': 0, 'm_length_error': 0}
+rx_check counters: {'m_err_oo_early': 0, 'm_err_open_with_no_fif_pkt': 0, 'm_err_fif_seen_twice': 0, 'm_err_no_magic': 0, 'm_err_oo_late': 0, 'm_err_flow_length_changed': 0, 'm_err_wrong_pkt_id': 0, 'm_err_oo_dup': 0, 'm_err_drop': 0, 'm_err_aged': 0}
+No errors in rx_check.
+]]></system-out></testcase><testcase classname="stateful_tests.trex_rx_test.CTRexRx_Test" name="test_rx_check_sfr_ipv6" time="141.593"><system-out><![CDATA[
+
+LATEST RESULT OBJECT:
+Is valid history?       True
+Done warmup?            True
+Expected tx rate:       {u'm_tx_expected_pps': 5205243.0, u'm_tx_expected_bps': 25788698624.0, u'm_tx_expected_cps': 103068.0}
+Current tx rate:        {u'm_tx_bps': 12978776064.0, u'm_tx_cps': 51800.1, u'm_tx_pps': 2618432.5}
+Minimum latency:        {u'min-2': 10, u'min-3': 10, u'min-0': 10, u'min-1': 10}
+Maximum latency:        {u'max-0': 150, u'max-1': 150, u'max-2': 150, u'max-3': 150}
+Average latency:        {'all': 66.9, u'port2': 67.6, u'port3': 71.1, u'port0': 66.1, u'port1': 62.8}
+Average window latency: {'all': 64.161, u'port2': 65.312, u'port3': 67.94, u'port0': 62.839, u'port1': 60.555}
+Total drops:            0
+Drop rate:              0.0
+History size so far:    100
+
+router drop stats: {'total_drops': 0}
+TRex drop stats: 0
+TRex CPU utilization: 18.68%, norm_cpu is : 34.46 Gb/core
+Err percent: 69.5442388425
+Total packets checked: 15459111
+Latency counters: {'m_seq_error': 4, 'm_no_ipv4_option': 0, 'm_unsup_prot': 0, 'm_no_id': 0, 'm_no_magic': 0, 'm_tx_pkt_err': 0, 'm_length_error': 0}
+rx_check counters: {'m_err_oo_early': 0, 'm_err_open_with_no_fif_pkt': 0, 'm_err_fif_seen_twice': 0, 'm_err_no_magic': 0, 'm_err_oo_late': 0, 'm_err_flow_length_changed': 0, 'm_err_wrong_pkt_id': 0, 'm_err_oo_dup': 0, 'm_err_drop': 0, 'm_err_aged': 0}
+No errors in rx_check.
+]]></system-out></testcase></testsuite>

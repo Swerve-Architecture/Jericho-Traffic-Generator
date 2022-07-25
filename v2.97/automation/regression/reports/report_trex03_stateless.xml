@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite name="nosetests" tests="1" errors="1" failures="0" skip="0"><testcase classname="stateless_tests.stl_general_test.STLBasic_Test" name="test_connectivity" time="5.210"><error type="exceptions.Exception" message="Test failed. Reasons:&#10;Client could not connect"><![CDATA[Traceback (most recent call last):
+  File "/sw/packages/python/2.7.4/lib/python2.7/unittest/case.py", line 361, in run
+    self.tearDown()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateful_tests/trex_general_test.py", line 507, in tearDown
+    raise Exception('Test failed. Reasons:\n%s' % '\n'.join(self.fail_reasons))
+Exception: Test failed. Reasons:
+Client could not connect
+]]></error><system-out><![CDATA[
+Starting TRex... done. (0s)
+Started TRex
+Connecting..........
+Error connecting: ?[1mRPC configuration mismatch - server RPC configuration: 'ASTF', client RPC configuration: 'STL'?[22m
+Error: Client could not connect
+]]></system-out></testcase></testsuite>

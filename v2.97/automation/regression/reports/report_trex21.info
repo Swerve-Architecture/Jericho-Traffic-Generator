@@ -1,0 +1,10 @@
+Version : v2.48
+DPDK version: DPDK 18.08.0
+User    : hhaim
+Date    : Nov 19 2018 , 11:31:02
+Uuid    : d35efcd6-ebdd-11e8-b669-0006f62b3e88
+Git SHA : bcf39ee16f5cfaf8ca124e7a9aefa3d934786dde
+Compiled with GCC: 6.2.0
+Compiled with glibc: 2.16 (host: 2.17)
+Sanitized image: no
+Server: 10.56.216.154, Modes: ['VM', 'loopback', 'vf_nics']

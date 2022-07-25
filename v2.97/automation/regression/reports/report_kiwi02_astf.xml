@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite name="nosetests" tests="18" errors="15" failures="0" skip="1"><testcase classname="astf_tests.astf_general_test.ASTFBasic_Test" name="test_connectivity" time="9.706"><system-out><![CDATA[
+
+Configuring DUT... done. (9s)
+Configured DUT
+Starting TRex... done. (0s)
+Started TRex
+Connecting.
+Connected
+Mapping ports.
+Got ports mapping: {'map': {0: 1, 1: 0, 2: 3, 3: 2}, 'bi': [(0, 1), (2, 3)], 'unknown': []}
+]]></system-out></testcase><testcase classname="astf_tests.astf_examples_test.ASTFExamples_Test" name="test_astf_prof_examples" time="14.121"><system-out><![CDATA[
+Running command: sh -c 'cd ../trex_control_plane/interactive; /router/bin/python-2.7.4 -m trex.examples.astf.astf_example -s 10.56.217.210'
+Stdout:
+?[?1034hInjecting with multiplier of '100' for 10 seconds
+{0: {'ibytes': 46580352,
+     'ierrors': 0,
+     'ipackets': 34400,
+     'obytes': 837192,
+     'oerrors': 0,
+     'opackets': 6908,
+     'rx_bps': 8256238.0,
+     'rx_bps_L1': 8378177.824218749,
+     'rx_pps': 762.1239013671875,
+     'rx_util': 0.0837817782421875,
+     'tx_bps': 148211.890625,
+     'tx_bps_L1': 172689.810546875,
+     'tx_pps': 152.98699951171875,
+     'tx_util': 0.0017268981054687502},
+ 1: {'ibytes': 837192,
+     'ierrors': 0,
+     'ipackets': 6908,
+     'obytes': 46580352,
+     'oerrors': 0,
+     'opackets': 34400,
+     'rx_bps': 148211.890625,
+     'rx_bps_L1': 172689.810546875,
+     'rx_pps': 152.98699951171875,
+     'rx_util': 0.0017268981054687502,
+     'tx_bps': 8247890.5,
+     'tx_bps_L1': 8369720.1875,
+     'tx_pps': 761.435546875,
+     'tx_util': 0.083697201875},
+ 2: {'ibytes': 46580352,
+     'ierrors': 0,
+     'ipackets': 34400,
+     'obytes': 837192,
+     'oerrors': 0,
+     'opackets': 6908,
+     'rx_bps': 8266962.0,
+     'rx_bps_L1': 8389073.77734375,
+     'rx_pps': 763.1986083984375,
+     'rx_util': 0.0838907377734375,
+     'tx_bps': 148514.546875,
+     'tx_bps_L1': 173035.9140625,
+     'tx_pps': 153.258544921875,
+     'tx_util': 0.0017303591406249998},
+ 3: {'ibytes': 837192,
+     'ierrors': 0,
+     'ipackets': 6908,
+     'obytes': 46580352,
+     'oerrors': 0,
+     'opackets': 34400,
+     'rx_bps': 148514.546875,
+     'rx_bps_L1': 173035.9140625,
+     'rx_pps': 153.258544921875,
+     'rx_util': 0.0017303591406249998,
+     'tx_bps': 8266962.0,
+     'tx_bps_L1': 8389073.77734375,
+     'tx_pps': 763.1986083984375,
+     'tx_util': 0.0838907377734375},
+ 'global': {'active_flows': 0.0,
+            'active_sockets': 0,
+            'bw_per_core': 6.064594745635986,
+            'cpu_util': 0.06930214911699295,
+            'cpu_util_raw': 0.0,
+            'open_flows': 2752.0,
+            'platform_factor': 1.0,
+            'queue_full': 0,
+            'rx_bps': 16819926.0,
+            'rx_core_pps': 0.0,
+            'rx_cpu_util': 0.0,
+            'rx_drop_bps': 0.0,
+            'rx_pps': 1831.568115234375,
+            'socket_util': 0.0,
+            'total_alloc_error': 0,
+            'total_clients': 0,
+            'total_servers': 0,
+            'tx_bps': 16811578.0,
+            'tx_cps': 60.88058090209961,
+            'tx_expected_bps': 0.0,
+            'tx_expected_cps': 0.0,
+            'tx_expected_pps': 0.0,
+            'tx_pps': 1830.8797607421875},
+ 'latency': {},
+ 'total': {'ibytes': 94835088,
+           'ierrors': 0,
+           'ipackets': 82616,
+           'obytes': 94835088,
+           'oerrors': 0,
+           'opackets': 82616,
+           'rx_bps': 16819926.4375,
+           'rx_bps_L1': 17112977.326171875,
+           'rx_pps': 1831.5680541992188,
+           'rx_util': 0.17112977326171874,
+           'tx_bps': 16811578.9375,
+           'tx_bps_L1': 17104519.689453125,
+           'tx_pps': 1830.8796997070312,
+           'tx_util': 0.17104519689453124},
+ 'traffic': {'client': {u'm_active_flows': 0,
+                        u'm_avg_size': 2915.6800343914,
+                        u'm_est_flows': 0,
+                        u'm_rx_bw_l7_r': 15665016.0365554,
+                        u'm_rx_pps_r': 370.6060791015625,
+                        u'm_tx_bw_l7_r': 121518.50930037857,
+                        u'm_tx_bw_l7_total_r': 121283.37989589399,
+                        u'm_tx_pps_r': 306.1886291503906,
+                        u'm_tx_ratio': 100.19386778690239,
+                        u'tcps_closed': 2752,
+                        u'tcps_connattempt': 2752,
+                        u'tcps_connects': 2752,
+                        u'tcps_delack': 71,
+                        u'tcps_preddat': 5692,
+                        u'tcps_rcvackbyte': 685248,
+                        u'tcps_rcvackbyte_of': 2752,
+                        u'tcps_rcvackpack': 5504,
+                        u'tcps_rcvbyte': 88322688,
+                        u'tcps_rcvpack': 11196,
+                        u'tcps_rttupdated': 8256,
+                        u'tcps_segstimed': 8256,
+                        u'tcps_sndacks': 5575,
+                        u'tcps_sndbyte': 685248,
+                        u'tcps_sndbyte_ok': 685248,
+                        u'tcps_sndctrl': 2752,
+                        u'tcps_sndpack': 2752,
+                        u'tcps_sndtotal': 13816,
+                        u'tcps_sndwinup': 2737},
+             'server': {u'm_active_flows': 0,
+                        u'm_avg_size': 1043.5475985532494,
+                        u'm_est_flows': 0,
+                        u'm_rx_bw_l7_r': 121351.93412838527,
+                        u'm_rx_pps_r': 367.37347412109375,
+                        u'm_tx_bw_l7_r': 15671417.682321997,
+                        u'm_tx_bw_l7_total_r': 15654697.905594787,
+                        u'm_tx_pps_r': 1524.343017578125,
+                        u'm_tx_ratio': 100.10680357313848,
+                        u'tcps_accepts': 2752,
+                        u'tcps_closed': 2752,
+                        u'tcps_connects': 2752,
+                        u'tcps_rcvackbyte': 88322688,
+                        u'tcps_rcvackbyte_of': 5504,
+                        u'tcps_rcvackpack': 11064,
+                        u'tcps_rcvbyte': 685248,
+                        u'tcps_rcvpack': 5504,
+                        u'tcps_rttupdated': 11064,
+                        u'tcps_segstimed': 11064,
+                        u'tcps_sndacks': 5504,
+                        u'tcps_sndbyte': 88322688,
+                        u'tcps_sndbyte_ok': 88322688,
+                        u'tcps_sndpack': 63296,
+                        u'tcps_sndtotal': 68800}}}
+
+Test has passed :-)
+
+
+]]></system-out></testcase><testcase classname="astf_tests.astf_profile_test.ASTFProfile_Test" name="test_astf_prof_latency" time="29.393"><error type="trex.common.trex_exceptions.TRexError" message="'is_traffic_active' - connection to the server had been lost: 'CTRL + C detected'"><![CDATA[Traceback (most recent call last):
+  File "/sw/packages/python/2.7.4/lib/python2.7/unittest/case.py", line 332, in run
+    testMethod()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/astf_tests/astf_profile_test.py", line 306, in test_astf_prof_latency
+    self.do_latency(30,stop_after=None)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/astf_tests/astf_profile_test.py", line 141, in wrapped
+    func(self, *args, **kwargs)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/astf_tests/astf_profile_test.py", line 282, in do_latency
+    while c.is_traffic_active():
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 45, in wrap2
+    raise TRexError("'{0}' - connection to the server had been lost: '{1}'".format(func_name, client.conn.get_disconnection_cause()))
+TRexError: 'is_traffic_active' - connection to the server had been lost: 'CTRL + C detected'
+]]></error><system-out><![CDATA[
+starting profile http_simple.py 
+ client active flows 0,
+port_id: 0, s_max: 0, s_avg: 0
+port_id: 1, s_max: 0, s_avg: 0
+port_id: 2, s_max: 0, s_avg: 0
+port_id: 3, s_max: 0, s_avg: 0
+
+ client active flows 1663,
+port_id: 0, s_max: 0, s_avg: 0
+port_id: 1, s_max: 0, s_avg: 0
+port_id: 2, s_max: 0, s_avg: 0
+port_id: 3, s_max: 0, s_avg: 0
+
+ client active flows 1663,
+port_id: 0, s_max: 46, s_avg: 17
+port_id: 1, s_max: 25, s_avg: 106
+port_id: 2, s_max: 26, s_avg: 17
+port_id: 3, s_max: 27, s_avg: 108
+
+ client active flows 1660,
+port_id: 0, s_max: 27, s_avg: 22
+port_id: 1, s_max: 26, s_avg: 44
+port_id: 2, s_max: 48, s_avg: 22
+port_id: 3, s_max: 27, s_avg: 44
+
+ client active flows 1661,
+port_id: 0, s_max: 41, s_avg: 23
+port_id: 1, s_max: 25, s_avg: 28
+port_id: 2, s_max: 48, s_avg: 23
+port_id: 3, s_max: 27, s_avg: 28
+
+ client active flows 1660,
+port_id: 0, s_max: 48, s_avg: 23
+port_id: 1, s_max: 26, s_avg: 24
+port_id: 2, s_max: 28, s_avg: 23
+port_id: 3, s_max: 28, s_avg: 24
+
+ client active flows 1660,
+port_id: 0, s_max: 28, s_avg: 23
+port_id: 1, s_max: 25, s_avg: 23
+port_id: 2, s_max: 54, s_avg: 23
+port_id: 3, s_max: 27, s_avg: 23
+
+ client active flows 1661,
+port_id: 0, s_max: 48, s_avg: 23
+port_id: 1, s_max: 36, s_avg: 23
+port_id: 2, s_max: 48, s_avg: 23
+port_id: 3, s_max: 28, s_avg: 23
+
+ client active flows 1662,
+port_id: 0, s_max: 47, s_avg: 23
+port_id: 1, s_max: 27, s_avg: 23
+port_id: 2, s_max: 48, s_avg: 23
+port_id: 3, s_max: 28, s_avg: 23
+
+ client active flows 1661,
+port_id: 0, s_max: 48, s_avg: 23
+port_id: 1, s_max: 25, s_avg: 23
+port_id: 2, s_max: 28, s_avg: 23
+port_id: 3, s_max: 27, s_avg: 23
+
+ client active flows 1663,
+port_id: 0, s_max: 30, s_avg: 23
+port_id: 1, s_max: 30, s_avg: 23
+port_id: 2, s_max: 47, s_avg: 23
+port_id: 3, s_max: 30, s_avg: 23
+
+ client active flows 1662,
+port_id: 0, s_max: 45, s_avg: 23
+port_id: 1, s_max: 25, s_avg: 23
+port_id: 2, s_max: 44, s_avg: 23
+port_id: 3, s_max: 28, s_avg: 23
+
+ client active flows 1662,
+port_id: 0, s_max: 47, s_avg: 23
+port_id: 1, s_max: 28, s_avg: 23
+port_id: 2, s_max: 27, s_avg: 23
+port_id: 3, s_max: 28, s_avg: 23
+
+ client active flows 1662,
+port_id: 0, s_max: 27, s_avg: 23
+port_id: 1, s_max: 27, s_avg: 23
+port_id: 2, s_max: 51, s_avg: 23
+port_id: 3, s_max: 27, s_avg: 23
+
+ client active flows 1660,
+port_id: 0, s_max: 48, s_avg: 23
+port_id: 1, s_max: 26, s_avg: 23
+port_id: 2, s_max: 46, s_avg: 23
+port_id: 3, s_max: 27, s_avg: 23
+
+ client active flows 1663,
+port_id: 0, s_max: 52, s_avg: 23
+port_id: 1, s_max: 25, s_avg: 23
+port_id: 2, s_max: 48, s_avg: 23
+port_id: 3, s_max: 28, s_avg: 23
+
+ client active flows 1660,
+port_id: 0, s_max: 28, s_avg: 23
+port_id: 1, s_max: 27, s_avg: 23
+port_id: 2, s_max: 27, s_avg: 23
+port_id: 3, s_max: 28, s_avg: 23
+
+ client active flows 1661,
+port_id: 0, s_max: 28, s_avg: 23
+port_id: 1, s_max: 26, s_avg: 23
+port_id: 2, s_max: 48, s_avg: 23
+port_id: 3, s_max: 28, s_avg: 23
+
+ client active flows 1659,
+port_id: 0, s_max: 47, s_avg: 23
+port_id: 1, s_max: 25, s_avg: 23
+port_id: 2, s_max: 47, s_avg: 23
+port_id: 3, s_max: 28, s_avg: 23
+
+ client active flows 1662,
+port_id: 0, s_max: 45, s_avg: 23
+port_id: 1, s_max: 25, s_avg: 23
+port_id: 2, s_max: 26, s_avg: 23
+port_id: 3, s_max: 28, s_avg: 23
+
+ client active flows 1660,
+port_id: 0, s_max: 27, s_avg: 23
+port_id: 1, s_max: 26, s_avg: 23
+port_id: 2, s_max: 48, s_avg: 23
+port_id: 3, s_max: 28, s_avg: 23
+
+ client active flows 1662,
+port_id: 0, s_max: 43, s_avg: 24
+port_id: 1, s_max: 43, s_avg: 24
+port_id: 2, s_max: 50, s_avg: 24
+port_id: 3, s_max: 42, s_avg: 24
+
+ client active flows 1663,
+port_id: 0, s_max: 46, s_avg: 23
+port_id: 1, s_max: 33, s_avg: 23
+port_id: 2, s_max: 43, s_avg: 23
+port_id: 3, s_max: 35, s_avg: 23
+
+ client active flows 1661,
+port_id: 0, s_max: 41, s_avg: 23
+port_id: 1, s_max: 28, s_avg: 23
+port_id: 2, s_max: 48, s_avg: 23
+port_id: 3, s_max: 28, s_avg: 23
+
+ client active flows 1661,
+port_id: 0, s_max: 31, s_avg: 23
+port_id: 1, s_max: 32, s_avg: 23
+port_id: 2, s_max: 31, s_avg: 23
+port_id: 3, s_max: 32, s_avg: 23
+
+ client active flows 1662,
+port_id: 0, s_max: 28, s_avg: 23
+port_id: 1, s_max: 26, s_avg: 23
+port_id: 2, s_max: 47, s_avg: 23
+port_id: 3, s_max: 27, s_avg: 23
+
+ client active flows 1662,
+port_id: 0, s_max: 46, s_avg: 23
+port_id: 1, s_max: 27, s_avg: 23
+port_id: 2, s_max: 47, s_avg: 23
+port_id: 3, s_max: 29, s_avg: 23
+
+ client active flows 1661,
+port_id: 0, s_max: 46, s_avg: 23
+port_id: 1, s_max: 26, s_avg: 23
+port_id: 2, s_max: 40, s_avg: 23
+port_id: 3, s_max: 28, s_avg: 23
+
+]]></system-out></testcase><testcase classname="astf_tests.astf_profile_test.ASTFProfile_Test" name="test_astf_prof_latency_stop" time="0.001"><error type="exceptions.AssertionError" message=""><![CDATA[Traceback (most recent call last):
+  File "/sw/packages/python/2.7.4/lib/python2.7/unittest/case.py", line 323, in run
+    self.setUp()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/astf_tests/astf_profile_test.py", line 19, in setUp
+    assert(c.is_connected())
+AssertionError
+]]></error><system-out><![CDATA[
+]]></system-out></testcase><testcase classname="astf_tests.astf_profile_test.ASTFProfile_Test" name="test_astf_prof_only_latency" time="0.001"><error type="exceptions.AssertionError" message=""><![CDATA[Traceback (most recent call last):
+  File "/sw/packages/python/2.7.4/lib/python2.7/unittest/case.py", line 323, in run
+    self.setUp()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/astf_tests/astf_profile_test.py", line 19, in setUp
+    assert(c.is_connected())
+AssertionError
+]]></error><system-out><![CDATA[
+]]></system-out></testcase><testcase classname="astf_tests.astf_profile_test.ASTFProfile_Test" name="test_astf_prof_profiles" time="0.001"><error type="exceptions.AssertionError" message=""><![CDATA[Traceback (most recent call last):
+  File "/sw/packages/python/2.7.4/lib/python2.7/unittest/case.py", line 323, in run
+    self.setUp()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/astf_tests/astf_profile_test.py", line 19, in setUp
+    assert(c.is_connected())
+AssertionError
+]]></error><system-out><![CDATA[
+]]></system-out></testcase><testcase classname="astf_tests.astf_profile_test.ASTFProfile_Test" name="test_astf_prof_sfr" time="0.001"><error type="exceptions.AssertionError" message=""><![CDATA[Traceback (most recent call last):
+  File "/sw/packages/python/2.7.4/lib/python2.7/unittest/case.py", line 323, in run
+    self.setUp()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/astf_tests/astf_profile_test.py", line 19, in setUp
+    assert(c.is_connected())
+AssertionError
+]]></error><system-out><![CDATA[
+]]></system-out></testcase><testcase classname="astf_tests.astf_profile_test.ASTFProfile_Test" name="test_astf_prof_simple" time="0.001"><error type="exceptions.AssertionError" message=""><![CDATA[Traceback (most recent call last):
+  File "/sw/packages/python/2.7.4/lib/python2.7/unittest/case.py", line 323, in run
+    self.setUp()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/astf_tests/astf_profile_test.py", line 19, in setUp
+    assert(c.is_connected())
+AssertionError
+]]></error><system-out><![CDATA[
+]]></system-out></testcase><testcase classname="astf_tests.astf_resilience_test.ASTFResilience_Test" name="test_astf_params" time="0.007"><error type="trex.common.trex_exceptions.TRexError" message="'load_profile' - connection to the server had been lost: 'CTRL + C detected'"><![CDATA[Traceback (most recent call last):
+  File "/sw/packages/python/2.7.4/lib/python2.7/unittest/case.py", line 332, in run
+    testMethod()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/astf_tests/astf_resilience_test.py", line 81, in test_astf_params
+    self.astf_trex.load_profile(profile)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 45, in wrap2
+    raise TRexError("'{0}' - connection to the server had been lost: '{1}'".format(func_name, client.conn.get_disconnection_cause()))
+TRexError: 'load_profile' - connection to the server had been lost: 'CTRL + C detected'
+]]></error><system-out><![CDATA[
+
+Creating profile with params: {'client_ips': 256, 'templates': 1, 'server_ips': 256}
+Profile size: 45813
+]]></system-out></testcase><testcase classname="astf_tests.astf_resilience_test.ASTFResilience_Test" name="test_double_start_stop" time="0.002"><error type="trex.common.trex_exceptions.TRexError" message="'load_profile' - connection to the server had been lost: 'CTRL + C detected'"><![CDATA[Traceback (most recent call last):
+  File "/sw/packages/python/2.7.4/lib/python2.7/unittest/case.py", line 332, in run
+    testMethod()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/astf_tests/astf_resilience_test.py", line 92, in test_double_start_stop
+    c.load_profile(os.path.join(CTRexScenario.scripts_path, 'astf', 'udp1.py'))
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 45, in wrap2
+    raise TRexError("'{0}' - connection to the server had been lost: '{1}'".format(func_name, client.conn.get_disconnection_cause()))
+TRexError: 'load_profile' - connection to the server had been lost: 'CTRL + C detected'
+]]></error><system-out><![CDATA[
+
+]]></system-out></testcase><testcase classname="astf_tests.astf_resilience_test.ASTFResilience_Test" name="test_stress_start_stop" time="0.002"><error type="trex.common.trex_exceptions.TRexError" message="'load_profile' - connection to the server had been lost: 'CTRL + C detected'"><![CDATA[Traceback (most recent call last):
+  File "/sw/packages/python/2.7.4/lib/python2.7/unittest/case.py", line 332, in run
+    testMethod()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/astf_tests/astf_resilience_test.py", line 103, in test_stress_start_stop
+    c.load_profile(os.path.join(CTRexScenario.scripts_path, 'astf', 'udp1.py'))
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 45, in wrap2
+    raise TRexError("'{0}' - connection to the server had been lost: '{1}'".format(func_name, client.conn.get_disconnection_cause()))
+TRexError: 'load_profile' - connection to the server had been lost: 'CTRL + C detected'
+]]></error><system-out><![CDATA[
+
+]]></system-out></testcase><testcase classname="astf_tests.astf_template_group_test.ASTFTemplateGroup_Test" name="test_astf_template_group_edge_cases" time="0.004"><error type="trex.common.trex_exceptions.TRexError" message="'load_profile' - connection to the server had been lost: 'CTRL + C detected'"><![CDATA[Traceback (most recent call last):
+  File "/sw/packages/python/2.7.4/lib/python2.7/unittest/case.py", line 332, in run
+    testMethod()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/astf_tests/astf_template_group_test.py", line 251, in test_astf_template_group_edge_cases
+    self.c.load_profile(profile)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 45, in wrap2
+    raise TRexError("'{0}' - connection to the server had been lost: '{1}'".format(func_name, client.conn.get_disconnection_cause()))
+TRexError: 'load_profile' - connection to the server had been lost: 'CTRL + C detected'
+]]></error><system-out><![CDATA[
+]]></system-out></testcase><testcase classname="astf_tests.astf_template_group_test.ASTFTemplateGroup_Test" name="test_astf_template_group_general" time="0.012"><error type="trex.common.trex_exceptions.TRexError" message="'load_profile' - connection to the server had been lost: 'CTRL + C detected'"><![CDATA[Traceback (most recent call last):
+  File "/sw/packages/python/2.7.4/lib/python2.7/unittest/case.py", line 332, in run
+    testMethod()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/astf_tests/astf_template_group_test.py", line 179, in test_astf_template_group_general
+    self.c.load_profile(profile_cps[0])
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 45, in wrap2
+    raise TRexError("'{0}' - connection to the server had been lost: '{1}'".format(func_name, client.conn.get_disconnection_cause()))
+TRexError: 'load_profile' - connection to the server had been lost: 'CTRL + C detected'
+]]></error><system-out><![CDATA[
+]]></system-out></testcase><testcase classname="astf_tests.astf_template_group_test.ASTFTemplateGroup_Test" name="test_astf_template_group_load" time="0.181"><error type="trex.common.trex_exceptions.TRexError" message="'load_profile' - connection to the server had been lost: 'CTRL + C detected'"><![CDATA[Traceback (most recent call last):
+  File "/sw/packages/python/2.7.4/lib/python2.7/unittest/case.py", line 332, in run
+    testMethod()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/astf_tests/astf_template_group_test.py", line 222, in test_astf_template_group_load
+    self.c.load_profile(profile)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 45, in wrap2
+    raise TRexError("'{0}' - connection to the server had been lost: '{1}'".format(func_name, client.conn.get_disconnection_cause()))
+TRexError: 'load_profile' - connection to the server had been lost: 'CTRL + C detected'
+]]></error><system-out><![CDATA[
+]]></system-out></testcase><testcase classname="astf_tests.astf_template_group_test.ASTFTemplateGroup_Test" name="test_astf_template_group_long" time="0.003"><error type="trex.common.trex_exceptions.TRexError" message="'load_profile' - connection to the server had been lost: 'CTRL + C detected'"><![CDATA[Traceback (most recent call last):
+  File "/sw/packages/python/2.7.4/lib/python2.7/unittest/case.py", line 332, in run
+    testMethod()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/astf_tests/astf_template_group_test.py", line 194, in test_astf_template_group_long
+    self.c.load_profile(profile)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 45, in wrap2
+    raise TRexError("'{0}' - connection to the server had been lost: '{1}'".format(func_name, client.conn.get_disconnection_cause()))
+TRexError: 'load_profile' - connection to the server had been lost: 'CTRL + C detected'
+]]></error><system-out><![CDATA[
+]]></system-out></testcase><testcase classname="astf_tests.astf_template_group_test.ASTFTemplateGroup_Test" name="test_astf_template_group_negative" time="0.008"><error type="trex.common.trex_exceptions.TRexError" message="'get_traffic_tg_stats' - connection to the server had been lost: 'CTRL + C detected'"><![CDATA[Traceback (most recent call last):
+  File "/sw/packages/python/2.7.4/lib/python2.7/unittest/case.py", line 332, in run
+    testMethod()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/astf_tests/astf_template_group_test.py", line 294, in test_astf_template_group_negative
+    stats = self.c.get_traffic_tg_stats('A')
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 45, in wrap2
+    raise TRexError("'{0}' - connection to the server had been lost: '{1}'".format(func_name, client.conn.get_disconnection_cause()))
+TRexError: 'get_traffic_tg_stats' - connection to the server had been lost: 'CTRL + C detected'
+]]></error><system-out><![CDATA[
+]]></system-out></testcase><testcase classname="astf_tests.astf_topo_test.ASTFTopology_Test" name="ASTFTopology_Test:setup" time="0.010"><skipped type="unittest.case.SkipTest" message="Topo tests are designed to work with non-dummy baremetal loopback NICs"><![CDATA[Traceback (most recent call last):
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/suite.py", line 209, in run
+    self.setUp()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/suite.py", line 292, in setUp
+    self.setupContext(ancestor)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/suite.py", line 315, in setupContext
+    try_run(context, names)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/util.py", line 470, in try_run
+    return func()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/astf_tests/astf_topo_test.py", line 21, in setUpClass
+    cls.skip('Topo tests are designed to work with non-dummy baremetal loopback NICs')
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateful_tests/trex_general_test.py", line 452, in skip
+    raise SkipTest(message)
+SkipTest: Topo tests are designed to work with non-dummy baremetal loopback NICs
+]]></skipped><system-out><![CDATA[Skip: Topo tests are designed to work with non-dummy baremetal loopback NICs
+]]></system-out></testcase><testcase classname="astf_tests.astf_vlan_test.ASTFVLAN_Test" name="ASTFVLAN_Test:setup" time="0.021"><error type="trex.common.trex_exceptions.TRexError" message="'get_port' - connection to the server had been lost: 'CTRL + C detected'"><![CDATA[Traceback (most recent call last):
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/suite.py", line 209, in run
+    self.setUp()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/suite.py", line 292, in setUp
+    self.setupContext(ancestor)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/suite.py", line 315, in setupContext
+    try_run(context, names)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/util.py", line 470, in try_run
+    return func()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/astf_tests/astf_vlan_test.py", line 19, in setUpClass
+    tx_port_vlan = c.get_port(cls.tx_port).get_vlan_cfg()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 56, in wrap2
+    raise TRexError("'{0}' - connection to the server had been lost: '{1}'".format(func_name, client.conn.get_disconnection_cause()))
+TRexError: 'get_port' - connection to the server had been lost: 'CTRL + C detected'
+]]></error></testcase></testsuite>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite name="nosetests" tests="2" errors="0" failures="0" skip="0"><testcase classname="astf_tests.astf_general_test.ASTFBasic_Test" name="test_connectivity" time="0.412"><system-out><![CDATA[
+Starting TRex... done. (0s)
+Started TRex
+Connecting.
+Connected
+Mapping ports.
+Got ports mapping: {'map': {1: 0, 0: 1}, 'bi': [(1, 0)], 'unknown': []}
+]]></system-out></testcase><testcase classname="astf_tests.astf_vlan_test.ASTFVLAN_Test" name="test_traffic_vlan" time="5.870"><system-out><![CDATA[
+Expected 20 IPv4 pkts without VLAN, got 20
+Expected 20 IPv4 pkts with VLAN, got 20
+Expected 20 IPv6 pkts without VLAN, got 20
+Expected 20 IPv6 pkts with VLAN, got 20
+]]></system-out></testcase></testsuite>

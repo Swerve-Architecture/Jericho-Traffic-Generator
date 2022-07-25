@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite name="nosetests" tests="1" errors="0" failures="0" skip="0"><testcase classname="stateful_tests.trex_ipv6_test.CTRexIPv6_Test" name="test_ipv6_simple" time="79.479"><system-out><![CDATA[
+LATEST RESULT OBJECT:
+Is valid history?       True
+Done warmup?            True
+Expected tx rate:       {u'm_tx_expected_pps': 1721085.1, u'm_tx_expected_bps': 8294422016.0, u'm_tx_expected_cps': 32981.8}
+Current tx rate:        {u'm_tx_bps': 5310471680.0, u'm_tx_cps': 21135.2, u'm_tx_pps': 1109752.0}
+Minimum latency:        {u'min-10': 10, u'min-11': 10, u'min-6': 10, u'min-7': 10, u'min-4': 10, u'min-5': 10, u'min-2': 10, u'min-3': 10, u'min-0': 10, u'min-1': 10, u'min-8': 10, u'min-9': 10}
+Maximum latency:        {u'max-8': 150, u'max-9': 150, u'max-4': 150, u'max-5': 150, u'max-6': 150, u'max-7': 150, u'max-0': 150, u'max-1': 150, u'max-2': 150, u'max-3': 150, u'max-10': 150, u'max-11': 150}
+Average latency:        {'all': 62.525, u'port2': 62.9, u'port10': 62.7, u'port8': 65.0, u'port9': 63.8, u'port6': 55.9, u'port7': 59.3, u'port4': 60.0, u'port5': 56.5, u'port11': 64.5, u'port3': 65.0, u'port0': 69.1, u'port1': 65.6}
+Average window latency: {'all': 56.503, u'port11': 58.215, u'port6': 54.131, u'port8': 54.968, u'port9': 54.587, u'port10': 57.119, u'port7': 55.587, u'port4': 60.245, u'port5': 59.279, u'port2': 55.319, u'port3': 56.287, u'port0': 56.818, u'port1': 55.479}
+Total drops:            0
+Drop rate:              0.0
+History size so far:    62
+
+TRex CPU utilization: 5.17%, norm_cpu is : 53 Gb/core
+Err percent: 80.6743176005
+]]></system-out></testcase></testsuite>

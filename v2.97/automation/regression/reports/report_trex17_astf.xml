@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite name="nosetests" tests="14" errors="0" failures="0" skip="9"><testcase classname="astf_tests.astf_general_test.ASTFBasic_Test" name="test_connectivity" time="0.515"><system-out><![CDATA[
+Starting TRex... done. (0s)
+Started TRex
+Connecting.
+Connected
+Mapping ports.
+Got ports mapping: {'map': {0: 1, 1: 0}, 'bi': [(0, 1)], 'unknown': []}
+]]></system-out></testcase><testcase classname="astf_tests.astf_examples_test.ASTFExamples_Test" name="test_astf_prof_examples" time="13.609"><system-out><![CDATA[Running command: sh -c 'cd ../trex_control_plane/interactive; /router/bin/python-2.7.4 -m trex.examples.astf.astf_example -s 10.56.216.150'
+Stdout:
+?[?1034hInjecting with multiplier of '100' for 10 seconds
+{0: {'ibytes': 93059212,
+     'ierrors': 0,
+     'ipackets': 68726,
+     'obytes': 1668643,
+     'oerrors': 0,
+     'opackets': 13745,
+     'rx_bps': 19018916.0,
+     'rx_bps_L1': 19300156.625,
+     'rx_pps': 1757.75390625,
+     'rx_util': 0.19300156625,
+     'tx_bps': 337161.21875,
+     'tx_bps_L1': 393742.9814453125,
+     'tx_pps': 353.6360168457031,
+     'tx_util': 0.003937429814453125},
+ 1: {'ibytes': 1668707,
+     'ierrors': 0,
+     'ipackets': 13746,
+     'obytes': 93059148,
+     'oerrors': 0,
+     'opackets': 68725,
+     'rx_bps': 337163.34375,
+     'rx_bps_L1': 393745.765625,
+     'rx_pps': 353.64013671875,
+     'rx_util': 0.00393745765625,
+     'tx_bps': 19018914.0,
+     'tx_bps_L1': 19300153.9609375,
+     'tx_pps': 1757.749755859375,
+     'tx_util': 0.193001539609375},
+ 'global': {'bw_per_core': 8.847379684448242,
+            'cpu_util': 0.4375549852848053,
+            'queue_full': 0,
+            'rx_bps': 19356080.0,
+            'rx_cpu_util': 0.0,
+            'rx_drop_bps': 0.0,
+            'rx_pps': 2111.39404296875,
+            'tx_bps': 19356076.0,
+            'tx_pps': 2111.3857421875},
+ 'latency': {},
+ 'total': {'ibytes': 94727919,
+           'ierrors': 0,
+           'ipackets': 82472,
+           'obytes': 94727791,
+           'oerrors': 0,
+           'opackets': 82470,
+           'rx_bps': 19356079.34375,
+           'rx_bps_L1': 19693902.390625,
+           'rx_pps': 2111.39404296875,
+           'rx_util': 0.19693902390625,
+           'tx_bps': 19356075.21875,
+           'tx_bps_L1': 19693896.942382812,
+           'tx_pps': 2111.385772705078,
+           'tx_util': 0.19693896942382813},
+ 'traffic': {'client': {u'm_active_flows': 0,
+                        u'm_avg_size': 1039.657249841852,
+                        u'm_est_flows': 0,
+                        u'm_rx_bw_l7_r': 18030385.56930693,
+                        u'm_rx_pps_r': 1830.6729736328125,
+                        u'm_tx_bw_l7_r': 134803.12616027228,
+                        u'm_tx_bw_l7_total_r': 134709.9245049505,
+                        u'm_tx_pps_r': 353.3627624511719,
+                        u'm_tx_ratio': 100.06918692565844,
+                        u'redirect_rx_ok': 1,
+                        u'tcps_closed': 2749,
+                        u'tcps_connattempt': 2749,
+                        u'tcps_connects': 2749,
+                        u'tcps_delack': 2749,
+                        u'tcps_preddat': 60478,
+                        u'tcps_rcvackbyte': 684501,
+                        u'tcps_rcvackbyte_of': 2749,
+                        u'tcps_rcvackpack': 5498,
+                        u'tcps_rcvbyte': 88226406,
+                        u'tcps_rcvpack': 65976,
+                        u'tcps_rttupdated': 8247,
+                        u'tcps_segstimed': 8247,
+                        u'tcps_sndacks': 8247,
+                        u'tcps_sndbyte': 684501,
+                        u'tcps_sndbyte_ok': 684501,
+                        u'tcps_sndctrl': 2749,
+                        u'tcps_sndpack': 2749,
+                        u'tcps_sndtotal': 13745},
+             'server': {u'm_active_flows': 0,
+                        u'm_avg_size': 1076.919597421355,
+                        u'm_est_flows': 0,
+                        u'm_rx_bw_l7_r': 134803.12616027228,
+                        u'm_rx_pps_r': 426.5787658691406,
+                        u'm_tx_bw_l7_r': 18669950.68193069,
+                        u'm_tx_bw_l7_total_r': 18014035.75108292,
+                        u'm_tx_pps_r': 1756.1229248046875,
+                        u'm_tx_ratio': 103.64113261409697,
+                        u'redirect_rx_ok': 1,
+                        u'tcps_accepts': 2749,
+                        u'tcps_closed': 2749,
+                        u'tcps_connects': 2749,
+                        u'tcps_rcvackbyte': 88226406,
+                        u'tcps_rcvackbyte_of': 5498,
+                        u'tcps_rcvackpack': 10996,
+                        u'tcps_rcvbyte': 684501,
+                        u'tcps_rcvpack': 5498,
+                        u'tcps_rttupdated': 10996,
+                        u'tcps_segstimed': 10996,
+                        u'tcps_sndacks': 5498,
+                        u'tcps_sndbyte': 88226406,
+                        u'tcps_sndbyte_ok': 88226406,
+                        u'tcps_sndpack': 63227,
+                        u'tcps_sndtotal': 68725}}}
+
+Test has passed :-)
+
+
+]]></system-out></testcase><testcase classname="astf_tests.astf_profile_test.ASTFProfile_Test" name="test_astf_prof_latency" time="0.073"><skipped type="unittest.case.SkipTest" message="not accurate latency"><![CDATA[SkipTest: not accurate latency
+]]></skipped><system-out><![CDATA[Skip: not accurate latency
+]]></system-out></testcase><testcase classname="astf_tests.astf_profile_test.ASTFProfile_Test" name="test_astf_prof_latency_stop" time="0.067"><skipped type="unittest.case.SkipTest" message="not accurate latency"><![CDATA[SkipTest: not accurate latency
+]]></skipped><system-out><![CDATA[Skip: not accurate latency
+]]></system-out></testcase><testcase classname="astf_tests.astf_profile_test.ASTFProfile_Test" name="test_astf_prof_only_latency" time="0.067"><skipped type="unittest.case.SkipTest" message="not accurate latency"><![CDATA[SkipTest: not accurate latency
+]]></skipped><system-out><![CDATA[Skip: not accurate latency
+]]></system-out></testcase><testcase classname="astf_tests.astf_profile_test.ASTFProfile_Test" name="test_astf_prof_profiles" time="0.086"><skipped type="unittest.case.SkipTest" message="not enough memory for this test"><![CDATA[SkipTest: not enough memory for this test
+]]></skipped><system-out><![CDATA[Skip: not enough memory for this test
+]]></system-out></testcase><testcase classname="astf_tests.astf_profile_test.ASTFProfile_Test" name="test_astf_prof_sfr" time="132.073"><system-out><![CDATA[starting profile sfr.py for duration 38
+starting profile sfr_full.py for duration 28
+]]></system-out></testcase><testcase classname="astf_tests.astf_profile_test.ASTFProfile_Test" name="test_astf_prof_simple" time="281.976"><system-out><![CDATA[starting profile http_simple.py for duration 54
+starting profile udp_pcap.py for duration 89
+starting profile http_simple.py for duration 22
+starting profile udp_pcap.py for duration 107
+]]></system-out></testcase><testcase classname="astf_tests.astf_resilience_test.ASTFResilience_Test" name="test_astf_prof_params" time="2.309"><system-out><![CDATA[
+Creating profile with params: {'client_ips': 256, 'templates': 1, 'server_ips': 256}
+Profile size: 2819
+Load took: 0.003
+Start took: 0.021
+Creating profile with params: {'client_ips': 256, 'templates': 256, 'server_ips': 256}
+Profile size: 164989
+Load took: 0.026
+Start took: 0.031
+Creating profile with params: {'client_ips': 256, 'templates': 1, 'server_ips': 65536}
+Profile size: 3559
+Load took: 0.005
+Start took: 0.022
+Creating profile with params: {'client_ips': 256, 'templates': 256, 'server_ips': 65536}
+Profile size: 165729
+Load took: 0.041
+Start took: 0.041
+Creating profile with params: {'client_ips': 65536, 'templates': 1, 'server_ips': 256}
+Profile size: 4301
+Load took: 0.005
+Start took: 0.213
+Creating profile with params: {'client_ips': 65536, 'templates': 256, 'server_ips': 256}
+Profile size: 166981
+Load took: 0.024
+Start took: 0.385
+Creating profile with params: {'client_ips': 65536, 'templates': 1, 'server_ips': 65536}
+Profile size: 5041
+Load took: 0.004
+Start took: 0.355
+Creating profile with params: {'client_ips': 65536, 'templates': 256, 'server_ips': 65536}
+Profile size: 167721
+Load took: 0.024
+Start took: 0.537
+]]></system-out></testcase><testcase classname="astf_tests.astf_vlan_test.ASTFVLAN_Test" name="test_config_vlan" time="0.066"><skipped type="unittest.case.SkipTest" message="Some driver issues with VLANs"><![CDATA[SkipTest: Some driver issues with VLANs
+]]></skipped><system-out><![CDATA[Skip: Some driver issues with VLANs
+]]></system-out></testcase><testcase classname="astf_tests.astf_vlan_test.ASTFVLAN_Test" name="test_latency_vlan" time="0.067"><skipped type="unittest.case.SkipTest" message="Some driver issues with VLANs"><![CDATA[SkipTest: Some driver issues with VLANs
+]]></skipped><system-out><![CDATA[Skip: Some driver issues with VLANs
+]]></system-out></testcase><testcase classname="astf_tests.astf_vlan_test.ASTFVLAN_Test" name="test_ping_vlan" time="0.066"><skipped type="unittest.case.SkipTest" message="Some driver issues with VLANs"><![CDATA[SkipTest: Some driver issues with VLANs
+]]></skipped><system-out><![CDATA[Skip: Some driver issues with VLANs
+]]></system-out></testcase><testcase classname="astf_tests.astf_vlan_test.ASTFVLAN_Test" name="test_resolve_vlan" time="0.066"><skipped type="unittest.case.SkipTest" message="Some driver issues with VLANs"><![CDATA[SkipTest: Some driver issues with VLANs
+]]></skipped><system-out><![CDATA[Skip: Some driver issues with VLANs
+]]></system-out></testcase><testcase classname="astf_tests.astf_vlan_test.ASTFVLAN_Test" name="test_traffic_vlan" time="0.066"><skipped type="unittest.case.SkipTest" message="Some driver issues with VLANs"><![CDATA[SkipTest: Some driver issues with VLANs
+]]></skipped><system-out><![CDATA[Skip: Some driver issues with VLANs
+]]></system-out></testcase></testsuite>

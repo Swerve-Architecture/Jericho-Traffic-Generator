@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite name="nosetests" tests="2" errors="1" failures="0" skip="0"><testcase classname="astf_tests.astf_general_test.ASTFBasic_Test" name="test_connectivity" time="0.549"><system-out><![CDATA[
+Starting TRex... done. (0s)
+Started TRex
+Connecting.state: 0
+state: 0
+
+Connected
+Mapping ports.
+Got ports mapping: {'map': {0: 1, 1: 0}, 'bi': [(0, 1)], 'unknown': []}
+]]></system-out></testcase><testcase classname="astf_tests.astf_resilience_test.ASTFResilience_Test" name="test_astf_params" time="30.419"><error type="trex.common.trex_exceptions.TRexError" message="*** [RPC] - Failed to get server response from tcp://10.56.192.189:4501"><![CDATA[Traceback (most recent call last):
+  File "/usr/cisco/depot/python/lib/python2.7/unittest/case.py", line 331, in run
+    testMethod()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/astf_tests/astf_resilience_test.py", line 84, in test_astf_params
+    self.astf_trex.start(duration = 1, nc = True)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 51, in wrap2
+    ret = f(*args, **kwargs)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/astf/trex_astf_client.py", line 475, in start
+    rc = self._transmit_async('start', params = params, ok_states = self.STATE_TX, bad_states = self.STATE_ASTF_LOADED)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/astf/trex_astf_client.py", line 197, in _transmit_async
+    self.wait_for_steady()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/astf/trex_astf_client.py", line 174, in wait_for_steady
+    self.sync()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/astf/trex_astf_client.py", line 166, in sync
+    raise TRexError(rc.err())
+TRexError: *** [RPC] - Failed to get server response from tcp://10.56.192.189:4501
+]]></error><system-out><![CDATA[state: 0
+state: 0
+
+Creating profile with params: {'client_ips': 65536, 'templates': 10000, 'server_ips': 65536}
+Profile size: 6609117
+state 1
+Load took: 1.049
+state: 1
+state 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state 3
+state: 3
+state: 3
+state: 3
+state: 3
+state: 3
+state: 3
+state: 3
+state: 3
+state: 3
+state: 3
+state: 3
+state: 3
+state: 3
+state: 3
+state 4
+state: 4
+Start took: 7.728
+state: 4
+state: 4
+state 5
+state 1
+Creating profile with params: {'client_ips': 65536, 'templates': 20000, 'server_ips': 65536}
+Profile size: 13239487
+state 0
+state 1
+Load took: 2.094
+state: 1
+state 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state: 2
+state 3
+state: 3
+state: 3
+state: 3
+state: 3
+state: 3
+state: 3
+state: 3
+state: 3
+state: 3
+state: 3
+state: 3
+state: 3
+state: 3
+state: 3
+state: 3
+state: 3
+state: 3
+state: 3
+]]></system-out></testcase></testsuite>

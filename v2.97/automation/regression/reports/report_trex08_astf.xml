@@ -1,0 +1,958 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite name="nosetests" tests="11" errors="3" failures="0" skip="0"><testcase classname="astf_tests.astf_general_test.ASTFBasic_Test" name="test_connectivity" time="0.636"><system-out><![CDATA[
+Starting TRex... done. (0s)
+Started TRex
+Connecting.
+Connected
+Mapping ports.
+Got ports mapping: {'map': {0: 3, 1: 2, 2: 1, 3: 0}, 'bi': [(0, 3), (1, 2)], 'unknown': []}
+]]></system-out></testcase><testcase classname="astf_tests.astf_examples_test.ASTFExamples_Test" name="test_astf_prof_examples" time="12.715"><system-out><![CDATA[Running command: sh -c 'cd ../trex_control_plane/interactive; /bin/python3 -m trex.examples.astf.astf_example -s 10.56.216.127'
+Stdout:
+Injecting with multiplier of '100' for 10 seconds
+{0: {'ibytes': 47155836,
+     'ierrors': 0,
+     'ipackets': 34825,
+     'obytes': 845551,
+     'oerrors': 0,
+     'opackets': 6965,
+     'rx_bps': 37407484.0,
+     'rx_bps_L1': 37959986.30468749,
+     'rx_pps': 3453.139404296875,
+     'rx_util': 0.09489996576171873,
+     'tx_bps': 671122.6875,
+     'tx_bps_L1': 781702.560546875,
+     'tx_pps': 691.1242065429688,
+     'tx_util': 0.0019542564013671875},
+ 1: {'ibytes': 845551,
+     'ierrors': 0,
+     'ipackets': 6965,
+     'obytes': 47155836,
+     'oerrors': 0,
+     'opackets': 34825,
+     'rx_bps': 672272.0625,
+     'rx_bps_L1': 782956.10546875,
+     'rx_pps': 691.7752685546875,
+     'rx_util': 0.001957390263671875,
+     'tx_bps': 37489812.0,
+     'tx_bps_L1': 38043526.1015625,
+     'tx_pps': 3460.713134765625,
+     'tx_util': 0.09510881525390626},
+ 2: {'ibytes': 47155836,
+     'ierrors': 0,
+     'ipackets': 34825,
+     'obytes': 845551,
+     'oerrors': 0,
+     'opackets': 6965,
+     'rx_bps': 37489812.0,
+     'rx_bps_L1': 38043526.1015625,
+     'rx_pps': 3460.713134765625,
+     'rx_util': 0.09510881525390626,
+     'tx_bps': 672272.0625,
+     'tx_bps_L1': 782956.10546875,
+     'tx_pps': 691.7752685546875,
+     'tx_util': 0.001957390263671875},
+ 3: {'ibytes': 845551,
+     'ierrors': 0,
+     'ipackets': 6965,
+     'obytes': 47155836,
+     'oerrors': 0,
+     'opackets': 34825,
+     'rx_bps': 671122.6875,
+     'rx_bps_L1': 781702.560546875,
+     'rx_pps': 691.1242065429688,
+     'rx_util': 0.0019542564013671875,
+     'tx_bps': 37473528.0,
+     'tx_bps_L1': 38026962.3359375,
+     'tx_pps': 3458.964599609375,
+     'tx_util': 0.09506740583984376},
+ 'global': {'active_flows': 0.0,
+            'active_sockets': 0,
+            'bw_per_core': 2.993544578552246,
+            'cpu_util': 0.3641490042209625,
+            'cpu_util_raw': 0.0,
+            'open_flows': 2786.0,
+            'platform_factor': 1.0,
+            'queue_full': 0,
+            'rx_bps': 76240688.0,
+            'rx_core_pps': 0.0,
+            'rx_cpu_util': 0.0,
+            'rx_drop_bps': 0.0,
+            'rx_pps': 8296.751953125,
+            'socket_util': 0.0,
+            'total_alloc_error': 0,
+            'total_clients': 0,
+            'total_servers': 0,
+            'tx_bps': 76306736.0,
+            'tx_cps': 276.4259948730469,
+            'tx_expected_bps': 0.0,
+            'tx_expected_cps': 0.0,
+            'tx_expected_pps': 0.0,
+            'tx_pps': 8302.5771484375},
+ 'latency': {},
+ 'total': {'ibytes': 96002774,
+           'ierrors': 0,
+           'ipackets': 83580,
+           'obytes': 96002774,
+           'oerrors': 0,
+           'opackets': 83580,
+           'rx_bps': 76240690.75,
+           'rx_bps_L1': 77568171.07226562,
+           'rx_pps': 8296.752014160156,
+           'rx_util': 0.19392042768066406,
+           'tx_bps': 76306734.75,
+           'tx_bps_L1': 77635147.10351562,
+           'tx_pps': 8302.577209472656,
+           'tx_util': 0.19408786775878908},
+ 'traffic': {'client': {'m_active_flows': 0,
+                        'm_avg_size': 1040.132302152673,
+                        'm_est_flows': 0,
+                        'm_rx_bw_l7_r': 57589376.09193556,
+                        'm_rx_pps_r': 5844.7841796875,
+                        'm_traffic_duration': 10.584578815625001,
+                        'm_tx_bw_l7_r': 433253.534141205,
+                        'm_tx_bw_l7_total_r': 433110.51497358654,
+                        'm_tx_pps_r': 1128.2025146484375,
+                        'm_tx_ratio': 100.0330214027769,
+                        'tcps_closed': 2786,
+                        'tcps_connattempt': 2786,
+                        'tcps_connects': 2786,
+                        'tcps_delack': 2786,
+                        'tcps_preddat': 61292,
+                        'tcps_rcvackbyte': 693714,
+                        'tcps_rcvackbyte_of': 2786,
+                        'tcps_rcvackpack': 5572,
+                        'tcps_rcvbyte': 89413884,
+                        'tcps_rcvpack': 66864,
+                        'tcps_rttupdated': 8358,
+                        'tcps_segstimed': 8358,
+                        'tcps_sndacks': 8358,
+                        'tcps_sndbyte': 693714,
+                        'tcps_sndbyte_ok': 693714,
+                        'tcps_sndctrl': 2786,
+                        'tcps_sndpack': 2786,
+                        'tcps_sndtotal': 13930},
+             'server': {'m_active_flows': 0,
+                        'm_avg_size': 1071.5549075723761,
+                        'm_est_flows': 0,
+                        'm_rx_bw_l7_r': 433233.27741290693,
+                        'm_rx_pps_r': 1359.8592529296875,
+                        'm_traffic_duration': 10.6121394159375,
+                        'm_tx_bw_l7_r': 59340978.224347994,
+                        'm_tx_bw_l7_total_r': 57587282.56175043,
+                        'm_tx_pps_r': 5612.9765625,
+                        'm_tx_ratio': 103.04528288987606,
+                        'tcps_accepts': 2786,
+                        'tcps_closed': 2786,
+                        'tcps_connects': 2786,
+                        'tcps_rcvackbyte': 89413884,
+                        'tcps_rcvackbyte_of': 5572,
+                        'tcps_rcvackpack': 11144,
+                        'tcps_rcvbyte': 693714,
+                        'tcps_rcvpack': 5572,
+                        'tcps_rttupdated': 11144,
+                        'tcps_segstimed': 11144,
+                        'tcps_sndacks': 5572,
+                        'tcps_sndbyte': 89413884,
+                        'tcps_sndbyte_ok': 89413884,
+                        'tcps_sndpack': 64078,
+                        'tcps_sndtotal': 69650}}}
+
+Test has passed :-)
+
+
+]]></system-out></testcase><testcase classname="astf_tests.astf_profile_test.ASTFProfile_Test" name="test_astf_prof_latency" time="31.010"><system-out><![CDATA[starting profile http_simple.py 
+ client active flows 0,
+port_id: 0, s_max: 0, s_avg: 0
+port_id: 1, s_max: 0, s_avg: 0
+port_id: 2, s_max: 0, s_avg: 0
+port_id: 3, s_max: 0, s_avg: 0
+
+ client active flows 1665,
+port_id: 0, s_max: 0, s_avg: 7
+port_id: 1, s_max: 0, s_avg: 49
+port_id: 2, s_max: 0, s_avg: 7
+port_id: 3, s_max: 0, s_avg: 54
+
+ client active flows 1666,
+port_id: 0, s_max: 9, s_avg: 7
+port_id: 1, s_max: 9, s_avg: 18
+port_id: 2, s_max: 10, s_avg: 7
+port_id: 3, s_max: 23, s_avg: 19
+
+ client active flows 1663,
+port_id: 0, s_max: 8, s_avg: 7
+port_id: 1, s_max: 9, s_avg: 10
+port_id: 2, s_max: 9, s_avg: 7
+port_id: 3, s_max: 10, s_avg: 10
+
+ client active flows 1665,
+port_id: 0, s_max: 11, s_avg: 7
+port_id: 1, s_max: 11, s_avg: 8
+port_id: 2, s_max: 9, s_avg: 7
+port_id: 3, s_max: 10, s_avg: 8
+
+ client active flows 1664,
+port_id: 0, s_max: 10, s_avg: 7
+port_id: 1, s_max: 10, s_avg: 8
+port_id: 2, s_max: 11, s_avg: 7
+port_id: 3, s_max: 10, s_avg: 8
+
+ client active flows 1661,
+port_id: 0, s_max: 10, s_avg: 7
+port_id: 1, s_max: 10, s_avg: 7
+port_id: 2, s_max: 10, s_avg: 7
+port_id: 3, s_max: 9, s_avg: 7
+
+ client active flows 1669,
+port_id: 0, s_max: 13, s_avg: 7
+port_id: 1, s_max: 13, s_avg: 7
+port_id: 2, s_max: 14, s_avg: 7
+port_id: 3, s_max: 13, s_avg: 7
+
+ client active flows 1660,
+port_id: 0, s_max: 9, s_avg: 7
+port_id: 1, s_max: 10, s_avg: 7
+port_id: 2, s_max: 10, s_avg: 7
+port_id: 3, s_max: 11, s_avg: 7
+
+ client active flows 1666,
+port_id: 0, s_max: 9, s_avg: 7
+port_id: 1, s_max: 10, s_avg: 7
+port_id: 2, s_max: 10, s_avg: 7
+port_id: 3, s_max: 11, s_avg: 7
+
+ client active flows 1659,
+port_id: 0, s_max: 9, s_avg: 7
+port_id: 1, s_max: 9, s_avg: 7
+port_id: 2, s_max: 10, s_avg: 7
+port_id: 3, s_max: 10, s_avg: 7
+
+ client active flows 1662,
+port_id: 0, s_max: 11, s_avg: 7
+port_id: 1, s_max: 9, s_avg: 7
+port_id: 2, s_max: 10, s_avg: 7
+port_id: 3, s_max: 11, s_avg: 7
+
+ client active flows 1662,
+port_id: 0, s_max: 11, s_avg: 7
+port_id: 1, s_max: 10, s_avg: 7
+port_id: 2, s_max: 11, s_avg: 7
+port_id: 3, s_max: 10, s_avg: 7
+
+ client active flows 1664,
+port_id: 0, s_max: 11, s_avg: 7
+port_id: 1, s_max: 12, s_avg: 7
+port_id: 2, s_max: 11, s_avg: 7
+port_id: 3, s_max: 11, s_avg: 7
+
+ client active flows 1660,
+port_id: 0, s_max: 10, s_avg: 7
+port_id: 1, s_max: 11, s_avg: 7
+port_id: 2, s_max: 11, s_avg: 7
+port_id: 3, s_max: 10, s_avg: 7
+
+ client active flows 1668,
+port_id: 0, s_max: 9, s_avg: 7
+port_id: 1, s_max: 10, s_avg: 7
+port_id: 2, s_max: 10, s_avg: 7
+port_id: 3, s_max: 11, s_avg: 7
+
+ client active flows 1667,
+port_id: 0, s_max: 9, s_avg: 7
+port_id: 1, s_max: 9, s_avg: 7
+port_id: 2, s_max: 9, s_avg: 7
+port_id: 3, s_max: 10, s_avg: 7
+
+ client active flows 1661,
+port_id: 0, s_max: 9, s_avg: 7
+port_id: 1, s_max: 10, s_avg: 7
+port_id: 2, s_max: 10, s_avg: 7
+port_id: 3, s_max: 11, s_avg: 7
+
+ client active flows 1664,
+port_id: 0, s_max: 10, s_avg: 7
+port_id: 1, s_max: 11, s_avg: 7
+port_id: 2, s_max: 11, s_avg: 7
+port_id: 3, s_max: 12, s_avg: 7
+
+ client active flows 1659,
+port_id: 0, s_max: 11, s_avg: 7
+port_id: 1, s_max: 10, s_avg: 7
+port_id: 2, s_max: 9, s_avg: 7
+port_id: 3, s_max: 10, s_avg: 7
+
+ client active flows 1659,
+port_id: 0, s_max: 10, s_avg: 7
+port_id: 1, s_max: 10, s_avg: 7
+port_id: 2, s_max: 9, s_avg: 7
+port_id: 3, s_max: 10, s_avg: 7
+
+ client active flows 1662,
+port_id: 0, s_max: 10, s_avg: 7
+port_id: 1, s_max: 11, s_avg: 7
+port_id: 2, s_max: 10, s_avg: 7
+port_id: 3, s_max: 9, s_avg: 7
+
+ client active flows 1663,
+port_id: 0, s_max: 10, s_avg: 7
+port_id: 1, s_max: 11, s_avg: 7
+port_id: 2, s_max: 11, s_avg: 7
+port_id: 3, s_max: 10, s_avg: 7
+
+ client active flows 1661,
+port_id: 0, s_max: 11, s_avg: 7
+port_id: 1, s_max: 10, s_avg: 7
+port_id: 2, s_max: 11, s_avg: 7
+port_id: 3, s_max: 11, s_avg: 7
+
+ client active flows 1661,
+port_id: 0, s_max: 9, s_avg: 7
+port_id: 1, s_max: 10, s_avg: 7
+port_id: 2, s_max: 10, s_avg: 7
+port_id: 3, s_max: 11, s_avg: 7
+
+ client active flows 1668,
+port_id: 0, s_max: 8, s_avg: 7
+port_id: 1, s_max: 9, s_avg: 7
+port_id: 2, s_max: 9, s_avg: 7
+port_id: 3, s_max: 9, s_avg: 7
+
+ client active flows 1662,
+port_id: 0, s_max: 9, s_avg: 7
+port_id: 1, s_max: 11, s_avg: 7
+port_id: 2, s_max: 10, s_avg: 7
+port_id: 3, s_max: 10, s_avg: 7
+
+ client active flows 1664,
+port_id: 0, s_max: 8, s_avg: 7
+port_id: 1, s_max: 10, s_avg: 7
+port_id: 2, s_max: 9, s_avg: 7
+port_id: 3, s_max: 10, s_avg: 7
+
+ client active flows 1665,
+port_id: 0, s_max: 11, s_avg: 7
+port_id: 1, s_max: 11, s_avg: 7
+port_id: 2, s_max: 10, s_avg: 7
+port_id: 3, s_max: 10, s_avg: 7
+
+ client active flows 1662,
+port_id: 0, s_max: 11, s_avg: 7
+port_id: 1, s_max: 11, s_avg: 7
+port_id: 2, s_max: 17, s_avg: 7
+port_id: 3, s_max: 61, s_avg: 7
+
+]]></system-out></testcase><testcase classname="astf_tests.astf_profile_test.ASTFProfile_Test" name="test_astf_prof_latency_dynamic_profile" time="21.639"><system-out><![CDATA[starting profile http_simple.py 
+dynamic profile 0 
+ client active flows 0,
+port_id: 0, s_max: 0, s_avg: 0
+port_id: 1, s_max: 0, s_avg: 0
+port_id: 2, s_max: 0, s_avg: 0
+port_id: 3, s_max: 0, s_avg: 0
+
+ client active flows 1663,
+port_id: 0, s_max: 0, s_avg: 9
+port_id: 1, s_max: 0, s_avg: 176
+port_id: 2, s_max: 0, s_avg: 9
+port_id: 3, s_max: 0, s_avg: 183
+
+ client active flows 1667,
+port_id: 0, s_max: 10, s_avg: 8
+port_id: 1, s_max: 11, s_avg: 49
+port_id: 2, s_max: 12, s_avg: 8
+port_id: 3, s_max: 11, s_avg: 51
+
+ client active flows 1665,
+port_id: 0, s_max: 12, s_avg: 7
+port_id: 1, s_max: 13, s_avg: 18
+port_id: 2, s_max: 12, s_avg: 7
+port_id: 3, s_max: 12, s_avg: 18
+
+starting profile http_simple.py 
+dynamic profile 1 
+ client active flows 0,
+port_id: 0, s_max: 0, s_avg: 0
+port_id: 1, s_max: 0, s_avg: 0
+port_id: 2, s_max: 0, s_avg: 0
+port_id: 3, s_max: 0, s_avg: 0
+
+ client active flows 1664,
+port_id: 0, s_max: 0, s_avg: 7
+port_id: 1, s_max: 0, s_avg: 16
+port_id: 2, s_max: 0, s_avg: 7
+port_id: 3, s_max: 0, s_avg: 18
+
+ client active flows 1664,
+port_id: 0, s_max: 12, s_avg: 7
+port_id: 1, s_max: 13, s_avg: 10
+port_id: 2, s_max: 11, s_avg: 7
+port_id: 3, s_max: 9, s_avg: 10
+
+ client active flows 1663,
+port_id: 0, s_max: 10, s_avg: 7
+port_id: 1, s_max: 11, s_avg: 8
+port_id: 2, s_max: 11, s_avg: 7
+port_id: 3, s_max: 11, s_avg: 8
+
+starting profile http_simple.py 
+dynamic profile 2 
+ client active flows 0,
+port_id: 0, s_max: 0, s_avg: 0
+port_id: 1, s_max: 0, s_avg: 0
+port_id: 2, s_max: 0, s_avg: 0
+port_id: 3, s_max: 0, s_avg: 0
+
+ client active flows 1665,
+port_id: 0, s_max: 0, s_avg: 0
+port_id: 1, s_max: 0, s_avg: 0
+port_id: 2, s_max: 0, s_avg: 0
+port_id: 3, s_max: 0, s_avg: 0
+
+ client active flows 1664,
+port_id: 0, s_max: 0, s_avg: 8
+port_id: 1, s_max: 11, s_avg: 139
+port_id: 2, s_max: 0, s_avg: 8
+port_id: 3, s_max: 10, s_avg: 142
+
+ client active flows 1664,
+port_id: 0, s_max: 10, s_avg: 7
+port_id: 1, s_max: 10, s_avg: 40
+port_id: 2, s_max: 11, s_avg: 8
+port_id: 3, s_max: 10, s_avg: 41
+
+starting profile http_simple.py 
+dynamic profile 3 
+ client active flows 0,
+port_id: 0, s_max: 0, s_avg: 0
+port_id: 1, s_max: 0, s_avg: 0
+port_id: 2, s_max: 0, s_avg: 0
+port_id: 3, s_max: 0, s_avg: 0
+
+ client active flows 1664,
+port_id: 0, s_max: 0, s_avg: 0
+port_id: 1, s_max: 0, s_avg: 0
+port_id: 2, s_max: 0, s_avg: 0
+port_id: 3, s_max: 0, s_avg: 0
+
+ client active flows 1664,
+port_id: 0, s_max: 0, s_avg: 8
+port_id: 1, s_max: 9, s_avg: 76
+port_id: 2, s_max: 0, s_avg: 8
+port_id: 3, s_max: 9, s_avg: 78
+
+ client active flows 1666,
+port_id: 0, s_max: 11, s_avg: 7
+port_id: 1, s_max: 9, s_avg: 24
+port_id: 2, s_max: 9, s_avg: 7
+port_id: 3, s_max: 10, s_avg: 25
+
+starting profile http_simple.py 
+dynamic profile 4 
+ client active flows 0,
+port_id: 0, s_max: 0, s_avg: 0
+port_id: 1, s_max: 0, s_avg: 0
+port_id: 2, s_max: 0, s_avg: 0
+port_id: 3, s_max: 0, s_avg: 0
+
+ client active flows 1663,
+port_id: 0, s_max: 0, s_avg: 8
+port_id: 1, s_max: 0, s_avg: 44
+port_id: 2, s_max: 0, s_avg: 8
+port_id: 3, s_max: 0, s_avg: 48
+
+ client active flows 1664,
+port_id: 0, s_max: 10, s_avg: 8
+port_id: 1, s_max: 10, s_avg: 17
+port_id: 2, s_max: 11, s_avg: 8
+port_id: 3, s_max: 11, s_avg: 18
+
+ client active flows 1662,
+port_id: 0, s_max: 9, s_avg: 7
+port_id: 1, s_max: 9, s_avg: 10
+port_id: 2, s_max: 10, s_avg: 7
+port_id: 3, s_max: 10, s_avg: 10
+
+]]></system-out></testcase><testcase classname="astf_tests.astf_profile_test.ASTFProfile_Test" name="test_astf_prof_latency_stop" time="11.642"><system-out><![CDATA[starting profile http_simple.py 
+ client active flows 0,
+port_id: 0, s_max: 0, s_avg: 0
+port_id: 1, s_max: 0, s_avg: 0
+port_id: 2, s_max: 0, s_avg: 0
+port_id: 3, s_max: 0, s_avg: 0
+
+ client active flows 1664,
+port_id: 0, s_max: 0, s_avg: 0
+port_id: 1, s_max: 0, s_avg: 0
+port_id: 2, s_max: 0, s_avg: 0
+port_id: 3, s_max: 0, s_avg: 0
+
+ client active flows 1665,
+port_id: 0, s_max: 0, s_avg: 8
+port_id: 1, s_max: 10, s_avg: 167
+port_id: 2, s_max: 0, s_avg: 8
+port_id: 3, s_max: 12, s_avg: 171
+
+ client active flows 1662,
+port_id: 0, s_max: 9, s_avg: 8
+port_id: 1, s_max: 11, s_avg: 47
+port_id: 2, s_max: 10, s_avg: 8
+port_id: 3, s_max: 9, s_avg: 48
+
+ client active flows 1661,
+port_id: 0, s_max: 11, s_avg: 7
+port_id: 1, s_max: 12, s_avg: 17
+port_id: 2, s_max: 11, s_avg: 7
+port_id: 3, s_max: 11, s_avg: 18
+
+ client active flows 1665,
+port_id: 0, s_max: 10, s_avg: 7
+port_id: 1, s_max: 10, s_avg: 10
+port_id: 2, s_max: 11, s_avg: 7
+port_id: 3, s_max: 10, s_avg: 10
+
+ client active flows 1665,
+port_id: 0, s_max: 10, s_avg: 7
+port_id: 1, s_max: 11, s_avg: 8
+port_id: 2, s_max: 11, s_avg: 7
+port_id: 3, s_max: 11, s_avg: 8
+
+ client active flows 1665,
+port_id: 0, s_max: 10, s_avg: 7
+port_id: 1, s_max: 10, s_avg: 8
+port_id: 2, s_max: 12, s_avg: 7
+port_id: 3, s_max: 12, s_avg: 8
+
+ client active flows 1665,
+port_id: 0, s_max: 11, s_avg: 7
+port_id: 1, s_max: 10, s_avg: 7
+port_id: 2, s_max: 11, s_avg: 7
+port_id: 3, s_max: 11, s_avg: 7
+
+ client active flows 1664,
+port_id: 0, s_max: 9, s_avg: 7
+port_id: 1, s_max: 10, s_avg: 7
+port_id: 2, s_max: 10, s_avg: 7
+port_id: 3, s_max: 12, s_avg: 7
+
+ client active flows 1666,
+port_id: 0, s_max: 9, s_avg: 7
+port_id: 1, s_max: 9, s_avg: 7
+port_id: 2, s_max: 9, s_avg: 7
+port_id: 3, s_max: 10, s_avg: 7
+
+]]></system-out></testcase><testcase classname="astf_tests.astf_profile_test.ASTFProfile_Test" name="test_astf_prof_latency_stop_dynamic_profile" time="12.008"><system-out><![CDATA[starting profile http_simple.py 
+dynamic profile 0 
+ client active flows 0,
+port_id: 0, s_max: 0, s_avg: 0
+port_id: 1, s_max: 0, s_avg: 0
+port_id: 2, s_max: 0, s_avg: 0
+port_id: 3, s_max: 0, s_avg: 0
+
+ client active flows 1663,
+port_id: 0, s_max: 0, s_avg: 11
+port_id: 1, s_max: 0, s_avg: 59
+port_id: 2, s_max: 0, s_avg: 12
+port_id: 3, s_max: 0, s_avg: 64
+
+starting profile http_simple.py 
+dynamic profile 1 
+ client active flows 0,
+port_id: 0, s_max: 0, s_avg: 0
+port_id: 1, s_max: 0, s_avg: 0
+port_id: 2, s_max: 0, s_avg: 0
+port_id: 3, s_max: 0, s_avg: 0
+
+ client active flows 1665,
+port_id: 0, s_max: 0, s_avg: 13
+port_id: 1, s_max: 0, s_avg: 377
+port_id: 2, s_max: 0, s_avg: 13
+port_id: 3, s_max: 0, s_avg: 386
+
+starting profile http_simple.py 
+dynamic profile 2 
+ client active flows 0,
+port_id: 0, s_max: 0, s_avg: 0
+port_id: 1, s_max: 0, s_avg: 0
+port_id: 2, s_max: 0, s_avg: 0
+port_id: 3, s_max: 0, s_avg: 0
+
+ client active flows 1661,
+port_id: 0, s_max: 0, s_avg: 9
+port_id: 1, s_max: 0, s_avg: 207
+port_id: 2, s_max: 0, s_avg: 9
+port_id: 3, s_max: 0, s_avg: 215
+
+starting profile http_simple.py 
+dynamic profile 3 
+ client active flows 0,
+port_id: 0, s_max: 0, s_avg: 0
+port_id: 1, s_max: 0, s_avg: 0
+port_id: 2, s_max: 0, s_avg: 0
+port_id: 3, s_max: 0, s_avg: 0
+
+ client active flows 1666,
+port_id: 0, s_max: 0, s_avg: 8
+port_id: 1, s_max: 0, s_avg: 19
+port_id: 2, s_max: 0, s_avg: 7
+port_id: 3, s_max: 0, s_avg: 21
+
+starting profile http_simple.py 
+dynamic profile 4 
+ client active flows 0,
+port_id: 0, s_max: 0, s_avg: 0
+port_id: 1, s_max: 0, s_avg: 0
+port_id: 2, s_max: 0, s_avg: 0
+port_id: 3, s_max: 0, s_avg: 0
+
+ client active flows 1664,
+port_id: 0, s_max: 0, s_avg: 0
+port_id: 1, s_max: 0, s_avg: 0
+port_id: 2, s_max: 0, s_avg: 0
+port_id: 3, s_max: 0, s_avg: 0
+
+]]></system-out></testcase><testcase classname="astf_tests.astf_profile_test.ASTFProfile_Test" name="test_astf_prof_only_latency" time="11.464"><system-out><![CDATA[ client active flows 0,
+
+ client active flows 0,
+
+ client active flows 0,
+
+ client active flows 0,
+
+ client active flows 0,
+
+ client active flows 0,
+
+ client active flows 0,
+
+ client active flows 0,
+
+ client active flows 0,
+
+ client active flows 0,
+
+ client active flows 0,
+
+]]></system-out></testcase><testcase classname="astf_tests.astf_profile_test.ASTFProfile_Test" name="test_astf_prof_profiles" time="50.684"><error type="trex.common.trex_exceptions.TRexError" message="Could not load profile: &#10;Python Traceback follows:&#10;&#10;  File &quot;/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/astf/trex_astf_profile.py&quot;, line 1941, in load_py&#10;    t = cls.get_module_tunables(module)&#10;  File &quot;/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/astf/trex_astf_profile.py&quot;, line 1898, in get_module_tunables&#10;    func = module.register().get_profile&#10;AttributeError: module 'udp_topo1' has no attribute 'register'&#10;"><![CDATA[Traceback (most recent call last):
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/astf/trex_astf_profile.py", line 21, in pretty_exceptions_inner
+    return func(*args, **kwargs)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/astf/trex_astf_profile.py", line 1941, in load_py
+    t = cls.get_module_tunables(module)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/astf/trex_astf_profile.py", line 1898, in get_module_tunables
+    func = module.register().get_profile
+AttributeError: module 'udp_topo1' has no attribute 'register'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/astf/trex_astf_client.py", line 559, in load_profile
+    profile = ASTFProfile.load(profile, **tunables)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/astf/trex_astf_profile.py", line 1993, in load
+    profile = cls.load_py(filename, **kwargs)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/astf/trex_astf_profile.py", line 27, in pretty_exceptions_inner
+    raise TRexError(summary)
+trex.common.trex_exceptions.TRexError: 
+Python Traceback follows:
+
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/astf/trex_astf_profile.py", line 1941, in load_py
+    t = cls.get_module_tunables(module)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/astf/trex_astf_profile.py", line 1898, in get_module_tunables
+    func = module.register().get_profile
+AttributeError: module 'udp_topo1' has no attribute 'register'
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/unittest/case.py", line 60, in testPartExecutor
+    yield
+  File "/usr/lib64/python3.6/unittest/case.py", line 622, in run
+    testMethod()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/astf_tests/astf_profile_test.py", line 410, in test_astf_prof_profiles
+    self.run_astf_profile(fname, m=1, is_udp=False, is_tcp=False, ipv6 =False, check_counters=False, nc = True)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/astf_tests/astf_profile_test.py", line 249, in wrapped
+    func(self, *args, **kwargs)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/astf_tests/astf_profile_test.py", line 274, in run_astf_profile
+    c.load_profile(self.get_profile_by_name(profile_name))
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 51, in wrap2
+    ret = f(*args, **kwargs)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/astf/trex_astf_client.py", line 562, in load_profile
+    raise TRexError('Could not load profile: %s' % e)
+trex.common.trex_exceptions.TRexError: Could not load profile: 
+Python Traceback follows:
+
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/astf/trex_astf_profile.py", line 1941, in load_py
+    t = cls.get_module_tunables(module)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/astf/trex_astf_profile.py", line 1898, in get_module_tunables
+    func = module.register().get_profile
+AttributeError: module 'udp_topo1' has no attribute 'register'
+
+]]></error><system-out><![CDATA[ running http_advanced.py
+starting profile http_advanced.py for duration 1
+ skipping http_by_l7_percent.py
+ running http_eflow.py
+starting profile http_eflow.py for duration 1
+ running http_eflow2.py
+starting profile http_eflow2.py for duration 1
+ skipping http_eflow3.py
+ running http_https.py
+starting profile http_https.py for duration 1
+ running http_manual_cli_tunable.py
+starting profile http_manual_cli_tunable.py for duration 1
+ running http_manual_commands.py
+starting profile http_manual_commands.py for duration 1
+ running http_manual_commands_connect_rst.py
+starting profile http_manual_commands_connect_rst.py for duration 1
+ running http_manual_commands_delay.py
+starting profile http_manual_commands_delay.py for duration 1
+ running http_manual_commands_delay_client.py
+starting profile http_manual_commands_delay_client.py for duration 1
+ running http_manual_commands_delay_client2.py
+starting profile http_manual_commands_delay_client2.py for duration 1
+ running http_manual_commands_delay_rand.py
+starting profile http_manual_commands_delay_rand.py for duration 1
+ running http_manual_commands_fin_ack.py
+starting profile http_manual_commands_fin_ack.py for duration 1
+ running http_manual_commands_loop.py
+starting profile http_manual_commands_loop.py for duration 1
+ running http_manual_commands_many_flows.py
+starting profile http_manual_commands_many_flows.py for duration 1
+ running http_manual_commands_pipeline.py
+starting profile http_manual_commands_pipeline.py for duration 1
+ running http_manual_commands_pipeline2.py
+starting profile http_manual_commands_pipeline2.py for duration 1
+ running http_manual_commands_pipeline3.py
+starting profile http_manual_commands_pipeline3.py for duration 1
+ running http_manual_commands_pipeline4.py
+starting profile http_manual_commands_pipeline4.py for duration 1
+ running http_manual_commands_rst.py
+starting profile http_manual_commands_rst.py for duration 1
+ running http_manual_tunable2.py
+starting profile http_manual_tunable2.py for duration 1
+ running http_manual_tunables.py
+starting profile http_manual_tunables.py for duration 1
+ running http_manual_tunables3.py
+starting profile http_manual_tunables3.py for duration 1
+ skipping http_manual_tunables4.py
+ running http_manual_tunables5.py
+starting profile http_manual_tunables5.py for duration 1
+ running http_simple.py
+starting profile http_simple.py for duration 1
+ running http_simple2.py
+starting profile http_simple2.py for duration 1
+ skipping http_simple_cc.py
+ skipping http_simple_cc1.py
+ running http_simple_different_ip_range.py
+starting profile http_simple_different_ip_range.py for duration 1
+ running http_simple_limit.py
+starting profile http_simple_limit.py for duration 1
+ skipping http_simple_rss.py
+ skipping sfr_full.py
+ running udp_pcap.py
+starting profile udp_pcap.py for duration 1
+ skipping http_simple_src_mac.py
+ skipping nginx_wget.py
+ running param_ipv6.py
+starting profile param_ipv6.py for duration 1
+ running param_ipv6_rss.py
+starting profile param_ipv6_rss.py for duration 1
+ running param_mss_err.py
+starting profile param_mss_err.py for duration 1
+ skipping param_mss_err2.py
+ running param_mss_initwnd.py
+starting profile param_mss_initwnd.py for duration 1
+ running udp_topo1.py
+starting profile udp_topo1.py for duration 1
+]]></system-out></testcase><testcase classname="astf_tests.astf_profile_test.ASTFProfile_Test" name="test_astf_prof_profiles_dynamic_profile" time="49.824"><error type="trex.common.trex_exceptions.TRexError" message="Could not load profile: &#10;Python Traceback follows:&#10;&#10;  File &quot;/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/astf/trex_astf_profile.py&quot;, line 1941, in load_py&#10;    t = cls.get_module_tunables(module)&#10;  File &quot;/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/astf/trex_astf_profile.py&quot;, line 1898, in get_module_tunables&#10;    func = module.register().get_profile&#10;AttributeError: module 'udp_topo1' has no attribute 'register'&#10;"><![CDATA[Traceback (most recent call last):
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/astf/trex_astf_profile.py", line 21, in pretty_exceptions_inner
+    return func(*args, **kwargs)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/astf/trex_astf_profile.py", line 1941, in load_py
+    t = cls.get_module_tunables(module)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/astf/trex_astf_profile.py", line 1898, in get_module_tunables
+    func = module.register().get_profile
+AttributeError: module 'udp_topo1' has no attribute 'register'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/astf/trex_astf_client.py", line 559, in load_profile
+    profile = ASTFProfile.load(profile, **tunables)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/astf/trex_astf_profile.py", line 1993, in load
+    profile = cls.load_py(filename, **kwargs)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/astf/trex_astf_profile.py", line 27, in pretty_exceptions_inner
+    raise TRexError(summary)
+trex.common.trex_exceptions.TRexError: 
+Python Traceback follows:
+
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/astf/trex_astf_profile.py", line 1941, in load_py
+    t = cls.get_module_tunables(module)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/astf/trex_astf_profile.py", line 1898, in get_module_tunables
+    func = module.register().get_profile
+AttributeError: module 'udp_topo1' has no attribute 'register'
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/unittest/case.py", line 60, in testPartExecutor
+    yield
+  File "/usr/lib64/python3.6/unittest/case.py", line 622, in run
+    testMethod()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/astf_tests/astf_profile_test.py", line 452, in test_astf_prof_profiles_dynamic_profile
+    self.run_astf_profile_dynamic_profile(fname, m=1, is_udp=False, is_tcp=False, ipv6 =False, check_counters=False, nc = True, pid_input=str(random_profile))
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/astf_tests/astf_profile_test.py", line 249, in wrapped
+    func(self, *args, **kwargs)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/astf_tests/astf_profile_test.py", line 304, in run_astf_profile_dynamic_profile
+    c.load_profile(self.get_profile_by_name(profile_name),pid_input=pid_input)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 51, in wrap2
+    ret = f(*args, **kwargs)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/astf/trex_astf_client.py", line 562, in load_profile
+    raise TRexError('Could not load profile: %s' % e)
+trex.common.trex_exceptions.TRexError: Could not load profile: 
+Python Traceback follows:
+
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/astf/trex_astf_profile.py", line 1941, in load_py
+    t = cls.get_module_tunables(module)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/astf/trex_astf_profile.py", line 1898, in get_module_tunables
+    func = module.register().get_profile
+AttributeError: module 'udp_topo1' has no attribute 'register'
+
+]]></error><system-out><![CDATA[ running http_advanced.py
+starting profile http_advanced.py for duration 1
+dynamic profile sjmpzsawfj 
+ skipping http_by_l7_percent.py
+ running http_eflow.py
+starting profile http_eflow.py for duration 1
+dynamic profile gcadwnwmga 
+ running http_eflow2.py
+starting profile http_eflow2.py for duration 1
+dynamic profile zdniejfnkm 
+ skipping http_eflow3.py
+ running http_https.py
+starting profile http_https.py for duration 1
+dynamic profile cnemzigjmk 
+ running http_manual_cli_tunable.py
+starting profile http_manual_cli_tunable.py for duration 1
+dynamic profile rmtlvvisnf 
+ running http_manual_commands.py
+starting profile http_manual_commands.py for duration 1
+dynamic profile varzyqcmhu 
+ running http_manual_commands_connect_rst.py
+starting profile http_manual_commands_connect_rst.py for duration 1
+dynamic profile cbivosybrj 
+ running http_manual_commands_delay.py
+starting profile http_manual_commands_delay.py for duration 1
+dynamic profile boaibdopra 
+ running http_manual_commands_delay_client.py
+starting profile http_manual_commands_delay_client.py for duration 1
+dynamic profile ssonqaxusr 
+ running http_manual_commands_delay_client2.py
+starting profile http_manual_commands_delay_client2.py for duration 1
+dynamic profile wwxjecgjbt 
+ running http_manual_commands_delay_rand.py
+starting profile http_manual_commands_delay_rand.py for duration 1
+dynamic profile rhcuevsnqe 
+ running http_manual_commands_fin_ack.py
+starting profile http_manual_commands_fin_ack.py for duration 1
+dynamic profile zedzllkocm 
+ running http_manual_commands_loop.py
+starting profile http_manual_commands_loop.py for duration 1
+dynamic profile eglxbcfbvf 
+ running http_manual_commands_many_flows.py
+starting profile http_manual_commands_many_flows.py for duration 1
+dynamic profile febhfhparu 
+ running http_manual_commands_pipeline.py
+starting profile http_manual_commands_pipeline.py for duration 1
+dynamic profile ncwtmxqcow 
+ running http_manual_commands_pipeline2.py
+starting profile http_manual_commands_pipeline2.py for duration 1
+dynamic profile vmrbijncok 
+ running http_manual_commands_pipeline3.py
+starting profile http_manual_commands_pipeline3.py for duration 1
+dynamic profile snujppsoln 
+ running http_manual_commands_pipeline4.py
+starting profile http_manual_commands_pipeline4.py for duration 1
+dynamic profile rcavhfdmtl 
+ running http_manual_commands_rst.py
+starting profile http_manual_commands_rst.py for duration 1
+dynamic profile jmorxcioho 
+ running http_manual_tunable2.py
+starting profile http_manual_tunable2.py for duration 1
+dynamic profile bgukxwduot 
+ running http_manual_tunables.py
+starting profile http_manual_tunables.py for duration 1
+dynamic profile hdrcqsrzyn 
+ running http_manual_tunables3.py
+starting profile http_manual_tunables3.py for duration 1
+dynamic profile ahpsvfryqp 
+ skipping http_manual_tunables4.py
+ running http_manual_tunables5.py
+starting profile http_manual_tunables5.py for duration 1
+dynamic profile tmbczfthgw 
+ running http_simple.py
+starting profile http_simple.py for duration 1
+dynamic profile ndjhfnrelh 
+ running http_simple2.py
+starting profile http_simple2.py for duration 1
+dynamic profile suvlshcnpn 
+ skipping http_simple_cc.py
+ skipping http_simple_cc1.py
+ running http_simple_different_ip_range.py
+starting profile http_simple_different_ip_range.py for duration 1
+dynamic profile oulvnripot 
+ running http_simple_limit.py
+starting profile http_simple_limit.py for duration 1
+dynamic profile xtvpdfhypk 
+ skipping http_simple_rss.py
+ skipping sfr_full.py
+ running udp_pcap.py
+starting profile udp_pcap.py for duration 1
+dynamic profile kibjvulrxw 
+ skipping http_simple_src_mac.py
+ skipping nginx_wget.py
+ running param_ipv6.py
+starting profile param_ipv6.py for duration 1
+dynamic profile nzrbqkqfro 
+ running param_ipv6_rss.py
+starting profile param_ipv6_rss.py for duration 1
+dynamic profile nvquyzsrey 
+ running param_mss_err.py
+starting profile param_mss_err.py for duration 1
+dynamic profile jwyzuwewrb 
+ skipping param_mss_err2.py
+ running param_mss_initwnd.py
+starting profile param_mss_initwnd.py for duration 1
+dynamic profile cgikosevzo 
+ running udp_topo1.py
+starting profile udp_topo1.py for duration 1
+dynamic profile qqitazpuld 
+]]></system-out></testcase><testcase classname="astf_tests.astf_profile_test.ASTFProfile_Test" name="test_astf_prof_sfr" time="177.581"><system-out><![CDATA[starting profile sfr.py for duration 56
+starting profile sfr_full.py for duration 55
+]]></system-out></testcase><testcase classname="astf_tests.astf_profile_test.ASTFProfile_Test" name="test_astf_prof_simple" time="132.594"><error type="trex.common.trex_exceptions.TRexError" message="'wait_on_traffic' - interrupted by a keyboard signal (probably ctrl + c)"><![CDATA[Traceback (most recent call last):
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 51, in wrap2
+    ret = f(*args, **kwargs)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_client.py", line 2097, in wait_on_traffic
+    time.sleep(0.01)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/unittest/case.py", line 60, in testPartExecutor
+    yield
+  File "/usr/lib64/python3.6/unittest/case.py", line 622, in run
+    testMethod()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/astf_tests/astf_profile_test.py", line 352, in test_astf_prof_simple
+    self.run_astf_profile(o['name'],mult,o['is_udp'],o['is_tcp'],ipv6=True)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/astf_tests/astf_profile_test.py", line 249, in wrapped
+    func(self, *args, **kwargs)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/astf_tests/astf_profile_test.py", line 277, in run_astf_profile
+    c.wait_on_traffic()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 51, in wrap2
+    ret = f(*args, **kwargs)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/astf/trex_astf_client.py", line 833, in wait_on_traffic
+    TRexClient.wait_on_traffic(self, ports, timeout)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 58, in wrap2
+    raise TRexError("'{0}' - interrupted by a keyboard signal (probably ctrl + c)".format(func_name))
+trex.common.trex_exceptions.TRexError: 'wait_on_traffic' - interrupted by a keyboard signal (probably ctrl + c)
+]]></error><system-out><![CDATA[starting profile http_simple.py for duration 35
+starting profile udp_pcap.py for duration 29
+starting profile http_simple.py for duration 43
+starting profile udp_pcap.py for duration 36
+]]></system-out></testcase></testsuite>

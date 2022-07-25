@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite name="nosetests" tests="33" errors="0" failures="0" skip="15"><testcase classname="astf_tests.astf_general_test.ASTFBasic_Test" name="test_connectivity" time="1.474"><system-out><![CDATA[
+Starting TRex... done. (0s)
+Started TRex
+Connecting.
+Connected
+Mapping ports.
+Got ports mapping: {'map': {0: 1, 1: 0}, 'bi': [(0, 1)], 'unknown': []}
+]]></system-out></testcase><testcase classname="astf_tests.astf_examples_test.ASTFExamples_Test" name="test_astf_prof_examples" time="13.602"><system-out><![CDATA[Running command: sh -c 'cd ../trex_control_plane/interactive; /bin/python3 -m trex.examples.astf.astf_example -s 10.56.216.149'
+Stdout:
+Injecting with multiplier of '100' for 10 seconds
+{0: {'ibytes': 93973152,
+     'ierrors': 0,
+     'ipackets': 69400,
+     'obytes': 1685032,
+     'oerrors': 0,
+     'opackets': 13880,
+     'rx_bps': 69167680.0,
+     'rx_bps_L1': 70190164.0625,
+     'rx_pps': 6390.525390625,
+     'rx_util': 0.701901640625,
+     'tx_bps': 1229698.125,
+     'tx_bps_L1': 1435105.0390625,
+     'tx_pps': 1283.793212890625,
+     'tx_util': 0.014351050390625},
+ 1: {'ibytes': 1685032,
+     'ierrors': 0,
+     'ipackets': 13880,
+     'obytes': 93973152,
+     'oerrors': 0,
+     'opackets': 69400,
+     'rx_bps': 1229698.125,
+     'rx_bps_L1': 1435105.0390625,
+     'rx_pps': 1283.793212890625,
+     'rx_util': 0.014351050390625,
+     'tx_bps': 69167680.0,
+     'tx_bps_L1': 70190164.0625,
+     'tx_pps': 6390.525390625,
+     'tx_util': 0.701901640625},
+ 'global': {'active_flows': 0.0,
+            'active_sockets': 0,
+            'bw_per_core': 168.7631378173828,
+            'cpu_util': 0.08342742919921875,
+            'cpu_util_raw': 0.0,
+            'open_flows': 2776.0,
+            'platform_factor': 1.0,
+            'queue_full': 0,
+            'rx_bps': 70397376.0,
+            'rx_core_pps': 0.0,
+            'rx_cpu_util': 0.0,
+            'rx_drop_bps': 0.0,
+            'rx_pps': 7674.318359375,
+            'socket_util': 0.0,
+            'total_alloc_error': 0,
+            'total_clients': 0,
+            'total_servers': 0,
+            'tx_bps': 70397376.0,
+            'tx_cps': 248.0978240966797,
+            'tx_expected_bps': 0.0,
+            'tx_expected_cps': 0.0,
+            'tx_expected_pps': 0.0,
+            'tx_pps': 7674.318359375},
+ 'latency': {},
+ 'total': {'ibytes': 95658184,
+           'ierrors': 0,
+           'ipackets': 83280,
+           'obytes': 95658184,
+           'oerrors': 0,
+           'opackets': 83280,
+           'rx_bps': 70397378.125,
+           'rx_bps_L1': 71625269.1015625,
+           'rx_pps': 7674.318603515625,
+           'rx_util': 0.716252691015625,
+           'tx_bps': 70397378.125,
+           'tx_bps_L1': 71625269.1015625,
+           'tx_pps': 7674.318603515625,
+           'tx_util': 0.716252691015625},
+ 'traffic': {'client': {'m_active_flows': 0,
+                        'm_avg_size': 1040.6323759595348,
+                        'm_est_flows': 0,
+                        'm_rx_bw_l7_r': 65569838.96658416,
+                        'm_rx_pps_r': 6652.7919921875,
+                        'm_traffic_duration': 10.59364694952978,
+                        'm_tx_bw_l7_r': 495167.77908415836,
+                        'm_tx_bw_l7_total_r': 494838.5782797029,
+                        'm_tx_pps_r': 1282.8883056640625,
+                        'm_tx_ratio': 100.06652690774432,
+                        'tcps_closed': 2776,
+                        'tcps_connattempt': 2776,
+                        'tcps_connects': 2776,
+                        'tcps_delack': 2776,
+                        'tcps_preddat': 61072,
+                        'tcps_rcvackbyte': 691224,
+                        'tcps_rcvackbyte_of': 2776,
+                        'tcps_rcvackpack': 5552,
+                        'tcps_rcvbyte': 89092944,
+                        'tcps_rcvpack': 66624,
+                        'tcps_rttupdated': 8328,
+                        'tcps_segstimed': 8328,
+                        'tcps_sndacks': 8328,
+                        'tcps_sndbyte': 691224,
+                        'tcps_sndbyte_ok': 691224,
+                        'tcps_sndctrl': 2776,
+                        'tcps_sndpack': 2776,
+                        'tcps_sndtotal': 13880},
+             'server': {'m_active_flows': 0,
+                        'm_avg_size': 1068.530783925624,
+                        'm_est_flows': 0,
+                        'm_rx_bw_l7_r': 494840.50433168316,
+                        'm_rx_pps_r': 1546.226806640625,
+                        'm_traffic_duration': 10.593924897178683,
+                        'm_tx_bw_l7_r': 67326576.01856437,
+                        'm_tx_bw_l7_total_r': 65542541.53589108,
+                        'm_tx_pps_r': 6387.72998046875,
+                        'm_tx_ratio': 102.72194889131109,
+                        'tcps_accepts': 2776,
+                        'tcps_closed': 2776,
+                        'tcps_connects': 2776,
+                        'tcps_rcvackbyte': 89092944,
+                        'tcps_rcvackbyte_of': 5552,
+                        'tcps_rcvackpack': 11104,
+                        'tcps_rcvbyte': 691224,
+                        'tcps_rcvpack': 5552,
+                        'tcps_rttupdated': 11104,
+                        'tcps_segstimed': 11104,
+                        'tcps_sndacks': 5552,
+                        'tcps_sndbyte': 89092944,
+                        'tcps_sndbyte_ok': 89092944,
+                        'tcps_sndpack': 63848,
+                        'tcps_sndtotal': 69400}}}
+
+Test has passed :-)
+
+
+]]></system-out></testcase><testcase classname="astf_tests.astf_profile_test.ASTFProfile_Test" name="test_astf_prof_latency" time="0.534"><skipped type="unittest.case.SkipTest" message="not accurate latency"><![CDATA[Exception: not accurate latency
+]]></skipped><system-out><![CDATA[Skip: not accurate latency
+]]></system-out></testcase><testcase classname="astf_tests.astf_profile_test.ASTFProfile_Test" name="test_astf_prof_latency_dynamic_profile" time="0.448"><skipped type="unittest.case.SkipTest" message="not accurate latency"><![CDATA[Exception: not accurate latency
+]]></skipped><system-out><![CDATA[Skip: not accurate latency
+]]></system-out></testcase><testcase classname="astf_tests.astf_profile_test.ASTFProfile_Test" name="test_astf_prof_latency_stop" time="0.218"><skipped type="unittest.case.SkipTest" message="not accurate latency"><![CDATA[Exception: not accurate latency
+]]></skipped><system-out><![CDATA[Skip: not accurate latency
+]]></system-out></testcase><testcase classname="astf_tests.astf_profile_test.ASTFProfile_Test" name="test_astf_prof_latency_stop_dynamic_profile" time="0.208"><skipped type="unittest.case.SkipTest" message="not accurate latency"><![CDATA[Exception: not accurate latency
+]]></skipped><system-out><![CDATA[Skip: not accurate latency
+]]></system-out></testcase><testcase classname="astf_tests.astf_profile_test.ASTFProfile_Test" name="test_astf_prof_only_latency" time="0.436"><skipped type="unittest.case.SkipTest" message="not accurate latency"><![CDATA[Exception: not accurate latency
+]]></skipped><system-out><![CDATA[Skip: not accurate latency
+]]></system-out></testcase><testcase classname="astf_tests.astf_profile_test.ASTFProfile_Test" name="test_astf_prof_profiles" time="0.200"><skipped type="unittest.case.SkipTest" message="not enough memory for this test"><![CDATA[Exception: not enough memory for this test
+]]></skipped><system-out><![CDATA[Skip: not enough memory for this test
+]]></system-out></testcase><testcase classname="astf_tests.astf_profile_test.ASTFProfile_Test" name="test_astf_prof_profiles_dynamic_profile" time="0.298"><skipped type="unittest.case.SkipTest" message="not enough memory for this test"><![CDATA[Exception: not enough memory for this test
+]]></skipped><system-out><![CDATA[Skip: not enough memory for this test
+]]></system-out></testcase><testcase classname="astf_tests.astf_profile_test.ASTFProfile_Test" name="test_astf_prof_sfr" time="160.079"><system-out><![CDATA[starting profile sfr.py for duration 47
+starting profile sfr_full.py for duration 50
+]]></system-out></testcase><testcase classname="astf_tests.astf_profile_test.ASTFProfile_Test" name="test_astf_prof_simple" time="168.812"><system-out><![CDATA[starting profile http_simple.py for duration 55
+starting profile udp_pcap.py for duration 33
+starting profile http_simple.py for duration 56
+starting profile udp_pcap.py for duration 21
+]]></system-out></testcase><testcase classname="astf_tests.astf_profile_test.ASTFProfile_Test" name="test_random_add_remove_dynamic_profile" time="0.249"><skipped type="unittest.case.SkipTest" message="not enough memory for this test"><![CDATA[Exception: not enough memory for this test
+]]></skipped><system-out><![CDATA[Skip: not enough memory for this test
+]]></system-out></testcase><testcase classname="astf_tests.astf_resilience_test.ASTFResilience_Test" name="test_astf_params" time="0.041"><skipped type="unittest.case.SkipTest" message="not enough memory for this test"><![CDATA[Exception: not enough memory for this test
+]]></skipped><system-out><![CDATA[Skip: not enough memory for this test
+]]></system-out></testcase><testcase classname="astf_tests.astf_resilience_test.ASTFResilience_Test" name="test_astf_params_dynamic_profile" time="0.041"><skipped type="unittest.case.SkipTest" message="not enough memory for this test"><![CDATA[Exception: not enough memory for this test
+]]></skipped><system-out><![CDATA[Skip: not enough memory for this test
+]]></system-out></testcase><testcase classname="astf_tests.astf_resilience_test.ASTFResilience_Test" name="test_double_start_stop" time="0.042"><skipped type="unittest.case.SkipTest" message="not enough memory for this test"><![CDATA[Exception: not enough memory for this test
+]]></skipped><system-out><![CDATA[Skip: not enough memory for this test
+]]></system-out></testcase><testcase classname="astf_tests.astf_resilience_test.ASTFResilience_Test" name="test_double_start_stop_dynamic_profile" time="0.043"><skipped type="unittest.case.SkipTest" message="not enough memory for this test"><![CDATA[Exception: not enough memory for this test
+]]></skipped><system-out><![CDATA[Skip: not enough memory for this test
+]]></system-out></testcase><testcase classname="astf_tests.astf_resilience_test.ASTFResilience_Test" name="test_stress_start_stop" time="0.041"><skipped type="unittest.case.SkipTest" message="not enough memory for this test"><![CDATA[Exception: not enough memory for this test
+]]></skipped><system-out><![CDATA[Skip: not enough memory for this test
+]]></system-out></testcase><testcase classname="astf_tests.astf_resilience_test.ASTFResilience_Test" name="test_stress_start_stop_dynamic_profile" time="0.042"><skipped type="unittest.case.SkipTest" message="not enough memory for this test"><![CDATA[Exception: not enough memory for this test
+]]></skipped><system-out><![CDATA[Skip: not enough memory for this test
+]]></system-out></testcase><testcase classname="astf_tests.astf_template_group_test.ASTFTemplateGroup_Test" name="test_astf_template_group_edge_cases" time="2.733"></testcase><testcase classname="astf_tests.astf_template_group_test.ASTFTemplateGroup_Test" name="test_astf_template_group_edge_cases_dynamic_profile" time="3.017"><system-out><![CDATA[Creating random name for the dynamic profile
+Dynamic profile name : olbngzqdkp
+Creating random name for the dynamic profile
+Dynamic profile name : oyebcxuhqp
+]]></system-out></testcase><testcase classname="astf_tests.astf_template_group_test.ASTFTemplateGroup_Test" name="test_astf_template_group_general" time="14.920"></testcase><testcase classname="astf_tests.astf_template_group_test.ASTFTemplateGroup_Test" name="test_astf_template_group_load" time="2.938"></testcase><testcase classname="astf_tests.astf_template_group_test.ASTFTemplateGroup_Test" name="test_astf_template_group_load_dynamic_profile" time="3.753"><system-out><![CDATA[Creating random name for the dynamic profile
+Dynamic profile name : smzjwdigtb
+]]></system-out></testcase><testcase classname="astf_tests.astf_template_group_test.ASTFTemplateGroup_Test" name="test_astf_template_group_long" time="60.379"></testcase><testcase classname="astf_tests.astf_template_group_test.ASTFTemplateGroup_Test" name="test_astf_template_group_negative" time="4.032"></testcase><testcase classname="astf_tests.astf_template_group_test.ASTFTemplateGroup_Test" name="test_astf_template_group_negative_dynamic_profile" time="4.039"><system-out><![CDATA[Creating random name for the dynamic profile
+Dynamic profile name : umstrfyrvh
+]]></system-out></testcase><testcase classname="astf_tests.astf_topo_test.ASTFTopology_Test" name="ASTFTopology_Test:setup" time="4.040"><skipped type="unittest.case.SkipTest" message="Topo tests are designed to work with non-dummy baremetal loopback NICs"><![CDATA[Traceback (most recent call last):
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python3/nose/suite.py", line 210, in run
+    self.setUp()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python3/nose/suite.py", line 293, in setUp
+    self.setupContext(ancestor)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python3/nose/suite.py", line 316, in setupContext
+    try_run(context, names)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python3/nose/util.py", line 470, in try_run
+    return func()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/astf_tests/astf_topo_test.py", line 21, in setUpClass
+    cls.skip('Topo tests are designed to work with non-dummy baremetal loopback NICs')
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateful_tests/trex_general_test.py", line 462, in skip
+    raise SkipTest(message)
+unittest.case.SkipTest: Topo tests are designed to work with non-dummy baremetal loopback NICs
+]]></skipped><system-out><![CDATA[Skip: Topo tests are designed to work with non-dummy baremetal loopback NICs
+]]></system-out></testcase><testcase classname="astf_tests.astf_vlan_test.ASTFVLAN_Test" name="test_config_vlan" time="0.507"></testcase><testcase classname="astf_tests.astf_vlan_test.ASTFVLAN_Test" name="test_latency_vlan" time="2.131"><system-out><![CDATA[
+Expected 20 IPv4 pkts without VLAN, got 20
+Expected 20 IPv4 pkts with VLAN, got 20
+]]></system-out></testcase><testcase classname="astf_tests.astf_vlan_test.ASTFVLAN_Test" name="test_ping_vlan" time="1.742"><system-out><![CDATA[
+TX port without VLAN, RX port without VLAN
+Got reply as expected
+TX port with VLAN, RX port without VLAN
+Got no reply as expected
+TX port with VLAN, RX port with VLAN
+Got reply as expected
+TX port without VLAN, RX port with VLAN
+Got no reply as expected
+]]></system-out></testcase><testcase classname="astf_tests.astf_vlan_test.ASTFVLAN_Test" name="test_resolve_vlan" time="12.888"></testcase><testcase classname="astf_tests.astf_vlan_test.ASTFVLAN_Test" name="test_traffic_vlan" time="5.625"><system-out><![CDATA[
+Expected 20 IPv4 pkts without VLAN, got 20
+Expected 20 IPv4 pkts with VLAN, got 20
+Expected 20 IPv6 pkts without VLAN, got 20
+Expected 20 IPv6 pkts with VLAN, got 20
+]]></system-out></testcase><testcase classname="astf_tests.astf_vlan_test.ASTFVLAN_Test" name="test_traffic_vlan_dynamic_profile" time="5.863"><system-out><![CDATA[
+Creating random name for the dynamic profile
+Dynamic profile name : ektwwtyrim
+Expected 20 IPv4 pkts without VLAN, got 20
+Expected 20 IPv4 pkts with VLAN, got 20
+Expected 20 IPv6 pkts without VLAN, got 20
+Expected 20 IPv6 pkts with VLAN, got 20
+]]></system-out></testcase></testsuite>

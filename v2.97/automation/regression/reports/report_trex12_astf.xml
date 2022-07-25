@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite name="nosetests" tests="2" errors="0" failures="0" skip="0"><testcase classname="astf_tests.astf_general_test.ASTFBasic_Test" name="test_connectivity" time="0.671"><system-out><![CDATA[
+Starting TRex... done. (0s)
+Started TRex
+Connecting.
+Connected
+Mapping ports.
+Got ports mapping: {'map': {11: 4, 10: 5, 9: 2, 8: 3, 7: 0, 6: 1, 1: 6, 0: 7, 2: 9, 3: 8, 4: 11, 5: 10}, 'bi': [(11, 4), (10, 5), (9, 2), (8, 3), (7, 0), (6, 1)], 'unknown': []}
+]]></system-out></testcase><testcase classname="astf_tests.astf_vlan_test.ASTFVLAN_Test" name="test_latency_vlan" time="2.327"><system-out><![CDATA[
+Expected 20 IPv4 pkts without VLAN, got 20
+Expected 20 IPv4 pkts with VLAN, got 20
+]]></system-out></testcase></testsuite>

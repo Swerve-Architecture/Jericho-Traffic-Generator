@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite name="nosetests" tests="3" errors="2" failures="0" skip="0"><testcase classname="stateless_tests.stl_general_test.STLBasic_Test" name="test_connectivity" time="0.447"><system-out><![CDATA[
+Starting TRex... done. (0s)
+Started TRex
+Connecting.
+Connected
+Mapping ports.
+Got ports mapping: {'map': {0: 1, 1: 0}, 'bi': [(0, 1)], 'unknown': []}
+]]></system-out></testcase><testcase classname="stateless_tests.stl_ns_test.STLNS_Test" name="test_ping_to_shared_ns" time="14.131"><error type="trex.common.trex_exceptions.TRexError" message="'set_port_attr' - is not valid while disconnected"><![CDATA[Traceback (most recent call last):
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateless_tests/stl_ns_test.py", line 371, in test_ping_to_shared_ns
+    c.wait_for_async_results(0)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 51, in wrap2
+    ret = f(*args, **kwargs)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_client.py", line 1447, in wait_for_async_results
+    raise TRexError(rc)
+trex.common.trex_exceptions.TRexError: ?[1mPort 0 : *** *** [RPC] - Failed to send message to server general exception?[22m
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/unittest/case.py", line 60, in testPartExecutor
+    yield
+  File "/usr/lib64/python3.6/unittest/case.py", line 622, in run
+    testMethod()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateless_tests/stl_ns_test.py", line 380, in test_ping_to_shared_ns
+    c.set_port_attr(promiscuous = False, multicast = False)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 48, in wrap2
+    raise TRexError("'{0}' - is not valid while disconnected".format(func_name))
+trex.common.trex_exceptions.TRexError: 'set_port_attr' - is not valid while disconnected
+]]></error><system-out><![CDATA[
+]]></system-out></testcase><testcase classname="stateless_tests.stl_ns_test.STLNS_Test" name="test_ping_to_shared_ns" time="14.132"><error type="trex.common.trex_exceptions.TRexError" message="'namespace_remove_all' - is not valid while disconnected"><![CDATA[Traceback (most recent call last):
+  File "/usr/lib64/python3.6/unittest/case.py", line 60, in testPartExecutor
+    yield
+  File "/usr/lib64/python3.6/unittest/case.py", line 625, in run
+    self.tearDown()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateless_tests/stl_ns_test.py", line 25, in tearDown
+    self.stl_trex.namespace_remove_all()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 48, in wrap2
+    raise TRexError("'{0}' - is not valid while disconnected".format(func_name))
+trex.common.trex_exceptions.TRexError: 'namespace_remove_all' - is not valid while disconnected
+]]></error><system-out><![CDATA[
+]]></system-out></testcase></testsuite>

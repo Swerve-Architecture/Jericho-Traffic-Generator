@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite name="nosetests" tests="2" errors="1" failures="0" skip="0"><testcase classname="astf_tests.astf_general_test.ASTFBasic_Test" name="test_connectivity" time="0.690"><system-out><![CDATA[
+Starting TRex... done. (0s)
+Started TRex
+Connecting.
+Connected
+Mapping ports.
+Got ports mapping: {'map': {0: 1, 1: 0, 2: 3, 3: 2, 4: 5, 5: 4, 6: 7, 7: 6}, 'bi': [(0, 1), (2, 3), (4, 5), (6, 7)], 'unknown': []}
+]]></system-out></testcase><testcase classname="astf_tests.astf_resilience_test.ASTFResilience_Test" name="test_astf_params" time="4.996"><error type="trex.common.trex_exceptions.TRexError" message="'start' - interrupted by a keyboard signal (probably ctrl + c)"><![CDATA[Traceback (most recent call last):
+  File "/usr/cisco/depot/python/lib/python2.7/unittest/case.py", line 331, in run
+    testMethod()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/astf_tests/astf_resilience_test.py", line 84, in test_astf_params
+    self.astf_trex.start(duration = 1, nc = True)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 58, in wrap2
+    raise TRexError("'{0}' - interrupted by a keyboard signal (probably ctrl + c)".format(func_name))
+TRexError: 'start' - interrupted by a keyboard signal (probably ctrl + c)
+]]></error><system-out><![CDATA[
+Creating profile with params: {'client_ips': 256, 'templates': 1, 'server_ips': 256}
+Profile size: 1739
+Load took: 0.004
+Start took: 0.219
+Creating profile with params: {'client_ips': 256, 'templates': 256, 'server_ips': 256}
+Profile size: 170029
+Load took: 0.034
+Start took: 0.424
+Creating profile with params: {'client_ips': 256, 'templates': 4096, 'server_ips': 256}
+Profile size: 2707232
+Load took: 0.479
+]]></system-out></testcase></testsuite>

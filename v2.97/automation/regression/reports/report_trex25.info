@@ -1,0 +1,11 @@
+Version : v2.86
+DPDK version: DPDK 20.02.0
+User    : hhaim
+Date    : Dec 29 2020 , 15:40:54
+Uuid    : 37af97c4-49db-11eb-81aa-641225363740
+Git SHA : b8b964be8915578b1d13accfc8a70bfdcb340a62
+Compiled with GCC: 7.4.0
+Compiled with glibc: 2.16 (host: 2.17)
+Sanitized image: no
+Modes: ['1G']
+Router: Model: ASR1004(RP2), Image: None

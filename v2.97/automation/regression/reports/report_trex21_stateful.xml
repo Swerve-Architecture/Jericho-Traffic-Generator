@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite name="nosetests" tests="5" errors="2" failures="0" skip="3"><testcase classname="stateful_tests.trex_client_cfg_test.CTRexClientCfg_Test" name="test_client_cfg_nbar" time="0.003"><skipped type="unittest.case.SkipTest" message="No NBAR on loopback"><![CDATA[SkipTest: No NBAR on loopback
+]]></skipped><system-out><![CDATA[Skip: No NBAR on loopback
+]]></system-out></testcase><testcase classname="stateful_tests.trex_client_cfg_test.CTRexClientCfg_Test" name="test_client_cfg_vlan" time="0.003"><skipped type="unittest.case.SkipTest" message="Not relevant on loopback"><![CDATA[SkipTest: Not relevant on loopback
+]]></skipped><system-out><![CDATA[Skip: Not relevant on loopback
+]]></system-out></testcase><testcase classname="stateful_tests.trex_imix_test.CTRexIMIX_Test" name="test_high_active_negative" time="0.003"><skipped type="unittest.case.SkipTest" message="No data in benchmark.yaml for test: test_short_flow_high_active, param: cores. Skipping."><![CDATA[SkipTest: No data in benchmark.yaml for test: test_short_flow_high_active, param: cores. Skipping.
+]]></skipped><system-out><![CDATA[Skip: No data in benchmark.yaml for test: test_short_flow_high_active, param: cores. Skipping.
+]]></system-out></testcase><testcase classname="stateful_tests.trex_imix_test.CTRexIMIX_Test" name="test_jumbo" time="17.103"><error type="exceptions.Exception" message="TRex is back to Idle state, verbose output:&#10;TRex run was terminated unexpectedly by outer process or by the hosting OS.&#10;&#10;Run output:&#10;The ports are bound/configured.&#10;Starting  TRex v2.48 please wait  ... &#10; set driver name net_ixgbe_vf &#10; driver capability  : TCP_UDP_OFFLOAD  TSO &#10; set dpdk queues mode to ONE_QUE &#10; Number of ports found: 4&#10;zmq publisher at: tcp://*:4500&#10; rx_data_q_num : 1 &#10; rx_drop_q_num : 0 &#10; rx_dp_q_num   : 0 &#10; rx_que_total : 1 &#10; --   &#10; rx_desc_num_data_q   : 512 &#10; rx_desc_num_drop_q   : 4096 &#10; rx_desc_num_dp_q     : 512 &#10; total_desc           : 512 &#10; --   &#10; tx_desc_num     : 1024 &#10; rx_qid: 0 (512) &#10; rx_qid: 0 (512) &#10; rx_qid: 0 (512) &#10; rx_qid: 0 (512) &#10; wait 1 sec .&#10;Failed resolving dest MAC for default gateway:2.2.2.2 on port 0&#10;port : 0 &#10;------------&#10;link         :  link : Link Up - speed 10000 Mbps - full-duplex&#10;promiscuous  : 0 &#10;port : 1 &#10;------------&#10;link         :  link : Link Up - speed 10000 Mbps - full-duplex&#10;promiscuous  : 0 &#10;port : 2 &#10;------------&#10;link         :  link : Link Up - speed 10000 Mbps - full-duplex&#10;promiscuous  : 0 &#10;port : 3 &#10;------------&#10;link         :  link : Link Up - speed 10000 Mbps - full-duplex&#10;promiscuous  : 0 &#10; number of ports         : 4 &#10; max cores for 2 ports   : 1 &#10; tx queues per port      : 3 &#10;no client generator pool configured, using default pool&#10;no server generator pool configured, using default pool&#10; -------------------------------&#10;RX core uses TX queue number 65535 on all ports&#10; core, c-port, c-queue, s-port, s-queue, lat-queue&#10; ------------------------------------------&#10; 1        0      0       1       0      0  &#10; 2        2      0       3       0      0  &#10; -------------------------------&#10;no client generator pool configured, using default pool&#10;no server generator pool configured, using default pool&#10; -- loading cap file stl/ipv4_udp_9k.pcap &#10; -- loading cap file stl/ipv4_udp_9k.pcap &#10; -- loading cap file stl/ipv4_udp_9k.pcap &#10; -- loading cap file stl/ipv4_udp_9k.pcap &#10; -- loading cap file stl/ipv4_udp_9k.pcap &#10; -- loading cap file stl/ipv4_udp_9k.pcap &#10; -- loading cap file stl/ipv4_udp_9k.pcap &#10; -- loading cap file stl/ipv4_udp_9k.pcap &#10;"><![CDATA[Traceback (most recent call last):
+  File "/sw/packages/python/2.7.4/lib/python2.7/unittest/case.py", line 332, in run
+    testMethod()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateful_tests/trex_imix_test.py", line 271, in test_jumbo
+    **kwargs)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/stf/trex_stf_lib/trex_client.py", line 188, in start_trex
+    self._block_to_success(timeout)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/stf/trex_stf_lib/trex_client.py", line 127, in _block_to_success
+    raise Exception('TRex is back to Idle state, verbose output:\n%s' % status['verbose'])
+Exception: TRex is back to Idle state, verbose output:
+TRex run was terminated unexpectedly by outer process or by the hosting OS.
+
+Run output:
+The ports are bound/configured.
+Starting  TRex v2.48 please wait  ... 
+ set driver name net_ixgbe_vf 
+ driver capability  : TCP_UDP_OFFLOAD  TSO 
+ set dpdk queues mode to ONE_QUE 
+ Number of ports found: 4
+zmq publisher at: tcp://*:4500
+ rx_data_q_num : 1 
+ rx_drop_q_num : 0 
+ rx_dp_q_num   : 0 
+ rx_que_total : 1 
+ --   
+ rx_desc_num_data_q   : 512 
+ rx_desc_num_drop_q   : 4096 
+ rx_desc_num_dp_q     : 512 
+ total_desc           : 512 
+ --   
+ tx_desc_num     : 1024 
+ rx_qid: 0 (512) 
+ rx_qid: 0 (512) 
+ rx_qid: 0 (512) 
+ rx_qid: 0 (512) 
+ wait 1 sec .
+Failed resolving dest MAC for default gateway:2.2.2.2 on port 0
+port : 0 
+------------
+link         :  link : Link Up - speed 10000 Mbps - full-duplex
+promiscuous  : 0 
+port : 1 
+------------
+link         :  link : Link Up - speed 10000 Mbps - full-duplex
+promiscuous  : 0 
+port : 2 
+------------
+link         :  link : Link Up - speed 10000 Mbps - full-duplex
+promiscuous  : 0 
+port : 3 
+------------
+link         :  link : Link Up - speed 10000 Mbps - full-duplex
+promiscuous  : 0 
+ number of ports         : 4 
+ max cores for 2 ports   : 1 
+ tx queues per port      : 3 
+no client generator pool configured, using default pool
+no server generator pool configured, using default pool
+ -------------------------------
+RX core uses TX queue number 65535 on all ports
+ core, c-port, c-queue, s-port, s-queue, lat-queue
+ ------------------------------------------
+ 1        0      0       1       0      0  
+ 2        2      0       3       0      0  
+ -------------------------------
+no client generator pool configured, using default pool
+no server generator pool configured, using default pool
+ -- loading cap file stl/ipv4_udp_9k.pcap 
+ -- loading cap file stl/ipv4_udp_9k.pcap 
+ -- loading cap file stl/ipv4_udp_9k.pcap 
+ -- loading cap file stl/ipv4_udp_9k.pcap 
+ -- loading cap file stl/ipv4_udp_9k.pcap 
+ -- loading cap file stl/ipv4_udp_9k.pcap 
+ -- loading cap file stl/ipv4_udp_9k.pcap 
+ -- loading cap file stl/ipv4_udp_9k.pcap 
+
+]]></error></testcase><testcase classname="stateful_tests.trex_imix_test.CTRexIMIX_Test" name="test_routing_imix" time="17.042"><error type="exceptions.Exception" message="TRex is back to Idle state, verbose output:&#10;TRex run was terminated unexpectedly by outer process or by the hosting OS.&#10;&#10;Run output:&#10;The ports are bound/configured.&#10;Starting  TRex v2.48 please wait  ... &#10; set driver name net_ixgbe_vf &#10; driver capability  : TCP_UDP_OFFLOAD  TSO &#10; set dpdk queues mode to ONE_QUE &#10; Number of ports found: 4&#10;zmq publisher at: tcp://*:4600&#10; rx_data_q_num : 1 &#10; rx_drop_q_num : 0 &#10; rx_dp_q_num   : 0 &#10; rx_que_total : 1 &#10; --   &#10; rx_desc_num_data_q   : 512 &#10; rx_desc_num_drop_q   : 4096 &#10; rx_desc_num_dp_q     : 512 &#10; total_desc           : 512 &#10; --   &#10; tx_desc_num     : 1024 &#10; rx_qid: 0 (512) &#10; rx_qid: 0 (512) &#10; rx_qid: 0 (512) &#10; rx_qid: 0 (512) &#10; wait 1 sec .&#10;Failed resolving dest MAC for default gateway:2.2.2.2 on port 0&#10;port : 0 &#10;------------&#10;link         :  link : Link Up - speed 10000 Mbps - full-duplex&#10;promiscuous  : 0 &#10;port : 1 &#10;------------&#10;link         :  link : Link Up - speed 10000 Mbps - full-duplex&#10;promiscuous  : 0 &#10;port : 2 &#10;------------&#10;link         :  link : Link Up - speed 10000 Mbps - full-duplex&#10;promiscuous  : 0 &#10;port : 3 &#10;------------&#10;link         :  link : Link Up - speed 10000 Mbps - full-duplex&#10;promiscuous  : 0 &#10; number of ports         : 4 &#10; max cores for 2 ports   : 1 &#10; tx queues per port      : 3 &#10;no client generator pool configured, using default pool&#10;no server generator pool configured, using default pool&#10; -------------------------------&#10;RX core uses TX queue number 65535 on all ports&#10; core, c-port, c-queue, s-port, s-queue, lat-queue&#10; ------------------------------------------&#10; 1        0      0       1       0      0  &#10; 2        2      0       3       0      0  &#10; -------------------------------&#10;no client generator pool configured, using default pool&#10;no server generator pool configured, using default pool&#10; -- loading cap file cap2/udp_64B.pcap &#10; -- loading cap file cap2/udp_594B.pcap &#10; -- loading cap file cap2/udp_1518B.pcap &#10; -- loading cap file cap2/udp_64B.pcap &#10; -- loading cap file cap2/udp_594B.pcap &#10; -- loading cap file cap2/udp_1518B.pcap &#10;"><![CDATA[Traceback (most recent call last):
+  File "/sw/packages/python/2.7.4/lib/python2.7/unittest/case.py", line 332, in run
+    testMethod()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateful_tests/trex_imix_test.py", line 171, in test_routing_imix
+    l = 1000)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/stf/trex_stf_lib/trex_client.py", line 188, in start_trex
+    self._block_to_success(timeout)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/stf/trex_stf_lib/trex_client.py", line 127, in _block_to_success
+    raise Exception('TRex is back to Idle state, verbose output:\n%s' % status['verbose'])
+Exception: TRex is back to Idle state, verbose output:
+TRex run was terminated unexpectedly by outer process or by the hosting OS.
+
+Run output:
+The ports are bound/configured.
+Starting  TRex v2.48 please wait  ... 
+ set driver name net_ixgbe_vf 
+ driver capability  : TCP_UDP_OFFLOAD  TSO 
+ set dpdk queues mode to ONE_QUE 
+ Number of ports found: 4
+zmq publisher at: tcp://*:4600
+ rx_data_q_num : 1 
+ rx_drop_q_num : 0 
+ rx_dp_q_num   : 0 
+ rx_que_total : 1 
+ --   
+ rx_desc_num_data_q   : 512 
+ rx_desc_num_drop_q   : 4096 
+ rx_desc_num_dp_q     : 512 
+ total_desc           : 512 
+ --   
+ tx_desc_num     : 1024 
+ rx_qid: 0 (512) 
+ rx_qid: 0 (512) 
+ rx_qid: 0 (512) 
+ rx_qid: 0 (512) 
+ wait 1 sec .
+Failed resolving dest MAC for default gateway:2.2.2.2 on port 0
+port : 0 
+------------
+link         :  link : Link Up - speed 10000 Mbps - full-duplex
+promiscuous  : 0 
+port : 1 
+------------
+link         :  link : Link Up - speed 10000 Mbps - full-duplex
+promiscuous  : 0 
+port : 2 
+------------
+link         :  link : Link Up - speed 10000 Mbps - full-duplex
+promiscuous  : 0 
+port : 3 
+------------
+link         :  link : Link Up - speed 10000 Mbps - full-duplex
+promiscuous  : 0 
+ number of ports         : 4 
+ max cores for 2 ports   : 1 
+ tx queues per port      : 3 
+no client generator pool configured, using default pool
+no server generator pool configured, using default pool
+ -------------------------------
+RX core uses TX queue number 65535 on all ports
+ core, c-port, c-queue, s-port, s-queue, lat-queue
+ ------------------------------------------
+ 1        0      0       1       0      0  
+ 2        2      0       3       0      0  
+ -------------------------------
+no client generator pool configured, using default pool
+no server generator pool configured, using default pool
+ -- loading cap file cap2/udp_64B.pcap 
+ -- loading cap file cap2/udp_594B.pcap 
+ -- loading cap file cap2/udp_1518B.pcap 
+ -- loading cap file cap2/udp_64B.pcap 
+ -- loading cap file cap2/udp_594B.pcap 
+ -- loading cap file cap2/udp_1518B.pcap 
+
+]]></error></testcase></testsuite>

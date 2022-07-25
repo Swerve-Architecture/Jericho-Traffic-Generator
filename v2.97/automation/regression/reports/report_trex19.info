@@ -1,0 +1,10 @@
+Version : v2.87
+DPDK version: DPDK 21.02.0-rc1
+User    : hhaim
+Date    : Feb 16 2021 , 13:58:21
+Uuid    : 4087c576-704e-11eb-bcbe-0006f62b3e88
+Git SHA : 2a2702dcbcd6dc4e9b845c0c98663f8f59fda7a1
+Compiled with GCC: 6.2.0
+Compiled with glibc: 2.16 (host: 2.17)
+Sanitized image: no
+Modes: ['loopback']

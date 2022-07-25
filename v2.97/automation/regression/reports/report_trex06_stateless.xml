@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite name="nosetests" tests="1" errors="1" failures="0" skip="0"><testcase classname="stateless_tests.stl_general_test.STLBasic_Test" name="test_connectivity" time="34.097"><error type="builtins.Exception" message="Test failed. Reasons:&#10;Client could not connect"><![CDATA[Traceback (most recent call last):
+  File "/usr/lib64/python3.6/unittest/case.py", line 60, in testPartExecutor
+    yield
+  File "/usr/lib64/python3.6/unittest/case.py", line 625, in run
+    self.tearDown()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateful_tests/trex_general_test.py", line 517, in tearDown
+    raise Exception('Test failed. Reasons:\n%s' % '\n'.join(self.fail_reasons))
+Exception: Test failed. Reasons:
+Client could not connect
+]]></error><system-out><![CDATA[
+Starting TRex... done. (0s)
+Started TRex
+Connecting..........
+Error connecting: ?[1m*** [RPC] - Failed to get server response from tcp://10.56.192.215:4501?[22m
+Error: Client could not connect
+]]></system-out></testcase></testsuite>

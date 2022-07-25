@@ -1,0 +1,564 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite name="nosetests" tests="53" errors="0" failures="0" skip="26"><testcase classname="stateless_tests.stl_general_test.STLBasic_Test" name="test_connectivity" time="40.043"><system-out><![CDATA[
+
+Configuring DUT... done. (21s)
+Configured DUT
+Starting TRex... done. (18s)
+Started TRex
+Connecting.
+Connected
+Mapping ports.
+Got ports mapping: {'map': {0: 1, 1: 0, 2: 3, 3: 2, 4: 5, 5: 4, 6: 7, 7: 6}, 'bi': [(0, 1), (2, 3), (4, 5), (6, 7)], 'unknown': []}
+]]></system-out></testcase><testcase classname="stateless_tests.stl_benchmark_test.STLBenchmark_Test" name="test_CPU_benchmark" time="280.982"><system-out><![CDATA[
+
+Testing profile stl/udp_for_benchmarks.py, kwargs: {'packet_len': 64}
+Done (10s), CPU util: 0.719938, norm_pps_per_core: 41.29mpps norm_bw_per_core:  21.14Gb/core
+Testing profile stl/udp_for_benchmarks.py, kwargs: {'stream_count': 10, 'packet_len': 64}
+Done (8s), CPU util: 1.51288, norm_pps_per_core: 19.59mpps norm_bw_per_core:  10.03Gb/core
+Testing profile stl/udp_for_benchmarks.py, kwargs: {'stream_count': 100, 'packet_len': 64}
+Done (7s), CPU util: 2.68627, norm_pps_per_core: 10.93mpps norm_bw_per_core:    5.6Gb/core
+Testing profile stl/udp_for_benchmarks.py, kwargs: {'packet_len': 128}
+Done (15s), CPU util: 0.443646, norm_pps_per_core: 38.07mpps norm_bw_per_core:  38.98Gb/core
+Testing profile stl/udp_for_benchmarks.py, kwargs: {'packet_len': 256}
+Done (16s), CPU util: 0.177485, norm_pps_per_core: 51.03mpps norm_bw_per_core: 104.51Gb/core
+Testing profile stl/udp_for_benchmarks.py, kwargs: {'packet_len': 512}
+Done (20s), CPU util: 0.132641, norm_pps_per_core: 35.44mpps norm_bw_per_core: 145.18Gb/core
+Testing profile stl/udp_for_benchmarks.py, kwargs: {'packet_len': 1500}
+Done (25s), CPU util: 0.0640306, norm_pps_per_core: 25.68mpps norm_bw_per_core: 308.11Gb/core
+Testing profile stl/udp_for_benchmarks.py, kwargs: {'packet_len': 4000}
+Done (31s), CPU util: 0.0453167, norm_pps_per_core: 13.71mpps norm_bw_per_core: 438.81Gb/core
+Testing profile stl/udp_for_benchmarks.py, kwargs: {'packet_len': 9000}
+Done (5s), CPU util: 0.0229006, norm_pps_per_core: 12.09mpps norm_bw_per_core: 837.02Gb/core
+Testing profile stl/imix.py, kwargs: {}
+Done (10s), CPU util: 0.913785, norm_pps_per_core:  7.13mpps norm_bw_per_core:  20.68Gb/core
+Testing profile stl/udp_1pkt_tuple_gen.py, kwargs: {'packet_len': 64}
+Done (10s), CPU util: 4.62159, norm_pps_per_core:  6.43mpps norm_bw_per_core:   3.29Gb/core
+Testing profile stl/udp_1pkt_tuple_gen.py, kwargs: {'packet_len': 128}
+Done (6s), CPU util: 2.80478, norm_pps_per_core:  5.95mpps norm_bw_per_core:   5.95Gb/core
+Testing profile stl/udp_1pkt_tuple_gen.py, kwargs: {'packet_len': 256}
+Done (8s), CPU util: 1.28333, norm_pps_per_core:  7.04mpps norm_bw_per_core:  14.37Gb/core
+Testing profile stl/udp_1pkt_tuple_gen.py, kwargs: {'packet_len': 512}
+Done (5s), CPU util: 0.77709, norm_pps_per_core:  5.95mpps norm_bw_per_core:  23.14Gb/core
+Testing profile stl/udp_1pkt_tuple_gen.py, kwargs: {'packet_len': 1500}
+Done (9s), CPU util: 0.242005, norm_pps_per_core:   6.8mpps norm_bw_per_core:   81.3Gb/core
+Testing profile stl/udp_1pkt_tuple_gen.py, kwargs: {'packet_len': 4000}
+Done (8s), CPU util: 0.111201, norm_pps_per_core:   5.6mpps norm_bw_per_core: 178.21Gb/core
+Testing profile stl/udp_1pkt_tuple_gen.py, kwargs: {'packet_len': 9000}
+Done (14s), CPU util: 0.0666586, norm_pps_per_core:  4.15mpps norm_bw_per_core: 299.07Gb/core
+Testing profile stl/pcap.py, kwargs: {'loop_count': 0, 'ipg_usec': 2}
+Done (9s), CPU util: 3.17984, norm_pps_per_core: 31.29mpps norm_bw_per_core:  20.64Gb/core
+Testing profile stl/udp_rand_len_9k.py, kwargs: {}
+Done (18s), CPU util: 0.122896, norm_pps_per_core:  4.68mpps norm_bw_per_core: 162.14Gb/core
+Testing profile stl/hlt/hlt_udp_rand_len_9k.py, kwargs: {}
+Done (9s), CPU util: 0.0853028, norm_pps_per_core:  6.73mpps norm_bw_per_core: 233.56Gb/core
+]]></system-out></testcase><testcase classname="stateless_tests.stl_capture_test.STLCapture_Test" name="test_arp_capture" time="0.001"><skipped type="unittest.case.SkipTest" message="capture tests are skipped on a non-loopback machine"><![CDATA[SkipTest: capture tests are skipped on a non-loopback machine
+]]></skipped><system-out><![CDATA[
+Skip: capture tests are skipped on a non-loopback machine
+]]></system-out></testcase><testcase classname="stateless_tests.stl_capture_test.STLCapture_Test" name="test_basic_capture" time="0.001"><skipped type="unittest.case.SkipTest" message="capture tests are skipped on a non-loopback machine"><![CDATA[SkipTest: capture tests are skipped on a non-loopback machine
+]]></skipped><system-out><![CDATA[
+Skip: capture tests are skipped on a non-loopback machine
+]]></system-out></testcase><testcase classname="stateless_tests.stl_capture_test.STLCapture_Test" name="test_ping_capture" time="0.001"><skipped type="unittest.case.SkipTest" message="capture tests are skipped on a non-loopback machine"><![CDATA[SkipTest: capture tests are skipped on a non-loopback machine
+]]></skipped><system-out><![CDATA[
+Skip: capture tests are skipped on a non-loopback machine
+]]></system-out></testcase><testcase classname="stateless_tests.stl_capture_test.STLCapture_Test" name="test_rx_from_capture_port_with_filter" time="0.001"><skipped type="unittest.case.SkipTest" message="capture tests are skipped on a non-loopback machine"><![CDATA[SkipTest: capture tests are skipped on a non-loopback machine
+]]></skipped><system-out><![CDATA[
+Skip: capture tests are skipped on a non-loopback machine
+]]></system-out></testcase><testcase classname="stateless_tests.stl_capture_test.STLCapture_Test" name="test_stress_capture" time="0.001"><skipped type="unittest.case.SkipTest" message="capture tests are skipped on a non-loopback machine"><![CDATA[SkipTest: capture tests are skipped on a non-loopback machine
+]]></skipped><system-out><![CDATA[
+Skip: capture tests are skipped on a non-loopback machine
+]]></system-out></testcase><testcase classname="stateless_tests.stl_capture_test.STLCapture_Test" name="test_stress_tx_rx" time="0.001"><skipped type="unittest.case.SkipTest" message="capture tests are skipped on a non-loopback machine"><![CDATA[SkipTest: capture tests are skipped on a non-loopback machine
+]]></skipped><system-out><![CDATA[
+Skip: capture tests are skipped on a non-loopback machine
+]]></system-out></testcase><testcase classname="stateless_tests.stl_capture_test.STLCapture_Test" name="test_tx_from_capture_port" time="0.001"><skipped type="unittest.case.SkipTest" message="capture tests are skipped on a non-loopback machine"><![CDATA[SkipTest: capture tests are skipped on a non-loopback machine
+]]></skipped><system-out><![CDATA[
+Skip: capture tests are skipped on a non-loopback machine
+]]></system-out></testcase><testcase classname="stateless_tests.stl_client_test.STLClient_Test" name="test_all_profiles" time="0.297"><skipped type="unittest.case.SkipTest" message="skipping profile tests for virtual / non loopback"><![CDATA[SkipTest: skipping profile tests for virtual / non loopback
+]]></skipped><system-out><![CDATA[
+Skip: skipping profile tests for virtual / non loopback
+]]></system-out></testcase><testcase classname="stateless_tests.stl_client_test.STLClient_Test" name="test_basic_connect_disconnect" time="0.825"><system-out><![CDATA[
+]]></system-out></testcase><testcase classname="stateless_tests.stl_client_test.STLClient_Test" name="test_basic_cont" time="1.138"><system-out><![CDATA[
+]]></system-out></testcase><testcase classname="stateless_tests.stl_client_test.STLClient_Test" name="test_basic_multi_burst" time="0.676"><system-out><![CDATA[
+]]></system-out></testcase><testcase classname="stateless_tests.stl_client_test.STLClient_Test" name="test_basic_single_burst" time="0.737"><system-out><![CDATA[
+]]></system-out></testcase><testcase classname="stateless_tests.stl_client_test.STLClient_Test" name="test_bpf" time="2.908"><system-out><![CDATA[
+]]></system-out></testcase><testcase classname="stateless_tests.stl_client_test.STLClient_Test" name="test_core_pinning" time="0.280"><skipped type="unittest.case.SkipTest" message="pinning test requires at least 2 cores per interface"><![CDATA[SkipTest: pinning test requires at least 2 cores per interface
+]]></skipped><system-out><![CDATA[
+Skip: pinning test requires at least 2 cores per interface
+]]></system-out></testcase><testcase classname="stateless_tests.stl_client_test.STLClient_Test" name="test_core_pinning_latency" time="0.278"><skipped type="unittest.case.SkipTest" message="pinning test requires at least 2 cores per interface"><![CDATA[SkipTest: pinning test requires at least 2 cores per interface
+]]></skipped><system-out><![CDATA[
+Skip: pinning test requires at least 2 cores per interface
+]]></system-out></testcase><testcase classname="stateless_tests.stl_client_test.STLClient_Test" name="test_latency_pause_resume" time="0.732"><system-out><![CDATA[
+]]></system-out></testcase><testcase classname="stateless_tests.stl_client_test.STLClient_Test" name="test_pause_resume_update_streams" time="15.503"><system-out><![CDATA[
+]]></system-out></testcase><testcase classname="stateless_tests.stl_client_test.STLClient_Test" name="test_pcap_remote" time="0.472"><system-out><![CDATA[
+]]></system-out></testcase><testcase classname="stateless_tests.stl_client_test.STLClient_Test" name="test_push_pcap" time="0.320"><system-out><![CDATA[
+]]></system-out></testcase><testcase classname="stateless_tests.stl_client_test.STLClient_Test" name="test_stress_connect_disconnect" time="18.285"><system-out><![CDATA[
+]]></system-out></testcase><testcase classname="stateless_tests.stl_client_test.STLClient_Test" name="test_stress_tx" time="5.352"><system-out><![CDATA[
+]]></system-out></testcase><testcase classname="stateless_tests.stl_client_test.STLClient_Test" name="test_tx_from_rx" time="2.292"><system-out><![CDATA[
+]]></system-out></testcase><testcase classname="stateless_tests.stl_core_id_pinning_test.CoreID_Test" name="test_core_id_negative" time="0.000"><skipped type="unittest.case.SkipTest" message="Must have more than one core for this test."><![CDATA[SkipTest: Must have more than one core for this test.
+]]></skipped><system-out><![CDATA[
+Skip: Must have more than one core for this test.
+]]></system-out></testcase><testcase classname="stateless_tests.stl_core_id_pinning_test.CoreID_Test" name="test_core_id_pinning_several_cores" time="0.000"><skipped type="unittest.case.SkipTest" message="Must have more than one core for this test."><![CDATA[SkipTest: Must have more than one core for this test.
+]]></skipped><system-out><![CDATA[
+Skip: Must have more than one core for this test.
+]]></system-out></testcase><testcase classname="stateless_tests.stl_core_id_pinning_test.CoreID_Test" name="test_core_id_pinning_several_streams" time="0.000"><skipped type="unittest.case.SkipTest" message="Must have more than one core for this test."><![CDATA[SkipTest: Must have more than one core for this test.
+]]></skipped><system-out><![CDATA[
+Skip: Must have more than one core for this test.
+]]></system-out></testcase><testcase classname="stateless_tests.stl_core_id_pinning_test.CoreID_Test" name="test_core_id_pinning_single" time="0.000"><skipped type="unittest.case.SkipTest" message="Must have more than one core for this test."><![CDATA[SkipTest: Must have more than one core for this test.
+]]></skipped><system-out><![CDATA[
+Skip: Must have more than one core for this test.
+]]></system-out></testcase><testcase classname="stateless_tests.stl_core_id_pinning_test.CoreID_Test" name="test_core_id_pinning_single_burst_loop" time="0.000"><skipped type="unittest.case.SkipTest" message="Must have more than one core for this test."><![CDATA[SkipTest: Must have more than one core for this test.
+]]></skipped><system-out><![CDATA[
+Skip: Must have more than one core for this test.
+]]></system-out></testcase><testcase classname="stateless_tests.stl_examples_test.STLExamples_Test" name="test_stl_examples" time="11.531"><system-out><![CDATA[
+Running command: sh -c 'cd ../trex_control_plane/interactive; /bin/python -m trex.examples.stl.stl_imix -s 10.56.216.158'
+Stdout:
+Mapped ports to sides [0, 2, 4, 6] <--> [1, 3, 5, 7]
+Injecting [0, 2, 4, 6] <--> [1, 3, 5, 7] on total rate of '30%' for 10 seconds
+
+Packets injected from [0, 2, 4, 6]: 491,056
+Packets injected from [1, 3, 5, 7]: 491,056
+
+packets lost from [0, 2, 4, 6] --> [0, 2, 4, 6]:   0 pkts
+packets lost from [1, 3, 5, 7] --> [1, 3, 5, 7]:   0 pkts
+
+Test has passed :-)
+
+
+]]></system-out></testcase><testcase classname="stateless_tests.stl_ipv6_test.STLIPv6_Test" name="test_ipv6_ping_linux_based_stack" time="0.155"><skipped type="unittest.case.SkipTest" message="Relevant only for Linux-based stack in loopback"><![CDATA[SkipTest: Relevant only for Linux-based stack in loopback
+]]></skipped><system-out><![CDATA[
+
+Skip: Relevant only for Linux-based stack in loopback
+]]></system-out></testcase><testcase classname="stateless_tests.stl_ipv6_test.STLIPv6_Test" name="test_stl_ipv6_ping" time="6.098"><system-out><![CDATA[
+
+Got replies from DUT as expected.
+Got no replies from non-existing IPv6 1234::1234 as expected.
+]]></system-out></testcase><testcase classname="stateless_tests.stl_ipv6_test.STLIPv6_Test" name="test_stl_ipv6_scan6" time="3.283"><system-out><![CDATA[
+
+Found one device as expected:
+Router     - 00:00:00:01:00:00    - fe80::200:ff:fe01:0
+]]></system-out></testcase><testcase classname="stateless_tests.stl_ns_test.STLNS_Test" name="test_many_ns" time="0.000"><skipped type="unittest.case.SkipTest" message="We need linux stack and loopback for this tests to work"><![CDATA[SkipTest: We need linux stack and loopback for this tests to work
+]]></skipped><system-out><![CDATA[
+Skip: We need linux stack and loopback for this tests to work
+]]></system-out></testcase><testcase classname="stateless_tests.stl_ns_test.STLNS_Test" name="test_ns_add_remove" time="0.000"><skipped type="unittest.case.SkipTest" message="We need linux stack and loopback for this tests to work"><![CDATA[SkipTest: We need linux stack and loopback for this tests to work
+]]></skipped><system-out><![CDATA[
+Skip: We need linux stack and loopback for this tests to work
+]]></system-out></testcase><testcase classname="stateless_tests.stl_ns_test.STLNS_Test" name="test_ping_to_ns" time="0.000"><skipped type="unittest.case.SkipTest" message="We need linux stack and loopback for this tests to work"><![CDATA[SkipTest: We need linux stack and loopback for this tests to work
+]]></skipped><system-out><![CDATA[
+Skip: We need linux stack and loopback for this tests to work
+]]></system-out></testcase><testcase classname="stateless_tests.stl_performance_test.STLPerformance_Test" name="test_performance_syn_attack_multi_cpus" time="0.321"><skipped type="unittest.case.SkipTest" message="No data in benchmark.yaml for test: test_performance_syn_attack_multi_cpus, param: cfg. Skipping."><![CDATA[SkipTest: No data in benchmark.yaml for test: test_performance_syn_attack_multi_cpus, param: cfg. Skipping.
+]]></skipped><system-out><![CDATA[
+Skip: No data in benchmark.yaml for test: test_performance_syn_attack_multi_cpus, param: cfg. Skipping.
+]]></system-out></testcase><testcase classname="stateless_tests.stl_performance_test.STLPerformance_Test" name="test_performance_syn_attack_single_cpu" time="0.287"><skipped type="unittest.case.SkipTest" message="No data in benchmark.yaml for test: test_performance_syn_attack_single_cpu, param: cfg. Skipping."><![CDATA[SkipTest: No data in benchmark.yaml for test: test_performance_syn_attack_single_cpu, param: cfg. Skipping.
+]]></skipped><system-out><![CDATA[
+Skip: No data in benchmark.yaml for test: test_performance_syn_attack_single_cpu, param: cfg. Skipping.
+]]></system-out></testcase><testcase classname="stateless_tests.stl_performance_test.STLPerformance_Test" name="test_performance_vm_multi_cpus" time="0.313"><skipped type="unittest.case.SkipTest" message="No data in benchmark.yaml for test: test_performance_vm_multi_cpus, param: cfg. Skipping."><![CDATA[SkipTest: No data in benchmark.yaml for test: test_performance_vm_multi_cpus, param: cfg. Skipping.
+]]></skipped><system-out><![CDATA[
+Skip: No data in benchmark.yaml for test: test_performance_vm_multi_cpus, param: cfg. Skipping.
+]]></system-out></testcase><testcase classname="stateless_tests.stl_performance_test.STLPerformance_Test" name="test_performance_vm_multi_cpus_cached" time="0.294"><skipped type="unittest.case.SkipTest" message="No data in benchmark.yaml for test: test_performance_vm_multi_cpus_cached, param: cfg. Skipping."><![CDATA[SkipTest: No data in benchmark.yaml for test: test_performance_vm_multi_cpus_cached, param: cfg. Skipping.
+]]></skipped><system-out><![CDATA[
+Skip: No data in benchmark.yaml for test: test_performance_vm_multi_cpus_cached, param: cfg. Skipping.
+]]></system-out></testcase><testcase classname="stateless_tests.stl_performance_test.STLPerformance_Test" name="test_performance_vm_single_cpu" time="0.295"><skipped type="unittest.case.SkipTest" message="No data in benchmark.yaml for test: test_performance_vm_single_cpu, param: cfg. Skipping."><![CDATA[SkipTest: No data in benchmark.yaml for test: test_performance_vm_single_cpu, param: cfg. Skipping.
+]]></skipped><system-out><![CDATA[
+Skip: No data in benchmark.yaml for test: test_performance_vm_single_cpu, param: cfg. Skipping.
+]]></system-out></testcase><testcase classname="stateless_tests.stl_performance_test.STLPerformance_Test" name="test_performance_vm_single_cpu_cached" time="0.294"><skipped type="unittest.case.SkipTest" message="No data in benchmark.yaml for test: test_performance_vm_single_cpu_cached, param: cfg. Skipping."><![CDATA[SkipTest: No data in benchmark.yaml for test: test_performance_vm_single_cpu_cached, param: cfg. Skipping.
+]]></skipped><system-out><![CDATA[
+Skip: No data in benchmark.yaml for test: test_performance_vm_single_cpu_cached, param: cfg. Skipping.
+]]></system-out></testcase><testcase classname="stateless_tests.stl_rx_test.STLRX_Test" name="test_1_stream_many_iterations" time="35.886"><system-out><![CDATA[
+
+num cores 4 num 9k mbufs 4096 num 4k mbufs 4096
+
+injecting 500 packets on port 0
+Stream: Latency, with field engine of random packet size
+Iteration 1
+Iteration 2
+Iteration 3
+Iteration 4
+Iteration 5
+Iteration 6
+Iteration 7
+Iteration 8
+Iteration 9
+Iteration 10
+Stream: Flow stat. No latency
+Iteration 1
+Iteration 2
+Iteration 3
+Iteration 4
+Iteration 5
+Iteration 6
+Iteration 7
+Iteration 8
+Iteration 9
+Iteration 10
+Stream: Latency, no field engine
+Iteration 1
+Iteration 2
+Iteration 3
+Iteration 4
+Iteration 5
+Iteration 6
+Iteration 7
+Iteration 8
+Iteration 9
+Iteration 10
+Stream: Latency, short packet with field engine
+Iteration 1
+Iteration 2
+Iteration 3
+Iteration 4
+Iteration 5
+Iteration 6
+Iteration 7
+Iteration 8
+Iteration 9
+Iteration 10
+Stream: Latency, large packet field engine
+Iteration 1
+Iteration 2
+Iteration 3
+Iteration 4
+Iteration 5
+Iteration 6
+Iteration 7
+Iteration 8
+Iteration 9
+Iteration 10
+Stream: Latency, 9k packet with field engine
+Iteration 1
+Iteration 2
+Iteration 3
+Iteration 4
+Iteration 5
+Iteration 6
+Iteration 7
+Iteration 8
+Iteration 9
+Iteration 10
+Stream: IPv6 flow stat. No latency
+Iteration 1
+Iteration 2
+Iteration 3
+Iteration 4
+Iteration 5
+Iteration 6
+Iteration 7
+Iteration 8
+Iteration 9
+Iteration 10
+Stream: IPv6 latency, no field engine
+Iteration 1
+Iteration 2
+Iteration 3
+Iteration 4
+Iteration 5
+Iteration 6
+Iteration 7
+Iteration 8
+Iteration 9
+Iteration 10
+]]></system-out></testcase><testcase classname="stateless_tests.stl_rx_test.STLRX_Test" name="test_9k_stream" time="0.105"><system-out><![CDATA[
+
+num cores 4 num 9k mbufs 4096 num 4k mbufs 4096
+SKIP
+]]></system-out></testcase><testcase classname="stateless_tests.stl_rx_test.STLRX_Test" name="test_fcs_stream" time="0.856"><system-out><![CDATA[
+
+num cores 4 num 9k mbufs 4096 num 4k mbufs 4096
+
+Sending from ports: [0, 1, 2, 3, 4, 5, 6, 7], has latency: True 
+
+Sending from ports: [0, 1, 2, 3, 4, 5, 6, 7], has latency: False 
+]]></system-out></testcase><testcase classname="stateless_tests.stl_rx_test.STLRX_Test" name="test_incremental_latency_streams" time="150.999"><system-out><![CDATA[
+
+num cores 4 num 9k mbufs 4096 num 4k mbufs 4096
+port 0 : 1 streams at 0.5% of line rate
+
+port 0 : 2 streams at 1.0% of line rate
+
+port 0 : 3 streams at 1.5% of line rate
+
+port 0 : 4 streams at 2.0% of line rate
+
+port 0 : 5 streams at 2.5% of line rate
+
+port 0 : 6 streams at 3.0% of line rate
+
+port 0 : 7 streams at 3.5% of line rate
+
+port 0 : 8 streams at 4.0% of line rate
+
+port 0 : 9 streams at 4.5% of line rate
+
+port 0 : 10 streams at 5.0% of line rate
+
+port 0 : 11 streams at 5.5% of line rate
+
+port 0 : 12 streams at 6.0% of line rate
+
+port 0 : 13 streams at 6.5% of line rate
+
+port 0 : 14 streams at 7.0% of line rate
+
+port 0 : 15 streams at 7.5% of line rate
+
+port 0 : 16 streams at 8.0% of line rate
+
+port 0 : 17 streams at 8.5% of line rate
+
+port 0 : 18 streams at 9.0% of line rate
+
+port 0 : 19 streams at 9.5% of line rate
+
+port 0 : 20 streams at 10.0% of line rate
+
+port 0 : 21 streams at 10.5% of line rate
+
+port 0 : 22 streams at 11.0% of line rate
+
+port 0 : 23 streams at 11.5% of line rate
+
+port 0 : 24 streams at 12.0% of line rate
+
+port 0 : 25 streams at 12.5% of line rate
+
+port 0 : 26 streams at 13.0% of line rate
+
+port 0 : 27 streams at 13.5% of line rate
+
+port 0 : 28 streams at 14.0% of line rate
+
+port 0 : 29 streams at 14.5% of line rate
+
+port 0 : 30 streams at 15.0% of line rate
+
+port 0 : 31 streams at 15.5% of line rate
+
+port 0 : 32 streams at 16.0% of line rate
+
+port 0 : 33 streams at 16.5% of line rate
+
+port 0 : 34 streams at 17.0% of line rate
+
+port 0 : 35 streams at 17.5% of line rate
+
+port 0 : 36 streams at 18.0% of line rate
+
+port 0 : 37 streams at 18.5% of line rate
+
+port 0 : 38 streams at 19.0% of line rate
+
+port 0 : 39 streams at 19.5% of line rate
+
+port 0 : 40 streams at 20.0% of line rate
+
+port 0 : 41 streams at 20.5% of line rate
+
+port 0 : 42 streams at 21.0% of line rate
+
+port 0 : 43 streams at 21.5% of line rate
+
+port 0 : 44 streams at 22.0% of line rate
+
+port 0 : 45 streams at 22.5% of line rate
+
+port 0 : 46 streams at 23.0% of line rate
+
+port 0 : 47 streams at 23.5% of line rate
+
+port 0 : 48 streams at 24.0% of line rate
+
+port 0 : 49 streams at 24.5% of line rate
+
+port 0 : 50 streams at 25.0% of line rate
+
+port 0 : 51 streams at 25.5% of line rate
+
+port 0 : 52 streams at 26.0% of line rate
+
+port 0 : 53 streams at 26.5% of line rate
+
+port 0 : 54 streams at 27.0% of line rate
+
+port 0 : 55 streams at 27.5% of line rate
+
+port 0 : 56 streams at 28.0% of line rate
+
+port 0 : 57 streams at 28.5% of line rate
+
+port 0 : 58 streams at 29.0% of line rate
+
+port 0 : 59 streams at 29.5% of line rate
+
+port 0 : 60 streams at 30.0% of line rate
+
+port 0 : 61 streams at 30.5% of line rate
+
+port 0 : 62 streams at 31.0% of line rate
+
+port 0 : 63 streams at 31.5% of line rate
+
+port 0 : 64 streams at 32.0% of line rate
+
+port 0 : 65 streams at 32.5% of line rate
+
+port 0 : 66 streams at 33.0% of line rate
+
+port 0 : 67 streams at 33.5% of line rate
+
+port 0 : 68 streams at 34.0% of line rate
+
+port 0 : 69 streams at 34.5% of line rate
+
+port 0 : 70 streams at 35.0% of line rate
+
+port 0 : 71 streams at 35.5% of line rate
+
+port 0 : 72 streams at 36.0% of line rate
+
+port 0 : 73 streams at 36.5% of line rate
+
+port 0 : 74 streams at 37.0% of line rate
+
+port 0 : 75 streams at 37.5% of line rate
+
+port 0 : 76 streams at 38.0% of line rate
+
+port 0 : 77 streams at 38.5% of line rate
+
+port 0 : 78 streams at 39.0% of line rate
+
+port 0 : 79 streams at 39.5% of line rate
+
+port 0 : 80 streams at 40.0% of line rate
+
+port 0 : 81 streams at 40.5% of line rate
+
+port 0 : 82 streams at 41.0% of line rate
+
+port 0 : 83 streams at 41.5% of line rate
+
+port 0 : 84 streams at 42.0% of line rate
+
+port 0 : 85 streams at 42.5% of line rate
+
+port 0 : 86 streams at 43.0% of line rate
+
+port 0 : 87 streams at 43.5% of line rate
+
+port 0 : 88 streams at 44.0% of line rate
+
+port 0 : 89 streams at 44.5% of line rate
+
+port 0 : 90 streams at 45.0% of line rate
+
+port 0 : 91 streams at 45.5% of line rate
+
+port 0 : 92 streams at 46.0% of line rate
+
+port 0 : 93 streams at 46.5% of line rate
+
+port 0 : 94 streams at 47.0% of line rate
+
+port 0 : 95 streams at 47.5% of line rate
+
+port 0 : 96 streams at 48.0% of line rate
+
+port 0 : 97 streams at 48.5% of line rate
+
+port 0 : 98 streams at 49.0% of line rate
+
+port 0 : 99 streams at 49.5% of line rate
+
+port 0 : 100 streams at 50.0% of line rate
+
+port 0 : 101 streams at 50.5% of line rate
+
+port 0 : 102 streams at 51.0% of line rate
+
+port 0 : 103 streams at 51.5% of line rate
+
+port 0 : 104 streams at 52.0% of line rate
+
+port 0 : 105 streams at 52.5% of line rate
+
+port 0 : 106 streams at 53.0% of line rate
+
+port 0 : 107 streams at 53.5% of line rate
+
+port 0 : 108 streams at 54.0% of line rate
+
+port 0 : 109 streams at 54.5% of line rate
+
+port 0 : 110 streams at 55.0% of line rate
+
+port 0 : 111 streams at 55.5% of line rate
+
+port 0 : 112 streams at 56.0% of line rate
+
+port 0 : 113 streams at 56.5% of line rate
+
+port 0 : 114 streams at 57.0% of line rate
+
+port 0 : 115 streams at 57.5% of line rate
+
+port 0 : 116 streams at 58.0% of line rate
+
+port 0 : 117 streams at 58.5% of line rate
+
+port 0 : 118 streams at 59.0% of line rate
+
+port 0 : 119 streams at 59.5% of line rate
+
+port 0 : 120 streams at 60.0% of line rate
+
+port 0 : 121 streams at 60.5% of line rate
+
+port 0 : 122 streams at 61.0% of line rate
+
+port 0 : 123 streams at 61.5% of line rate
+
+port 0 : 124 streams at 62.0% of line rate
+
+port 0 : 125 streams at 62.5% of line rate
+
+port 0 : 126 streams at 63.0% of line rate
+
+port 0 : 127 streams at 63.5% of line rate
+
+port 0 : 1 streams at 0.5% of line rate
+
+port 0 : 2 streams at 1.0% of line rate
+
+port 0 : 3 streams at 1.5% of line rate
+
+port 0 : 4 streams at 2.0% of line rate
+
+]]></system-out></testcase><testcase classname="stateless_tests.stl_rx_test.STLRX_Test" name="test_multiple_streams" time="3.143"><system-out><![CDATA[
+
+num cores 4 num 9k mbufs 4096 num 4k mbufs 4096
+num_latency_streams:128
+num_flow_stat_streams:255
+]]></system-out></testcase><testcase classname="stateless_tests.stl_rx_test.STLRX_Test" name="test_multiple_streams_random" time="61.561"><system-out><![CDATA[
+
+num cores 4 num 9k mbufs 4096 num 4k mbufs 4096
+num_latency_streams:4
+  total percent:1.0 (0.25 per stream)
+num_flow_stat_streams:105
+  total percent:80.0 (0.761904761905 per stream)
+Duration: 60
+]]></system-out></testcase><testcase classname="stateless_tests.stl_rx_test.STLRX_Test" name="test_one_stream" time="0.340"><system-out><![CDATA[
+
+num cores 4 num 9k mbufs 4096 num 4k mbufs 4096
+
+injecting 500 packets on port 0
+
+]]></system-out></testcase><testcase classname="stateless_tests.stl_rx_test.STLRX_Test" name="test_service_mode_flow_stats" time="0.141"><system-out><![CDATA[
+
+num cores 4 num 9k mbufs 4096 num 4k mbufs 4096
+]]></system-out></testcase><testcase classname="stateless_tests.stl_rx_test.STLRX_Test" name="test_vxlan_fs" time="0.162"><system-out><![CDATA[
+
+num cores 4 num 9k mbufs 4096 num 4k mbufs 4096
+]]></system-out></testcase><testcase classname="stateless_tests.stl_rx_test.STLRX_Test" name="test_x710_counters_wraparound" time="0.098"><skipped type="unittest.case.SkipTest" message="Test is only for i40e."><![CDATA[SkipTest: Test is only for i40e.
+]]></skipped><system-out><![CDATA[
+
+num cores 4 num 9k mbufs 4096 num 4k mbufs 4096
+Skip: Test is only for i40e.
+]]></system-out></testcase><testcase classname="stateless_tests.stl_services_test.STLServices_Test" name="test_arp_service" time="4.242"><system-out><![CDATA[
+]]></system-out></testcase></testsuite>

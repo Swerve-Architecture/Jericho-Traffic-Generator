@@ -1,0 +1,10 @@
+Version : v2.83
+DPDK version: DPDK 20.02.0
+User    : hhaim
+Date    : Sep  8 2020 , 02:40:17
+Uuid    : 3bf8c038-f163-11ea-b2d1-641225363740
+Git SHA : ce264ad42e926a0faeed5e5e20905ddaf1a6adfe
+Compiled with GCC: 7.4.0
+Compiled with glibc: 2.16 (host: 2.23)
+Sanitized image: no
+Modes: ['loopback', '1G', 'VM', 'switch']
